@@ -371,7 +371,7 @@ plt.show()
 
 _Ejercicio 1_:
 
-Varía los valores de e (eficiencia energética) y observa cómo varía el valor de equilibrio de P, intentan también valores negativos de r_p.
+Varía los valores de e (eficiencia energética) y observa cómo varía el valor de equilibrio de P, intenta también valores negativos de r_p.
 
 ```python
 A=0.3
