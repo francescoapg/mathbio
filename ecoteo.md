@@ -329,7 +329,13 @@ Ausloos, M., & Dirickx, M. (Eds.). (2006). The logistic map and the route to cha
 
 ### Interacción entre poblaciones {#semana3}
 
-Para esta sesión vamos a necesitar los siguientes paquetes
+Para esta sesión vamos a necesitar los siguientes paquetes:
+
+- Numpy
+- Matplotlib
+- Scipy
+
+Lo primero que haremos será llamar a los paquetes que usaremos en esta lección, de la siguiente manera
 
 ```python
 import numpy as np
