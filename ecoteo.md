@@ -624,7 +624,7 @@ plt.show()
 print("Los últimos elementos son: Número de presas = " + str(N1s[-1]) + ", Número de depredadores = " + str(P2s[-1]))
 ```
 
-Como ejercicio observa como manipular el valor de "al" (alpha) no incrementa la población de depredadores en el equilibrio, trata de encontrar un juego de parámetros y condiciones iniciales que sí tenga ese efecto.
+Como ejercicio observa cómo manipular el valor de "al" (alpha) no incrementa la población de depredadores en el equilibrio, trata de encontrar un juego de parámetros y condiciones iniciales que sí tenga ese efecto.
 
 **Hipótesis de la interferencia gradual: Tyutyunov et al. (2008)**
 
