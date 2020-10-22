@@ -14,7 +14,7 @@ Primero asegurate de tener los siguientes paquetes instalados
 - Numpy 
 - Matplotlib (generalmente viene instalado con Anaconda)
 
-El método de instalar esos paquetes es escribir el siguiente código en _Anaconda Prompt_: `conda install numpy` y `conda install matplotlib` y escribir `y` y presionar _Enter_ luego de que aparezca el anuncio, para verificar si tienes estos paquetes instalados puedes escribir `conda list` en el _Prompt_.
+El método de instalar esos paquetes es escribir el siguiente código en _Anaconda Prompt_: `conda install numpy` y `conda install matplotlib`, luego de escribir cada uno (y que te aparezca el anuncio de confirmación) escribe `y` y presiona _Enter_. Para verificar si tienes estos paquetes instalados puedes escribir `conda list` en _Anaconda Prompt_.
 
 A continuación, abrimos un nuevo documento en _Jupyter Notebook_. Lo primero que haremos será llamar a los paquetes que usaremos en esta lección, de la siguiente manera
 
