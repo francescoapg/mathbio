@@ -4,7 +4,7 @@
 
 ### Cursos
 
-1. [Ecología Teórica](http://github.com)
+1. [Ecología Teórica](https://francescoapg.github.io/mathbio/ecoteo)
 2. Biomatemática
 
 
