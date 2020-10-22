@@ -52,7 +52,7 @@ plt.show()
 ```
 _Ejercicio 1_:
 
-Intenta cambiar los valores de R para obtener distintas gráficas. Recuerda que R representa la proporción de la población que se reproducirá y generará descendencia en la siguiente unidad de tiempo, se calcula como $R_t=N_{t+1}/N_t$.
+Intenta cambiar los valores de R para obtener distintas gráficas. Recuerda que R representa la proporción de la población que se reproducirá y generará descendencia en la siguiente unidad de tiempo, se calcula como R_t=N_{t+1}/N_t.
 
 ```python
 I = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -212,7 +212,7 @@ plt.show()
 
 _Ejercicio 3_:
 
-Prueba valores pequeños de $N_0$ y observa si la población se mantiene, puedes variar también el valor de R (actualmente es 1.15)
+Prueba valores pequeños de N_0 y observa si la población se mantiene, puedes variar también el valor de R (actualmente es 1.15)
 
 ```python
 N_0=10
@@ -328,3 +328,391 @@ plt.show()
 Ausloos, M., & Dirickx, M. (Eds.). (2006). The logistic map and the route to chaos: From the beginnings to modern applications. Springer Science & Business Media.
 
 ### Interacción entre poblaciones {#semana3}
+
+Para esta sesión vamos a necesitar los siguientes paquetes
+
+```python
+import numpy as np
+from scipy.integrate import odeint
+import matplotlib.pyplot as plt
+```
+
+**Modelo de Jacques Monod (1942)**
+
+```python
+A=0.3
+e=0.1
+r_p=0.16
+def monod(x, t, *args):
+    S, P = x
+    A, e, r_p = args
+    dsdt = -(1/e)*((r_p*S*P)/(A+S))
+    dpdt = (r_p*S*P)/(A+S)
+    return dsdt, dpdt
+t = np.linspace(0, 200, 200)
+S_0 = 1  
+P_0 = 0.1
+x_0 = S_0, P_0
+sol = odeint(monod, x_0, t, args=(A, e, r_p))
+
+plt.plot(t, sol[:, 0], 'g', label='S(t)')
+plt.plot(t, sol[:, 1], 'b', label='P(t)')
+plt.legend(loc='best')
+plt.xlabel('Tiempo')
+plt.grid()
+plt.show()
+```
+
+_Ejercicio 1_:
+
+Varía los valores de e (eficiencia energética) y observa cómo varía el valor de equilibrio de P, intentan también valores negativos de r_p.
+
+```python
+A=0.3
+e=0.4
+r_p=0.16
+def monod(x, t, *args):
+    S, P = x
+    A, e, r_p = args
+    dsdt = -(1/e)*((r_p*S*P)/(A+S))
+    dpdt = (r_p*S*P)/(A+S)
+    return dsdt, dpdt
+t = np.linspace(0, 200, 200)
+S_0 = 1  
+P_0 = 0.1
+x_0 = S_0, P_0
+sol = odeint(monod, x_0, t, args=(A, e, r_p))
+
+plt.plot(t, sol[:, 0], 'g', label='S(t)')
+plt.plot(t, sol[:, 1], 'b', label='P(t)')
+plt.legend(loc='best')
+plt.xlabel('Tiempo')
+plt.grid()
+plt.show()
+```
+
+**Modelo de David Ely Contois (1959)**
+
+```python
+B=10
+e=0.4
+r_p=0.16
+def monod(x, t, *args):
+    S, P = x
+    B, e, r_p = args
+    dsdt = -(1/e)*((r_p*S)/(B+(S/P)))
+    dpdt = (r_p*S)/(B+(S/P))
+    return dsdt, dpdt
+t = np.linspace(0, 200, 200)
+S_0 = 1  
+P_0 = 0.1
+x_0 = S_0, P_0
+sol = odeint(monod, x_0, t, args=(B, e, r_p))
+
+plt.plot(t, sol[:, 0], 'g', label='S(t)')
+plt.plot(t, sol[:, 1], 'b', label='P(t)')
+plt.legend(loc='best')
+plt.xlabel('Tiempo')
+plt.grid()
+plt.show()
+```
+
+_Ejercicio 2_:
+
+Observa cómo variar el parámetro B varía la forma de las funciones.
+
+```python
+B=100
+e=0.4
+r_p=0.16
+def monod(x, t, *args):
+    S, P = x
+    B, e, r_p = args
+    dsdt = -(1/e)*((r_p*S)/(B+(S/P)))
+    dpdt = (r_p*S)/(B+(S/P))
+    return dsdt, dpdt
+t = np.linspace(0, 200, 200)
+S_0 = 1  
+P_0 = 0.1
+x_0 = S_0, P_0
+sol = odeint(monod, x_0, t, args=(B, e, r_p))
+
+plt.plot(t, sol[:, 0], 'g', label='S(t)')
+plt.plot(t, sol[:, 1], 'b', label='P(t)')
+plt.legend(loc='best')
+plt.xlabel('Tiempo')
+plt.grid()
+plt.show()
+```
+
+**Modelo estándar de Lotka-Volterra (1920-1930)**
+
+Para manipular las ecuaciones vamos a utilizar el método de integración de Euler; de modo que si las poblaciones tienen menos de un individuo, su valor sea 0. Esto es adecuado dado nuestro _set_ de parámetros y la interpretación que le damos; sin embargo, esto no será adecuado en todos los escenarios; por ejemplo, los valores de N y P pueden representar la concentración de bacterias en suspensión, valores menores a 1, en ese contexto, no serán inadecuados.
+
+```python
+r=0.16
+q=0.13
+e=0.1
+a=0.03
+dt=0.1
+
+N = 300 
+P = 30
+
+t = 0
+ts = np.empty(1001)
+N1s = np.empty(1001)
+P2s = np.empty(1001)
+i = 0
+while t<100.0:
+    ts[i] = t
+    N1s[i] = N
+    P2s[i] = P
+    N = N + (r*N-a*N*P)*dt 
+    if N<1:
+        N = 0
+    P = P + (e*a*N*P-q*P)*dt
+    if P<1:
+        P = 0
+    i = i + 1
+    t = t + dt
+
+# plot data
+
+plt.figure(1)
+plt.plot(ts,N1s, label="Presas")
+plt.plot(ts,P2s, label="Depredadores")
+plt.xlabel("Tiempo")
+plt.ylabel("Tamaño poblacional")
+plt.legend()
+plt.show()
+print("Los últimos elementos son: Número de presas = " + str(N1s[-1]) + ", Número de depredadores = " + str(P2s[-1]))
+```
+
+Comor ejercicio trata de encontrar valores de las constantes y condiciones iniciales que lleven al equilibrio.
+
+**Respuesta funcional: Modelo de Holling (1959)**
+
+```python
+r=0.16
+q=0.13
+e=0.1
+a=0.03
+h=0.5
+dt=0.1
+
+N = 300 
+P = 30
+
+t = 0
+ts = np.empty(1001)
+N1s = np.empty(1001)
+P2s = np.empty(1001)
+i = 0
+while t<100.0:
+    ts[i] = t
+    N1s[i] = N
+    P2s[i] = P
+    N = N + (r*N-((a*N)/(1+a*h*N))*P)*dt 
+    if N<1:
+        N = 0
+    P = P + (e*((a*N)/(1+a*h*N))*P-q*P)*dt
+    if P<1:
+        P = 0
+    i = i + 1
+    t = t + dt
+
+# plot data
+
+plt.figure(1)
+plt.plot(ts,N1s, label="Presas")
+plt.plot(ts,P2s, label="Depredadores")
+plt.xlabel("Tiempo")
+plt.ylabel("Tamaño poblacional")
+plt.legend()
+plt.show()
+print("Los últimos elementos son: Número de presas = " + str(N1s[-1]) + ", Número de depredadores = " + str(P2s[-1]))
+```
+
+Como ejercicio trata de encontrar valores de las constantes y condiciones iniciales que lleven al equilibrio.
+
+**Modelo dependiente de presas: Rosenzweig y MacArthur (1963)**
+
+```python
+r=0.16
+q=0.13
+e=0.1
+a=0.01
+h=0.35
+dt=0.1
+
+N = 300 
+K = 400
+P = 30
+
+t = 0
+ts = np.empty(10000)
+N1s = np.empty(10000)
+P2s = np.empty(10000)
+i = 0
+while t<1000.0:
+    ts[i] = t
+    N1s[i] = N
+    P2s[i] = P
+    N = N + (r*N*(1-N/K)-((a*N)/(1+a*h*N))*P)*dt 
+    if N<1:
+        N = 0
+    P = P + (e*((a*N)/(1+a*h*N))*P-q*P)*dt
+    if P<1:
+        P = 0
+    i = i + 1
+    t = t + dt
+
+# plot data
+
+plt.figure(1)
+plt.plot(ts,N1s, label="Presas")
+plt.plot(ts,P2s, label="Depredadores")
+plt.xlabel("Tiempo")
+plt.ylabel("Tamaño poblacional")
+plt.legend()
+plt.show()
+print("Los últimos elementos son: Número de presas = " + str(N1s[-1]) + ", Número de depredadores = " + str(P2s[-1]))
+```
+
+**Modelo dependiente de razones de Arditi-Ginzburg (1989)**
+
+```python
+r=0.16
+q=0.13
+e=0.1
+al=0.15
+h=0.2
+dt=0.1
+
+N = 300 
+K = 400
+P = 30
+
+t = 0
+ts = np.empty(10000)
+N1s = np.empty(10000)
+P2s = np.empty(10000)
+i = 0
+while t<1000.0:
+    ts[i] = t
+    N1s[i] = N
+    P2s[i] = P
+    N = N + (r*N*(1-N/K)-((al*N)/(P+al*h*N))*P)*dt 
+    if N<1:
+        N = 0
+    P = P + (e*((al*N)/(P+al*h*N))*P-q*P)*dt
+    if P<1:
+        P = 0
+    i = i + 1
+    t = t + dt
+
+# plot data
+
+plt.figure(1)
+plt.plot(ts,N1s, label="Presas")
+plt.plot(ts,P2s, label="Depredadores")
+plt.xlabel("Tiempo")
+plt.ylabel("Tamaño poblacional")
+plt.legend()
+plt.show()
+print("Los últimos elementos son: Número de presas = " + str(N1s[-1]) + ", Número de depredadores = " + str(P2s[-1]))
+```
+
+Como ejercicio observa como manipular el valor de "al" (alpha) no incrementa la población de depredadores en el equilibrio, trata de encontrar un juego de parámetros y condiciones iniciales que sí tenga ese efecto.
+
+**Hipótesis de la interferencia gradual: Tyutyunov et al. (2008)**
+
+```python
+r=0.16
+q=0.13
+e=0.1
+a=0.015
+h=0.07
+dt=0.1
+
+N = 300 
+K = 400
+P = 30
+P_c = 70
+
+t = 0
+ts = np.empty(10000)
+N1s = np.empty(10000)
+P2s = np.empty(10000)
+i = 0
+while t<1000.0:
+    ts[i] = t
+    N1s[i] = N
+    P2s[i] = P
+    N = N + (r*N*(1-N/K)-((a*N)/(P/P_c+np.exp(-P/P_c)+a*h*N))*P)*dt 
+    if N<1:
+        N = 0
+    P = P + (e*((a*N)/(P/P_c+np.exp(-P/P_c)+a*h*N))*P-q*P)*dt
+    if P<1:
+        P = 0
+    i = i + 1
+    t = t + dt
+
+# plot data
+
+plt.figure(1)
+plt.plot(ts,N1s, label="Presas")
+plt.plot(ts,P2s, label="Depredadores")
+plt.xlabel("Tiempo")
+plt.ylabel("Tamaño poblacional")
+plt.legend()
+plt.show()
+print("Los últimos elementos son: Número de presas = " + str(N1s[-1]) + ", Número de depredadores = " + str(P2s[-1]))
+```
+
+**Modelo de competencia de Lotka-Volterra (1920-1930)**
+
+El resultado que observarás es el escenario de **exclusión competitiva**.
+
+```python
+r_1=0.16
+r_2=0.2
+al_12=0.3
+al_21=0.9
+dt=0.1
+
+N_1 = 300 
+N_2 = 300
+K_1 = 250
+K_2 = 250
+
+t = 0
+ts = np.empty(1001)
+N1s = np.empty(1001)
+N2s = np.empty(1001)
+i = 0
+while t<100.0:
+    ts[i] = t
+    N1s[i] = N_1
+    N2s[i] = N_2
+    N_1 = N_1 + (r_1*N_1*((K_1-N_1-al_12*N_2)/(K_1)))*dt 
+    if N_1<1:
+        N_1 = 0
+    N_2 = N_2 + (r_2*N_2*((K_2-N_2-al_21*N_1)/(K_2)))*dt 
+    if N_2<1:
+        N_2 = 0
+    i = i + 1
+    t = t + dt
+
+# plot data
+
+plt.figure(1)
+plt.plot(ts,N1s, label="Especie 1")
+plt.plot(ts,N2s, label="Especie 2")
+plt.xlabel("Tiempo")
+plt.ylabel("Tamaño poblacional")
+plt.legend()
+plt.show()
+print("Población de Especie 1 = " + str(N1s[-1]) + ",Población de Especie 2 = " + str(N2s[-1]))
+```
