@@ -447,7 +447,7 @@ plt.show()
 
 **Modelo estándar de Lotka-Volterra (1920-1930)**
 
-Para manipular las ecuaciones vamos a utilizar el método de integración de Euler; de modo que si las poblaciones tienen menos de un individuo, su valor sea 0. Esto es adecuado dado nuestro _set_ de parámetros y la interpretación que le damos; sin embargo, esto no será adecuado en todos los escenarios; por ejemplo, los valores de N y P pueden representar la concentración de bacterias en suspensión, valores menores a 1, en ese contexto, no serán inadecuados.
+Para manipular las ecuaciones vamos a utilizar el método de integración de Euler; de modo que si las poblaciones tienen menos de un individuo, su valor sea 0. Esto es adecuado dado nuestro _set_ de parámetros y la interpretación que le damos; sin embargo, esto no será adecuado en todos los escenarios; por ejemplo, los valores de N y P pueden representar la concentración de bacterias en suspensión, valores menores a 1, en ese contexto, sí serán adecuados.
 
 ```python
 r=0.16
