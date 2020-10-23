@@ -16,7 +16,7 @@ Nuestro foco de estudio será el modelamiento algebraico (no _cálculo_). Un Sis
 
 Dentro de teoría de conjuntos clásica existen dos enfoques, el _naive_ o ingenuo y el axiomático. Para nuestros objetivos, nos conformaremos con el _naive_. Empezamos con las siguientes definiciones:
 
-1. El símbolo $\in$ representa pertenencia, formalmente, es una relación entre un elemento y el conjunto que lo contiene. Por ejemplo, $a\in S$ significa que $a$ es un elemento de $S$.
+1. El símbolo <img src="https://render.githubusercontent.com/render/math?math=\in"> representa pertenencia, formalmente, es una relación entre un elemento y el conjunto que lo contiene. Por ejemplo, $a\in S$ significa que $a$ es un elemento de $S$.
 2. 
 
 **Referencias**
