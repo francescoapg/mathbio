@@ -73,12 +73,12 @@ Ahora hablaremos de **grupos de permutación**, los cuales son clave para el est
 
 Las permutaciones se suelen representar de la siguiente manera. Para un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large S"> con elementos <img src="https://render.githubusercontent.com/render/math?math=\large a_1, a_2, ..., a_i, a_j, ...">, una permutación es la siguiente
 
-<img src="https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Barray%7D%7Bc%7Dc%3D%5Cbegin%7Bpmatrix%7D+a_1+%26+a_2+%26+...+%5C%5C+a_i+%26+a_j+%26+...+%5Cend%7Bpmatrix%7D%5Cend%7Barray%7D" alt="\begin{array}{c}c=\begin{pmatrix} a_1 & a_2 & ... \\ a_i & a_j & ... \end{pmatrix}\end{array}&mode=inline">
+<img src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Barray%7D%7Bc%7Dc%3D%5Cbegin%7Bpmatrix%7D%20a_1%20%26%20a_2%20%26%20...%20%5C%5C%20a_i%20%26%20a_j%20%26%20...%20%5Cend%7Bpmatrix%7D%5Cend%7Barray%7D">
 
 
 Lo cual permuta <img src="https://render.githubusercontent.com/render/math?math=\large a_1"> con <img src="https://render.githubusercontent.com/render/math?math=\large a_i">, <img src="https://render.githubusercontent.com/render/math?math=\large a_2"> con <img src="https://render.githubusercontent.com/render/math?math=\large a_j">, y así sucesivamente. Finalmente, la composición de permutaciones no suele ser conmutativa.
 
-Finalizamos esta sección con los casos relajados de grupos. sometextd
+Finalizamos esta sección con los casos relajados de grupos. sometextde
 
 **Referencias**
 
