@@ -69,7 +69,12 @@ _Demostración_: El elemento identidad está en <img src="https://render.githubu
 
 Si <img src="https://render.githubusercontent.com/render/math?math=\large G"> contiene un elemento que lo genere entonces <img src="https://render.githubusercontent.com/render/math?math=\large G"> es un grupo cíclico. Se prueba que todo grupo cíclico es abeliano; también se prueba que todos los subgrupos de un grupo.
 
-Ahora hablaremos de **grupos de permutación**. 
+Ahora hablaremos de **grupos de permutación**, los cuales son clave para el estudio de simetría. Una permutación es un mapeo biyectivo <img src="https://render.githubusercontent.com/render/math?math=\large \pi : X \to X">. De forma general, las permutaciones de un set <img src="https://render.githubusercontent.com/render/math?math=\large X"> forman un grupo <img src="https://render.githubusercontent.com/render/math?math=\large S_X">, el cual es llamado **grupo simétrico**. Los subgrupos de <img src="https://render.githubusercontent.com/render/math?math=\large S_X"> son llamados **grupos de permutación**. 
+
+Las permutaciones se suelen representar de la siguiente manera.
+<img src="https://render.githubusercontent.com/render/math?math=\large \begin{pmatrix} a_1 & a_2 & ... \\ a_i & a_j & ... \end{pmatrix}">
+
+Finalizamos esta sección con los casos relajados de grupos.
 
 **Referencias**
 
