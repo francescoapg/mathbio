@@ -71,7 +71,7 @@ Si <img src="https://render.githubusercontent.com/render/math?math=\large G"> co
 
 Ahora hablaremos de **grupos de permutación**, los cuales son clave para el estudio de simetría. Una permutación es un mapeo biyectivo <img src="https://render.githubusercontent.com/render/math?math=\large \pi : X \to X">. De forma general, las permutaciones de un set <img src="https://render.githubusercontent.com/render/math?math=\large X"> forman un grupo <img src="https://render.githubusercontent.com/render/math?math=\large S_X">, el cual es llamado **grupo simétrico**. Los subgrupos de <img src="https://render.githubusercontent.com/render/math?math=\large S_X"> son llamados **grupos de permutación**. 
 
-Las permutaciones se suelen representar de la siguiente manera.
+Las permutaciones se suelen representar de la siguiente manera. Para un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large S"> con elementos <img src="https://render.githubusercontent.com/render/math?math=\large a_1, a_2, ..., a_i, a_j, ...">, una permutación es la siguiente
 <img src="https://render.githubusercontent.com/render/math?math= \begin{pmatrix} a_1 & a_2 & ... \\ a_i & a_j & ... \end{pmatrix}">
 
 Finalizamos esta sección con los casos relajados de grupos.
