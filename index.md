@@ -9,7 +9,7 @@
 
 ### Licencia
 
-[Ver licencia (Inglés)](https://francescoapg.github.io/mathbio/license)
+[Ver licencia (Inglés)](https://francescoapg.github.io/mathbio/lcs)
 
 ### Contacto
 
