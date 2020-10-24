@@ -4,11 +4,11 @@
 
 **Índice**
 
-1. [Estructuras algebraicas: grupos y anillos](#semana2)
+1. [Estructuras algebraicas: Grupos](#semana2)
 2. Látices
 3. Estructuras naturales
 
-### Estructuras algebraicas: grupos y anillos {#semana2}
+### Estructuras algebraicas: Grupos {#semana2}
 
 Un Sistema Algebraico puede ser descrito como un conjunto de objetos junto con algunas operaciones para combinarlas. (Herstein, 1975) Por tal motivo, el primer paso comprender ese campo será tener cierto conocimiento de _Teoría de conjuntos_.
 
@@ -80,7 +80,7 @@ Lo cual permuta <img src="https://render.githubusercontent.com/render/math?math=
 
 El último tipo de grupo que veremos es el **grupo dihedral**. Un grupo dihedral es aquel que se forma de las permutaciones rígidas de un polígono. Dentro de sus elementos se tendrán solo rotaciones o reflexione, todas ellas respetan la vecindad de los vértices del polígono. De forma análoga, se puede establecer el grupo de movimientos rígidos de poliedros como cubos.
 
-Podemos incluir otras estructuras compatibles con la ley de combinación.
+Finalmente, podemos incluir otras estructuras compatibles con la ley de combinación.
 
 - Grupos topológicos
 - Grupos de Lie
@@ -100,7 +100,8 @@ Lo opuesto también puede ser logrado, si relajamos algunos de los axiomas que d
 - Grupoide
 - Semigrupoide
 
-Hablaremos un poco
+Hablaremos un poco de **Magmas** y **Monoides**. Un magma es un conjunto asociado con una ley de composición interna, se cumple que el conjunto es cerrado bajo la ley de composición, esta condición es compartida con el resto de estructuras similares a grupos y grupos, excepto por semigrupoides. Expresada en lógica, la condición es la siguiente: <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b\in M (a\circ b\in M)">. Un monoide, además de la condición mencionada, cumple con la asociatividad de la ley de composición y la existencia del elemento identidad.
+
 **Referencias**
 
 - Herstein, I. N. (1975). Topics in algebra. Second edition. Xerox Corporation.
