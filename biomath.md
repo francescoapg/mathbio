@@ -111,6 +111,8 @@ Entre <img src="https://render.githubusercontent.com/render/math?math=\large H">
 
 Un corolario importante de este teorema es que si un grupo finito tiene un número primo de elementos entonces es cíclico y cualquier elemento distinto al identidad es un generador.
 
+
+
 **Referencias**
 
 - Herstein, I. N. (1975). Topics in algebra. Second edition. Xerox Corporation.
@@ -154,7 +156,7 @@ Entonces <img src="https://render.githubusercontent.com/render/math?math=\large 
 
 **Teorema**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large G"> el producto directo interno de sus subgrupos <img src="https://render.githubusercontent.com/render/math?math=\large H"> y <img src="https://render.githubusercontent.com/render/math?math=\large K">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large G"> es isomórfico a <img src="https://render.githubusercontent.com/render/math?math=\large H\times K">.
 
-Toma en cuanta, también, que no todos los grupos pueden ser descompuestos por el producto interno directo. Finalmente, las condiciones del producto directo interno también pueden ser generalizadas a <img src="https://render.githubusercontent.com/render/math?math=\large n"> subgrupos.
+Toma en cuanta, también, que no todos los grupos pueden ser descompuestos por el producto interno directo. Finalmente, las condiciones del producto directo interno también pueden ser generalizadas a <img src="https://render.githubusercontent.com/render/math?math=\large n"> subgrupos, al igual que el teorema anterior.
 
 **Referencias**
 
