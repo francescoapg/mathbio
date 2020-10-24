@@ -102,6 +102,8 @@ Lo opuesto también puede ser logrado, si relajamos algunos de los axiomas que d
 
 Hablaremos un poco de **Magmas** y **Monoides**. Un magma es un conjunto asociado con una ley de composición interna, se cumple que el conjunto es cerrado bajo la ley de composición, esta condición es compartida con el resto de estructuras similares a grupos y grupos, excepto por semigrupoides. Expresada en lógica, la condición es la siguiente: siendo <img src="https://render.githubusercontent.com/render/math?math=\large M"> un magma, <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b\in M (a\circ b\in M)">. Un monoide, además de la condición mencionada, cumple con la asociatividad de la ley de composición y la existencia del elemento identidad.
 
+Continuamos con el Teorema de Lagrange, uno de los teoremas más importantes de la teoría de grupos finitos. Primero es necesario definir el concepto de _coset_. Sea <img src="https://render.githubusercontent.com/render/math?math=\large G"> y un subgrupo <img src="https://render.githubusercontent.com/render/math?math=\large H"> de este. Un coset izquierdo
+
 **Referencias**
 
 - Herstein, I. N. (1975). Topics in algebra. Second edition. Xerox Corporation.
