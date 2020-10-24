@@ -5,7 +5,7 @@
 **Índice**
 
 1. [Estructuras algebraicas: Grupos](#semana2)
-2. Látices
+2. [Látices y orden](#semana3)
 3. Estructuras naturales
 
 ### Estructuras algebraicas: Grupos {#semana2}
@@ -100,9 +100,15 @@ Lo opuesto también puede ser logrado, si relajamos algunos de los axiomas que d
 - Grupoide
 - Semigrupoide
 
-Hablaremos un poco de **Magmas** y **Monoides**. Un magma es un conjunto asociado con una ley de composición interna, se cumple que el conjunto es cerrado bajo la ley de composición, esta condición es compartida con el resto de estructuras similares a grupos y grupos, excepto por semigrupoides. Expresada en lógica, la condición es la siguiente: <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b\in M (a\circ b\in M)">. Un monoide, además de la condición mencionada, cumple con la asociatividad de la ley de composición y la existencia del elemento identidad.
+Hablaremos un poco de **Magmas** y **Monoides**. Un magma es un conjunto asociado con una ley de composición interna, se cumple que el conjunto es cerrado bajo la ley de composición, esta condición es compartida con el resto de estructuras similares a grupos y grupos, excepto por semigrupoides. Expresada en lógica, la condición es la siguiente: siendo <img src="https://render.githubusercontent.com/render/math?math=\large M"> un magma, <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b\in M (a\circ b\in M)">. Un monoide, además de la condición mencionada, cumple con la asociatividad de la ley de composición y la existencia del elemento identidad.
 
 **Referencias**
 
 - Herstein, I. N. (1975). Topics in algebra. Second edition. Xerox Corporation.
 - Judson, T. W. (2017) Abstract Algebra: Theory and Applications.
+
+### Látices y orden {#semana3}
+
+**Referencias**
+
+- 
