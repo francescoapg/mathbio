@@ -138,9 +138,23 @@ El isomorfismo entre ellos recibe el nombre de **representación regular izquier
 
 Considera el producto cartesiano de los conjuntos de dos grupos (<img src="https://render.githubusercontent.com/render/math?math=\large G \times H">), es posible definir la siguiente ley de composición dentro de este nuevo conjunto: <img src="https://render.githubusercontent.com/render/math?math=\large (g_1,h_1) \diamond (g_2,h_2)=(g_1\bullet g_2,h_1\circ h_2)">, siendo <img src="https://render.githubusercontent.com/render/math?math=\large g_1, g_2\in G"> y <img src="https://render.githubusercontent.com/render/math?math=\large h_1,h_2\in H"> y <img src="https://render.githubusercontent.com/render/math?math=\large \bullet ,\circ"> sus respectivas leyes de composiciones. Se demuestra que <img src="https://render.githubusercontent.com/render/math?math=\large (G\times H , \diamond)"> es un grupo y es llamado _producto directo externo_ de <img src="https://render.githubusercontent.com/render/math?math=\large G"> y <img src="https://render.githubusercontent.com/render/math?math=\large H">. De forma general, 
 
-<img src="https://render.githubusercontent.com/render/math?math=%5Cprod_%7Bi%3D1%7D%5E%7Bn%7DG_%7Bi%7D%3DG_%7B1%7D%5Ctimes%20G_%7B2%7D%5Ctimes%20...%20%20%5Ctimes%20G_%7Bn%7D">
+<img src="https://render.githubusercontent.com/render/math?math=%5Clarge%0A%5Cprod_%7Bi%3D1%7D%5E%7Bn%7DG_%7Bi%7D%3DG_%7B1%7D%5Ctimes%20G_%7B2%7D%5Ctimes%20...%20%20%5Ctimes%20G_%7Bn%7D">
 
 es el producto directo externo de los grupos <img src="https://render.githubusercontent.com/render/math?math=\large G_1, G_2,...,G_n">.
+
+**Producto directo interno**
+
+En el caso anterior construímos un grupo más grande a partir de dos grupos pequeños, en este caso veremos una situación inversa: dividiremos un grupo como el producto de dos subgurpos. Primero consideraremos dos subgrupos <img src="https://render.githubusercontent.com/render/math?math=\large H"> y <img src="https://render.githubusercontent.com/render/math?math=\large K"> de <img src="https://render.githubusercontent.com/render/math?math=\large G"> que cumplan con las siguientes condiciones (Judson, 2017).
+
+1. <img src="https://render.githubusercontent.com/render/math?math=\large G=HK=\{hk:h\in H, k\in K \}">
+2. <img src="https://render.githubusercontent.com/render/math?math=\large H\cap K =\{e\}">
+3. <img src="https://render.githubusercontent.com/render/math?math=\large hk=kh \forall k \in K, h\in H">.
+
+Entonces <img src="https://render.githubusercontent.com/render/math?math=\large G"> es el _producto directo interno_ de <img src="https://render.githubusercontent.com/render/math?math=\large H"> y <img src="https://render.githubusercontent.com/render/math?math=\large K">. El siguiente teorema enlaza los conceptos de productos directos internos y externos.
+
+**Teorema**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large G"> el producto directo interno de sus subgrupos <img src="https://render.githubusercontent.com/render/math?math=\large H"> y <img src="https://render.githubusercontent.com/render/math?math=\large K">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large G"> es isomórfico a <img src="https://render.githubusercontent.com/render/math?math=\large H\times K">.
+
+Toma en cuanta, también, que no todos los grupos pueden ser descompuestos por el producto interno directo. Finalmente, las condiciones del producto directo interno también pueden ser generalizadas a <img src="https://render.githubusercontent.com/render/math?math=\large n"> subgrupos.
 
 **Referencias**
 
