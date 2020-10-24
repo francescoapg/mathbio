@@ -130,13 +130,17 @@ Entre las consecuencias de tener definidos isomorfismos tenemos que, tal que exi
 
 Así es como el objetivo de la teoría de grupos se torna hacia estas clases de equivalencia generadas dentro de la clase de todos los grupos. Dentro del estudio de ellos surge otro teorema muy importante.
 
-**Teorema de Cayley**: (_Teorema de representacion_) Todo grupo es isomórfico a un grupo de permutaciones.
+**Teorema de Cayley**: (_Teorema de representación_) Todo grupo es isomórfico a un grupo de permutaciones.
 
 El isomorfismo entre ellos recibe el nombre de **representación regular izquierda** del grupo (<img src="https://render.githubusercontent.com/render/math?math=\large G">).
 
 **Producto directo externo**
 
+Considera el producto cartesiano de los conjuntos de dos grupos (<img src="https://render.githubusercontent.com/render/math?math=\large G \times H">), es posible definir la siguiente ley de composición dentro de este nuevo conjunto: <img src="https://render.githubusercontent.com/render/math?math=\large (g_1,h_1) \diamond (g_2,h_2)=(g_1\bullet g_2,h_1\circ h_2)">, siendo <img src="https://render.githubusercontent.com/render/math?math=\large g_1, g_2\in G"> y <img src="https://render.githubusercontent.com/render/math?math=\large h_1,h_2\in H"> y <img src="https://render.githubusercontent.com/render/math?math=\large \bullet ,\circ"> sus respectivas leyes de composiciones. Se demuestra que <img src="https://render.githubusercontent.com/render/math?math=\large (G\times H , \diamond)"> es un grupo y es llamado _producto directo externo_ de <img src="https://render.githubusercontent.com/render/math?math=\large G"> y <img src="https://render.githubusercontent.com/render/math?math=\large H">. De forma general, 
 
+<img src="https://render.githubusercontent.com/render/math?math=%5Cprod_%7Bi%3D1%7D%5E%7Bn%7DG_%7Bi%7D%3DG_%7B1%7D%5Ctimes%20G_%7B2%7D%5Ctimes%20...%20%20%5Ctimes%20G_%7Bn%7D">
+
+es el producto directo externo de los grupos <img src="https://render.githubusercontent.com/render/math?math=\large G_1, G_2,...,G_n">.
 
 **Referencias**
 
