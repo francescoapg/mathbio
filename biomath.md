@@ -5,8 +5,9 @@
 **Índice**
 
 1. [Estructuras algebraicas: Grupos](#semana2)
-2. [Látices y orden](#semana3)
-3. Estructuras naturales
+2. [Isomorfismos](#extra1)
+3. [Látices y orden](#semana3)
+4. Estructuras naturales
 
 ### Estructuras algebraicas: Grupos {#semana2}
 
@@ -113,6 +114,20 @@ Un corolario importante de este teorema es que si un grupo finito tiene un núme
 **Referencias**
 
 - Herstein, I. N. (1975). Topics in algebra. Second edition. Xerox Corporation.
+- Judson, T. W. (2017) Abstract Algebra: Theory and Applications.
+
+### Isomorfismos {#extra1}
+
+Entre las "herramientas" que se usan para estudiar grupos están los isomorfismos; con ellos, se pueden econtrar semejanzas entre grupos que a primera vistas parecen disímiles.
+
+**Definición**: (Judson, 2017) Dos grupos <img src="https://render.githubusercontent.com/render/math?math=\large (G, \bullet )"> y <img src="https://render.githubusercontent.com/render/math?math=\large (H, \circ )"> son isomórficos si existe un mapeo biyectivo (suryectivo e inyectivo) <img src="https://render.githubusercontent.com/render/math?math=\large \phi : G \to H">, tal que <img src="https://render.githubusercontent.com/render/math?math=\large \phi (a \bullet b)=\phi (a)\circ \phi (b)"> para cualesquiera elementos <img src="https://render.githubusercontent.com/render/math?math=\large a,b\in G">, es decir, se preservan las operaciones entre grupos. El mapa <img src="https://render.githubusercontent.com/render/math?math=\large \phi"> es llamado isomorfismo.
+
+Note que el isomorfismo anterior está definido de <img src="https://render.githubusercontent.com/render/math?math=\large G"> hacia <img src="https://render.githubusercontent.com/render/math?math=\large H">; sin embargo, se puede probar que <img src="https://render.githubusercontent.com/render/math?math=\large \phi ^{-1}"> también es un isomorfismo. Observe también que dos grupos pueden tener dos o más isomorfismos distintos definidos entre ellos. 
+
+
+
+**Referencias**
+
 - Judson, T. W. (2017) Abstract Algebra: Theory and Applications.
 
 ### Látices y orden {#semana3}
