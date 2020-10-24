@@ -124,7 +124,15 @@ Entre las "herramientas" que se usan para estudiar grupos están los isomorfismo
 
 Note que el isomorfismo anterior está definido de <img src="https://render.githubusercontent.com/render/math?math=\large G"> hacia <img src="https://render.githubusercontent.com/render/math?math=\large H">; sin embargo, se puede probar que <img src="https://render.githubusercontent.com/render/math?math=\large \phi ^{-1}"> también es un isomorfismo. Observe también que dos grupos pueden tener dos o más isomorfismos distintos definidos entre ellos. 
 
+Entre las consecuencias de tener definidos isomorfismos tenemos que, tal que exista un isomorfismo <img src="https://render.githubusercontent.com/render/math?math=\large \phi : G \to H"> entre dos grupos, si el primero es abeliano, el segundo también lo es; si el primero es cíclico, el segundo también lo es, y, si el primero tiene un subgrupo de orden <img src="https://render.githubusercontent.com/render/math?math=\large n">, el segundo también. Como caso especial, todos los grupos cíclicos de orden infinito son isomórficos a <img src="https://render.githubusercontent.com/render/math?math=%5Cmathbb%7B%20Z%20%7D">.
 
+**Teorema**: La relación de isomorfismos entre grupos es una relación de equivalencia en la clase de todos los grupos.
+
+Así es como el objetivo de la teoría de grupos se torna hacia estas clases de equivalencia generadas dentro de la clase de todos los grupos. Dentro del estudio de ellos surge otro teorema muy importante.
+
+**Teorema de Cayley**: Todo grupo es isomórfico a un grupo de permutaciones.
+
+Este teorema también es conocido como _Teorema de representaciones_.
 
 **Referencias**
 
