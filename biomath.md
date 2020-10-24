@@ -130,9 +130,13 @@ Entre las consecuencias de tener definidos isomorfismos tenemos que, tal que exi
 
 Así es como el objetivo de la teoría de grupos se torna hacia estas clases de equivalencia generadas dentro de la clase de todos los grupos. Dentro del estudio de ellos surge otro teorema muy importante.
 
-**Teorema de Cayley**: (_Teorema de representaciones_) Todo grupo es isomórfico a un grupo de permutaciones.
+**Teorema de Cayley**: (_Teorema de representacion_) Todo grupo es isomórfico a un grupo de permutaciones.
 
-El isomorfismo entre ellos recibe el nombre de **representación regular izquierda** de un grupo (<img src="https://render.githubusercontent.com/render/math?math=\large G">).
+El isomorfismo entre ellos recibe el nombre de **representación regular izquierda** del grupo (<img src="https://render.githubusercontent.com/render/math?math=\large G">).
+
+**Producto directo externo**
+
+
 
 **Referencias**
 
