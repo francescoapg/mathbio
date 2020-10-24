@@ -71,15 +71,36 @@ Si <img src="https://render.githubusercontent.com/render/math?math=\large G"> co
 
 Ahora hablaremos de **grupos de permutación**, los cuales son clave para el estudio de simetría. Una permutación es un mapeo biyectivo <img src="https://render.githubusercontent.com/render/math?math=\large \pi : X \to X">. De forma general, las permutaciones de un set <img src="https://render.githubusercontent.com/render/math?math=\large X"> forman un grupo <img src="https://render.githubusercontent.com/render/math?math=\large S_X">, el cual es llamado **grupo simétrico**. Los subgrupos de <img src="https://render.githubusercontent.com/render/math?math=\large S_X"> son llamados **grupos de permutación**. 
 
-Las permutaciones se suelen representar de la siguiente manera. Para un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large S"> con elementos <img src="https://render.githubusercontent.com/render/math?math=\large a_1, a_2, ..., a_i, a_j, ...">, una permutación es la siguiente
+Las permutaciones se suelen representar de la siguiente manera. Para un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large X"> con elementos <img src="https://render.githubusercontent.com/render/math?math=\large a_1, a_2, ..., a_i, a_j, ...">, una permutación es la siguiente
 
 <img src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Bpmatrix%7D%20%0Aa_1%20%26%20a_2%20%26%20...%20%5C%5C%20%0Aa_i%20%26%20a_j%20%26%20...%20%0A%5Cend%7Bpmatrix%7D">
 
 
 Lo cual permuta <img src="https://render.githubusercontent.com/render/math?math=\large a_1"> con <img src="https://render.githubusercontent.com/render/math?math=\large a_i">, <img src="https://render.githubusercontent.com/render/math?math=\large a_2"> con <img src="https://render.githubusercontent.com/render/math?math=\large a_j">, y así sucesivamente. Finalmente, la composición de permutaciones no suele ser conmutativa.
 
-Finalizamos esta sección con los casos relajados de grupos.
+El último tipo de grupo que veremos es el **grupo dihedral**. Un grupo dihedral es aquel que se forma de las permutaciones rígidas de un polígono. Dentro de sus elementos se tendrán solo rotaciones o reflexione, todas ellas respetan la vecindad de los vértices del polígono. De forma análoga, se puede establecer el grupo de movimientos rígidos de poliedros como cubos.
 
+Podemos incluir otras estructuras compatibles con la ley de combinación.
+
+- Grupos topológicos
+- Grupos de Lie
+- Grupo algebraico
+- Grupo ordenado
+- Grupos libres
+- Grupos completos
+- Grupos residualmente finitos
+
+Lo opuesto también puede ser logrado, si relajamos algunos de los axiomas que definen a un grupo obtenemos las siguientes estructuras similares a grupos.
+
+- Monoide
+- Monoide conmutativo
+- Semigrupo
+- Semigrupo inverso
+- Magma
+- Grupoide
+- Semigrupoide
+
+Hablaremos un poco
 **Referencias**
 
 - Herstein, I. N. (1975). Topics in algebra. Second edition. Xerox Corporation.
