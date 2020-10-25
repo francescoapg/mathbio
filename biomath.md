@@ -177,7 +177,7 @@ Otro concepto asociado es el de núcleo o **kernel** del homomorfismo, este est�
 
 A continuación veremos los teoremas de isomorfismos para grupos (existe una versión de estos para cada estructra algebraica).
 
-**Teorema**: (_Teorema del homomorfismo_) Dado el homomorfismo <img src="https://render.githubusercontent.com/render/math?math=\large \varphi :  G \to H">. Sea <img src="https://render.githubusercontent.com/render/math?math=\large \phi : G \to G/Ker\varphi"> el homomorfismo canónico, entonces <img src="https://render.githubusercontent.com/render/math?math=\large G/Ker\varphi"> y <img src="https://render.githubusercontent.com/render/math?math=\large \varphi (G)"> son isomórficos y ese isomorfismo es único.
+**Teorema del homomorfismo**: Dado el homomorfismo <img src="https://render.githubusercontent.com/render/math?math=\large \varphi :  G \to H">. Sea <img src="https://render.githubusercontent.com/render/math?math=\large \phi : G \to G/Ker\varphi"> el homomorfismo canónico, entonces <img src="https://render.githubusercontent.com/render/math?math=\large G/Ker\varphi"> y <img src="https://render.githubusercontent.com/render/math?math=\large \varphi (G)"> son isomórficos y ese isomorfismo es único.
 
 Este teorema también es conocido por algunos como Primer teorema de isomorfismos o teorema fundamental de homomorfismos.
 
