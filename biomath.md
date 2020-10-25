@@ -6,8 +6,9 @@
 
 1. [Estructuras algebraicas: Grupos](#semana2)
 2. [Isomorfismos](#extra1)
-3. [Látices y orden](#semana3)
-4. Estructuras naturales
+3. [Homomorfismos](#extra2)
+4. [Látices y orden](#semana3)
+5. Estructuras naturales
 
 ### Estructuras algebraicas: Grupos {#semana2}
 
@@ -111,7 +112,9 @@ Entre <img src="https://render.githubusercontent.com/render/math?math=\large H">
 
 Un corolario importante de este teorema es que si un grupo finito tiene un número primo de elementos entonces es cíclico y cualquier elemento distinto al identidad es un generador.
 
+Un subgrupo <img src="https://render.githubusercontent.com/render/math?math=\large H"> de un grupo <img src="https://render.githubusercontent.com/render/math?math=\large G"> es **normal** en <img src="https://render.githubusercontent.com/render/math?math=\large G"> si <img src="https://render.githubusercontent.com/render/math?math=\large gH=Hg"> para todo elemento <img src="https://render.githubusercontent.com/render/math?math=\large g"> de <img src="https://render.githubusercontent.com/render/math?math=\large G">, es decir, sus cosets derecho e izquierdo son iguales. Esto es facil de ver en un grupo abeliano. Si un grupo tiene únicamente grupos normales triviales, este grupo se llama grupo simple.
 
+A continuación, hablaremos de los **grupos cocientes o factores**. Sea <img src="https://render.githubusercontent.com/render/math?math=\large H"> un subgrupo de <img src="https://render.githubusercontent.com/render/math?math=\large G">, el conjunto formado por todos los cosets (izquierdos o derechos, no ambos a menos que sean iguales) de <img src="https://render.githubusercontent.com/render/math?math=\large H"> en <img src="https://render.githubusercontent.com/render/math?math=\large G"> forman un grupo <img src="https://render.githubusercontent.com/render/math?math=\large G/H"> llamado _grupo cociente_, este grupo tiene como operación a <img src="https://render.githubusercontent.com/render/math?math=\circ : (aH)(bH)=abH">. Observe que los elementos de <img src="https://render.githubusercontent.com/render/math?math=\large G/H"> son subconjuntos de <img src="https://render.githubusercontent.com/render/math?math=\large G">. Este grupo <img src="https://render.githubusercontent.com/render/math?math=\large G/H"> tiene como orden <img src="https://render.githubusercontent.com/render/math?math=[G:H]">, como es evidente.
 
 **Referencias**
 
@@ -157,6 +160,14 @@ Entonces <img src="https://render.githubusercontent.com/render/math?math=\large 
 **Teorema**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large G"> el producto directo interno de sus subgrupos <img src="https://render.githubusercontent.com/render/math?math=\large H"> y <img src="https://render.githubusercontent.com/render/math?math=\large K">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large G"> es isomórfico a <img src="https://render.githubusercontent.com/render/math?math=\large H\times K">.
 
 Toma en cuanta, también, que no todos los grupos pueden ser descompuestos por el producto interno directo. Finalmente, las condiciones del producto directo interno también pueden ser generalizadas a <img src="https://render.githubusercontent.com/render/math?math=\large n"> subgrupos, al igual que el teorema anterior.
+
+**Referencias**
+
+- Judson, T. W. (2017) Abstract Algebra: Theory and Applications.
+
+### Homomorfismos {#extra2}
+
+
 
 **Referencias**
 
