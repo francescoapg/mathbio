@@ -171,6 +171,10 @@ Un homomorfismo entre dos grupos <img src="https://render.githubusercontent.com/
 
 A diferencia de los isomorfismos, los homomorfismos no requieren ser biyecciones y, por lo tanto, se consideran una generalización del concepto de isomorfismo.
 
+Para un homomorfismo entre dos grupos, se cumple que se preserva el elemento identidad, es decir, si <img src="https://render.githubusercontent.com/render/math?math=\large e"> es la identidad en <img src="https://render.githubusercontent.com/render/math?math=\large G">, entoces <img src="https://render.githubusercontent.com/render/math?math=\large \phi (e)"> es la identidad de <img src="https://render.githubusercontent.com/render/math?math=\large H">. Además, para cualquier elemento del grupo <img src="https://render.githubusercontent.com/render/math?math=\large G"> se cumple que <img src="https://render.githubusercontent.com/render/math?math=\large \phi (g^{-1})=(\phi (g)^{-1})">. Finalmente, cuando se aplica la función a todos los elementos de un subgrupo de <img src="https://render.githubusercontent.com/render/math?math=\large G">, el conjunto de llegada en <img src="https://render.githubusercontent.com/render/math?math=\large H"> es también un subgrupo, lo inverso también se cumple.
+
+Otro concepto asociado es el de núcleo o **kernel** del homomorfismo, este está definido como el conjunto <img src="https://render.githubusercontent.com/render/math?math=\large ker \phi = \{g\in G : \phi(g)=e_H\}">, donde <img src="https://render.githubusercontent.com/render/math?math=\large e_H"> es el elemento identidad de <img src="https://render.githubusercontent.com/render/math?math=\large H">. Para un homomorfismo entre grupos, el kernel de <img src="https://render.githubusercontent.com/render/math?math=\large \phi"> es simpre un subgrupo normal.
+
 **Referencias**
 
 - Judson, T. W. (2017) Abstract Algebra: Theory and Applications.
