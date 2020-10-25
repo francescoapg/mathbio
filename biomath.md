@@ -167,7 +167,7 @@ Toma en cuanta, también, que no todos los grupos pueden ser descompuestos por e
 
 ### Homomorfismos {#extra2}
 
-Un homomorfismo entre dos grupos <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )"> y <img src="https://render.githubusercontent.com/render/math?math=\large (H,\bullet )"> es un mapa <img src="https://render.githubusercontent.com/render/math?math=\large \phi : G\to H">, definido como <img src="https://render.githubusercontent.com/render/math?math= \phi (g_1 \circ g_2)=\phi (g_1)\bullet \phi (g_2)">, para cualesquiera elementos <img src="https://render.githubusercontent.com/render/math?math=\large g_1, g_2\in G">.
+Un homomorfismo entre dos grupos <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )"> y <img src="https://render.githubusercontent.com/render/math?math=\large (H,\bullet )"> es un mapa <img src="https://render.githubusercontent.com/render/math?math=\large \phi : G\to H">, definido como <img src="https://render.githubusercontent.com/render/math?math=%5Cphi%20(g_1%20%5Ccirc%20g_2)%3D%5Cphi%20(g_1)%5Cbullet%20%5Cphi%20(g_2)"> para cualesquiera elementos <img src="https://render.githubusercontent.com/render/math?math=\large g_1, g_2\in G">.
 
 A diferencia de los isomorfismos, los homomorfismos no requieren ser biyecciones y, por lo tanto, se consideran una generalización del concepto de isomorfismo.
 
