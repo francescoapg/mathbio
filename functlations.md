@@ -6,11 +6,11 @@
 2. [Teorema de la función implícita](#teorema)
 3. [Funciones](#funciones)
 
-### [Relaciones] {#relaciones}
+### Relaciones {#relaciones}
 
-### [Teorema de la función implícita] {#teorema}
+### Teorema de la función implícita {#teorema}
 
-### [Funciones] {#funciones}
+### Funciones {#funciones}
 
 **Función bien definida**
 
