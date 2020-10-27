@@ -189,6 +189,22 @@ Este teorema también es conocido por algunos como Primer teorema de isomorfismo
 
 ### Látices y orden {#semana3}
 
+Empezamos esta sección con una nota sobre conjuntos parcialmente ordenados o **posets**. Un orden parcial en un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large X"> es una relación binaria entre elementos de <img src="https://render.githubusercontent.com/render/math?math=\large X"> que satisface lo siguiente.
+
+1. <img src="https://render.githubusercontent.com/render/math?math=\large \forall a \in R (aRa)">
+2. <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b,c \in R (aRb\land bRc \Rightarrow aRc)">
+3. <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b\in R (aRb\land bRa \Rightarrow a=b)">
+
+La primera condición recibe el nombre de reflexividad, la segunda, transitividad, y la tercera, antisimetría. Una relación de orden también puede cumplir que <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b\in R (aRb \lor bRa)">, si se cumple esta condición, la relación se dice que es un orden **lineal** o **total**. De este modo, un conjunto asociado a un orden parcial se llama _conjunto parcialmente ordenado_ o _poset_, y un conjunto asociado a un orden total se llama _conjunto linelamnente ordenado_ o _totalmente ordenado_. 
+
+Cuando un conjunto totalmente ordenado es subconjunto (subposet) de un poset, recibe el nombre de **cadena**. Si una relación de orden solo cumple 1. y 2., se conoce como _preorden_, y al objeto matemático asociado se lo conoce como _conjunto preordenado_. Nuevamente, es posible identificar un subconjunto dentro de este objeto que cumpla condiciones adicionales (como 3.), esto puede ser logrado al definir una clase de equivalencia dentro del conjunto asociada al preorden (<img src="https://render.githubusercontent.com/render/math?math=\large a\sim b \iff aRb \lor bRa">).
+
+Respecto a las notaciones, solemos usar los siguientes símbolos para referirnos a la relación de orden (y preorden).
+
+<img src="https://render.githubusercontent.com/render/math?math=\large \leq, \preceq, \prec, \sqsubseteq">
+
+El símbolo < se reserva para el caso <img src="https://render.githubusercontent.com/render/math?math=\large a \leq b \land a\neq b">.
+
 **Referencias**
 
 - 
