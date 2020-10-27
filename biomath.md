@@ -195,15 +195,20 @@ Empezamos esta sección con una nota sobre conjuntos parcialmente ordenados o **
 2. <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b,c \in R (aRb\land bRc \Rightarrow aRc)">
 3. <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b\in R (aRb\land bRa \Rightarrow a=b)">
 
-La primera condición recibe el nombre de reflexividad, la segunda, transitividad, y la tercera, antisimetría. Una relación de orden también puede cumplir que <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b\in R (aRb \lor bRa)">, si se cumple esta condición, la relación se dice que es un orden **lineal** o **total**. De este modo, un conjunto asociado a un orden parcial se llama _conjunto parcialmente ordenado_ o _poset_, y un conjunto asociado a un orden total se llama _conjunto linelamnente ordenado_ o _totalmente ordenado_. 
+La primera condición recibe el nombre de reflexividad, la segunda, transitividad, y la tercera, antisimetría. Una relación de orden también puede cumplir que <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b\in R (aRb \lor bRa)">, si se cumple esta condición, la relación se dice que es un orden **lineal** o **total**. De este modo, un conjunto asociado a un orden parcial se llama _conjunto parcialmente ordenado_ o _poset_, y un conjunto asociado a un orden total se llama _conjunto linealmente ordenado_ o _totalmente ordenado_. 
 
-Cuando un conjunto totalmente ordenado es subconjunto (subposet) de un poset, recibe el nombre de **cadena**. Si una relación de orden solo cumple 1. y 2., se conoce como _preorden_, y al objeto matemático asociado se lo conoce como _conjunto preordenado_. Nuevamente, es posible identificar un subconjunto dentro de este objeto que cumpla condiciones adicionales (como 3.), esto puede ser logrado al definir una clase de equivalencia dentro del conjunto asociada al preorden (<img src="https://render.githubusercontent.com/render/math?math=\large a\sim b \iff aRb \lor bRa">).
+Cuando un conjunto totalmente ordenado es subconjunto (subposet) de un poset, recibe el nombre de **cadena**. Si una relación de orden solo cumple 1. y 2., se conoce como _preorden_, y al objeto matemático asociado se lo conoce como _conjunto preordenado_. Nuevamente, es posible identificar un subconjunto dentro de este objeto que cumpla condiciones adicionales (como 3.), esto puede ser logrado al definir una clase de equivalencia dentro del conjunto asociada al preorden (<img src="https://render.githubusercontent.com/render/math?math=\large a\sim b \iff aRb \land bRa">). En lagunos casos, identificar esta relación <img src="https://render.githubusercontent.com/render/math?math=\large \sim"> puede ser muy importante para el estudio.
 
-Respecto a las notaciones, solemos usar los siguientes símbolos para referirnos a la relación de orden (y preorden).
+Respecto a la notación, solemos usar los siguientes símbolos para referirnos a la relación de orden (y preorden).
 
 <img src="https://render.githubusercontent.com/render/math?math=\large \leq, \preceq, \prec, \sqsubseteq">
 
-El símbolo < se reserva para el caso <img src="https://render.githubusercontent.com/render/math?math=\large a \leq b \land a\neq b">.
+El símbolo <img src="https://render.githubusercontent.com/render/math?math=\large <"> se reserva para el caso <img src="https://render.githubusercontent.com/render/math?math=\large a \leq b \land a\neq b">.
+
+Se puede generar un conjunto ordenado a partir de otro mediante el **orden dual** u **orden opuesto**. Dado, <img src="https://render.githubusercontent.com/render/math?math=\large (X, \leq)"> un poset, entonces 
+<img src="https://render.githubusercontent.com/render/math?math=\large (X, \leq ^{´})"> también es un conjunto odenado si se cumple que <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b \in X (a \leq ^{´} b \iff b \leq a)">. Otra forma de representar <img src="https://render.githubusercontent.com/render/math?math=\large (X, \leq ^{´})"> es mediante los símbolos <img src="https://render.githubusercontent.com/render/math?math=\large (X, \leq)^{op}"> o <img src="https://render.githubusercontent.com/render/math?math=\large X^{op}">.
+
+
 
 **Referencias**
 
