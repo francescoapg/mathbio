@@ -7,8 +7,9 @@
 1. [Estructuras algebraicas: Grupos](#semana2)
 2. [Isomorfismos](#extra1)
 3. [Homomorfismos](#extra2)
-4. [Látices y orden](#semana3)
-5. Estructuras naturales
+4. [Grupos abelianos finitos](#extra3)
+5. [Látices y orden](#semana3)
+6. Estructuras naturales
 
 ### Estructuras algebraicas: Grupos {#semana2}
 
@@ -119,7 +120,7 @@ A continuación, hablaremos de los **grupos cociente o factor**. Sea <img src="h
 **Referencias**
 
 - Herstein, I. N. (1975). Topics in algebra. Second edition. Xerox Corporation.
-- Judson, T. W. (2017) Abstract Algebra: Theory and Applications.
+- Judson, T. W. y Beezer R. A. (2017) Abstract Algebra: Theory and Applications.
 
 ### Isomorfismos {#extra1}
 
@@ -192,7 +193,25 @@ Este teorema también es conocido por algunos como Primer teorema de isomorfismo
 
 **Referencias**
 
-- Judson, T. W. (2017) Abstract Algebra: Theory and Applications.
+- Judson, T. W. y Beezer R. A. (2017) Abstract Algebra: Theory and Applications.
+
+### Grupos abelianos finitos {#extra3}
+
+<img src="https://render.githubusercontent.com/render/math?math=%5Cmathbb%7BZ%7D_n"> es el conjunto de clases de equivalencia de los enteros _mod n_. La clase de equivalencia se define por la relación <img src="https://render.githubusercontent.com/render/math?math=\large \sim"> definida como <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b \in \mathbb{Z} (n\text{ divide }a-b\Rightarrow a \sim b)">. Por ejemplo, los enteros módulo 7 (<img src="https://render.githubusercontent.com/render/math?math=%5Cmathbb%7BZ%7D_7">) consiste en el conjunto <img src="https://render.githubusercontent.com/render/math?math=%5C%7B%5B0%5D%2C%20%5B1%5D%2C%20...%2C%20%5B6%5D%5C%7D">, donde:
+
+<img src="https://render.githubusercontent.com/render/math?math=%5B0%5D%3D%5C%7B...%2C%20-14%2C-7%2C0%2C7%2C14%2C%20...%5C%7D%0A">
+
+<img src="https://render.githubusercontent.com/render/math?math=%5B1%5D%3D%5C%7B...%2C%20-13%2C-6%2C1%2C8%2C15%2C%20...%5C%7D%0A">
+
+...
+
+<img src="https://render.githubusercontent.com/render/math?math=%5B6%5D%3D%5C%7B...%2C%20-8%2C-1%2C6%2C13%2C20%2C%20...%5C%7D%0A">
+
+Algunas operaciones en <img src="https://render.githubusercontent.com/render/math?math=%5Cmathbb%7BZ%7D_7">, definimos la suma módulo _n_ como el resto de la división de la suma y _n_. Análogamente se puede definir la multiplicación módulo _n_.
+
+**Referencias**
+
+- Judson, T. W. y Beezer R. A. (2017) Abstract Algebra: Theory and Applications.
 
 ### Látices y orden {#semana3}
 
@@ -236,3 +255,5 @@ A continuación hablaremos de **conjuntos direccionados**. Comunmente, se define
 **Referencias**
 
 - Picado, J., & Pultr, A. (2011). Frames and Locales: topology without points. Springer Science & Business Media.
+- Judson, T. W. y Beezer R. A. (2017) Abstract Algebra: Theory and Applications.
+
