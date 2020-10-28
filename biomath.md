@@ -206,10 +206,26 @@ Respecto a la notación, solemos usar los siguientes símbolos para referirnos a
 El símbolo <img src="https://render.githubusercontent.com/render/math?math=\large <"> se reserva para el caso <img src="https://render.githubusercontent.com/render/math?math=\large a \leq b \land a\neq b">.
 
 Se puede generar un conjunto ordenado a partir de otro mediante el **orden dual** u **orden opuesto**. Dado, <img src="https://render.githubusercontent.com/render/math?math=\large (X, \leq)"> un poset, entonces 
-<img src="https://render.githubusercontent.com/render/math?math=\large (X, \leq ^{´})"> también es un conjunto odenado si se cumple que <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b \in X (a \leq ^{´} b \iff b \leq a)">. Otra forma de representar <img src="https://render.githubusercontent.com/render/math?math=\large (X, \leq ^{´})"> es mediante los símbolos <img src="https://render.githubusercontent.com/render/math?math=\large (X, \leq)^{op}"> o <img src="https://render.githubusercontent.com/render/math?math=\large X^{op}">.
+<img src="https://render.githubusercontent.com/render/math?math=\large (X, \leq ^{\ast})"> también es un conjunto odenado si se cumple que <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b \in X (a \leq ^{\ast} b \iff b \leq a)">. Otra forma de representar <img src="https://render.githubusercontent.com/render/math?math=\large (X, \leq ^{\ast})"> es mediante los símbolos <img src="https://render.githubusercontent.com/render/math?math=\large (X, \leq)^{op}"> o <img src="https://render.githubusercontent.com/render/math?math=\large X^{op}">.
 
+**Ten en cuenta que todo poset puede ser representado como una colección de sets ordenados por la relación de inclusión**.
 
+A continuación definiremos otros conjuntos importantes en el estudio de posets. Para cualquier <img src="https://render.githubusercontent.com/render/math?math=\large x\in X"> en <img src="https://render.githubusercontent.com/render/math?math=\large (X, \leq)">, definiremos 
+
+<img src="https://render.githubusercontent.com/render/math?math=\large \downarrow x = \{y : y \leq x \}">
+
+<img src="https://render.githubusercontent.com/render/math?math=\large \uparrow x = \{y : x \leq y \}">
+
+Sea <img src="https://render.githubusercontent.com/render/math?math=\large M\subset X">, definimos los siguientes conjuntos llamados _down-set_ y _up-set_ de <img src="https://render.githubusercontent.com/render/math?math=\large X">, respectivamente.
+
+<img src="https://render.githubusercontent.com/render/math?math=\large \downarrow M=\bigcup \{\downarrow x \}_{x \in M}">
+
+<img src="https://render.githubusercontent.com/render/math?math=\large \uparrow M=\bigcup \{\uparrow x \}_{x \in M}">
+
+Una forma de usar estos conceptos es para definir **minimales** y **maximales**. Si <img src="https://render.githubusercontent.com/render/math?math=\large \{x\}"> es un _up-set_, entonces <img src="https://render.githubusercontent.com/render/math?math=\large x"> es maximal, si <img src="https://render.githubusercontent.com/render/math?math=\large \{x\}"> es un _down-set_, entonces <img src="https://render.githubusercontent.com/render/math?math=\large x"> es minimal. La relación inversa también se cumple para ambos. Ahora, definiremos **_lower bound_** (límite inferior) y **_upper bound_** (límite superior) de un subset <img src="https://render.githubusercontent.com/render/math?math=\large A\subset X">, dado <img src="https://render.githubusercontent.com/render/math?math=\large (X,\leq)">.  <img src="https://render.githubusercontent.com/render/math?math=\large x"> es un límite inferior de <img src="https://render.githubusercontent.com/render/math?math=\large A"> si <img src="https://render.githubusercontent.com/render/math?math=\large \forall y\in A (x\leq y)">; de forma análoga, <img src="https://render.githubusercontent.com/render/math?math=\large x"> es un límite superior de <img src="https://render.githubusercontent.com/render/math?math=\large A"> si <img src="https://render.githubusercontent.com/render/math?math=\large \forall y\in A (y\leq x)">. **Note** que, en estas definiciones, no es necesario que <img src="https://render.githubusercontent.com/render/math?math=\large x\in A">. Algunos autores definen <img src="https://render.githubusercontent.com/render/math?math=\large lb A"> y <img src="https://render.githubusercontent.com/render/math?math=\large ub A"> como los conjuntos de _lower bounds_ y _upper bounds_ de <img src="https://render.githubusercontent.com/render/math?math=\large A">.
+
+A continuación hablaremos de **conjuntos direccionados**. 
 
 **Referencias**
 
-- 
+- Picado, J., & Pultr, A. (2011). Frames and Locales: topology without points. Springer Science & Business Media.
