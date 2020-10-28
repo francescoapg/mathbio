@@ -161,6 +161,8 @@ Entonces <img src="https://render.githubusercontent.com/render/math?math=\large 
 
 Toma en cuanta, también, que no todos los grupos pueden ser descompuestos por el producto interno directo. Finalmente, las condiciones del producto directo interno también pueden ser generalizadas a <img src="https://render.githubusercontent.com/render/math?math=\large n"> subgrupos, al igual que el teorema anterior.
 
+Finalmente, recuerda que un **automorfismo** es un isomorfismo de un objeto matemático hacia sí mismo.
+
 **Referencias**
 
 - Judson, T. W. (2017) Abstract Algebra: Theory and Applications.
@@ -181,7 +183,12 @@ A continuación veremos los teoremas de isomorfismos para grupos (existe una ver
 
 Este teorema también es conocido por algunos como Primer teorema de isomorfismos o teorema fundamental de homomorfismos.
 
-**Teorema del Isomorfismo**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large (H,\circ )"> un subgrupo de <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )"> y <img src="https://render.githubusercontent.com/render/math?math=\large (N,\circ )"> un subgrupo normal de <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )">. Entonces, <img src="https://render.githubusercontent.com/render/math?math=\large (HN,\circ )"> es un subgrupode <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )">, <img src="https://render.githubusercontent.com/render/math?math=\large (H\cap N,\circ)"> es un subgrupo normal de <img src="https://render.githubusercontent.com/render/math?math=\large (H,\circ )">, y <img src="https://render.githubusercontent.com/render/math?math=\large (H/(H\cap N), \circ)"> y <img src="https://render.githubusercontent.com/render/math?math=\large (HN/N, \circ )"> son isomórficos.
+**Teorema del Isomorfismo**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large (H,\circ )"> un subgrupo de <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )"> y <img src="https://render.githubusercontent.com/render/math?math=\large (N,\circ )"> un subgrupo normal de <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )">. Entonces, 
+- <img src="https://render.githubusercontent.com/render/math?math=\large (HN,\circ )"> es un subgrupo de <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )">
+- <img src="https://render.githubusercontent.com/render/math?math=\large (H\cap N,\circ)"> es un subgrupo normal de <img src="https://render.githubusercontent.com/render/math?math=\large (H,\circ )">
+- <img src="https://render.githubusercontent.com/render/math?math=\large (H/(H\cap N), \circ)"> y <img src="https://render.githubusercontent.com/render/math?math=\large (HN/N, \circ )"> son isomórficos.
+
+**Teorema de correspondencia**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large (N,\circ )"> un subgrupo normal de un grupo <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )">, <img src="https://render.githubusercontent.com/render/math?math=%5Cmathcal%7BN%7D"> el conjunto de subgrupos de subgrupos de <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )"> que contienen a <img src="https://render.githubusercontent.com/render/math?math=\large (N,\circ )"> y <img src="https://render.githubusercontent.com/render/math?math=%5Cmathcal%7BG%7D"> el conjunto de subgrupos de <img src="https://render.githubusercontent.com/render/math?math=\large G/N">. Entonces, <img src="https://render.githubusercontent.com/render/math?math=%5Cphi%20%3A%20%5Cmathcal%7BN%7D%20%5Cto%20%5Cmathcal%7BG%7D"> es un mapeo inyectivo.
 
 **Referencias**
 
