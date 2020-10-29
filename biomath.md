@@ -233,6 +233,8 @@ Los _Teoremas de Sylow_ son los siguientes. Sea <img src="https://render.githubu
 2. En un grupo finito, todos los _p-subgrupos de Sylow_ son conjugados de algún <img src="https://render.githubusercontent.com/render/math?math=\large p">.
 3. El número de _p-subgrupos de Sylow_ para un <img src="https://render.githubusercontent.com/render/math?math=\large p"> fijo es congruente a <img src="https://render.githubusercontent.com/render/math?math=\large 1"> (_mod_ <img src="https://render.githubusercontent.com/render/math?math=\large p">).
 
+Recuerda que para un subgrupo <img src="https://render.githubusercontent.com/render/math?math=\large (H,\circ )"> de <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )">, su subgrupo conjugado será de la forma <img src="https://render.githubusercontent.com/render/math?math=\large (gHg^{-1},\circ )">, dado un <img src="https://render.githubusercontent.com/render/math?math=\large g\in G">. 
+
 **Referencias**
 
 - Judson, T. W. y Beezer R. A. (2017) Abstract Algebra: Theory and Applications.
