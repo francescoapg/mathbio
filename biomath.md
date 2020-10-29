@@ -223,6 +223,16 @@ Lo anterior se puede expresar como una proposición.
 
 donde los <img src="https://render.githubusercontent.com/render/math?math=\large g_{ik}"> no necesariamente son diferentes.
 
+**p-grupo**
+
+Un grupo <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> es un **p-grupo** si todos los elementos de su conjunto tienen como orden a una potencia de un número primo (_p_). Recuerda que el orden de un **elemento** _g_ es el mínimo exponente que resuelve ecuación <img src="https://render.githubusercontent.com/render/math?math=\large a^n=e (n\in \mathbb{N})">, donde <img src="https://render.githubusercontent.com/render/math?math=\large e"> es el elemento identidad, cuando no existe tal número, se dice que el elemento tiene orden infinito.
+
+Los _Teoremas de Sylow_ son los siguientes. Sea <img src="https://render.githubusercontent.com/render/math?math=\large p"> un número primo, <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )"> un grupo finito y <img src="https://render.githubusercontent.com/render/math?math=%7CG%7C"> el orden de <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )">.
+
+1. Si <img src="https://render.githubusercontent.com/render/math?math=\large p"> divide <img src="https://render.githubusercontent.com/render/math?math=%7CG%7C">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )"> tiene un _p-subgrupo de Sylow_.
+2. En un grupo finito, todos los _p-subgrupos de Sylow_ son conjugados de algún <img src="https://render.githubusercontent.com/render/math?math=\large p">.
+3. El número de _p-subgrupos de Sylow_ para un <img src="https://render.githubusercontent.com/render/math?math=\large p"> fijo es congruente a <img src="https://render.githubusercontent.com/render/math?math=\large 1"> (_mod_ <img src="https://render.githubusercontent.com/render/math?math=\large p">).
+
 **Referencias**
 
 - Judson, T. W. y Beezer R. A. (2017) Abstract Algebra: Theory and Applications.
