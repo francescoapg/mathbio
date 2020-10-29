@@ -209,6 +209,20 @@ Este teorema también es conocido por algunos como Primer teorema de isomorfismo
 
 Algunas operaciones en <img src="https://render.githubusercontent.com/render/math?math=%5Cmathbb%7BZ%7D_7">, definimos la suma módulo _n_ como el resto de la división de la suma y _n_. Análogamente se puede definir la multiplicación módulo _n_.
 
+Se demuestra que todo grupo de orden primo era un grupo cíclico e isomórfico a <img src="https://render.githubusercontent.com/render/math?math=%5Cmathbb%7BZ%7D_p">, donde _p_ es un número primo. También se demuestra que todo grupo abeliano finito es isomórfico al producto directo de grupos cíclicos de orden primo.
+
+**Generador de grupo**
+
+Sea <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> un grupo y <img src="https://render.githubusercontent.com/render/math?math=\large \{g_i\}\in G (in \in I)">, para un <img src="https://render.githubusercontent.com/render/math?math=\large I"> arbitrario. El subgrupo más pequeño de <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> que contiene a <img src="https://render.githubusercontent.com/render/math?math=\large \{g_i\}"> es el subgrupo de <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> generado por los elementos de <img src="https://render.githubusercontent.com/render/math?math=\large \{g_i\}">. Si este subgrupo es todo el grupo, entonces se dice que <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> está generado por <img src="https://render.githubusercontent.com/render/math?math=\large \{gi : i\in I\}"> y cada <img src="https://render.githubusercontent.com/render/math?math=\large g_i"> es un **generador** del grupo, si el conjunto es finito, se dice que <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> es finitamente generado. En especial, todos los grupos finitos son finitamente generados.
+
+Lo anterior se puede expresar como una proposición.
+
+**Proposición**: (Judson y Beezer, 2017) Sea <img src="https://render.githubusercontent.com/render/math?math=\large H"> el subgrupo de un grupo <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> que es generado por <img src="https://render.githubusercontent.com/render/math?math=\large \{g_i\in G : i\in I\}">. Entonces <img src="https://render.githubusercontent.com/render/math?math=\large h\in H"> si y solo si puede ser expresado como un producto de la forma 
+
+<img src="https://render.githubusercontent.com/render/math?math=\large h=g_{i1}^{\alpha 1}\circ ... \circ g_{in}^{\alpha n}">
+
+donde los <img src="https://render.githubusercontent.com/render/math?math=\large g_{ik}"> no necesariamente son diferentes.
+
 **Referencias**
 
 - Judson, T. W. y Beezer R. A. (2017) Abstract Algebra: Theory and Applications.
