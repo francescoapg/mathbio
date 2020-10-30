@@ -261,6 +261,14 @@ Una serie normal (subnormal) <img src="https://render.githubusercontent.com/rend
 
 Dos series normales (subnormales) <img src="https://render.githubusercontent.com/render/math?math=%5C%7BH_i%5C%7D"> y <img src="https://render.githubusercontent.com/render/math?math=%5C%7BK_j%5C%7D"> de un grupo son isomórficas si hay una correspondencia 1-1 entre las colecciones de grupos factores <img src="https://render.githubusercontent.com/render/math?math=%5C%7BH_%7Bi%2B1%7D%2FH_i%5C%7D"> y <img src="https://render.githubusercontent.com/render/math?math=%5C%7BK_%7Bj%2B1%7D%2FK_j%5C%7D">.
 
+Una serie subnormal <img src="https://render.githubusercontent.com/render/math?math=\large \{H_i\}"> de un grupo es una **serie de composición** si todos los grupos factores son simples (solo tienen grupos normales triviales). Una serie normal <img src="https://render.githubusercontent.com/render/math?math=\large \{H_i\}"> de un grupo es una **serie principal** si todos los grupos factores son simples.
+
+**Teorema de Jordan-Hölder**: Cualquier par de series de composición de un grupo son isomórficas.
+
+Como corolario, ambas series de composición tienen la misma longitud. 
+
+Un grupo es **soluble** si tiene una serie subnormal <img src="https://render.githubusercontent.com/render/math?math=\large \{H_i\}"> con grupos factores <img src="https://render.githubusercontent.com/render/math?math=%5C%7BH_%7Bi%2B1%7D%2FH_i%5C%7D"> abelianos.
+
 **Referencias**
 
 - Judson, T. W. y Beezer R. A. (2017) Abstract Algebra: Theory and Applications.
