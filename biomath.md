@@ -213,7 +213,7 @@ Se demuestra que todo grupo de orden primo era un grupo cíclico e isomórfico a
 
 **Generador de grupo**
 
-Sea <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> un grupo y <img src="https://render.githubusercontent.com/render/math?math=\large \{g_i\}\in G (in \in I)">, para un <img src="https://render.githubusercontent.com/render/math?math=\large I"> arbitrario. El subgrupo más pequeño de <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> que contiene a <img src="https://render.githubusercontent.com/render/math?math=\large \{g_i\}"> es el subgrupo de <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> generado por los elementos de <img src="https://render.githubusercontent.com/render/math?math=\large \{g_i\}">. Si este subgrupo es todo el grupo, entonces se dice que <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> está generado por <img src="https://render.githubusercontent.com/render/math?math=\large \{gi : i\in I\}"> y cada <img src="https://render.githubusercontent.com/render/math?math=\large g_i"> es un **generador** del grupo, si el conjunto es finito, se dice que <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> es finitamente generado. En especial, todos los grupos finitos son finitamente generados.
+Sea <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> un grupo y <img src="https://render.githubusercontent.com/render/math?math=\large \{g_i\}\in G (i \in I)">, para un <img src="https://render.githubusercontent.com/render/math?math=\large I"> arbitrario. El subgrupo más pequeño de <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> que contiene a <img src="https://render.githubusercontent.com/render/math?math=\large \{g_i\}"> es el subgrupo de <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> generado por los elementos de <img src="https://render.githubusercontent.com/render/math?math=\large \{g_i\}">. Si este subgrupo es todo el grupo, entonces se dice que <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> está generado por <img src="https://render.githubusercontent.com/render/math?math=\large \{gi : i\in I\}"> y cada <img src="https://render.githubusercontent.com/render/math?math=\large g_i"> es un **generador** del grupo, si el conjunto es finito, se dice que <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> es finitamente generado. En especial, todos los grupos finitos son finitamente generados.
 
 Lo anterior se puede expresar como una proposición.
 
@@ -234,6 +234,28 @@ Los _Teoremas de Sylow_ son los siguientes. Sea <img src="https://render.githubu
 3. El número de _p-subgrupos de Sylow_ para un <img src="https://render.githubusercontent.com/render/math?math=\large p"> fijo es congruente a <img src="https://render.githubusercontent.com/render/math?math=\large 1"> (_mod_ <img src="https://render.githubusercontent.com/render/math?math=\large p">).
 
 Recuerda que para un subgrupo <img src="https://render.githubusercontent.com/render/math?math=\large (H,\circ )"> de <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )">, su subgrupo conjugado será de la forma <img src="https://render.githubusercontent.com/render/math?math=\large (gHg^{-1},\circ )">, dado un <img src="https://render.githubusercontent.com/render/math?math=\large g\in G">. 
+
+**Teorema fundamental de los grupos abelianos finitos**: (Judson y Beezer, 2017) Cada grupo abeliano finito es isomórfico al producto directo de grupos cíclicos de la forma
+
+<img src="https://render.githubusercontent.com/render/math?math=%5Cmathbb%7BZ%7D_%7Bp_1%5E%7B%5Calpha_1%7D%7D%5Ctimes%5Cmathbb%7BZ%7D_%7Bp_2%5E%7B%5Calpha_2%7D%7D%5Ctimes%20...%20%5Ctimes%20%5Cmathbb%7BZ%7D_%7Bp_n%5E%7B%5Calpha_n%7D%7D">
+
+donde los <img src="https://render.githubusercontent.com/render/math?math=\large p_i">s son primos, no necesariamente distintos.
+
+A continuacón, la forma más general del teorema.
+
+**Teorema fundamental de los grupos abelianos finitamente generados**: (Judson y Beezer, 2017) Cada grupo abeliano finitamente generado es isomórfico al producto directo de grupos cíclicos de la forma
+
+<img src="https://render.githubusercontent.com/render/math?math=%5Cmathbb%7BZ%7D_%7Bp_1%5E%7B%5Calpha_1%7D%7D%5Ctimes%5Cmathbb%7BZ%7D_%7Bp_2%5E%7B%5Calpha_2%7D%7D%5Ctimes%20...%20%5Ctimes%20%5Cmathbb%7BZ%7D_%7Bp_n%5E%7B%5Calpha_n%7D%7D%5Ctimes%20%5Cmathbb%7BZ%7D%5Ctimes%20%0A%20...%5Ctimes%20%5Cmathbb%7BZ%7D">
+
+donde los <img src="https://render.githubusercontent.com/render/math?math=\large p_i">s son primos, no necesariamente distintos.
+
+**Grupos solubles**
+
+Una serie subnormal de un grupo <img src="https://render.githubusercontent.com/render/math?math=\large G"> es una secuencia finita de subgrupos
+
+<img src="https://render.githubusercontent.com/render/math?math=G%3DH_n%5Csupset%20H_%7Bn-1%7D%5Csupset%20...%20%5Csupset%20H_1%20%5Csupset%20H_0%20%3D%20%5C%7Be%5C%7D">
+
+, donde <img src="https://render.githubusercontent.com/render/math?math=\large H_i"> es un subgrupo normal de <img src="https://render.githubusercontent.com/render/math?math=\large H_{i+1}">. Si cada subgrupo es normal en <img src="https://render.githubusercontent.com/render/math?math=\large G">, entonces la serie es llamada **serie normal**. La longitud de cada serie se calcula como el número de inclusiones propias.
 
 **Referencias**
 
