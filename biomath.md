@@ -276,12 +276,12 @@ Un grupo es **soluble** si tiene una serie subnormal <img src="https://render.gi
 
 ### Acción de grupos {#extra4}
 
-Sea <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> un grupo y <img src="https://render.githubusercontent.com/render/math?math=\large X"> un conjunto. Una **acción (izquierda)** de <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> en <img src="https://render.githubusercontent.com/render/math?math=\large X"> es un mapeo <img src="https://render.githubusercontent.com/render/math?math=\large \phi : G \times X \to X"> dado por <img src="https://render.githubusercontent.com/render/math?math=\large (g,x) \mapsto gx">, donde se cumple que 
+Sea <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> un grupo y <img src="https://render.githubusercontent.com/render/math?math=\large X"> un conjunto. Una **acción (izquierda)** de <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> en <img src="https://render.githubusercontent.com/render/math?math=\large X"> es un mapeo <img src="https://render.githubusercontent.com/render/math?math=\large \phi : G \times X \to X"> dado por <img src="https://render.githubusercontent.com/render/math?math=\large (g,x_1) \mapsto x_2">, donde se cumple para todo elemento de <img src="https://render.githubusercontent.com/render/math?math=\large X"> que
 
-1. <img src="https://render.githubusercontent.com/render/math?math=\large \forall x \in X,e\in G (e\circ x=x)">
-2. <img src="https://render.githubusercontent.com/render/math?math=\large \forall x \in X, \forall g_1,g_2\in G ((g_1\circ g_2)\circ x = g_1 \circ (g_2\circ x))">
+1. <img src="https://render.githubusercontent.com/render/math?math=\large \forall x \in X,e\in G (\phi (e,x)=x)">
+2. <img src="https://render.githubusercontent.com/render/math?math=\large \forall x \in X, \forall g_1,g_2\in G (\phi(\phi(g_1, g_2), x) = \phi (g_1 , \phi (g_2, x))">
 
-Se considera al conjunto <img src="https://render.githubusercontent.com/render/math?math=\large X"> como un *G-conjunto*
+Se considera al conjunto <img src="https://render.githubusercontent.com/render/math?math=\large X"> como un *G-conjunto*.
 
 **Referencias**
 
