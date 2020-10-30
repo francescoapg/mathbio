@@ -257,9 +257,9 @@ Una serie subnormal de un grupo <img src="https://render.githubusercontent.com/r
 
 , donde <img src="https://render.githubusercontent.com/render/math?math=\large H_i"> es un subgrupo normal de <img src="https://render.githubusercontent.com/render/math?math=H_%7Bi%2B1%7D">. Si cada subgrupo es normal en <img src="https://render.githubusercontent.com/render/math?math=\large G">, entonces la serie es llamada **serie normal**. La longitud de cada serie se calcula como el número de inclusiones propias.
 
-Una serie normal (subnormal) <img src="https://render.githubusercontent.com/render/math?math=%5C%7BM_j%5C%7D"> es un _refinamiento de una serie normal (subnormal)_ <img src="https://render.githubusercontent.com/render/math?math=%5C%7BN_i%5C%7D"> si <img src="https://render.githubusercontent.com/render/math?math=%5C%7BN_i%5C%7D%5Csubset%20%5C%7BM_i%5C%7D">.
+Una serie normal (subnormal) <img src="https://render.githubusercontent.com/render/math?math=%5C%7BM_j%5C%7D"> es un _refinamiento de una serie normal (subnormal)_ <img src="https://render.githubusercontent.com/render/math?math=%5C%7BN_i%5C%7D"> si <img src="https://render.githubusercontent.com/render/math?math=%5C%7BN_i%5C%7D%5Csubset%5C%7BM_j%5C%7D">.
 
-Dos series normales (subnormales) <img src="https://render.githubusercontent.com/render/math?math=%5C%7BH_i%5C%7D"> y 
+Dos series normales (subnormales) <img src="https://render.githubusercontent.com/render/math?math=%5C%7BH_i%5C%7D"> y <img src="https://render.githubusercontent.com/render/math?math=%5C%7BK_j%5C%7D"> de un grupo son isomórficas si hay una correspondencia 1-1 entre las colecciones de grupos factores <img src="https://render.githubusercontent.com/render/math?math=%5C%7BH_%7Bi%2B1%7D%2FH_i%5C%7D"> y <img src="https://render.githubusercontent.com/render/math?math=%5C%7BK_%7Bj%2B1%7D%2FK_j%5C%7D">.
 
 **Referencias**
 
