@@ -283,6 +283,14 @@ Sea <img src="https://render.githubusercontent.com/render/math?math=\large (G, \
 
 Se considera al conjunto <img src="https://render.githubusercontent.com/render/math?math=\large X"> como un *G-conjunto*.
 
+Si <img src="https://render.githubusercontent.com/render/math?math=\large G"> actúa sobre un set <img src="https://render.githubusercontent.com/render/math?math=\large X"> y <img src="https://render.githubusercontent.com/render/math?math=\large x,y\in X">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large x"> se dice que es **G-equivalente** a <img src="https://render.githubusercontent.com/render/math?math=\large y"> si existe un elemento <img src="https://render.githubusercontent.com/render/math?math=\large g"> en <img src="https://render.githubusercontent.com/render/math?math=\large G"> para el que <img src="https://render.githubusercontent.com/render/math?math=\large gx=y">.
+
+**Proposición**: (Judson y Beezer, 2017) Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> un _G-conjunto_, entonces _G-equivalencia_ es una relación de equivalencia en <img src="https://render.githubusercontent.com/render/math?math=\large X">.
+
+Cada partición generada en <img src="https://render.githubusercontent.com/render/math?math=\large X"> por la relación de equivalencia es llamada una **órbita** de <img src="https://render.githubusercontent.com/render/math?math=\large X"> bajo <img src="https://render.githubusercontent.com/render/math?math=\large G">. La notación para estos conjuntos será <img src="https://render.githubusercontent.com/render/math?math=%5Cmathcal%7BO%7D_x">, donde <img src="https://render.githubusercontent.com/render/math?math=\large x"> es un elemento de este conjunto.
+
+Dada la notación anterior, el **conjunto de punto fijo** de <img src="https://render.githubusercontent.com/render/math?math=\large g"> en <img src="https://render.githubusercontent.com/render/math?math=\large X">, denotado como <img src="https://render.githubusercontent.com/render/math?math=\large X_g">, será el subconjunto de <img src="https://render.githubusercontent.com/render/math?math=\large X"> que cumpla con la condición <img src="https://render.githubusercontent.com/render/math?math=\large gx=x">.
+
 **Referencias**
 
 - Judson, T. W. y Beezer R. A. (2017) Abstract Algebra: Theory and Applications.
