@@ -228,7 +228,7 @@ donde los <img src="https://render.githubusercontent.com/render/math?math=\large
 
 Un grupo <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> es un **p-grupo** si todos los elementos de su conjunto tienen como orden a una potencia de un número primo (_p_). Recuerda que el orden de un **elemento** _g_ es el mínimo exponente que resuelve ecuación <img src="https://render.githubusercontent.com/render/math?math=\large a^n=e (n\in \mathbb{N})">, donde <img src="https://render.githubusercontent.com/render/math?math=\large e"> es el elemento identidad, cuando no existe tal número, se dice que el elemento tiene orden infinito.
 
-Los _Teoremas de Sylow_ son los siguientes. Sea <img src="https://render.githubusercontent.com/render/math?math=\large p"> un número primo, <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )"> un grupo finito y <img src="https://render.githubusercontent.com/render/math?math=%7CG%7C"> el orden de <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )">.
+Los _Teoremas de Sylow_ son los siguientes (Weisstein, Eric W., 2020). Sea <img src="https://render.githubusercontent.com/render/math?math=\large p"> un número primo, <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )"> un grupo finito y <img src="https://render.githubusercontent.com/render/math?math=%7CG%7C"> el orden de <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )">.
 
 1. Si <img src="https://render.githubusercontent.com/render/math?math=\large p"> divide <img src="https://render.githubusercontent.com/render/math?math=%7CG%7C">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large (G,\circ )"> tiene un _p-subgrupo de Sylow_.
 2. En un grupo finito, todos los _p-subgrupos de Sylow_ son conjugados de algún <img src="https://render.githubusercontent.com/render/math?math=\large p">.
@@ -273,6 +273,7 @@ Un grupo es **soluble** si tiene una serie subnormal <img src="https://render.gi
 **Referencias**
 
 - Judson, T. W. y Beezer R. A. (2017) Abstract Algebra: Theory and Applications.
+- Weisstein, Eric W. (2020) "Sylow Theorems." From MathWorld--A Wolfram Web Resource. https://mathworld.wolfram.com/SylowTheorems.html
 
 ### Acción de grupos {#extra4}
 
