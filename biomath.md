@@ -291,6 +291,14 @@ Cada partición generada en <img src="https://render.githubusercontent.com/rende
 
 Dada la notación anterior, el **conjunto de punto fijo** de <img src="https://render.githubusercontent.com/render/math?math=\large g"> en <img src="https://render.githubusercontent.com/render/math?math=\large X">, denotado como <img src="https://render.githubusercontent.com/render/math?math=\large X_g">, será el subconjunto de <img src="https://render.githubusercontent.com/render/math?math=\large X"> que cumpla con la condición <img src="https://render.githubusercontent.com/render/math?math=\large gx=x">.
 
+De forma análoga se puede definir el subconjunto de <img src="https://render.githubusercontent.com/render/math?math=\large G"> que fija un elemento <img src="https://render.githubusercontent.com/render/math?math=\large x"> de <img src="https://render.githubusercontent.com/render/math?math=\large X">, es decir, el conjunto
+
+<img src="https://render.githubusercontent.com/render/math?math=\large G_x=\{g\in G : gx=x \}">
+
+Se prueba que este conjunto es un subgrupo de <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ)">. Este subgrupo es llamado **subgrupo estabilizador** de <img src="https://render.githubusercontent.com/render/math?math=\large x"> y, en algunos contextos, **subgrupo isotrópico**.
+
+**Teorema**: (Judson y Beezer, 2017) Sea <img src="https://render.githubusercontent.com/render/math?math=\large G"> un grupo finito y <img src="https://render.githubusercontent.com/render/math?math=\large X"> un G-conjunto finito. Si <img src="https://render.githubusercontent.com/render/math?math=\large x\in X">, entonces <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%7C%5Cmathcal%7BO%7D_x%7C%3D%5BG%3AG_x%5D">.
+
 **Referencias**
 
 - Judson, T. W. y Beezer R. A. (2017) Abstract Algebra: Theory and Applications.
