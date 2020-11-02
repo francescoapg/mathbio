@@ -343,6 +343,20 @@ Una forma de usar estos conceptos es para definir **minimales** y **maximales**.
 
 A continuación hablaremos de **conjuntos direccionados**. Comunmente, se define como un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large D"> asociado con una relación <img src="https://render.githubusercontent.com/render/math?math=\large \leq"> que es reflexiva, transitiva, y cumple que <img src="https://render.githubusercontent.com/render/math?math=\large \forall x,y \in D (\exists z \in D)(x\leq z \land y\leq z)(x\neq y)">. Esta relación definida se conoce como **orden dirigido**. También se puede expresar como aquel subconjunto de (<img src="https://render.githubusercontent.com/render/math?math=\large X, \leq">) en el que cada subconjunto finito tiene un _upper bound_ en él; así, el conjunto se dice que es _up-directed_.
 
+El **supremo** de un subconjunto <img src="https://render.githubusercontent.com/render/math?math=\large M\subset (X, \leq)"> es el menor límite superior de <img src="https://render.githubusercontent.com/render/math?math=\large M"> o, en inglés, el _least upper bound_. El **ínfimo** de <img src="https://render.githubusercontent.com/render/math?math=\large M"> es el mayor límite inferior de <img src="https://render.githubusercontent.com/render/math?math=\large M"> o el _greatest lower bound_, en inglés. Un subconjunto cualquiera no siempre tiene supremo e ínfimo, pero, si los tiene, son únicos.
+
+Expresado en lógica, <img src="https://render.githubusercontent.com/render/math?math=\large s"> es el supremo de <img src="https://render.githubusercontent.com/render/math?math=\large M"> si 
+
+1. <img src="https://render.githubusercontent.com/render/math?math=\large \forall m \in M (m\leq s)">
+2. <img src="https://render.githubusercontent.com/render/math?math=\large \forall m \in M (m\leq x \Rightarrow s\leq x)">
+
+Análogamente, <img src="https://render.githubusercontent.com/render/math?math=\large r"> es el ínfimo de <img src="https://render.githubusercontent.com/render/math?math=\large M"> si
+
+1. <img src="https://render.githubusercontent.com/render/math?math=\large \forall m \in M (r\leq m)">
+2. <img src="https://render.githubusercontent.com/render/math?math=\large \forall m \in M (x\leq m \Rightarrow x\leq r)"> 
+
+El supremo también recibe el nombre de **join** de <img src="https://render.githubusercontent.com/render/math?math=\large M"> y el ínfimo recibe el nombre de **meet** de <img src="https://render.githubusercontent.com/render/math?math=\large M">. La notación de supremo es <img src="https://render.githubusercontent.com/render/math?math=\large sup M"> o <img src="https://render.githubusercontent.com/render/math?math=\large \vee M">, también se puede usar como operador binario para subconjuntos finitos (<img src="https://render.githubusercontent.com/render/math?math=\large a\lor b"> para el conjunto <img src="https://render.githubusercontent.com/render/math?math=\large \{a,b\}">). Por otro lado, se denota <img src="https://render.githubusercontent.com/render/math?math=\large inf M"> o <img src="https://render.githubusercontent.com/render/math?math=\large \wedge M"> al ínfimo de <img src="https://render.githubusercontent.com/render/math?math=\large M">, también se puede usar la notación de operador binario <img src="https://render.githubusercontent.com/render/math?math=\large a\land b">.
+
 **Referencias**
 
 - Picado, J., & Pultr, A. (2011). Frames and Locales: topology without points. Springer Science & Business Media.
