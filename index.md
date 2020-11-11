@@ -7,6 +7,13 @@
 1. [Ecología Teórica](https://francescoapg.github.io/mathbio/ecoteo)
 2. [Biomatemática](https://francescoapg.github.io/mathbio/biomath)
 
+### Notas
+
+1. [Teoría de conjuntos](https://francescoapg.github.io/mathbio/setheory)
+2. Relaciones y funciones
+3. Espacios
+4. Teoría de Grupos
+
 ### Licencia
 
 Copyright (C) 2020 Francesco Peña Garcia
