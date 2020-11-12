@@ -26,11 +26,19 @@ Definimos una relación <img src="https://render.githubusercontent.com/render/ma
 
 **Teorema**: (Cantor) Para cualquier conjunto <img src="https://render.githubusercontent.com/render/math?math=\large X">, <img src="https://render.githubusercontent.com/render/math?math=X%3C_c%5Cmathcal%7BP%7D(X)">.
 
-**Teorema**: (Teorema de Schröder-Bernstein) Para cualquier par de conjuntos <img src="https://render.githubusercontent.com/render/math?math=\large X"> y <img src="https://render.githubusercontent.com/render/math?math=\large Y">, 
+**Teorema de Schröder-Bernstein**: Para cualquier par de conjuntos <img src="https://render.githubusercontent.com/render/math?math=\large X"> y <img src="https://render.githubusercontent.com/render/math?math=\large Y">, 
 
 <img src="https://render.githubusercontent.com/render/math?math=X%5Cleq_cY%5Cland%20Y%5Cleq_cX%5CRightarrow%20X%5Cequiv%20Y">
 
 La prueba fue inicialmente dada por Cantor y luego por Dedekind.
+
+**Axioma de elección (AC)**
+
+Si <img src="https://render.githubusercontent.com/render/math?math=%5C%7BA_i%5C%7D_%7Bi%5Cin%20I%7D"> es una familia de conjuntos no vacíos, entonces existe una función <img src="https://render.githubusercontent.com/render/math?math=f%3AI%5Cto%20%5Ccup_iA_i"> tal que <img src="https://render.githubusercontent.com/render/math?math=f(i)%5Cin%20A_i"> para cada <img src="https://render.githubusercontent.com/render/math?math=i%5Cin%20I">.
+
+Dicha función recibe el nombre de **función de elección**. La existencia del axioma de elección es debatible. Hay muchos problemas cuando lo consideramos válido; sin embargo, hay más problemas cuando no lo consideramos; por lo que de momento se considera como necesario (válido).
+
+**Teorema**: Si <img src="https://render.githubusercontent.com/render/math?math=\large X"> es infinito y <img src="https://render.githubusercontent.com/render/math?math=\large A\subseteq X "> es finito, entonces <img src="https://render.githubusercontent.com/render/math?math=\large X \ A"> y <img src="https://render.githubusercontent.com/render/math?math=\large X"> tienen la misma cardinalidad.
 
 **Referencias**
 
