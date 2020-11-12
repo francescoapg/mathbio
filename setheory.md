@@ -2,13 +2,12 @@
 
 ## Teoría de Conjuntos
 
-Como libro introductorio, refierase a _Naive set theory_ de Paul R. Halmos.
-
 **Índice**
 
 1. [Conjuntos contables](#countable)
 2. [Axioma de elección (AC)](#choice)
 3. [Conjuntos bien ordenados](#wellordered)
+3. [Inducción transfinia](#transfinite)
 
 ### Conjuntos contables {#countable}
 
@@ -32,6 +31,10 @@ Definimos una relación <img src="https://render.githubusercontent.com/render/ma
 
 La prueba fue inicialmente dada por Cantor y luego por Dedekind.
 
+**Referencias**
+
+- Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
+
 ### Axioma de elección (AC) {#choice}
 
 Si <img src="https://render.githubusercontent.com/render/math?math=%5C%7BA_i%5C%7D_%7Bi%5Cin%20I%7D"> es una familia de conjuntos no vacíos, entonces existe una función <img src="https://render.githubusercontent.com/render/math?math=f%3AI%5Cto%20%5Ccup_iA_i"> tal que <img src="https://render.githubusercontent.com/render/math?math=f(i)%5Cin%20A_i"> para cada <img src="https://render.githubusercontent.com/render/math?math=i%5Cin%20I">.
@@ -54,11 +57,23 @@ Esto también parece cumplirse cuando <img src="https://render.githubusercontent
 
 **Proposición**: (J. König, 58) Sean <img src="https://render.githubusercontent.com/render/math?math=\large \{X_i:i\in I\}"> y <img src="https://render.githubusercontent.com/render/math?math=\large \{Y_i:i\in I\}"> familias de conjuntos, tal que <img src="https://render.githubusercontent.com/render/math?math=\large X_i\leq_c Y_i"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large i\in I">. Entonces no existe un mapeo suryectivo de <img src="https://render.githubusercontent.com/render/math?math=\large \cup_iX_i"> a <img src="https://render.githubusercontent.com/render/math?math=\large \Pi_iY_i">.
 
+**Referencias**
+
+- König, J. (1905). Zum Kontinuum-Problem.
+- Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
+
 ### Conjuntos bien ordenados {#wellordered}
 
 Un buen ordenamiento en un conjunto es un orden lineal (total) tal que todo subconjunto no vacío <img src="https://render.githubusercontent.com/render/math?math=\large A"> de él tiene un límite inferior en <img src="https://render.githubusercontent.com/render/math?math=\large A">. 
 
 Todo orden lineal en un conjunto finito es un buen ordenamiento.
 
+**Principio del buen ordenamiento**: Todo conjunto puede ser bien ordenado.
 
+### Inducción transfinita {#transfinite}
 
+33/274
+
+**Referencias**
+
+- Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
