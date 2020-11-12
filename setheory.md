@@ -8,6 +8,7 @@
 2. [Axioma de elección (AC)](#choice)
 3. [Conjuntos bien ordenados](#wellordered)
 3. [Inducción transfinia](#transfinite)
+4. [Números cardinales](#cardinal)
 
 ### Conjuntos contables {#countable}
 
@@ -78,8 +79,17 @@ Esta proposición se prueba por el buen ordenamiento de los naturales.
 
 **Definición por inducción**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> cualquier conjunto no vacío. Supón que <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> es un punto fijo de <img src="https://render.githubusercontent.com/render/math?math=\large X"> y <img src="https://render.githubusercontent.com/render/math?math=\large g"> es un mapeo cualquiera <img src="https://render.githubusercontent.com/render/math?math=\large g:X\to X">. Entonces, existe un mapeo único <img src="https://render.githubusercontent.com/render/math?math=\large f:\mathbb{N}\to X"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large f(0)=x_0"> y <img src="https://render.githubusercontent.com/render/math?math=f(n%2B1)%3Dg(f(n))"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large n">.
 
-**Prueba por inducción transfinita**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large (W,\leq)"> un conjunto bien ordenado, sea <img src="https://render.githubusercontent.com/render/math?math=\large P(w)"> una proposición matemática respecto a <img src="https://render.githubusercontent.com/render/math?math=\large w\in W">. Supón que <img src="https://render.githubusercontent.com/render/math?math=\large \forall w \in W (P(v) \text{TRUE} \forall v<w)\Rightarrow P(w) \text{TRUE}">
+**Prueba por inducción transfinita**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large (W,\leq)"> un conjunto bien ordenado, sea <img src="https://render.githubusercontent.com/render/math?math=\large P(w)"> una proposición matemática respecto a <img src="https://render.githubusercontent.com/render/math?math=\large w\in W">. Supón que <img src="https://render.githubusercontent.com/render/math?math=\large \forall w \in W (P(v) \forall v<w)\Rightarrow P(w) "> Entonces, <img src="https://render.githubusercontent.com/render/math?math=\large P(w)"> es cierto para todo elemento de <img src="https://render.githubusercontent.com/render/math?math=\large W">.
+
+34/274
 
 **Referencias**
 
 - Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
+
+### Números cardinales {#carinal}
+
+**Alephs**
+
+
+
