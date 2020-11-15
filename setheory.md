@@ -70,6 +70,8 @@ La existencia del axioma de elección es debatible. Hay muchos problemas cuando 
 
 **Lema de Zorn**: Si <img src="https://render.githubusercontent.com/render/math?math=\large P"> es un conjunto no vacío parcialmente ordenado tal que cada cadena en <img src="https://render.githubusercontent.com/render/math?math=\large P"> tiene un límite superior en <img src="https://render.githubusercontent.com/render/math?math=\large P">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large P"> tiene un elemento maximal.
 
+El Lema de Zorn se prueba que es equivalente a AC. También es equivalente a la **condición de cadena maximal de Hausdorff**, que establece que "cada conjunto parcialmente ordenado contiene una cadena maximal".
+
 **Hipótesis del continuo**: (Cantor) No existe conjunto cuya cardinalidad este entre los enteros y los números reales.
 
 También se sabe que los números racionales se relacionan 1-1 con los enteros. La hipótesis del continuo plantea que los números reales tienen la mínima cardinalidad posible que sea mayor a la de los enteros. Además, los números relaes son equinúmeros con el conjunto potencia de los enteros, expresado en números de aleph, <img src="https://render.githubusercontent.com/render/math?math=%7C%5CR%7C%3D2%5E%7B%5Caleph_0%7D">. La generalización de la hipótesis del continuo es, siendo <img src="https://render.githubusercontent.com/render/math?math=\large \lambda"> un cardinal infinito, <img src="https://render.githubusercontent.com/render/math?math=\large \nexists k (\lambda < |k| < 2^\lambda)">.
@@ -99,6 +101,10 @@ Todo orden lineal en un conjunto finito es un buen ordenamiento.
 
 El principio del buen ordenamiento y el axioma de elección son equivalentes. Sin embargo, el continuo no está bien ordenado.
 
+**Referencias**
+
+- Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
+
 ### Inducción transfinita {#transfinite}
 
 **Prueba por inducción**: Para cada <img src="https://render.githubusercontent.com/render/math?math=\large n\in \mathbb{N}">, sea <img src="https://render.githubusercontent.com/render/math?math=\large P_n"> una proposición matemática. Supón que <img src="https://render.githubusercontent.com/render/math?math=\large P_0"> es verdadero y que para cualquier <img src="https://render.githubusercontent.com/render/math?math=\large n">, <img src="https://render.githubusercontent.com/render/math?math=P_%7Bn%2B1%7D"> es cierto siempre que <img src="https://render.githubusercontent.com/render/math?math=\large P_n"> es cierto. Entonces, parar cada <img src="https://render.githubusercontent.com/render/math?math=\large n">, <img src="https://render.githubusercontent.com/render/math?math=\large P_n"> es verdadero. En lógica, <img src="https://render.githubusercontent.com/render/math?math=(P_0%5Cland%20%5Cforall%20n%20(P_n%5CRightarrow%20P_%7Bn%2B1%7D))%5CRightarrow%20%5Cforall%20n%20(P_n)">.
@@ -117,6 +123,15 @@ Esta proposición se prueba por el buen ordenamiento de los naturales.
 
 ### Números cardinales {#carinal}
 
+A pesar de estar en contra de AC, Russell dio una versión equivalente del axioma de elección llamada axioma de multipicación. La introducción de este axioma permitía la definición de productos arbitrarios de números cardinales, como
+
+- <img src="https://render.githubusercontent.com/render/math?math=\large |X|\cdot |Y|=|X\times Y|">
+- <img src="https://render.githubusercontent.com/render/math?math=\large k\cdot 0=0\cdot k=0">
+- <img src="https://render.githubusercontent.com/render/math?math=\large k \cdot u = 0 \Rightarrow k=0\lor u=0">
+- <img src="https://render.githubusercontent.com/render/math?math=\large k\cdot 1=1\cdot k=k">
+
+**Axioma multiplicativo**: (Russell) Para cada familia <img src="https://render.githubusercontent.com/render/math?math=\large (X_i)_{i\in I}"> de conjuntos no vacíos mutuamente disjuntos, existe un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large Y"> con <img src="https://render.githubusercontent.com/render/math?math=\large |Y\cap X_i|=1"> para cada <img src="https://render.githubusercontent.com/render/math?math=\large i\in I">.
+
 **Alephs**
 
 Un conjunto tiene cardinalidad  <img src="https://render.githubusercontent.com/render/math?math=\large \aleph_0"> si y solo si es contable infinito, es decir, si existe una biyeccoón entre dicho cojunto y los números naturales. Los siguientes son <img src="https://render.githubusercontent.com/render/math?math=\large \aleph_0">
@@ -131,3 +146,6 @@ Un conjunto tiene cardinalidad  <img src="https://render.githubusercontent.com/r
 
 <img src="https://render.githubusercontent.com/render/math?math=\large \aleph_1"> es la cardinalidad del conjunto de todos los números ordinales contables, dicho conjunto (<img src="https://render.githubusercontent.com/render/math?math=\large \omega_1">) es incontable.
 
+**Referencias**
+
+- Herrlich, H. (2006). Axiom of choice. Berlin: Springer.
