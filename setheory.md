@@ -72,7 +72,9 @@ Un conjunto linealmente ordenado es llamado **orden denso** si para cada <img sr
 
 **Lema de Zorn**: Si <img src="https://render.githubusercontent.com/render/math?math=\large P"> es un conjunto no vacío parcialmente ordenado tal que cada cadena en <img src="https://render.githubusercontent.com/render/math?math=\large P"> tiene un límite superior en <img src="https://render.githubusercontent.com/render/math?math=\large P">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large P"> tiene un elemento maximal.
 
-**Hipótesis del continuo**: (Cantor)
+**Hipótesis del continuo**: (Cantor) No existe conjunto cuya cardinalidad este entre los enteros y los números reales.
+
+También se sabe que los números racionales se relacionan 1-1 con los enteros. La hipótesis del continuo plantea que los números reales tienen la mínima cardinalidad posible que sea mayor a la de los enteros. Además, los números relaes son equinúmeros con el conjunto potencia de los enteros, expresado en números de aleph, <img src="https://render.githubusercontent.com/render/math?math=%7C%5CR%7C%3D2%5E%7B%5Caleph_0%7D">. La generalización de la hipótesis del continuo es, siendo <img src="https://render.githubusercontent.com/render/math?math=\large \lambda"> un cardinal infinito, <img src="https://render.githubusercontent.com/render/math?math=\large \nexists k (\lambda < |k| < 2^\lambda)">.
 
 **Teorema**: Para cualquier par de conjuntos <img src="https://render.githubusercontent.com/render/math?math=\large X"> y <img src="https://render.githubusercontent.com/render/math?math=\large Y">, al menos uno de los siguientes se mantienen <img src="https://render.githubusercontent.com/render/math?math=\large X\leq_c Y"> o <img src="https://render.githubusercontent.com/render/math?math=\large Y\leq_c X">.
 
