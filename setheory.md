@@ -58,9 +58,11 @@ La prueba fue inicialmente dada por Cantor y luego por Dedekind.
 
 ### Axioma de elección (AC) {#choice}
 
-Si <img src="https://render.githubusercontent.com/render/math?math=%5C%7BA_i%5C%7D_%7Bi%5Cin%20I%7D"> es una familia de conjuntos no vacíos, entonces existe una función <img src="https://render.githubusercontent.com/render/math?math=f%3AI%5Cto%20%5Ccup_iA_i"> tal que <img src="https://render.githubusercontent.com/render/math?math=f(i)%5Cin%20A_i"> para cada <img src="https://render.githubusercontent.com/render/math?math=i%5Cin%20I">.
+**AC**: Para toda familia <img src="https://render.githubusercontent.com/render/math?math=\large (X_i)_{i\in I}"> de conjuntos no vacíos <img src="https://render.githubusercontent.com/render/math?math=\large X_i">, el conjunto producto <img src="https://render.githubusercontent.com/render/math?math=\large \Pi_{i\in I}X_i"> es no vacío.
 
-Dicha función recibe el nombre de **función de elección**. 
+Los elementos del conjunto producto (<img src="https://render.githubusercontent.com/render/math?math=\large \Pi_{i\in I}X_i">) son **función de elección** (<img src="https://render.githubusercontent.com/render/math?math=\large X:I\to\cup_{i\in I}X_i">).
+
+Recuerda que el producto cartesiano de una familia <img src="https://render.githubusercontent.com/render/math?math=\large (E_i)_{i\in I}"> es definido como <img src="https://render.githubusercontent.com/render/math?math=\large \Pi_{i\in I}E_i=\{(x_i)_{i\in I}: \forall i \in I, x_i\in E_i\}">.
 
 La existencia del axioma de elección es debatible. Hay muchos problemas cuando lo consideramos válido; sin embargo, hay más problemas cuando no lo consideramos; por lo que de momento se considera como necesario (útil pero no válido). Los constructivistas la evitan, ya que afirma la existencia de entidades elusivas (lo único que sabes es que existen). Una de las consecuencias es la **paradoja de Banach-Tarski**, la cual es extremadamente contraintuitivo. 
 
@@ -129,7 +131,7 @@ Un conjunto tiene cardinalidad  <img src="https://render.githubusercontent.com/r
 - Números compuestos
 - Enteros
 - Racionales
-- El conjunto de todos los subconjutnos finitos de cualquier conjunto infinito contable.
+- El conjunto de todos los subconjuntos finitos de cualquier conjunto infinito contable.
 
 <img src="https://render.githubusercontent.com/render/math?math=\large \aleph_1"> es la cardinalidad del conjunto de todos los números ordinales contables, dicho conjunto (<img src="https://render.githubusercontent.com/render/math?math=\large \omega_1">) es incontable.
 
