@@ -60,17 +60,13 @@ La prueba fue inicialmente dada por Cantor y luego por Dedekind.
 
 **AC**: Para toda familia <img src="https://render.githubusercontent.com/render/math?math=\large (X_i)_{i\in I}"> de conjuntos no vacíos <img src="https://render.githubusercontent.com/render/math?math=\large X_i">, el conjunto producto <img src="https://render.githubusercontent.com/render/math?math=\large \Pi_{i\in I}X_i"> es no vacío.
 
-Los elementos del conjunto producto (<img src="https://render.githubusercontent.com/render/math?math=\large \Pi_{i\in I}X_i">) son **función de elección** (<img src="https://render.githubusercontent.com/render/math?math=\large X:I\to\cup_{i\in I}X_i">).
+Los elementos del conjunto producto (<img src="https://render.githubusercontent.com/render/math?math=\large \Pi_{i\in I}X_i">) son **función de elección**. Esta función de elección se aplica siempre que se use la idea de elegir un elemento.
 
 Recuerda que el producto cartesiano de una familia <img src="https://render.githubusercontent.com/render/math?math=\large (E_i)_{i\in I}"> es definido como <img src="https://render.githubusercontent.com/render/math?math=\large \Pi_{i\in I}E_i=\{(x_i)_{i\in I}: \forall i \in I, x_i\in E_i\}">.
 
 La existencia del axioma de elección es debatible. Hay muchos problemas cuando lo consideramos válido; sin embargo, hay más problemas cuando no lo consideramos; por lo que de momento se considera como necesario (útil pero no válido). Los constructivistas la evitan, ya que afirma la existencia de entidades elusivas (lo único que sabes es que existen). Una de las consecuencias es la **paradoja de Banach-Tarski**, la cual es extremadamente contraintuitivo. 
 
 **Teorema**: Si <img src="https://render.githubusercontent.com/render/math?math=\large X"> es infinito y <img src="https://render.githubusercontent.com/render/math?math=\large A\subseteq X "> es finito, entonces <img src="https://render.githubusercontent.com/render/math?math=\large X \setminus A"> y <img src="https://render.githubusercontent.com/render/math?math=\large X"> tienen la misma cardinalidad.
-
-Una función parcial es una función cuyo dominio es un subconjunto del conjunto de partida. Dadas dos funciones parciales <img src="https://render.githubusercontent.com/render/math?math=\large f"> y <img src="https://render.githubusercontent.com/render/math?math=\large g"> definidas en los mismos conjuntos de partida y llegada, <img src="https://render.githubusercontent.com/render/math?math=\large f"> extiende a <img src="https://render.githubusercontent.com/render/math?math=\large g"> (f\succeq g) si el dominio de <img src="https://render.githubusercontent.com/render/math?math=\large f"> incluye al dominio de <img src="https://render.githubusercontent.com/render/math?math=\large g"> y <img src="https://render.githubusercontent.com/render/math?math=\large f(x)=g(x) \forall x \in dominio(g)">. Si <img src="https://render.githubusercontent.com/render/math?math=\large A"> es el dominio de <img src="https://render.githubusercontent.com/render/math?math=\large g">, se dice que <img src="https://render.githubusercontent.com/render/math?math=\large g"> es una restricción de <img src="https://render.githubusercontent.com/render/math?math=\large f"> o <img src="https://render.githubusercontent.com/render/math?math=\large f=g_{|A}">.
-
-Un conjunto linealmente ordenado es llamado **orden denso** si para cada <img src="https://render.githubusercontent.com/render/math?math=\large x<y">, existe un <img src="https://render.githubusercontent.com/render/math?math=\large z"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large x<z<y">. Dos conjuntos linealmente ordenados son llamados **isomórficos en orden** o, simplemente, isomórficos si existe un mapeo biyectivo de uno a otro.
 
 **Lema de Zorn**: Si <img src="https://render.githubusercontent.com/render/math?math=\large P"> es un conjunto no vacío parcialmente ordenado tal que cada cadena en <img src="https://render.githubusercontent.com/render/math?math=\large P"> tiene un límite superior en <img src="https://render.githubusercontent.com/render/math?math=\large P">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large P"> tiene un elemento maximal.
 
@@ -101,7 +97,7 @@ Todo orden lineal en un conjunto finito es un buen ordenamiento.
 
 **Principio del buen ordenamiento**: Todo conjunto puede ser bien ordenado.
 
-Sin embargo, el continuo no está bien ordenado.
+El principio del buen ordenamiento y el axioma de elección son equivalentes. Sin embargo, el continuo no está bien ordenado.
 
 ### Inducción transfinita {#transfinite}
 
