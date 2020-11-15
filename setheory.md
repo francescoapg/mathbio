@@ -52,6 +52,12 @@ Definimos una relación <img src="https://render.githubusercontent.com/render/ma
 
 La prueba fue inicialmente dada por Cantor y luego por Dedekind.
 
+**Teorema**: Para cualquier par de conjuntos <img src="https://render.githubusercontent.com/render/math?math=\large X"> y <img src="https://render.githubusercontent.com/render/math?math=\large Y">, al menos uno de los siguientes se mantienen <img src="https://render.githubusercontent.com/render/math?math=\large X\leq_c Y"> o <img src="https://render.githubusercontent.com/render/math?math=\large Y\leq_c X">.
+
+**Teorema**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large A"> un conjunto finito y <img src="https://render.githubusercontent.com/render/math?math=\large X"> un conjunto infinito, <img src="https://render.githubusercontent.com/render/math?math=\large X\times A \equiv X">.
+
+Esto también parece cumplirse cuando <img src="https://render.githubusercontent.com/render/math?math=\large A=X">.
+
 **Referencias**
 
 - Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
@@ -76,13 +82,9 @@ El Lema de Zorn se prueba que es equivalente a AC. También es equivalente a la 
 
 También se sabe que los números racionales se relacionan 1-1 con los enteros. La hipótesis del continuo plantea que los números reales tienen la mínima cardinalidad posible que sea mayor a la de los enteros. Además, los números relaes son equinúmeros con el conjunto potencia de los enteros, expresado en números de aleph, <img src="https://render.githubusercontent.com/render/math?math=%7C%5CR%7C%3D2%5E%7B%5Caleph_0%7D">. La generalización de la hipótesis del continuo es, siendo <img src="https://render.githubusercontent.com/render/math?math=\large \lambda"> un cardinal infinito, <img src="https://render.githubusercontent.com/render/math?math=\large \nexists k (\lambda < |k| < 2^\lambda)">.
 
-**Teorema**: Para cualquier par de conjuntos <img src="https://render.githubusercontent.com/render/math?math=\large X"> y <img src="https://render.githubusercontent.com/render/math?math=\large Y">, al menos uno de los siguientes se mantienen <img src="https://render.githubusercontent.com/render/math?math=\large X\leq_c Y"> o <img src="https://render.githubusercontent.com/render/math?math=\large Y\leq_c X">.
-
-**Teorema**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large A"> un conjunto finito y <img src="https://render.githubusercontent.com/render/math?math=\large X"> un conjunto infinito, <img src="https://render.githubusercontent.com/render/math?math=\large X\times A \equiv X">.
-
-Esto también parece cumplirse cuando <img src="https://render.githubusercontent.com/render/math?math=\large A=X">.
-
 **Proposición**: (König) Sean <img src="https://render.githubusercontent.com/render/math?math=\large \{X_i:i\in I\}"> y <img src="https://render.githubusercontent.com/render/math?math=\large \{Y_i:i\in I\}"> familias de conjuntos, tal que <img src="https://render.githubusercontent.com/render/math?math=\large X_i\leq_c Y_i"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large i\in I">. Entonces no existe un mapeo suryectivo de <img src="https://render.githubusercontent.com/render/math?math=\large \cup_iX_i"> a <img src="https://render.githubusercontent.com/render/math?math=\large \Pi_iY_i">.
+
+**Axioma de fundación**: (Axioma de regularidad) Entre los axiomas de teoría de conjuntos ZF, el axioma de fundación establece que <img src="https://render.githubusercontent.com/render/math?math=\large X\neq \emptyset \Rightarrow \exists y (y\in X \land y\cap x = \emptyset)">. Se lee: todo conjunto no vacío es disjunto de uno de sus elementos.
 
 **Referencias**
 
