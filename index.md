@@ -10,7 +10,7 @@
 ### Notas
 
 1. [Teoría de conjuntos](https://francescoapg.github.io/mathbio/setheory)
-2. Relaciones y funciones
+2. [Relaciones y funciones](https://francescoapg.github.io/mathbio/functlations)
 3. Espacios
 4. [Teoría de Grupos](https://francescoapg.github.io/mathbio/groups)
 
