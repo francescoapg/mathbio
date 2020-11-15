@@ -25,6 +25,11 @@ Dicho esto, la _equivalencia de conjuntos_ se define como: <img src="https://ren
 
 A continuación, definiremos la unión de dos conjuntos, la cual se representa de la siguiente manera: <img src="https://render.githubusercontent.com/render/math?math=\large A\cup B = \{x:x\in A \lor x\in B\}">. La definición de intersection es similar: <img src="https://render.githubusercontent.com/render/math?math=\large A\cap B = \{x:x\in A \land x\in B\}">.
 
+La teoría de conjuntos pasó a su era moderna a inicios de 1960 con la aparición de los métodos de forzado  y el descubrimiento de la relación entre números cardinales grandes y los conjuntos construíbles. Los métodos de forzado (_forcing methos_) son útiles para probar **consistencia** e **independencia** de resultados. La independencia se puede entender como la improbabilidad de una sentencia a partir de otras.
+
+- Herrlich, H. (2006). Axiom of choice. Berlin: Springer.
+- Herstein, I. N. (1975). Topics in algebra. Second edition. Xerox Corporation.
+
 ### Conjuntos contables {#countable}
 
 Dos conjuntos <img src="https://render.githubusercontent.com/render/math?math=\large A">, <img src="https://render.githubusercontent.com/render/math?math=\large B"> son **equinúmeros** o tienen la misma **cardinalidad** (<img src="https://render.githubusercontent.com/render/math?math=\large A\equiv B">) si existe un mapa bijectivo de <img src="https://render.githubusercontent.com/render/math?math=\large A"> hacia <img src="https://render.githubusercontent.com/render/math?math=\large B">.
@@ -55,7 +60,9 @@ La prueba fue inicialmente dada por Cantor y luego por Dedekind.
 
 Si <img src="https://render.githubusercontent.com/render/math?math=%5C%7BA_i%5C%7D_%7Bi%5Cin%20I%7D"> es una familia de conjuntos no vacíos, entonces existe una función <img src="https://render.githubusercontent.com/render/math?math=f%3AI%5Cto%20%5Ccup_iA_i"> tal que <img src="https://render.githubusercontent.com/render/math?math=f(i)%5Cin%20A_i"> para cada <img src="https://render.githubusercontent.com/render/math?math=i%5Cin%20I">.
 
-Dicha función recibe el nombre de **función de elección**. La existencia del axioma de elección es debatible. Hay muchos problemas cuando lo consideramos válido; sin embargo, hay más problemas cuando no lo consideramos; por lo que de momento se considera como necesario (válido).
+Dicha función recibe el nombre de **función de elección**. 
+
+La existencia del axioma de elección es debatible. Hay muchos problemas cuando lo consideramos válido; sin embargo, hay más problemas cuando no lo consideramos; por lo que de momento se considera como necesario (útil pero no válido). Los constructivistas la evitan, ya que afirma la existencia de entidades elusivas (lo único que sabes es que existen). Una de las consecuencias es la **paradoja de Banach-Tarski**, la cual es extremadamente contraintuitivo. 
 
 **Teorema**: Si <img src="https://render.githubusercontent.com/render/math?math=\large X"> es infinito y <img src="https://render.githubusercontent.com/render/math?math=\large A\subseteq X "> es finito, entonces <img src="https://render.githubusercontent.com/render/math?math=\large X \setminus A"> y <img src="https://render.githubusercontent.com/render/math?math=\large X"> tienen la misma cardinalidad.
 
@@ -64,6 +71,8 @@ Una función parcial es una función cuyo dominio es un subconjunto del conjunto
 Un conjunto linealmente ordenado es llamado **orden denso** si para cada <img src="https://render.githubusercontent.com/render/math?math=\large x<y">, existe un <img src="https://render.githubusercontent.com/render/math?math=\large z"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large x<z<y">. Dos conjuntos linealmente ordenados son llamados **isomórficos en orden** o, simplemente, isomórficos si existe un mapeo biyectivo de uno a otro.
 
 **Lema de Zorn**: Si <img src="https://render.githubusercontent.com/render/math?math=\large P"> es un conjunto no vacío parcialmente ordenado tal que cada cadena en <img src="https://render.githubusercontent.com/render/math?math=\large P"> tiene un límite superior en <img src="https://render.githubusercontent.com/render/math?math=\large P">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large P"> tiene un elemento maximal.
+
+**Hipótesis del continuo**: (Cantor)
 
 **Teorema**: Para cualquier par de conjuntos <img src="https://render.githubusercontent.com/render/math?math=\large X"> y <img src="https://render.githubusercontent.com/render/math?math=\large Y">, al menos uno de los siguientes se mantienen <img src="https://render.githubusercontent.com/render/math?math=\large X\leq_c Y"> o <img src="https://render.githubusercontent.com/render/math?math=\large Y\leq_c X">.
 
@@ -75,8 +84,10 @@ Esto también parece cumplirse cuando <img src="https://render.githubusercontent
 
 **Referencias**
 
+- Herrlich, H. (2006). Axiom of choice. Berlin: Springer.
 - König, J. (1905). Zum Kontinuum-Problem.
 - Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
+
 
 ### Conjuntos bien ordenados {#wellordered}
 
