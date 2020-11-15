@@ -130,6 +130,8 @@ Se puede generar un conjunto ordenado a partir de otro mediante el **orden dual*
 
 **Ten en cuenta que todo poset puede ser representado como una colección de sets ordenados por la relación de inclusión**.
 
+Un conjunto linealmente ordenado es llamado **orden denso** si para cada <img src="https://render.githubusercontent.com/render/math?math=\large x<y">, existe un <img src="https://render.githubusercontent.com/render/math?math=\large z"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large x<z<y">. Dos conjuntos linealmente ordenados son llamados **isomórficos en orden** o, simplemente, isomórficos si existe un mapeo biyectivo de uno a otro.
+
 A continuación definiremos otros conjuntos importantes en el estudio de posets. Para cualquier <img src="https://render.githubusercontent.com/render/math?math=\large x\in X"> en <img src="https://render.githubusercontent.com/render/math?math=\large (X, \leq)">, definiremos 
 
 <img src="https://render.githubusercontent.com/render/math?math=\large \downarrow x = \{y : y \leq x \}">
