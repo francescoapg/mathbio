@@ -82,7 +82,7 @@ También se sabe que los números racionales se relacionan 1-1 con los enteros. 
 
 Esto también parece cumplirse cuando <img src="https://render.githubusercontent.com/render/math?math=\large A=X">.
 
-**Proposición**: (J. König, 58) Sean <img src="https://render.githubusercontent.com/render/math?math=\large \{X_i:i\in I\}"> y <img src="https://render.githubusercontent.com/render/math?math=\large \{Y_i:i\in I\}"> familias de conjuntos, tal que <img src="https://render.githubusercontent.com/render/math?math=\large X_i\leq_c Y_i"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large i\in I">. Entonces no existe un mapeo suryectivo de <img src="https://render.githubusercontent.com/render/math?math=\large \cup_iX_i"> a <img src="https://render.githubusercontent.com/render/math?math=\large \Pi_iY_i">.
+**Proposición**: (König) Sean <img src="https://render.githubusercontent.com/render/math?math=\large \{X_i:i\in I\}"> y <img src="https://render.githubusercontent.com/render/math?math=\large \{Y_i:i\in I\}"> familias de conjuntos, tal que <img src="https://render.githubusercontent.com/render/math?math=\large X_i\leq_c Y_i"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large i\in I">. Entonces no existe un mapeo suryectivo de <img src="https://render.githubusercontent.com/render/math?math=\large \cup_iX_i"> a <img src="https://render.githubusercontent.com/render/math?math=\large \Pi_iY_i">.
 
 **Referencias**
 
@@ -98,6 +98,8 @@ Un buen ordenamiento en un conjunto es un orden lineal (total) tal que todo subc
 Todo orden lineal en un conjunto finito es un buen ordenamiento.
 
 **Principio del buen ordenamiento**: Todo conjunto puede ser bien ordenado.
+
+Sin embargo, el continuo no está bien ordenado.
 
 ### Inducción transfinita {#transfinite}
 
@@ -119,5 +121,15 @@ Esta proposición se prueba por el buen ordenamiento de los naturales.
 
 **Alephs**
 
+Un conjunto tiene cardinalidad  <img src="https://render.githubusercontent.com/render/math?math=\large \aleph_0"> si y solo si es contable infinito, es decir, si existe una biyeccoón entre dicho cojunto y los números naturales. Los siguientes son <img src="https://render.githubusercontent.com/render/math?math=\large \aleph_0">
 
+- Números impares
+- Números pares
+- Números primos
+- Números compuestos
+- Enteros
+- Racionales
+- El conjunto de todos los subconjutnos finitos de cualquier conjunto infinito contable.
+
+<img src="https://render.githubusercontent.com/render/math?math=\large \aleph_1"> es la cardinalidad del conjunto de todos los números ordinales contables, dicho conjunto (<img src="https://render.githubusercontent.com/render/math?math=\large \omega_1">) es incontable.
 
