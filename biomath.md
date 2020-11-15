@@ -180,6 +180,6 @@ Por lo tanto, si <img src="https://render.githubusercontent.com/render/math?math
 
 **Referencias**
 
-- Picado, J., & Pultr, A. (2011). Frames and Locales: topology without points. Springer Science & Business Media.
 - Judson, T. W. y Beezer R. A. (2017) Abstract Algebra: Theory and Applications.
-
+- Picado, J., & Pultr, A. (2011). Frames and Locales: topology without points. Springer Science & Business Media.
+- Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
