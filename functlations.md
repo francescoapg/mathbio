@@ -16,3 +16,7 @@ Una función parcial es una función cuyo dominio es un subconjunto del conjunto
 
 **Función bien definida**
 
+**Referencias**
+
+- Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
+
