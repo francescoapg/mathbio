@@ -36,6 +36,8 @@ Dos conjuntos <img src="https://render.githubusercontent.com/render/math?math=\l
 
 Un set es finito si existe una bijección desde un subconjunto propio de los naturales hacia <img src="https://render.githubusercontent.com/render/math?math=\large A">; caso contrario, llamamos a <img src="https://render.githubusercontent.com/render/math?math=\large A">, infinito. Un conjunto es llamado **contable** si es finito o si existe una biyección de los naturales (todo el conjunto) a <img src="https://render.githubusercontent.com/render/math?math=\large A">; si no es contable, <img src="https://render.githubusercontent.com/render/math?math=\large A"> es incontable.
 
+Cada conjunto infinito _X_ es _Dedekind_ infinito si y solo si permite una inyección <img src="https://render.githubusercontent.com/render/math?math=%5CN%5Cto%20X">. Cada subconjunto infinito de <img src="https://render.githubusercontent.com/render/math?math=%5CR"> es Dedekind infinito. Todo set infinito linealmente ordenado es Dedekind infinito.
+
 **Teorema**: La unión (finita o infinita) de conjuntos contables es contable.
 
 **Teorema**: (Cantor) Para cualquier par de números reales <img src="https://render.githubusercontent.com/render/math?math=\large a"> y <img src="https://render.githubusercontent.com/render/math?math=\large b">, con <img src="https://render.githubusercontent.com/render/math?math=\large a<b">, el intervalo <img src="https://render.githubusercontent.com/render/math?math=\large [a,b]"> es incontable.
@@ -85,6 +87,27 @@ También se sabe que los números racionales se relacionan 1-1 con los enteros. 
 **Proposición**: (König) Sean <img src="https://render.githubusercontent.com/render/math?math=\large \{X_i:i\in I\}"> y <img src="https://render.githubusercontent.com/render/math?math=\large \{Y_i:i\in I\}"> familias de conjuntos, tal que <img src="https://render.githubusercontent.com/render/math?math=\large X_i\leq_c Y_i"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large i\in I">. Entonces no existe un mapeo suryectivo de <img src="https://render.githubusercontent.com/render/math?math=\large \cup_iX_i"> a <img src="https://render.githubusercontent.com/render/math?math=\large \Pi_iY_i">.
 
 **Axioma de fundación**: (Axioma de regularidad) Entre los axiomas de teoría de conjuntos ZF, el axioma de fundación establece que <img src="https://render.githubusercontent.com/render/math?math=\large X\neq \emptyset \Rightarrow \exists y (y\in X \land y\cap x = \emptyset)">. Se lee: todo conjunto no vacío es disjunto de uno de sus elementos.
+
+Entre los matemáticos constructivistas, algunos aceptan formas débiles del axioma de elección. Estos son: el axioma de Elección Contable y el Principio de Elección Dependiente. El **Axioma de Elección Contable** establece que para cada secuencia <img src="https://render.githubusercontent.com/render/math?math=(X_n)_%7Bn%5Cin%5CN%7D"> de conjuntos no vacíos <img src="https://render.githubusercontent.com/render/math?math=X_n">, el conjunto producto <img src="https://render.githubusercontent.com/render/math?math=%5CPi_%7Bn%5Cin%5CN%7DX_n"> es no vacío. Existe una variante finita (<img src="https://render.githubusercontent.com/render/math?math=X_n"> finito) de este axioma.
+
+**Axioma de elección multiple**: Para cada familia <img src="https://render.githubusercontent.com/render/math?math=(X_i)_%7Bi%5Cin%20I%7D"> de conjuntos no vacíos <img src="https://render.githubusercontent.com/render/math?math=X_i">, existe una familia <img src="https://render.githubusercontent.com/render/math?math=(F_i)_%7Bi%5Cin%20I%7D"> de subconjuntos finitos no vacíos <img src="https://render.githubusercontent.com/render/math?math=F_i"> de <img src="https://render.githubusercontent.com/render/math?math=X_i">.
+
+**Principio de Elecciones Dependientes**: Para cada par <img src="https://render.githubusercontent.com/render/math?math=(X%2C%5Cdelta)"> cuando _X_ es un conjunto no vacío y <img src="https://render.githubusercontent.com/render/math?math=%5Cdelta"> es una relación en _X_ tal que para cada <img src="https://render.githubusercontent.com/render/math?math=x%5Cin%20X%2C%5Cexists%20y%20%5Cin%20X%20(x%5Cdelta%20y)">. Existe una secuencia <img src="https://render.githubusercontent.com/render/math?math=(X_n)"> en _X_ con <img src="https://render.githubusercontent.com/render/math?math=X_n%5Cdelta%20X_%7Bn%2B1%7D"> para cada <img src="https://render.githubusercontent.com/render/math?math=n%5Cin%20%5CN">.
+
+**Principios de maximalidad**
+
+1. **Teorema del ultrafiltro**: En todo conjunto cualquier filtro puede ser agrandado a un ultrafiltro.
+2. **Principio del ultrafiltro débil**: Cada conjunto tiene un ultrafiltro libre.
+
+**Ultrafiltro**: Un filtro que es maximal. Debe cumplir que
+
+1. El vacío no está incluído en un ultrafiltro.
+2. Si A y B pertenecen al ultrafiltro, entonces su unión también es un elemento.
+3. Si Z está incluído en el ultrafiltro, entonces Z pertenece al ultrafiltro o su complemento en el ultrafiltro pertenece al ultrafiltro.
+
+Los ultrafiltros se dividen en dos clases, los triviales (o fijado o principal) y los libres. Los ultrafiltros triviales son una colección de todos los subconjuntos que contienen a un elemento (el elemento está _fijo_). Los ultrafiltros libres no son fijos a cualquier elemento, para probar la existencia de un ultrafiltro se requiere el axioma de elección.
+
+Para cada filtro hay un ultrafiltro que lo contiene. Todo filtro es la intersección de todos los ultrafiltros que lo contienen.
 
 **Referencias**
 
@@ -147,6 +170,8 @@ Un conjunto tiene cardinalidad  <img src="https://render.githubusercontent.com/r
 - El conjunto de todos los subconjuntos finitos de cualquier conjunto infinito contable.
 
 <img src="https://render.githubusercontent.com/render/math?math=\large \aleph_1"> es la cardinalidad del conjunto de todos los números ordinales contables, dicho conjunto (<img src="https://render.githubusercontent.com/render/math?math=\large \omega_1">) es incontable.
+
+**Hipótesis del Aleph**: Para todo ordinal <img src="https://render.githubusercontent.com/render/math?math=%5Calpha">, <img src="https://render.githubusercontent.com/render/math?math=2%5E%7B%5Caleph_%5Calpha%7D%3D%5Caleph_%7B%5Calpha%2B1%7D">. Tanto la hipótesis del continuon como la hipótesis del aleph para un cardinal 0 se supone que son falsas.
 
 **Referencias**
 
