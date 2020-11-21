@@ -118,13 +118,17 @@ Para cada filtro hay un ultrafiltro que lo contiene. Todo filtro es la intersecc
 
 ### Conjuntos bien ordenados {#wellordered}
 
-Un buen ordenamiento en un conjunto es un orden lineal (total) tal que todo subconjunto no vacío <img src="https://render.githubusercontent.com/render/math?math=\large A"> de él tiene un límite inferior en <img src="https://render.githubusercontent.com/render/math?math=\large A">. 
-
 Todo orden lineal en un conjunto finito es un buen ordenamiento.
+
+**Definición**: Un conjunto bien ordenado _X_ es un conjunto linealmente ordenado para el cual todo subconjunto no vacío tiene un elemento minimal.
+
+Recordemos que ___x___ es minimal en _X_ si y solo si, para todo <img src="https://render.githubusercontent.com/render/math?math=y%5Cin%20X%20(y%5Cleq%20x%20%5Cimplies%20y%3Dx)">. No debes confundirlo con un minimo (límite inferior) que se define como un elemento ___x___ tal que para todo <img src="https://render.githubusercontent.com/render/math?math=y%5Cin%20X%20(x%5Cleq%20y)">. Date cuenta que todo minimo es minimal; todo mínimo es el único minimal. Sin embargo, un único minimal no necesariamente es un mínimo. Dentro de un orden lineal, sin un elemento es minimal entonces es un mínimo.
 
 **Principio del buen ordenamiento**: Todo conjunto puede ser bien ordenado.
 
 El principio del buen ordenamiento y el axioma de elección son equivalentes. Sin embargo, el continuo no está bien ordenado.
+
+Los ordinales son conjuntos bien ordenados canónicos, en realidad, cualquier conjunto bien ordenado es orden isomórfico a un ordinal; por lo que no es una exageración decir que los ordinales son centrales para el estudio de los conjuntos.
 
 **Referencias**
 
