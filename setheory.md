@@ -142,7 +142,7 @@ Decimos que un elemento <img src="https://render.githubusercontent.com/render/ma
 
 Llamamos a un elemento como límite si no es el sucesor de ningún elemento.
 
-**Proposición**: Sea __X__ un conjunto bien ordenado y <img src="https://render.githubusercontent.com/render/math?math=\large \Lambda"> el conjunto de límites en __X__. Entonces, <img src="https://render.githubusercontent.com/render/math?math=X%5Csubset%20%5C%7BS%5En(x)%3Ax%5Ein%5CLambda%2Cn%5Cin%5CN%5C%7D">.
+**Proposición**: Sea __X__ un conjunto bien ordenado y <img src="https://render.githubusercontent.com/render/math?math=\large \Lambda"> el conjunto de límites en __X__. Entonces, <img src="https://render.githubusercontent.com/render/math?math=\large X\subset \{S^{n}(x):x^in\Lambda,n\in\N\}">.
 
 
 **Referencias**
