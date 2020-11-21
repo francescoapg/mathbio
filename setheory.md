@@ -124,19 +124,38 @@ Todo orden lineal en un conjunto finito es un buen ordenamiento.
 
 Recordemos que ___x___ es minimal en _X_ si y solo si, para todo <img src="https://render.githubusercontent.com/render/math?math=y%5Cin%20X%20(y%5Cleq%20x%20%5Cimplies%20y%3Dx)">. No debes confundirlo con un minimo (límite inferior) que se define como un elemento ___x___ tal que para todo <img src="https://render.githubusercontent.com/render/math?math=y%5Cin%20X%20(x%5Cleq%20y)">. Date cuenta que todo minimo es minimal; todo mínimo es el único minimal. Sin embargo, un único minimal no necesariamente es un mínimo. Dentro de un orden lineal, sin un elemento es minimal entonces es un mínimo.
 
+Estar bien ordenado es una propiedad hereditaria, es decir, una propiedad que se hereda a cada subconjunto.
+
+**Teorema**: X está bien ordenado si y solo si, dado cierto orden lineal, no existe una cada descendiente infinita de elementos de X.
+
+Una consecuencia directa de este teorema es que el intervalo unitario <img src="https://render.githubusercontent.com/render/math?math=%5B0%2C1%5D"> no está bien ordenado, es decir, el continuo no está bien ordenado.
+
 **Principio del buen ordenamiento**: Todo conjunto puede ser bien ordenado.
 
-El principio del buen ordenamiento y el axioma de elección son equivalentes. Sin embargo, el continuo no está bien ordenado.
+El principio del buen ordenamiento y el axioma de elección son equivalentes.
 
-Los ordinales son conjuntos bien ordenados canónicos, en realidad, cualquier conjunto bien ordenado es orden isomórfico a un ordinal; por lo que no es una exageración decir que los ordinales son centrales para el estudio de los conjuntos.
+Decimos que un elemento <img src="https://render.githubusercontent.com/render/math?math=y"> es sucesor de <img src="https://render.githubusercontent.com/render/math?math=x"> si y solo si (1) <img src="https://render.githubusercontent.com/render/math?math=x%3Cy"> y (2) <img src="https://render.githubusercontent.com/render/math?math=%5Cforall%20z%5Cin%20X%20(x%3Cz%5Cimplies%20y%5Cleq%20z)">. Otra forma de denotar al sucesor de __x__ es mediante __S(x)__. Note que en un conjunto linealmente ordenado, __x__ no puede tener más de un sucesor, además, no necesarimante todo elemento tiene sucesor.
+
+**Proposición**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> un conjunto linealmente ordenado, <img src="https://render.githubusercontent.com/render/math?math=\large x\in X">. <img src="https://render.githubusercontent.com/render/math?math=\large x"> es maximal o <img src="https://render.githubusercontent.com/render/math?math=\large x"> tiene un sucesor.
+
+**Proposición**: Sea <img src="https://render.githubusercontent.com/render/math?math=S%5E%7Bn%2B1%7D(x)%3DS(S%5E%7Bn%7D(x))"> y <img src="https://render.githubusercontent.com/render/math?math=S%5E%7B0%7D(x)%3Dx">, si __n<m__, entonces <img src="https://render.githubusercontent.com/render/math?math=S%5E%7Bn%7D(x)%3CS%5E%7Bm%7D(x)"> para todo __x__.
+
+Llamamos a un elemento como límite si no es el sucesor de ningún elemento.
+
+**Proposición**: Sea __X__ un conjunto bien ordenado y <img src="https://render.githubusercontent.com/render/math?math=\large \Lambda"> el conjunto de límites en __X__. Entonces, <img src="https://render.githubusercontent.com/render/math?math=X%5Csubset%20%5C%7BS%5En(x)%3Ax%5Ein%5CLambda%2Cn%5Cin%5CN%5C%7D">.
+
 
 **Referencias**
 
+- Roitman, J. (1990). Introduction to modern set theory. John Wiley & Sons.
 - Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
 
 ### Inducción transfinita {#transfinite}
 
-**Prueba por inducción**: Para cada <img src="https://render.githubusercontent.com/render/math?math=\large n\in \mathbb{N}">, sea <img src="https://render.githubusercontent.com/render/math?math=\large P_n"> una proposición matemática. Supón que <img src="https://render.githubusercontent.com/render/math?math=\large P_0"> es verdadero y que para cualquier <img src="https://render.githubusercontent.com/render/math?math=\large n">, <img src="https://render.githubusercontent.com/render/math?math=P_%7Bn%2B1%7D"> es cierto siempre que <img src="https://render.githubusercontent.com/render/math?math=\large P_n"> es cierto. Entonces, parar cada <img src="https://render.githubusercontent.com/render/math?math=\large n">, <img src="https://render.githubusercontent.com/render/math?math=\large P_n"> es verdadero. En lógica, <img src="https://render.githubusercontent.com/render/math?math=(P_0%5Cland%20%5Cforall%20n%20(P_n%5CRightarrow%20P_%7Bn%2B1%7D))%5CRightarrow%20%5Cforall%20n%20(P_n)">.
+**Principio de Inducción Matemática** (Prueba por inducción): Para cada <img src="https://render.githubusercontent.com/render/math?math=\large n\in \mathbb{N}">, sea <img src="https://render.githubusercontent.com/render/math?math=\large P_n"> una proposición matemática. Supón que <img src="https://render.githubusercontent.com/render/math?math=\large P_0"> es verdadero y que para cualquier <img src="https://render.githubusercontent.com/render/math?math=\large n">, <img src="https://render.githubusercontent.com/render/math?math=P_%7Bn%2B1%7D"> es cierto siempre que <img src="https://render.githubusercontent.com/render/math?math=\large P_n"> es cierto. Entonces, parar cada <img src="https://render.githubusercontent.com/render/math?math=\large n">, <img src="https://render.githubusercontent.com/render/math?math=\large P_n"> es verdadero. En lógica, <img src="https://render.githubusercontent.com/render/math?math=(P_0%5Cland%20%5Cforall%20n%20(P_n%5CRightarrow%20P_%7Bn%2B1%7D))%5CRightarrow%20%5Cforall%20n%20(P_n)">.
+
+De forma general, si 0 pertenece al conjunto __X__ y <img src="https://render.githubusercontent.com/render/math?math=\large n\in X"> implica <img src="https://render.githubusercontent.com/render/math?math=\large n+1\in X"> para todo número natural __n__, entonces <img src="https://render.githubusercontent.com/render/math?math=\large X=\N">.
+
 
 Esta proposición se prueba por el buen ordenamiento de los naturales.
 
@@ -175,8 +194,13 @@ Un conjunto tiene cardinalidad  <img src="https://render.githubusercontent.com/r
 
 <img src="https://render.githubusercontent.com/render/math?math=\large \aleph_1"> es la cardinalidad del conjunto de todos los números ordinales contables, dicho conjunto (<img src="https://render.githubusercontent.com/render/math?math=\large \omega_1">) es incontable.
 
-**Hipótesis del Aleph**: Para todo ordinal <img src="https://render.githubusercontent.com/render/math?math=%5Calpha">, <img src="https://render.githubusercontent.com/render/math?math=2%5E%7B%5Caleph_%5Calpha%7D%3D%5Caleph_%7B%5Calpha%2B1%7D">. Tanto la hipótesis del continuon como la hipótesis del aleph para un cardinal 0 se supone que son falsas.
+**Hipótesis del Aleph**: Para todo ordinal <img src="https://render.githubusercontent.com/render/math?math=%5Calpha">, <img src="https://render.githubusercontent.com/render/math?math=2%5E%7B%5Caleph_%5Calpha%7D%3D%5Caleph_%7B%5Calpha%2B1%7D">. Tanto la hipótesis del continuo como la hipótesis del aleph para un cardinal 0 se supone que son falsas.
 
 **Referencias**
 
 - Herrlich, H. (2006). Axiom of choice. Berlin: Springer.
+
+
+### Números ordinales
+
+Los ordinales son conjuntos bien ordenados canónicos, en realidad, cualquier conjunto bien ordenado es orden isomórfico a un ordinal; por lo que no es una exageración decir que los ordinales son centrales para el estudio de los conjuntos.
