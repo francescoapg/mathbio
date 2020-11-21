@@ -8,7 +8,7 @@
 2. [Conjuntos contables](#countable)
 3. [Axioma de elección (AC)](#choice)
 4. [Conjuntos bien ordenados](#wellordered)
-5. [Inducción transfinia](#transfinite)
+5. [Inducción](#induction)
 6. [Números cardinales](#cardinal)
 
 ### Introducción {#intro}
@@ -150,14 +150,15 @@ Llamamos a un elemento como límite si no es el sucesor de ningún elemento.
 - Roitman, J. (1990). Introduction to modern set theory. John Wiley & Sons.
 - Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
 
-### Inducción transfinita {#transfinite}
+### Inducción matemática {#induction}
 
 **Principio de Inducción Matemática** (Prueba por inducción): Para cada <img src="https://render.githubusercontent.com/render/math?math=\large n\in \mathbb{N}">, sea <img src="https://render.githubusercontent.com/render/math?math=\large P_n"> una proposición matemática. Supón que <img src="https://render.githubusercontent.com/render/math?math=\large P_0"> es verdadero y que para cualquier <img src="https://render.githubusercontent.com/render/math?math=\large n">, <img src="https://render.githubusercontent.com/render/math?math=P_%7Bn%2B1%7D"> es cierto siempre que <img src="https://render.githubusercontent.com/render/math?math=\large P_n"> es cierto. Entonces, parar cada <img src="https://render.githubusercontent.com/render/math?math=\large n">, <img src="https://render.githubusercontent.com/render/math?math=\large P_n"> es verdadero. En lógica, <img src="https://render.githubusercontent.com/render/math?math=(P_0%5Cland%20%5Cforall%20n%20(P_n%5CRightarrow%20P_%7Bn%2B1%7D))%5CRightarrow%20%5Cforall%20n%20(P_n)">.
 
-De forma general, si 0 pertenece al conjunto __X__ y <img src="https://render.githubusercontent.com/render/math?math=\large n\in X"> implica <img src="https://render.githubusercontent.com/render/math?math=\large n+1\in X"> para todo número natural __n__, entonces <img src="https://render.githubusercontent.com/render/math?math=\large X=\N">.
+De forma general, si 0 pertenece al conjunto __X__ y <img src="https://render.githubusercontent.com/render/math?math=\large n\in X"> implica <img src="https://render.githubusercontent.com/render/math?math=\large n+1\in X"> para todo número natural __n__, entonces <img src="https://render.githubusercontent.com/render/math?math=\large X=\N">. Esta proposición se prueba por el buen ordenamiento de los naturales.
 
+El siguiente teorema se prueba por inducción matemática.
 
-Esta proposición se prueba por el buen ordenamiento de los naturales.
+**Teorema**: Si <img src="https://render.githubusercontent.com/render/math?math=\large X"> es finito, entonces <img src="https://render.githubusercontent.com/render/math?math=%5Cwp(X)"> es finito.
 
 **Definición por inducción**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> cualquier conjunto no vacío. Supón que <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> es un punto fijo de <img src="https://render.githubusercontent.com/render/math?math=\large X"> y <img src="https://render.githubusercontent.com/render/math?math=\large g"> es un mapeo cualquiera <img src="https://render.githubusercontent.com/render/math?math=\large g:X\to X">. Entonces, existe un mapeo único <img src="https://render.githubusercontent.com/render/math?math=\large f:\mathbb{N}\to X"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large f(0)=x_0"> y <img src="https://render.githubusercontent.com/render/math?math=f(n%2B1)%3Dg(f(n))"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large n">.
 
