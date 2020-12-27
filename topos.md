@@ -67,6 +67,10 @@ La familia<img src="https://render.githubusercontent.com/render/math?math=\large
 
 Nos damos cuenta, entonces, que el enfoque _métrico_ es solo una manera de definir topologías; sin embargo, en general, no es necesario.
 
+**Referencias**
+
+- Joshi, K. D. (1983). Introduction to general topology. New Age International.
+
 ### Retracción {#retraction}
 
 Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> un espacio topológico y <img src="https://render.githubusercontent.com/render/math?math=\large A"> un subespacio de <img src="https://render.githubusercontent.com/render/math?math=\large X">. El mapeo (función continua)
@@ -76,6 +80,3 @@ Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> u
 es una **retracción** si <img src="https://render.githubusercontent.com/render/math?math=%5Ctau_%7B%7CA%7D(x)%3Dx">.
 
 **Referencias**
-
-- Joshi, K. D. (1983). Introduction to general topology. New Age International.
-
