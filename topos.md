@@ -54,10 +54,9 @@ Primero, establecemos una serie de definiciones. Considera <img src="https://ren
 Sea <img src="https://render.githubusercontent.com/render/math?math=\large x_0\in X"> y <img src="https://render.githubusercontent.com/render/math?math=\large r"> un número real positivo. Entonces, la **bola abierta** con centro en <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> y radio <img src="https://render.githubusercontent.com/render/math?math=\large r"> se define como el conjunto <img src="https://render.githubusercontent.com/render/math?math=\large \{x\in X: d(x,x_0)<r\}">. Se denota como <img src="https://render.githubusercontent.com/render/math?math=\large B_r(x_0)"> o <img src="https://render.githubusercontent.com/render/math?math=\large B(x_0,r)">. Se llama tambíén la r-bola abierta alrededor de <img src="https://render.githubusercontent.com/render/math?math=\large x_0">. Cuando se quiere dejar en claro la métrica se usa <img src="https://render.githubusercontent.com/render/math?math=\large B_d(x_0,r)">.
     
 **Definición**:
-Un subconjunto <img src="https://render.githubusercontent.com/render/math?math=\large A\subset X"> se dice que es **abierto** si para cada <img src="https://render.githubusercontent.com/render/math?math=\large x_0\in A">, existe alguna bola abierta alrededor de <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> y esta es contenida en <img src="https://render.githubusercontent.com/render/math?math=\large A">, es decir, existe <img src="https://render.githubusercontent.com/render/math?math=\large 0<r"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large $B(x_0,r)\subset A">.
+Un subconjunto <img src="https://render.githubusercontent.com/render/math?math=\large A\subset X"> se dice que es **abierto** si para cada <img src="https://render.githubusercontent.com/render/math?math=\large x_0\in A">, existe alguna bola abierta alrededor de <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> y esta es contenida en <img src="https://render.githubusercontent.com/render/math?math=\large A">, es decir, existe <img src="https://render.githubusercontent.com/render/math?math=\large 0<r"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large B(x_0,r)\subset A">.
     
 **Definición**: 
-
 Un **espacio topológico** es un par <img src="https://render.githubusercontent.com/render/math?math=\large (X,\mathcal{T})"> donde <img src="https://render.githubusercontent.com/render/math?math=\large X"> es un conjunto y <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{T}"> es una familia de subconjuntos de <img src="https://render.githubusercontent.com/render/math?math=\large X"> que satisfacen que:
 
 1. <img src="https://render.githubusercontent.com/render/math?math=\large \emptyset \in \mathcal{T}$ y $X\in \mathcal{T}">.
@@ -65,6 +64,8 @@ Un **espacio topológico** es un par <img src="https://render.githubusercontent.
 3. <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{T}"> es cerrado bajo intersecciones arbitrarias.
 
 La familia<img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{T}"> se dice que es una topología del conjunto <img src="https://render.githubusercontent.com/render/math?math=\large X">. Los miembros de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{T}"> se dice que son abiertos en <img src="https://render.githubusercontent.com/render/math?math=\large X"> o que son subconjuntos abiertos de <img src="https://render.githubusercontent.com/render/math?math=\large X">.
+
+Nos damos cuenta, entonces, que el enfoque _métrico_ es solo una manera de definir topologías; sin embargo, en general, no es necesario.
 
 ### Retracción {#retraction}
 
