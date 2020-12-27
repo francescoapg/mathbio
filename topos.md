@@ -67,6 +67,23 @@ La familia<img src="https://render.githubusercontent.com/render/math?math=\large
 
 Nos damos cuenta, entonces, que el enfoque _métrico_ es solo una manera de definir topologías; sin embargo, en general, no es necesario.
 
+**Bases de una Topología**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large (X, \mathcal{T})"> un espacio tológico. Una subfamilia <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{B}"> de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{T}"> se dice que es una base de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{T}"> si cada miembro de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{T}"> puede ser expresado como la unión de algunos miembros de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{B}">.
+
+**Vecindad**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large (X,\mathcal{T})"> un espacio topológico, <img src="https://render.githubusercontent.com/render/math?math=\large x_0\in X"> y <img src="https://render.githubusercontent.com/render/math?math=\large N\subset X">. Entonces, <img src="https://render.githubusercontent.com/render/math?math=\large N"> se dice que es una **vecindad** de <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> o <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> es llamado **punto interior** de <img src="https://render.githubusercontent.com/render/math?math=\large N"> si hay un conjunto abierto <img src="https://render.githubusercontent.com/render/math?math=\large V"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large x_0\in V"> y <img src="https://render.githubusercontent.com/render/math?math=\large V\subset N">.
+
+**Cercanía (_Nearness_)
+
+Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> un conjunto. Una **relación de cercanía** en <img src="https://render.githubusercontent.com/render/math?math=\large X"> es un subconjunto <img src="https://render.githubusercontent.com/render/math?math=\large N"> de <img src="https://render.githubusercontent.com/render/math?math=\large X\times \wp(X)"> el cual satisface ciertas propiedades.
+    
+_Notación_: Para <img src="https://render.githubusercontent.com/render/math?math=\large y\in X"> y <img src="https://render.githubusercontent.com/render/math?math=\large A\in \wp (X)">, escribimos <img src="https://render.githubusercontent.com/render/math?math=\large y\delta A"> para referirnos a <img src="https://render.githubusercontent.com/render/math?math=\large (y,A)\in N"> y <img src="https://render.githubusercontent.com/render/math?math=\large y \Bar{\epsilon}A"> para denotar <img src="https://render.githubusercontent.com/render/math?math=\large (y,A)\notin N">; <img src="https://render.githubusercontent.com/render/math?math=\large y\delta A"> se lee como <img src="https://render.githubusercontent.com/render/math?math=\large y"> está cerca a <img src="https://render.githubusercontent.com/render/math?math=\large A">.
+    
+_Propiedades_:
+
+1. <img src="https://render.githubusercontent.com/render/math?math=\large y\Bar{\delta}\emptyset"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large y\in X">.
+2. <img src="https://render.githubusercontent.com/render/math?math=\large y\in A\implies y\delta A"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large y\in X">, <img src="https://render.githubusercontent.com/render/math?math=\large A\subset X">.
+3. <img src="https://render.githubusercontent.com/render/math?math=\large y\delta (A\cup B)\iff y\delta A\lor y\delta B">, para todo <img src="https://render.githubusercontent.com/render/math?math=\large y\in X">, <img src="https://render.githubusercontent.com/render/math?math=\large A,B \subset X">.
+4. Si <img src="https://render.githubusercontent.com/render/math?math=\large y\delta A"> y (<img src="https://render.githubusercontent.com/render/math?math=\large a\delta B"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large a\in A">), entonces <img src="https://render.githubusercontent.com/render/math?math=\large y\delta B">, para todo <img src="https://render.githubusercontent.com/render/math?math=\large y\in X">, <img src="https://render.githubusercontent.com/render/math?math=\large A,B\subset X">.
+
 **Referencias**
 
 - Joshi, K. D. (1983). Introduction to general topology. New Age International.
