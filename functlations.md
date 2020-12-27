@@ -28,7 +28,10 @@ Sea <img src="https://render.githubusercontent.com/render/math?math=\large f: A\
 Sean <img src="https://render.githubusercontent.com/render/math?math=\large A"> y <img src="https://render.githubusercontent.com/render/math?math=\large B"> subconjuntos de espacios euclideanos, <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B"> una funcióny <img src="https://render.githubusercontent.com/render/math?math=\large x_0\in A">. Decimos que f es **contínua** en <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> si para cada <img src="https://render.githubusercontent.com/render/math?math=\large \epsilon >0">, existe <img src="https://render.githubusercontent.com/render/math?math=\large \delta>0"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large d(f(x), f(x_0))<\epsilon"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large x\in A"> para el cual <img src="https://render.githubusercontent.com/render/math?math=\large d(x,x_0)<\delta">. Más aún, decímos que <img src="https://render.githubusercontent.com/render/math?math=\large f"> es contínua si es contínua en todo punto de <img src="https://render.githubusercontent.com/render/math?math=\large A">. (Joshi, 2008)
 
 Una función contínua es comúnmente llamada **mapeo**.
+
 **Función bien definida**
+
+
 
 **Referencias**
 
