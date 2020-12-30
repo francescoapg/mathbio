@@ -82,6 +82,17 @@ Estas condiciones se llaman positividad, simetría e inecualidad triangular.
 
 Una secuencia <img src="https://render.githubusercontent.com/render/math?math=\large \{x_n\}"> en un espacio métrico <img src="https://render.githubusercontent.com/render/math?math=\large (X,d)"> se dice que **converge** a un punto <img src="https://render.githubusercontent.com/render/math?math=\large y"> en <img src="https://render.githubusercontent.com/render/math?math=\large X"> si para cada <img src="https://render.githubusercontent.com/render/math?math=\large \epsilon>0"> existe un entero positivo <img src="https://render.githubusercontent.com/render/math?math=\large N"> tal que para todos los enteros <img src="https://render.githubusercontent.com/render/math?math=\large n\geq N">, <img src="https://render.githubusercontent.com/render/math?math=\large d(x_n,y)<\epsilon">.
 
+Expresado en términos de topología, para un espacio topológico arbitrario, una secuencia <img src="https://render.githubusercontent.com/render/math?math=\large \{x_n\}"> en un espacio topológico <img src="https://render.githubusercontent.com/render/math?math=\large (X,\mathcal{T})"> converge a un punto <img src="https://render.githubusercontent.com/render/math?math=\large y"> de <img src="https://render.githubusercontent.com/render/math?math=\large X"> si para cada conjunto abierto <img src="https://render.githubusercontent.com/render/math?math=\large U"> que contiene a <img src="https://render.githubusercontent.com/render/math?math=\large y">, existe un natural <img src="https://render.githubusercontent.com/render/math?math=\large N">, tal que para todo <img src="https://render.githubusercontent.com/render/math?math=\large n\geq N">, <img src="https://render.githubusercontent.com/render/math?math=\large x_n\in U">.
+
+Considera <img src="https://render.githubusercontent.com/render/math?math=\large (X, d)"> como un espacio métrico.
+
+**Definición**:
+Sea <img src="https://render.githubusercontent.com/render/math?math=\large x_0\in X"> y <img src="https://render.githubusercontent.com/render/math?math=\large r"> un número real positivo. Entonces, la **bola abierta** con centro en <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> y radio <img src="https://render.githubusercontent.com/render/math?math=\large r"> se define como el conjunto <img src="https://render.githubusercontent.com/render/math?math=\large \{x\in X: d(x,x_0)<r\}">. Se denota como <img src="https://render.githubusercontent.com/render/math?math=\large B_r(x_0)"> o <img src="https://render.githubusercontent.com/render/math?math=\large B(x_0,r)">. Se llama tambíén la r-bola abierta alrededor de <img src="https://render.githubusercontent.com/render/math?math=\large x_0">. Cuando se quiere dejar en claro la métrica se usa <img src="https://render.githubusercontent.com/render/math?math=\large B_d(x_0,r)">.
+    
+**Definición**:
+Un subconjunto <img src="https://render.githubusercontent.com/render/math?math=\large A\subset X"> se dice que es **abierto** si para cada <img src="https://render.githubusercontent.com/render/math?math=\large x_0\in A">, existe alguna bola abierta alrededor de <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> y esta es contenida en <img src="https://render.githubusercontent.com/render/math?math=\large A">, es decir, existe <img src="https://render.githubusercontent.com/render/math?math=\large 0<r"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large B(x_0,r)\subset A">.
+
+Vemos como los conceptos de topología surgen a partir de la métrica, en estos casos, llamamos al espacio topológico como **metrizable**.
 
 **Referencias**
 
@@ -100,14 +111,6 @@ El mapa de identidad (<img src="https://render.githubusercontent.com/render/math
 - Joshi, K. D. (1983). Introduction to general topology. New Age International.
 
 ### Espacio Topológico {#topospace}
-
-Primero, establecemos una serie de definiciones. Considera <img src="https://render.githubusercontent.com/render/math?math=\large (X, d)"> como un espacio métrico.
-
-**Definición**:
-Sea <img src="https://render.githubusercontent.com/render/math?math=\large x_0\in X"> y <img src="https://render.githubusercontent.com/render/math?math=\large r"> un número real positivo. Entonces, la **bola abierta** con centro en <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> y radio <img src="https://render.githubusercontent.com/render/math?math=\large r"> se define como el conjunto <img src="https://render.githubusercontent.com/render/math?math=\large \{x\in X: d(x,x_0)<r\}">. Se denota como <img src="https://render.githubusercontent.com/render/math?math=\large B_r(x_0)"> o <img src="https://render.githubusercontent.com/render/math?math=\large B(x_0,r)">. Se llama tambíén la r-bola abierta alrededor de <img src="https://render.githubusercontent.com/render/math?math=\large x_0">. Cuando se quiere dejar en claro la métrica se usa <img src="https://render.githubusercontent.com/render/math?math=\large B_d(x_0,r)">.
-    
-**Definición**:
-Un subconjunto <img src="https://render.githubusercontent.com/render/math?math=\large A\subset X"> se dice que es **abierto** si para cada <img src="https://render.githubusercontent.com/render/math?math=\large x_0\in A">, existe alguna bola abierta alrededor de <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> y esta es contenida en <img src="https://render.githubusercontent.com/render/math?math=\large A">, es decir, existe <img src="https://render.githubusercontent.com/render/math?math=\large 0<r"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large B(x_0,r)\subset A">.
     
 **Definición**: 
 Un **espacio topológico** es un par <img src="https://render.githubusercontent.com/render/math?math=\large (X,\mathcal{T})"> donde <img src="https://render.githubusercontent.com/render/math?math=\large X"> es un conjunto y <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{T}"> es una familia de subconjuntos de <img src="https://render.githubusercontent.com/render/math?math=\large X"> que satisfacen que:
@@ -137,7 +140,9 @@ _Propiedades_:
 3. <img src="https://render.githubusercontent.com/render/math?math=\large y\delta (A\cup B)\iff y\delta A\lor y\delta B">, para todo <img src="https://render.githubusercontent.com/render/math?math=\large y\in X">, <img src="https://render.githubusercontent.com/render/math?math=\large A,B \subset X">.
 4. Si <img src="https://render.githubusercontent.com/render/math?math=\large y\delta A"> y (<img src="https://render.githubusercontent.com/render/math?math=\large a\delta B"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large a\in A">), entonces <img src="https://render.githubusercontent.com/render/math?math=\large y\delta B">, para todo <img src="https://render.githubusercontent.com/render/math?math=\large y\in X">, <img src="https://render.githubusercontent.com/render/math?math=\large A,B\subset X">.
 
+**Proposición**: Sea \mathcal{D} una familia de subconjuntos de <img src="https://render.githubusercontent.com/render/math?math=\large X">, entonces existe una topología <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{T}"> de <img src="https://render.githubusercontent.com/render/math?math=\large X"> que incluye a <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{D}"> y sea la más pequeña (es subconjunto de toda topología que incluya a <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{D}">).
 
+Relacionados a estos conceptos de inclusión de topologías están los conceptos de 
 
 **Referencias**
 
