@@ -22,7 +22,7 @@ Estudiar Topología es más sencillo con un ejemplo concreto como lo es <img src
 
 **Definición**: Un subconjunto <img src="https://render.githubusercontent.com/render/math?math=\large A"> de <img src="https://render.githubusercontent.com/render/math?math=\large \R"> es abierto si todos sus elementos son interiores (Horváth, 1969).
 
-En la sección de [espacios topológicos](https://francescoapg.github.io/mathbio/topos#topospace) vemos que la noción o idea de calculo de conjuntos abiertos dada aquí es congruente con la definición general de _abierto_. Más aún, en base a la definición brindada, las siguientes proposiciones son demostrables:
+En la sección de [espacios topológicos](https://francescoapg.github.io/mathbio/topos#topospace) vemos que la noción o idea de cálculo de conjuntos abiertos dada aquí es congruente con la definición general de _abierto_. Más aún, en base a la definición brindada, las siguientes proposiciones son demostrables:
 
 - <img src="https://render.githubusercontent.com/render/math?math=\large \emptyset"> y <img src="https://render.githubusercontent.com/render/math?math=\large \R"> son abiertos.
 - Si <img src="https://render.githubusercontent.com/render/math?math=\large A"> y <img src="https://render.githubusercontent.com/render/math?math=\large B"> son abiertos, también lo es <img src="https://render.githubusercontent.com/render/math?math=\large A\cap B">.
