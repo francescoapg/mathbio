@@ -6,11 +6,27 @@ Los objetos que estudia la Topología son **espácios topológicos**, los cuales
 
 **Índice**
 
-1. [Espacios métricos](#met)
-2. [Homeomorfismo](#homeo)
-3. [Retracción](#retraction)
+1. [Nociones Introductorias](#intro)
+2. [Espacios Métricos](#met)
+3. [Homeomorfismo](#homeo)
+4. [Espacios Topológicos](#topospace)
+5. [Retracción](#retraction)
 
-### Espacios métricos {#met}
+### Nociones Introductorias {#intro}
+
+Estudiar Topología es más sencillo con un ejemplo concreto como lo es <img src="https://render.githubusercontent.com/render/math?math=\large \R">.
+
+**Definción**: Se llama **vecindad** de <img src="https://render.githubusercontent.com/render/math?math=\large x"> a un conjunto que incluye a un intervalo abierto que a su vez incluye a <img src="https://render.githubusercontent.com/render/math?math=\large x"> (Horváth, 1969).
+
+**Definiciones**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large M"> un subconjunto de <img src="https://render.githubusercontent.com/render/math?math=\large \R">. Un punto <img src="https://render.githubusercontent.com/render/math?math=\large x\in \R"> es **punto interior** de <img src="https://render.githubusercontent.com/render/math?math=\large M"> si existe una vecindad <img src="https://render.githubusercontent.com/render/math?math=\large V"> de <img src="https://render.githubusercontent.com/render/math?math=\large x"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large V\subset M">. Un punto <img src="https://render.githubusercontent.com/render/math?math=\large x\in\R"> es un **punto exterior** a <img src="https://render.githubusercontent.com/render/math?math=\large M"> si existe una vecindad <img src="https://render.githubusercontent.com/render/math?math=\large V"> de <img src="https://render.githubusercontent.com/render/math?math=\large x"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large V\cap M=\emptyset">. Un punto <img src="https://render.githubusercontent.com/render/math?math=\large x\in\R"> es un punto de frontera (**boundary point**) si toda vecindad <img src="https://render.githubusercontent.com/render/math?math=\large V"> de <img src="https://render.githubusercontent.com/render/math?math=\large x"> cumple que <img src="https://render.githubusercontent.com/render/math?math=\large V\cap M\neq \emptyset \land V\setminus M\neq\emptyset"> (Horváth, 1969).
+
+**Definición**: Un subconjunto <img src="https://render.githubusercontent.com/render/math?math=\large A"> de <img src="https://render.githubusercontent.com/render/math?math=\large \R"> es abierto si todos sus elementos son interiores (Horváth, 1969).
+
+**Referencias**
+
+- Horváth, J. (1969). Introducción a la topología general. Matemática. Monografía (OEA).
+
+### Espacios Métricos {#met}
 
 Los espacios métricos son una generalización del espacio euclidiano.
 
@@ -46,7 +62,7 @@ El mapa de identidad (<img src="https://render.githubusercontent.com/render/math
 
 - Joshi, K. D. (1983). Introduction to general topology. New Age International.
 
-### Espacio Topológico
+### Espacio Topológico {#topospace}
 
 Primero, establecemos una serie de definiciones. Considera <img src="https://render.githubusercontent.com/render/math?math=\large (X, d)"> como un espacio métrico.
 
@@ -71,15 +87,15 @@ Nos damos cuenta, entonces, que el enfoque _métrico_ es solo una manera de defi
 
 **Vecindad**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large (X,\mathcal{T})"> un espacio topológico, <img src="https://render.githubusercontent.com/render/math?math=\large x_0\in X"> y <img src="https://render.githubusercontent.com/render/math?math=\large N\subset X">. Entonces, <img src="https://render.githubusercontent.com/render/math?math=\large N"> se dice que es una **vecindad** de <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> o <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> es llamado **punto interior** de <img src="https://render.githubusercontent.com/render/math?math=\large N"> si hay un conjunto abierto <img src="https://render.githubusercontent.com/render/math?math=\large V"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large x_0\in V"> y <img src="https://render.githubusercontent.com/render/math?math=\large V\subset N">.
 
-**Cercanía (_Nearness_)
+**Cercanía (_Nearness_)**
 
 Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> un conjunto. Una **relación de cercanía** en <img src="https://render.githubusercontent.com/render/math?math=\large X"> es un subconjunto <img src="https://render.githubusercontent.com/render/math?math=\large N"> de <img src="https://render.githubusercontent.com/render/math?math=\large X\times \wp(X)"> el cual satisface ciertas propiedades.
     
-_Notación_: Para <img src="https://render.githubusercontent.com/render/math?math=\large y\in X"> y <img src="https://render.githubusercontent.com/render/math?math=\large A\in \wp (X)">, escribimos <img src="https://render.githubusercontent.com/render/math?math=\large y\delta A"> para referirnos a <img src="https://render.githubusercontent.com/render/math?math=\large (y,A)\in N"> y <img src="https://render.githubusercontent.com/render/math?math=\large y \Bar{\epsilon}A"> para denotar <img src="https://render.githubusercontent.com/render/math?math=\large (y,A)\notin N">; <img src="https://render.githubusercontent.com/render/math?math=\large y\delta A"> se lee como <img src="https://render.githubusercontent.com/render/math?math=\large y"> está cerca a <img src="https://render.githubusercontent.com/render/math?math=\large A">.
+_Notación_: Para <img src="https://render.githubusercontent.com/render/math?math=\large y\in X"> y <img src="https://render.githubusercontent.com/render/math?math=\large A\in \wp (X)">, escribimos <img src="https://render.githubusercontent.com/render/math?math=\large y\delta A"> para referirnos a <img src="https://render.githubusercontent.com/render/math?math=\large (y,A)\in N"> y <img src="https://render.githubusercontent.com/render/math?math=\large y \overline{\epsilon}A"> para denotar <img src="https://render.githubusercontent.com/render/math?math=\large (y,A)\notin N">; <img src="https://render.githubusercontent.com/render/math?math=\large y\delta A"> se lee como <img src="https://render.githubusercontent.com/render/math?math=\large y"> está cerca a <img src="https://render.githubusercontent.com/render/math?math=\large A">.
     
 _Propiedades_:
 
-1. <img src="https://render.githubusercontent.com/render/math?math=\large y\Bar{\delta}\emptyset"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large y\in X">.
+1. <img src="https://render.githubusercontent.com/render/math?math=\large y\overline{\delta}\emptyset"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large y\in X">.
 2. <img src="https://render.githubusercontent.com/render/math?math=\large y\in A\implies y\delta A"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large y\in X">, <img src="https://render.githubusercontent.com/render/math?math=\large A\subset X">.
 3. <img src="https://render.githubusercontent.com/render/math?math=\large y\delta (A\cup B)\iff y\delta A\lor y\delta B">, para todo <img src="https://render.githubusercontent.com/render/math?math=\large y\in X">, <img src="https://render.githubusercontent.com/render/math?math=\large A,B \subset X">.
 4. Si <img src="https://render.githubusercontent.com/render/math?math=\large y\delta A"> y (<img src="https://render.githubusercontent.com/render/math?math=\large a\delta B"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large a\in A">), entonces <img src="https://render.githubusercontent.com/render/math?math=\large y\delta B">, para todo <img src="https://render.githubusercontent.com/render/math?math=\large y\in X">, <img src="https://render.githubusercontent.com/render/math?math=\large A,B\subset X">.
