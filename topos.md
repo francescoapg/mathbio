@@ -2,7 +2,11 @@
 
 ## Topología General
 
-Los objetos que estudia la Topología son **espácios topológicos**, los cuales, en términos simples, son conjuntos con propiedades adicionales.
+Los objetos que estudia la Topología son **espacios topológicos**, los cuales, en términos simples, son conjuntos con propiedades adicionales. La Topología General también es conocida como _point-set Topology_, se enfoca principalmente en la continuidad y propiedades geométricas de espacios. Esta es la base de
+
+- Topologia Algebraica
+- Topología Diferencial
+- Topología de baja dimensión (_Low-Dimensional Topology_)
 
 **Índice**
 
@@ -30,13 +34,28 @@ En la sección de [espacios topológicos](https://francescoapg.github.io/mathbio
 
 Cada una de estas se verifica directamente de la definición general de _abierto_.
 
-**Definiciones**: El conjunto de todos los puntos interiores de un subconjunto cualquiera de <img src="https://render.githubusercontent.com/render/math?math=\large \R"> se llama **interior** de <img src="https://render.githubusercontent.com/render/math?math=\large A"> y se denota por <img src="https://render.githubusercontent.com/render/math?math=\large A^{\circ}">, <img src="https://render.githubusercontent.com/render/math?math=\large \mathit{Int}A"> o <img src="https://render.githubusercontent.com/render/math?math=\large \langle A \rangle">. El _**boundary**_ de <img src="https://render.githubusercontent.com/render/math?math=\large A"> es el conjunto de todos los puntos de frontera de <img src="https://render.githubusercontent.com/render/math?math=\large A"> y se denota por <img src="https://render.githubusercontent.com/render/math?math=\large \delta A">, <img src="https://render.githubusercontent.com/render/math?math=\large b(A)">, <img src="https://render.githubusercontent.com/render/math?math=\large Fr(A)"> o <img src="https://render.githubusercontent.com/render/math?math=\large Fr_{\R}(A)">. La **cerradura** de <img src="https://render.githubusercontent.com/render/math?math=\large A"> es la intersección de todos los conjuntos _cerrados_ en <img src="https://render.githubusercontent.com/render/math?math=\large \R"> que contienen a <img src="https://render.githubusercontent.com/render/math?math=\large A"> y se denota como <img src="https://render.githubusercontent.com/render/math?math=\large \overline{A}">, <img src="https://render.githubusercontent.com/render/math?math=\large \mathit{Cl}A"> o <img src="https://render.githubusercontent.com/render/math?math=\large \mathit{Cl}_{\R}A">.
+**Definiciones**: El conjunto de todos los puntos interiores de un subconjunto cualquiera de <img src="https://render.githubusercontent.com/render/math?math=\large \R"> se llama **interior** de <img src="https://render.githubusercontent.com/render/math?math=\large A"> y se denota por <img src="https://render.githubusercontent.com/render/math?math=\large A^{\circ}">, <img src="https://render.githubusercontent.com/render/math?math=\large \mathit{Int}A"> o <img src="https://render.githubusercontent.com/render/math?math=\large \langle A \rangle">. El _**boundary**_ de <img src="https://render.githubusercontent.com/render/math?math=\large A"> es el conjunto de todos los puntos de frontera de <img src="https://render.githubusercontent.com/render/math?math=\large A"> y se denota por <img src="https://render.githubusercontent.com/render/math?math=\large \delta A">, <img src="https://render.githubusercontent.com/render/math?math=\large b(A)">, <img src="https://render.githubusercontent.com/render/math?math=\large Fr(A)"> o <img src="https://render.githubusercontent.com/render/math?math=\large Fr_{\R}(A)">. 
 
-Cabe resaltar que un conjunto _cerrado_ es aquel que no es _abierto_. El interior de <img src="https://render.githubusercontent.com/render/math?math=\large A"> es el complemento en <img src="https://render.githubusercontent.com/render/math?math=\large A"> del _boundary_ de <img src="https://render.githubusercontent.com/render/math?math=\large A">. El _boundary_ de <img src="https://render.githubusercontent.com/render/math?math=\large A"> es el conjunto de puntos que no están en el interior de <img src="https://render.githubusercontent.com/render/math?math=\large A"> o en el interior de <img src="https://render.githubusercontent.com/render/math?math=\large \R\setminus A">. El _boundary_ de <img src="https://render.githubusercontent.com/render/math?math=\large A"> es también <img src="https://render.githubusercontent.com/render/math?math=\large \overline{A}\setminus A^{\circ}">. Todo conjunto que contenga su _boundary_ no es abierto (es cerrado); análogamente, si un conjunto es disjunto a su _boundary_ es abierto. El interior de todo conjunto es abierto. La cerradura se puede entender también como el mínimo conjunto cerrado que contiene a <img src="https://render.githubusercontent.com/render/math?math=\large A">. Los elementos de la cerradura se llaman _puntos adherentes_ de <img src="https://render.githubusercontent.com/render/math?math=\large A">.
+El interior de <img src="https://render.githubusercontent.com/render/math?math=\large A"> es el complemento en <img src="https://render.githubusercontent.com/render/math?math=\large A"> del _boundary_ de <img src="https://render.githubusercontent.com/render/math?math=\large A">. El _boundary_ de <img src="https://render.githubusercontent.com/render/math?math=\large A"> es el conjunto de puntos que no están en el interior de <img src="https://render.githubusercontent.com/render/math?math=\large A"> o en el interior de <img src="https://render.githubusercontent.com/render/math?math=\large \R\setminus A">. El _boundary_ de <img src="https://render.githubusercontent.com/render/math?math=\large A"> es también <img src="https://render.githubusercontent.com/render/math?math=\large \overline{A}\setminus A^{\circ}">. Todo conjunto que contenga su _boundary_ no es abierto; análogamente, si un conjunto es disjunto a su _boundary_ es abierto. El interior de todo conjunto es abierto. 
 
-**Definición**: Se dice que un punto <img src="https://render.githubusercontent.com/render/math?math=\large x\in\R"> es adherente al conjunto <img src="https://render.githubusercontent.com/render/math?math=\large A\subset\R"> si toda vecindad de dicho elemento contiene un elemento de <img src="https://render.githubusercontent.com/render/math?math=\large A">.
+**Definición**: Se dice que un punto <img src="https://render.githubusercontent.com/render/math?math=\large x\in\R"> es _adherente_ al conjunto <img src="https://render.githubusercontent.com/render/math?math=\large A\subset\R"> si toda vecindad de dicho elemento contiene un elemento de <img src="https://render.githubusercontent.com/render/math?math=\large A">.
 
 Una conclusión directa es que los puntos adherentes serán los puntos interiores de <img src="https://render.githubusercontent.com/render/math?math=\large A"> y los puntos de frontera de <img src="https://render.githubusercontent.com/render/math?math=\large A">.
+
+**Definición**: El conjunto de todos los puntos de adherencia de un conjunto es llamada la adherencia o **cerradura** de dicho conjunto. Se denota como <img src="https://render.githubusercontent.com/render/math?math=\large \overline{A}">, <img src="https://render.githubusercontent.com/render/math?math=\large \mathit{Cl}A"> o <img src="https://render.githubusercontent.com/render/math?math=\large \mathit{Cl}_{\R}A">.
+
+La cerradura también se puede definir como el complemento del interior del complemento del conjunto.
+
+**Definición**: Las siguientes son definiciones equivalentes de conjunto **cerrado**:
+
+1. Un conjunto **cerrado** es el complemento en \R de un conjunto abierto.
+2. Es un conjunto que es equivalente a su cerradura (A=\overline{A}).
+
+Finalmente, un conjunto puede ser cerrado, abierto, cerrado y abierto o ninguno de los dos. Con esto, podemos concluir que
+
+- <img src="https://render.githubusercontent.com/render/math?math=\large \emptyset"> y <img src="https://render.githubusercontent.com/render/math?math=\large \R"> son cerrados.
+- Si <img src="https://render.githubusercontent.com/render/math?math=\large A"> y <img src="https://render.githubusercontent.com/render/math?math=\large B"> son  cerrados, también lo es <img src="https://render.githubusercontent.com/render/math?math=\large A\cup B">.
+- <img src="https://render.githubusercontent.com/render/math?math=\large \cap_{i\in I}\{A_i\}"> (siendo cada <img src="https://render.githubusercontent.com/render/math?math=\large A_i"> cerrado) es también un cerrado.
 
 **Referencias**
 
@@ -117,6 +136,8 @@ _Propiedades_:
 2. <img src="https://render.githubusercontent.com/render/math?math=\large y\in A\implies y\delta A"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large y\in X">, <img src="https://render.githubusercontent.com/render/math?math=\large A\subset X">.
 3. <img src="https://render.githubusercontent.com/render/math?math=\large y\delta (A\cup B)\iff y\delta A\lor y\delta B">, para todo <img src="https://render.githubusercontent.com/render/math?math=\large y\in X">, <img src="https://render.githubusercontent.com/render/math?math=\large A,B \subset X">.
 4. Si <img src="https://render.githubusercontent.com/render/math?math=\large y\delta A"> y (<img src="https://render.githubusercontent.com/render/math?math=\large a\delta B"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large a\in A">), entonces <img src="https://render.githubusercontent.com/render/math?math=\large y\delta B">, para todo <img src="https://render.githubusercontent.com/render/math?math=\large y\in X">, <img src="https://render.githubusercontent.com/render/math?math=\large A,B\subset X">.
+
+
 
 **Referencias**
 
