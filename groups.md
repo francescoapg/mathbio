@@ -152,7 +152,7 @@ Una serie subnormal <img src="https://render.githubusercontent.com/render/math?m
 
 **Teorema de Jordan-Hölder**: Cualquier par de series de composición de un grupo son isomórficas.
 
-Como corolario, ambas series de composición tienen la misma longitud. 
+Como corolario, ambas series de composición tienen la misma longitud. El teorema de Jordan-Hölder también muestra una manera en la que un grupo finito <img src="https://render.githubusercontent.com/render/math?math=\large G"> es construído a partir de una secuencia de grupos simples. Los cuales son llamados factores de composición de <img src="https://render.githubusercontent.com/render/math?math=\large G">.
 
 Un grupo es **soluble** si tiene una serie subnormal <img src="https://render.githubusercontent.com/render/math?math=\large \{H_i\}"> con grupos factores <img src="https://render.githubusercontent.com/render/math?math=%5C%7BH_%7Bi%2B1%7D%2FH_i%5C%7D"> abelianos.
 
