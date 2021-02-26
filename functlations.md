@@ -31,13 +31,15 @@ Dada una función <img src="https://render.githubusercontent.com/render/math?mat
 
 Teniendo en cuenta de que <img src="https://render.githubusercontent.com/render/math?math=\large id_X:X\to X"> está definida como <img src="https://render.githubusercontent.com/render/math?math=\large id_X(x)=x"> para todo elemento de <img src="https://render.githubusercontent.com/render/math?math=\large X">. <img src="https://render.githubusercontent.com/render/math?math=\large id_Y"> está definido de forma análoga.
 
+Se demuestra que si una función tiene inversa, entonces esta inversa es única y se usa la notación <img src="https://render.githubusercontent.com/render/math?math=\large f^{-1}">.
+
 **Función continua** 
 
 Existen varias definiciones de continuidad y tipos de continuidad. Una definición clásica es la siguiente:
 
 Sean <img src="https://render.githubusercontent.com/render/math?math=\large A"> y <img src="https://render.githubusercontent.com/render/math?math=\large B"> subconjuntos de espacios euclideanos, <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B"> una función y <img src="https://render.githubusercontent.com/render/math?math=\large x_0\in A">. Decimos que <img src="https://render.githubusercontent.com/render/math?math=\large f"> es **contínua** en <img src="https://render.githubusercontent.com/render/math?math=\large x_0"> si para cada <img src="https://render.githubusercontent.com/render/math?math=\large \epsilon >0">, existe <img src="https://render.githubusercontent.com/render/math?math=\large \delta>0"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large d(f(x), f(x_0))<\epsilon"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large x\in A"> para el cual <img src="https://render.githubusercontent.com/render/math?math=\large d(x,x_0)<\delta">. Más aún, decímos que <img src="https://render.githubusercontent.com/render/math?math=\large f"> es contínua si es contínua en todo punto de <img src="https://render.githubusercontent.com/render/math?math=\large A">. (Joshi, 2008)
 
-Una función contínua es comúnmente llamada **mapeo**.
+Una función contínua es comúnmente llamada **mapeo**, aunque también se puede tomar a un mapeo como una función general y a una _función_ se puede reservar para los sistemas de números.
 
 Otra definición alternativa es la siguiente:
 
