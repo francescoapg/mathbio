@@ -4,10 +4,29 @@
 
 **Índice**
 
-1. [Isomorfismos](#isomorphism)
-2. [Homomorfismos](#homomorphism)
-3. [Grupos abelianos finitos](#finiteab)
-4. [Acción de grupos](#groupact)
+1. [Definición](#definition)
+2. [Isomorfismos](#isomorphism)
+3. [Homomorfismos](#homomorphism)
+4. [Grupos abelianos finitos](#finiteab)
+5. [Acción de grupos](#groupact)
+
+### Definición {#definition}
+
+Un grupo es una dupla <img src="https://render.githubusercontent.com/render/math?math=\large (G, \circ )"> de un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large G"> y una operación binaria o ley de composición <img src="https://render.githubusercontent.com/render/math?math=\large \circ"> que cumplen las siguientes condiciones:
+
+- Cerradura: <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b\in G(a\circ b \in G)">.
+- Asociatividad de la ley de composición: <img src="https://render.githubusercontent.com/render/math?math=\large (a \circ b)\circ c=a\circ (b\circ c)"> para <img src="https://render.githubusercontent.com/render/math?math=\large a,b,c\in G">.
+- Existencia del elemento identidad: <img src="https://render.githubusercontent.com/render/math?math=\large \forall a\in G \exists e \in G (e \circ a = a \circ e = a)">.
+- Existencia de la inversa de cada elemento: <img src="https://render.githubusercontent.com/render/math?math=\large \forall a\in G \exists a^{-1} (a\circ a^{-1} = a^{-1}\circ a = e)">.
+
+Existe una condición adicional llamada conmutatividad, definida como <img src="https://render.githubusercontent.com/render/math?math=\large \forall a,b \in G (a \circ b = b \circ a)">. Los grupos que cumplan con esta condición son llamados grupos abelianos o conmutativos, los que no cumplen la condición son llamados no abelianos o no conmutativos.
+
+De forma sencilla, un grupo es infinito si su conjunto asociado es infinito, de otra manera, es finito.
+
+**Referencias**
+
+- Humphreys, J. F. (1996). A course in group theory. Oxford University Press.
+- Judson, T. W. (2017) Abstract Algebra: Theory and Applications.
 
 ### Isomorfismos {#isomorphism}
 
