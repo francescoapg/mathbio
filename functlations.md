@@ -23,6 +23,14 @@ Sea <img src="https://render.githubusercontent.com/render/math?math=\large f: A\
 
 **Función suryectiva**: <img src="https://render.githubusercontent.com/render/math?math=\large \forall b\in B,\exists a \in A : f(a)=b">
 
+**Función bien definida**
+
+**Inversa**
+
+Dada una función <img src="https://render.githubusercontent.com/render/math?math=\large f:X\to Y">, decimos que <img src="https://render.githubusercontent.com/render/math?math=\large f"> tiene una función inversa si existe una función <img src="https://render.githubusercontent.com/render/math?math=\large g:Y\to X"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large g\circ f =id_X"> y <img src="https://render.githubusercontent.com/render/math?math=\large f\circ g=id_Y">.
+
+Teniendo en cuenta de que <img src="https://render.githubusercontent.com/render/math?math=\large id_X:X\to X"> está definida como <img src="https://render.githubusercontent.com/render/math?math=\large id_X(x)=x"> para todo elemento de <img src="https://render.githubusercontent.com/render/math?math=\large X">. <img src="https://render.githubusercontent.com/render/math?math=\large id_Y"> está definido de forma análoga.
+
 **Función continua** 
 
 Existen varias definiciones de continuidad y tipos de continuidad. Una definición clásica es la siguiente:
@@ -47,12 +55,10 @@ Sea <img src="https://render.githubusercontent.com/render/math?math=\large f"> u
 
 Si <img src="https://render.githubusercontent.com/render/math?math=\large f"> es contínua en un conjunto compacto <img src="https://render.githubusercontent.com/render/math?math=\large E">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large f(E)"> es un conjunto compacto.
 
-**Función bien definida**
-
-
 
 **Referencias**
 
 - Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
 - Joshi, K. D. (1983). Introduction to general topology. New Age International.
 - Buck, R. C. (1978). Advanced calculus. McGraw-Hill, Inc.
+- Humphreys, J. F. (1996). A course in group theory. Oxford University Press.
