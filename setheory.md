@@ -2,6 +2,16 @@
 
 ## Teoría de Conjuntos
 
+Esta teoría ve la luz en 1874, con el trabajo de el matemático aleman Georg Cantor (1845-1918) titulado "Ueber eine Eigenschaft des Inbegriffs aller reellen algebraischen Zahlen". Entre las áreas de estudio se encuentran
+
+- Combinatorial set theory
+- Descriptive set theory
+- Fuzzy set theory
+- Inner model theory
+- Forcing
+
+entre otras áreas.
+
 **Índice**
 
 1. [Introducción](#intro)
