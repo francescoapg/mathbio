@@ -12,6 +12,12 @@ Esta teoría ve la luz en 1874, con el trabajo del matemático aleman Georg Cant
 
 entre otras.
 
+Antes de iniciar con el estudio de esta teoría, es necesario tener algunos conceptos de lógica matemática claros. Entre ellos, recordar que una **fórmula** (abreviación de fórmula bien formulada o _well-formed formula_) es una cadena de caracteres (elementos de un alfabeto) que siguen o cumplen con una gramática formal. El conjunto de todas las fórmulas es el **lenguaje formal**. Como ejemplo, un **teorema** es fórmula de cierta importancia en el lenguaje formal. Finalmente, una fórmula puede tener variables libres o no, una fórmula sin variables libres es conocida como una _sentence_. En el caso de las fórmulas con variables libres, se suele adoptar la notación <img src="https://render.githubusercontent.com/render/math?math=\large \phi(p_1,...,p_n)">, donde <img src="https://render.githubusercontent.com/render/math?math=\large p_1,...,p_n"> son las variables.
+
+**Referencias**
+
+- Jech, Thomas J. (2003). Set theory. Springer 3rd Millennium ed.
+
 **Índice**
 
 1. [Introducción](#intro)
@@ -32,16 +38,16 @@ es un elemento de <img src="https://render.githubusercontent.com/render/math?mat
 
 La teoría de conjuntos usa **fórmulas atómicas** para construir todas las fórmulas de la teoría. Estas fórmulas atómicas son <img src="https://render.githubusercontent.com/render/math?math=\large x\in y"> y <img src="https://render.githubusercontent.com/render/math?math=\large x=y">, el resto de fómulas se construye con la ayuda de conectores y cuantificadores. Los conectores son:
 
-- <img src="https://render.githubusercontent.com/render/math?math=\large \phi\land\psi">.
-- <img src="https://render.githubusercontent.com/render/math?math=\large \phi\lor\psi">.
-- <img src="https://render.githubusercontent.com/render/math?math=\large \neg\phi">.
-- <img src="https://render.githubusercontent.com/render/math?math=\large \phi\implies\psi">.
-- <img src="https://render.githubusercontent.com/render/math?math=\large \phi\iff\psi">.
+- Conjunción: <img src="https://render.githubusercontent.com/render/math?math=\large \phi\land\psi">.
+- Disyunción: <img src="https://render.githubusercontent.com/render/math?math=\large \phi\lor\psi">.
+- Negación: <img src="https://render.githubusercontent.com/render/math?math=\large \neg\phi">.
+- Implicancia: <img src="https://render.githubusercontent.com/render/math?math=\large \phi\implies\psi">.
+- Equivalencia: <img src="https://render.githubusercontent.com/render/math?math=\large \phi\iff\psi">.
 
 Mientras que los cuantificadores son:
 
-- <img src="https://render.githubusercontent.com/render/math?math=\large \forall x\phi">.
-- <img src="https://render.githubusercontent.com/render/math?math=\large \exists x\phi">.
+- Universal: <img src="https://render.githubusercontent.com/render/math?math=\large \forall x\phi">.
+- Existencial: <img src="https://render.githubusercontent.com/render/math?math=\large \exists x\phi">.
 
 Con estos elementos podemos definir otras relaciones y operaciones. Un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large B"> es _subconjunto_ de <img src="https://render.githubusercontent.com/render/math?math=\large A"> si se cumple lo siguiente: <img src="https://render.githubusercontent.com/render/math?math=\large b \in B \Rightarrow b \in A">, en otras palabras, todo elemento de <img src="https://render.githubusercontent.com/render/math?math=\large B"> está en <img src="https://render.githubusercontent.com/render/math?math=\large A">. Esta relación se representa con el símbolo <img src="https://render.githubusercontent.com/render/math?math=\subset">, entonces, el enunciado anterior es equivalente a <img src="https://render.githubusercontent.com/render/math?math=\large B\subset A">.
 
@@ -53,6 +59,7 @@ La teoría de conjuntos pasó a su era moderna a inicios de 1960 con la aparici�
 
 - Herrlich, H. (2006). Axiom of choice. Berlin: Springer.
 - Herstein, I. N. (1975). Topics in algebra. Second edition. Xerox Corporation.
+- Jech, Thomas J. (2003). Set theory. Springer 3rd Millennium ed.
 
 ### Conjuntos contables {#countable}
 
@@ -103,7 +110,7 @@ Es importante comentar que el esquema del axioma de separación corresponde a se
 
 **Referencias**
 
-- Jech, Thomas J. (2003). Set theory. Springer 3rd Millennium ed
+- Jech, Thomas J. (2003). Set theory. Springer 3rd Millennium ed.
 
 ### Axioma de elección (AC) {#choice}
 
