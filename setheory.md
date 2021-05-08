@@ -16,10 +16,11 @@ entre otras áreas.
 
 1. [Introducción](#intro)
 2. [Conjuntos contables](#countable)
-3. [Axioma de elección (AC)](#choice)
-4. [Conjuntos bien ordenados](#wellordered)
-5. [Inducción](#induction)
-6. [Números cardinales](#cardinal)
+3. [Axiomas de Zermelo-Fraenkel](#ZF)
+4. [Axioma de elección (AC)](#choice)
+5. [Conjuntos bien ordenados](#wellordered)
+6. [Inducción](#induction)
+7. [Números cardinales](#cardinal)
 
 ### Introducción {#intro}
 
@@ -35,7 +36,7 @@ Dicho esto, la _equivalencia de conjuntos_ se define como: <img src="https://ren
 
 A continuación, definiremos la unión de dos conjuntos, la cual se representa de la siguiente manera: <img src="https://render.githubusercontent.com/render/math?math=\large A\cup B = \{x:x\in A \lor x\in B\}">. La definición de intersection es similar: <img src="https://render.githubusercontent.com/render/math?math=\large A\cap B = \{x:x\in A \land x\in B\}">.
 
-La teoría de conjuntos pasó a su era moderna a inicios de 1960 con la aparición de los métodos de forzado  y el descubrimiento de la relación entre números cardinales grandes y los conjuntos construíbles. Los métodos de forzado (_forcing methos_) son útiles para probar **consistencia** e **independencia** de resultados. La independencia se puede entender como la improbabilidad de una sentencia a partir de otras.
+La teoría de conjuntos pasó a su era moderna a inicios de 1960 con la aparición de los métodos de forzado  y el descubrimiento de la relación entre números cardinales grandes y los conjuntos construíbles. Los métodos de forzado (_forcing methods_) son útiles para probar **consistencia** e **independencia** de resultados. La independencia se puede entender como la improbabilidad de una sentencia a partir de otras.
 
 - Herrlich, H. (2006). Axiom of choice. Berlin: Springer.
 - Herstein, I. N. (1975). Topics in algebra. Second edition. Xerox Corporation.
@@ -73,6 +74,23 @@ Esto también parece cumplirse cuando <img src="https://render.githubusercontent
 **Referencias**
 
 - Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
+
+### Axiomas de Zermelo-Fraenkel {#ZF}
+
+1. **Axioma de extensionalidad**: Si dos conjuntos tienen los mismos elementos, entonces son iguales.
+2. **Axioma de emparejamiento**: Para cada <img src="https://render.githubusercontent.com/render/math?math=\large a"> y <img src="https://render.githubusercontent.com/render/math?math=\large b"> existe un conjunto <img src="https://render.githubusercontent.com/render/math?math=%5C%7Ba%2Cb%5C%7D"> que contiene únicamente a ambos.
+3. **Esquema del axioma de separamiento**: Si <img src="https://render.githubusercontent.com/render/math?math=\large P"> es una propiedad, entonces, para cualquier conjunto <img src="https://render.githubusercontent.com/render/math?math=\large X"> y parámetro <img src="https://render.githubusercontent.com/render/math?math=\large p"> (parámetro de <img src="https://render.githubusercontent.com/render/math?math=\large P">), existe un conjunto <img src="https://render.githubusercontent.com/render/math?math=Y%3D%5C%7Bu%5Cin%20X%3AP(u%2Cp)%5C%7D"> que contiene a todos los elementos de <img src="https://render.githubusercontent.com/render/math?math=\large X"> que cumplen la propiedad <img src="https://render.githubusercontent.com/render/math?math=\large P">.
+4. **Axioma de unión**: Para cada conjunto <img src="https://render.githubusercontent.com/render/math?math=\large X"> existe un conjunto formado por la unión de todos los elementos de <img src="https://render.githubusercontent.com/render/math?math=\large X">.
+5. **Axioma del producto cartesiano**: Para cada conjunto existe un conjunto formado por todos los subconjuntos de dicho conjunto.
+6. **Axioma del infinito**: Existe un conjunto infinito.
+7. **Esquema del axioma de reemplazo**: Sin una clase <img src="https://render.githubusercontent.com/render/math?math=\large f"> es una función, entonces para cada <img src="https://render.githubusercontent.com/render/math?math=\large X"> existe un conjunto <img src="https://render.githubusercontent.com/render/math?math=Y%3D%5C%7Bf(x)%3Ax%5Cin%20X%5C%7D">.
+8. **Axioma de regularidad**: Cada conjunto no vacío contiene al menos un elemento disjunto de sí mismo.
+
+
+
+**Referencias**
+
+- Jech, Thomas J. (2003). Set theory. Springer 3rd Millennium ed
 
 ### Axioma de elección (AC) {#choice}
 
