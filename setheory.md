@@ -2,7 +2,7 @@
 
 ## Teoría de Conjuntos
 
-Esta teoría ve la luz en 1874, con el trabajo de el matemático aleman Georg Cantor (1845-1918) titulado "Ueber eine Eigenschaft des Inbegriffs aller reellen algebraischen Zahlen". Entre las áreas de estudio se encuentran
+Esta teoría ve la luz en 1874, con el trabajo del matemático aleman Georg Cantor (1845-1918) titulado "Ueber eine Eigenschaft des Inbegriffs aller reellen algebraischen Zahlen". Entre las áreas de estudio en la actualidad se encuentran
 
 - Combinatorial set theory
 - Descriptive set theory
@@ -10,7 +10,7 @@ Esta teoría ve la luz en 1874, con el trabajo de el matemático aleman Georg Ca
 - Inner model theory
 - Forcing
 
-entre otras áreas.
+entre otras.
 
 **Índice**
 
@@ -30,7 +30,20 @@ Empezamos con las siguientes definiciones:
 es un elemento de <img src="https://render.githubusercontent.com/render/math?math=\large S">. También se utiliza el símbolo <img src="https://render.githubusercontent.com/render/math?math=\notin"> para representar que un elemento **no** está en un conjunto.
 2. Un conjunto se define de la siguiente manera: <img src="https://render.githubusercontent.com/render/math?math=\large A=\{x:P(x)\}">, donde <img src="https://render.githubusercontent.com/render/math?math=\large x"> representa a los elementos del conjunto y <img src="https://render.githubusercontent.com/render/math?math=\large P(x)"> significa que sus elementos cumplen la propiedad <img src="https://render.githubusercontent.com/render/math?math=\large P">. Todo junto se lee "A es un set cuyos elementos (<img src="https://render.githubusercontent.com/render/math?math=\large x">) cumplen <img src="https://render.githubusercontent.com/render/math?math=\large P(x)">".
 
-Con estas dos definiciones ya podemos definir algunas otras relaciones y operaciones. Un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large B"> es _subconjunto_ de <img src="https://render.githubusercontent.com/render/math?math=\large A"> si se cumple lo siguiente: <img src="https://render.githubusercontent.com/render/math?math=\large b \in B \Rightarrow b \in A">, en otras palabras, todo elemento de <img src="https://render.githubusercontent.com/render/math?math=\large B"> está en <img src="https://render.githubusercontent.com/render/math?math=\large A">. Esta relación se representa con el símbolo <img src="https://render.githubusercontent.com/render/math?math=\subset">, entonces, el enunciado anterior es equivalente a <img src="https://render.githubusercontent.com/render/math?math=\large B\subset A">.
+La teoría de conjuntos usa **fórmulas atómicas** para construir todas las fórmulas de la teoría. Estas fórmulas atómicas son <img src="https://render.githubusercontent.com/render/math?math=\large x\in y"> y <img src="https://render.githubusercontent.com/render/math?math=\large x=y">, el resto de fómulas se construye con la ayuda de conectores y cuantificadores. Los conectores son:
+
+- <img src="https://render.githubusercontent.com/render/math?math=\large \phi\land\psi">.
+- <img src="https://render.githubusercontent.com/render/math?math=\large \phi\lor\psi">.
+- <img src="https://render.githubusercontent.com/render/math?math=\large \neg\phi">.
+- <img src="https://render.githubusercontent.com/render/math?math=\large \phi\implies\psi">.
+- <img src="https://render.githubusercontent.com/render/math?math=\large \phi\iff\psi">.
+
+Mientras que los cuantificadores son:
+
+- <img src="https://render.githubusercontent.com/render/math?math=\large \forall x\phi">.
+- <img src="https://render.githubusercontent.com/render/math?math=\large \exists x\phi">.
+
+Con estos elementos podemos definir otras relaciones y operaciones. Un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large B"> es _subconjunto_ de <img src="https://render.githubusercontent.com/render/math?math=\large A"> si se cumple lo siguiente: <img src="https://render.githubusercontent.com/render/math?math=\large b \in B \Rightarrow b \in A">, en otras palabras, todo elemento de <img src="https://render.githubusercontent.com/render/math?math=\large B"> está en <img src="https://render.githubusercontent.com/render/math?math=\large A">. Esta relación se representa con el símbolo <img src="https://render.githubusercontent.com/render/math?math=\subset">, entonces, el enunciado anterior es equivalente a <img src="https://render.githubusercontent.com/render/math?math=\large B\subset A">.
 
 Dicho esto, la _equivalencia de conjuntos_ se define como: <img src="https://render.githubusercontent.com/render/math?math=\large A=B\iff A\subset B \land B\subset A">. Con este concepto se hace una distinción entre subconjuntos y subconjuntos propios, un subconjunto propio es aquel subconjunto que no es equivalente al conjunto relacionado, es decir, si <img src="https://render.githubusercontent.com/render/math?math=\large B"> del ejemplo anterior fuese un subconjunto propio, debería existir algún elemento en <img src="https://render.githubusercontent.com/render/math?math=\large A"> que no pertenezca a <img src="https://render.githubusercontent.com/render/math?math=\large B">.
 
