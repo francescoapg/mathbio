@@ -12,7 +12,26 @@ Esta teoría ve la luz en 1874, con el trabajo del matemático aleman Georg Cant
 
 entre otras.
 
+### Conceptos preliminares
+
 Antes de iniciar con el estudio de esta teoría, es necesario tener algunos conceptos de lógica matemática claros. Entre ellos, recordar que una **fórmula** (abreviación de fórmula bien formulada o _well-formed formula_) es una cadena de caracteres (elementos de un alfabeto) que siguen o cumplen con una gramática formal. El conjunto de todas las fórmulas es el **lenguaje formal**. Como ejemplo, un **teorema** es fórmula de cierta importancia en el lenguaje formal. Finalmente, una fórmula puede tener variables libres o no, una fórmula sin variables libres es conocida como una _sentence_. En el caso de las fórmulas con variables libres, se suele adoptar la notación <img src="https://render.githubusercontent.com/render/math?math=\large \phi(p_1,...,p_n)">, donde <img src="https://render.githubusercontent.com/render/math?math=\large p_1,...,p_n"> son las variables.
+
+La teoría de conjuntos usa **fórmulas atómicas** para construir todas las fórmulas de la teoría. Estas fórmulas atómicas son <img src="https://render.githubusercontent.com/render/math?math=\large x\in y"> y <img src="https://render.githubusercontent.com/render/math?math=\large x=y">, el resto de fómulas se construye con la ayuda de conectores y cuantificadores. Los conectores son:
+
+- Conjunción: <img src="https://render.githubusercontent.com/render/math?math=\large \phi\land\psi">.
+- Disyunción: <img src="https://render.githubusercontent.com/render/math?math=\large \phi\lor\psi">.
+- Negación: <img src="https://render.githubusercontent.com/render/math?math=\large \neg\phi">.
+- Implicancia: <img src="https://render.githubusercontent.com/render/math?math=\large \phi\implies\psi">.
+- Equivalencia: <img src="https://render.githubusercontent.com/render/math?math=\large \phi\iff\psi">.
+
+Mientras que los cuantificadores son:
+
+- Universal: <img src="https://render.githubusercontent.com/render/math?math=\large \forall x\phi">.
+- Existencial: <img src="https://render.githubusercontent.com/render/math?math=\large \exists x\phi">.
+
+El uso de formulas atómicas, conectores y cuantificadores se conoce como **lógica de primer orden** (first-order logic) y es el corazón de la teoría de conjuntos, la lógica de primer orden tiene como base al **cálculo proposicional** que usa únicamente fórmulas y conectores. En una nota complementaria, a partir de la lógica de primer orden se extiende la **lógica de segundo orden** y, a su vez, la **lógica de orden superior**. Las bases del cálculo proposicional o lógica proposicional son  las siguientes:
+
+
 
 **Referencias**
 
@@ -35,19 +54,6 @@ Empezamos con las siguientes definiciones:
 1. El símbolo <img src="https://render.githubusercontent.com/render/math?math=\in"> representa pertenencia, formalmente, es una relación entre un elemento y el conjunto que lo contiene. Por ejemplo, <img src="https://render.githubusercontent.com/render/math?math=\large a\in S"> significa que <img src="https://render.githubusercontent.com/render/math?math=\large a">
 es un elemento de <img src="https://render.githubusercontent.com/render/math?math=\large S">. También se utiliza el símbolo <img src="https://render.githubusercontent.com/render/math?math=\notin"> para representar que un elemento **no** está en un conjunto.
 2. Un conjunto se define de la siguiente manera: <img src="https://render.githubusercontent.com/render/math?math=\large A=\{x:P(x)\}">, donde <img src="https://render.githubusercontent.com/render/math?math=\large x"> representa a los elementos del conjunto y <img src="https://render.githubusercontent.com/render/math?math=\large P(x)"> significa que sus elementos cumplen la propiedad <img src="https://render.githubusercontent.com/render/math?math=\large P">. Todo junto se lee "A es un set cuyos elementos (<img src="https://render.githubusercontent.com/render/math?math=\large x">) cumplen <img src="https://render.githubusercontent.com/render/math?math=\large P(x)">".
-
-La teoría de conjuntos usa **fórmulas atómicas** para construir todas las fórmulas de la teoría. Estas fórmulas atómicas son <img src="https://render.githubusercontent.com/render/math?math=\large x\in y"> y <img src="https://render.githubusercontent.com/render/math?math=\large x=y">, el resto de fómulas se construye con la ayuda de conectores y cuantificadores. Los conectores son:
-
-- Conjunción: <img src="https://render.githubusercontent.com/render/math?math=\large \phi\land\psi">.
-- Disyunción: <img src="https://render.githubusercontent.com/render/math?math=\large \phi\lor\psi">.
-- Negación: <img src="https://render.githubusercontent.com/render/math?math=\large \neg\phi">.
-- Implicancia: <img src="https://render.githubusercontent.com/render/math?math=\large \phi\implies\psi">.
-- Equivalencia: <img src="https://render.githubusercontent.com/render/math?math=\large \phi\iff\psi">.
-
-Mientras que los cuantificadores son:
-
-- Universal: <img src="https://render.githubusercontent.com/render/math?math=\large \forall x\phi">.
-- Existencial: <img src="https://render.githubusercontent.com/render/math?math=\large \exists x\phi">.
 
 Con estos elementos podemos definir otras relaciones y operaciones. Un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large B"> es _subconjunto_ de <img src="https://render.githubusercontent.com/render/math?math=\large A"> si se cumple lo siguiente: <img src="https://render.githubusercontent.com/render/math?math=\large b \in B \Rightarrow b \in A">, en otras palabras, todo elemento de <img src="https://render.githubusercontent.com/render/math?math=\large B"> está en <img src="https://render.githubusercontent.com/render/math?math=\large A">. Esta relación se representa con el símbolo <img src="https://render.githubusercontent.com/render/math?math=\subset">, entonces, el enunciado anterior es equivalente a <img src="https://render.githubusercontent.com/render/math?math=\large B\subset A">.
 
