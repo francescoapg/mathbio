@@ -53,7 +53,7 @@ Con estos conceptos claros, veamos algunas formas de argumento generalmente usad
 
 **Leyes de Morgan**: La primera es: <img src="https://render.githubusercontent.com/render/math?math=%5Cneg%20(P%5Cland%20Q)%5Cequiv%5Cneg%20P%5Clor%5Cneg%20Q">, mientras que la segunda es: <img src="https://render.githubusercontent.com/render/math?math=%5Cneg%20(P%5Clor%20Q)%5Cequiv%20%5Cneg%20P%5Cland%5Cneg%20Q">.
 
-Finalmente, tanto la conjunción como la disyunción son conmutativas, asociativas y ambos juntos, distributivas. Otros principios lógicos importantes son el **principio de no contradicción** y el **principio del tercero excluído**.
+Finalmente, tanto la conjunción como la disyunción son conmutativas, asociativas y ambos juntos, distributivas. Otros principios lógicos importantes son el **principio de no contradicción** y el **principio del tercero excluído**. El principio de no contradicción establece que una proposición y su negación no pueden ser simultánemanete validas, en el sentido que <img src="https://render.githubusercontent.com/render/math?math=P%5Cland%5Cneg%20P"> es siempre falso o una **contradicción**. El principio del tercero exluído establece que si una proposición establece algo y otra, su negación, entonces no existe una tercera proposición que sea verdadera más allá de las dos primeras, en otras palabras, <img src="https://render.githubusercontent.com/render/math?math=P%5Clor%5Cneg%20P"> es una tautología.
 
 
 **Referencias**
