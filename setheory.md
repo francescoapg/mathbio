@@ -55,7 +55,7 @@ Con estos conceptos claros, veamos algunas formas de argumento generalmente usad
 
 Finalmente, tanto la conjunción como la disyunción son conmutativas, asociativas y ambos juntos, distributivas. Otros principios lógicos importantes son el **principio de no contradicción** y el **principio del tercero excluído**. El principio de no contradicción establece que una proposición y su negación no pueden ser simultánemanete validas, en el sentido que <img src="https://render.githubusercontent.com/render/math?math=P%5Cland%5Cneg%20P"> es siempre falso o una **contradicción**. El principio del tercero exluído establece que si una proposición establece algo y otra, su negación, entonces no existe una tercera proposición que sea verdadera más allá de las dos primeras, en otras palabras, <img src="https://render.githubusercontent.com/render/math?math=P%5Clor%5Cneg%20P"> es una tautología.
 
-Respecto a la notación usada, en lógica de primer orden, es usual redactar de la siguiente manera <img src="https://render.githubusercontent.com/render/math?math=\large (\textit{Cuantificador})(\textit{Proposición})">. También redactamos <img src="https://render.githubusercontent.com/render/math?math=\large (\textit{Cuantificador})(\textit{Proposición})\iff(\textit{Cuantificador})(\textit{Proposición})">.
+Respecto a la notación usada, en lógica de primer orden, es usual redactar de la siguiente manera <img src="https://render.githubusercontent.com/render/math?math=\large (\textit{Cuantificador})(\textit{Proposicion})">. También redactamos <img src="https://render.githubusercontent.com/render/math?math=\large (\textit{Cuantificador})(\textit{Proposicion})\iff(\textit{Cuantificador})(\textit{Proposicion})">.
 
 **Referencias**
 
@@ -64,8 +64,8 @@ Respecto a la notación usada, en lógica de primer orden, es usual redactar de 
 **Índice**
 
 1. [Introducción](#intro)
-2. [Conjuntos contables](#countable)
-3. [Axiomas de Zermelo-Fraenkel](#ZF)
+2. [Axiomas de Zermelo-Fraenkel](#ZF)
+3. [Conjuntos contables](#countable)
 4. [Axioma de elección (AC)](#choice)
 5. [Conjuntos bien ordenados](#wellordered)
 6. [Inducción](#induction)
@@ -89,6 +89,23 @@ La teoría de conjuntos pasó a su era moderna a inicios de 1960 con la aparici�
 
 - Herrlich, H. (2006). Axiom of choice. Berlin: Springer.
 - Herstein, I. N. (1975). Topics in algebra. Second edition. Xerox Corporation.
+- Jech, Thomas J. (2003). Set theory. Springer 3rd Millennium ed.
+
+### Axiomas de Zermelo-Fraenkel {#ZF}
+
+1. **Axioma de extensionalidad**: Si dos conjuntos tienen los mismos elementos, entonces son iguales.
+2. **Axioma de emparejamiento**: Para cada <img src="https://render.githubusercontent.com/render/math?math=\large a"> y <img src="https://render.githubusercontent.com/render/math?math=\large b"> existe un conjunto <img src="https://render.githubusercontent.com/render/math?math=%5C%7Ba%2Cb%5C%7D"> que contiene únicamente a ambos.
+3. **Esquema del axioma de separación**: Si <img src="https://render.githubusercontent.com/render/math?math=\large P"> es una propiedad, entonces, para cualquier conjunto <img src="https://render.githubusercontent.com/render/math?math=\large X"> y parámetro <img src="https://render.githubusercontent.com/render/math?math=\large p"> (parámetro de <img src="https://render.githubusercontent.com/render/math?math=\large P">), existe un conjunto <img src="https://render.githubusercontent.com/render/math?math=Y%3D%5C%7Bu%5Cin%20X%3AP(u%2Cp)%5C%7D"> que contiene a todos los elementos de <img src="https://render.githubusercontent.com/render/math?math=\large X"> que cumplen la propiedad <img src="https://render.githubusercontent.com/render/math?math=\large P">.
+4. **Axioma de unión**: Para cada conjunto <img src="https://render.githubusercontent.com/render/math?math=\large X"> existe un conjunto formado por la unión de todos los elementos de <img src="https://render.githubusercontent.com/render/math?math=\large X">.
+5. **Axioma del producto cartesiano**: Para cada conjunto existe un conjunto formado por todos los subconjuntos de dicho conjunto.
+6. **Axioma del infinito**: Existe un conjunto infinito.
+7. **Esquema del axioma de reemplazo**: Sin una clase <img src="https://render.githubusercontent.com/render/math?math=\large f"> es una función, entonces para cada <img src="https://render.githubusercontent.com/render/math?math=\large X"> existe un conjunto <img src="https://render.githubusercontent.com/render/math?math=Y%3D%5C%7Bf(x)%3Ax%5Cin%20X%5C%7D">.
+8. **Axioma de regularidad**: Cada conjunto no vacío contiene al menos un elemento disjunto de sí mismo.
+
+Es importante comentar que el esquema del axioma de separación corresponde a ser una forma débil del esquema del axioma de comprensión. El esquema del axioma de comprensión tiene la forma de "si <img src="https://render.githubusercontent.com/render/math?math=\large P"> es una propiedad, entonces el conjunto <img src="https://render.githubusercontent.com/render/math?math=Y%3D%5C%7Bx%3AP(x)%5C%7D"> existe". Este esquema lleva a la famosa paradoja de Russell, por lo que en **ZF** fue reemplazada por una forma no nociva.
+
+**Referencias**
+
 - Jech, Thomas J. (2003). Set theory. Springer 3rd Millennium ed.
 
 ### Conjuntos contables {#countable}
@@ -125,22 +142,6 @@ Esto también parece cumplirse cuando <img src="https://render.githubusercontent
 
 - Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
 
-### Axiomas de Zermelo-Fraenkel {#ZF}
-
-1. **Axioma de extensionalidad**: Si dos conjuntos tienen los mismos elementos, entonces son iguales.
-2. **Axioma de emparejamiento**: Para cada <img src="https://render.githubusercontent.com/render/math?math=\large a"> y <img src="https://render.githubusercontent.com/render/math?math=\large b"> existe un conjunto <img src="https://render.githubusercontent.com/render/math?math=%5C%7Ba%2Cb%5C%7D"> que contiene únicamente a ambos.
-3. **Esquema del axioma de separación**: Si <img src="https://render.githubusercontent.com/render/math?math=\large P"> es una propiedad, entonces, para cualquier conjunto <img src="https://render.githubusercontent.com/render/math?math=\large X"> y parámetro <img src="https://render.githubusercontent.com/render/math?math=\large p"> (parámetro de <img src="https://render.githubusercontent.com/render/math?math=\large P">), existe un conjunto <img src="https://render.githubusercontent.com/render/math?math=Y%3D%5C%7Bu%5Cin%20X%3AP(u%2Cp)%5C%7D"> que contiene a todos los elementos de <img src="https://render.githubusercontent.com/render/math?math=\large X"> que cumplen la propiedad <img src="https://render.githubusercontent.com/render/math?math=\large P">.
-4. **Axioma de unión**: Para cada conjunto <img src="https://render.githubusercontent.com/render/math?math=\large X"> existe un conjunto formado por la unión de todos los elementos de <img src="https://render.githubusercontent.com/render/math?math=\large X">.
-5. **Axioma del producto cartesiano**: Para cada conjunto existe un conjunto formado por todos los subconjuntos de dicho conjunto.
-6. **Axioma del infinito**: Existe un conjunto infinito.
-7. **Esquema del axioma de reemplazo**: Sin una clase <img src="https://render.githubusercontent.com/render/math?math=\large f"> es una función, entonces para cada <img src="https://render.githubusercontent.com/render/math?math=\large X"> existe un conjunto <img src="https://render.githubusercontent.com/render/math?math=Y%3D%5C%7Bf(x)%3Ax%5Cin%20X%5C%7D">.
-8. **Axioma de regularidad**: Cada conjunto no vacío contiene al menos un elemento disjunto de sí mismo.
-
-Es importante comentar que el esquema del axioma de separación corresponde a ser una forma débil del esquema del axioma de comprensión. El esquema del axioma de comprensión tiene la forma de "si <img src="https://render.githubusercontent.com/render/math?math=\large P"> es una propiedad, entonces el conjunto <img src="https://render.githubusercontent.com/render/math?math=Y%3D%5C%7Bx%3AP(x)%5C%7D"> existe". Este esquema lleva a la famosa paradoja de Russell, por lo que en **ZF** fue reemplazada por una forma no nociva.
-
-**Referencias**
-
-- Jech, Thomas J. (2003). Set theory. Springer 3rd Millennium ed.
 
 ### Axioma de elección (AC) {#choice}
 
