@@ -43,15 +43,15 @@ El uso de formulas atómicas, conectores y cuantificadores se conoce como **lóg
 
 Con estos conceptos claros, veamos algunas formas de argumento generalmente usadas,
 
-**Modus ponendo ponens**: .
+**Modus ponendo ponens**: <img src="https://render.githubusercontent.com/render/math?math=((P%5Cimplies%20Q)%5Cland%20P)%5Cimplies%20Q">.
 
-**Modus tollendo tollens**: . 
+**Modus tollendo tollens**: <img src="https://render.githubusercontent.com/render/math?math=((P%5Cimplies%20Q)%5Cland%20%5Cneg%20Q)%5Cimplies%20%5Cneg%20P">. 
 
-**Silogismo hipotético**: .
+**Silogismo hipotético**: <img src="https://render.githubusercontent.com/render/math?math=((P%5Cimplies%20Q)%5Cland%20(Q%5Cimplies%20R))%5Cimplies%20(P%20%5Cimplies%20R)">.
 
-**Silogismo disyuntivo**: .
+**Silogismo disyuntivo**: También llamado Modus tollendo ponens, <img src="https://render.githubusercontent.com/render/math?math=((P%5Clor%20Q)%5Cland%5Cneg%20P)%5Cimplies%20Q">.
 
-**Leyes de Morgan**: La primera es: , mientras que la segunda es: .
+**Leyes de Morgan**: La primera es: <img src="https://render.githubusercontent.com/render/math?math=%5Cneg%20(P%5Cland%20Q)%5Cequiv%5Cneg%20P%5Clor%5Cneg%20Q">, mientras que la segunda es: <img src="https://render.githubusercontent.com/render/math?math=%5Cneg%20(P%5Clor%20Q)%5Cequiv%20%5Cneg%20P%5Cland%5Cneg%20Q">.
 
 Finalmente, tanto la conjunción como la disyunción son conmutativas, asociativas y ambos juntos, distributivas. Otros principios lógicos importantes son el **principio de no contradicción** y el **principio del tercero excluído**.
 
