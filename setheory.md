@@ -32,10 +32,28 @@ Mientras que los cuantificadores son:
 El uso de formulas atómicas, conectores y cuantificadores se conoce como **lógica de primer orden** (first-order logic) y es el corazón de la teoría de conjuntos; la lógica de primer orden tiene como base al **cálculo proposicional** que usa únicamente fórmulas y conectores. En una nota complementaria, a partir de la lógica de primer orden se extiende la **lógica de segundo orden** y, a su vez, la **lógica de orden superior**. Las bases del cálculo proposicional o lógica proposicional son  las siguientes:
 
 <img src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Bmatrix%7D%0A%5Cpsi%20%26%20%5Cneg%5Cpsi%5C%5C%0AV%20%26%20F%5C%5C%0AF%20%26%20V%5C%5C%0A%20%26%20%20%5C%5C%0A%20%26%20%20%20%0A%5Cend%7Bmatrix%7D">
+
 <img src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Bmatrix%7D%0A%5Cpsi%20%26%20%5Cphi%20%26%20%5Cpsi%5Cland%5Cphi%5C%5C%0AV%20%26%20V%20%26%20V%5C%5C%0AV%20%26%20F%20%26%20F%5C%5C%0AF%20%26%20V%20%26%20F%5C%5C%0AF%20%26%20F%20%26%20F%0A%5Cend%7Bmatrix%7D">
+
 <img src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Bmatrix%7D%0A%5Cpsi%20%26%20%5Cphi%20%26%20%5Cpsi%5Clor%5Cphi%5C%5C%0AV%20%26%20V%20%26%20V%5C%5C%0AV%20%26%20F%20%26%20V%5C%5C%0AF%20%26%20V%20%26%20V%5C%5C%0AF%20%26%20F%20%26%20F%0A%5Cend%7Bmatrix%7D">
+
 <img src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Bmatrix%7D%0A%5Cpsi%20%26%20%5Cphi%20%26%20%5Cpsi%5Cimplies%5Cphi%5C%5C%0AV%20%26%20V%20%26%20V%5C%5C%0AV%20%26%20F%20%26%20F%5C%5C%0AF%20%26%20V%20%26%20V%5C%5C%0AF%20%26%20F%20%26%20V%0A%5Cend%7Bmatrix%7D">
+
 <img src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Bmatrix%7D%0A%5Cpsi%20%26%20%5Cphi%20%26%20%5Cpsi%5Ciff%5Cphi%5C%5C%0AV%20%26%20V%20%26%20V%5C%5C%0AV%20%26%20F%20%26%20F%5C%5C%0AF%20%26%20V%20%26%20F%5C%5C%0AF%20%26%20F%20%26%20V%0A%5Cend%7Bmatrix%7D">
+
+Con estos conceptos claros, veamos algunas formas de argumento generalmente usadas,
+
+**Modus ponendo ponens**: .
+
+**Modus tollendo tollens**: . 
+
+**Silogismo hipotético**: .
+
+**Silogismo disyuntivo**: .
+
+**Leyes de Morgan**: La primera es: , mientras que la segunda es: .
+
+Finalmente, tanto la conjunción como la disyunción son conmutativas, asociativas y ambos juntos, distributivas. Otros principios lógicos importantes son el **principio de no contradicción** y el **principio del tercero excluído**.
 
 
 **Referencias**
