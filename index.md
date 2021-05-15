@@ -14,6 +14,7 @@
 3. Espacios
 4. [Teoría de Grupos](https://francescoapg.github.io/mathbio/groups)
 5. [Topología General](https://francescoapg.github.io/mathbio/topos)
+6. [Categorias](https://francescoapg.github.io/mathbio/cat)
 
 ### Licencia
 
