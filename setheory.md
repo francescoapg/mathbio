@@ -29,7 +29,7 @@ Mientras que los cuantificadores son:
 - Universal: <img src="https://render.githubusercontent.com/render/math?math=\large \forall x\phi">.
 - Existencial: <img src="https://render.githubusercontent.com/render/math?math=\large \exists x\phi">.
 
-El uso de formulas atómicas, conectores y cuantificadores se conoce como **lógica de primer orden** (first-order logic) y es el corazón de la teoría de conjuntos; la lógica de primer orden tiene como base al **cálculo proposicional** que usa únicamente fórmulas y conectores. En una nota complementaria, a partir de la lógica de primer orden se extiende la **lógica de segundo orden** y, a su vez, la **lógica de orden superior**. Las bases del cálculo proposicional o lógica proposicional son  las siguientes:
+El uso de formulas atómicas, conectores y cuantificadores se conoce como **lógica de primer orden** (first-order logic) y es el corazón de la teoría de conjuntos; la lógica de primer orden tiene como base al **cálculo proposicional** que usa únicamente fórmulas y conectores. En una nota complementaria, a partir de la lógica de primer orden se extiende la **lógica de segundo orden** que se usa en teoría de conjuntos cuando cuantificamos sobre subsets de un set (por ejemplo <img src="https://render.githubusercontent.com/render/math?math=\large \forall S\subset \mathbb{N}(P\implies Q)">), en logica de segundo orden también se puede cuantificar sobre otras fórmulas; de la misma manera, se extiende la **lógica de orden superior**. Las bases del cálculo proposicional o lógica proposicional son  las siguientes:
 
 <img src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Bmatrix%7D%0A%5Cpsi%20%26%20%5Cneg%5Cpsi%5C%5C%0AV%20%26%20F%5C%5C%0AF%20%26%20V%5C%5C%0A%20%26%20%20%5C%5C%0A%20%26%20%20%20%0A%5Cend%7Bmatrix%7D">
 
@@ -111,7 +111,7 @@ Es importante comentar que el esquema del axioma de separación corresponde a se
 
 ### Inducción matemática {#induc}
 
-Esta es una técnica o metodología para probar proposiciones/formulas respecto a los naturales. El primer paso es probar o mostrar un caso base que cumpla con la proposición y el segundo es mostrar el paso inductivo, es decir, asumiendo la proposición <img src="https://render.githubusercontent.com/render/math?math=\large p(n)">, mostrar que <img src="https://render.githubusercontent.com/render/math?math=\large p(n+1)"> también cumple.
+Esta es una técnica o metodología para probar proposiciones/formulas respecto a los naturales. El primer paso es probar o mostrar un caso base que cumpla con la proposición y el segundo es mostrar el paso inductivo, es decir, asumiendo la proposición <img src="https://render.githubusercontent.com/render/math?math=p(n)">, mostrar que <img src="https://render.githubusercontent.com/render/math?math=p(n%2B1)"> también cumple.
 
 Antes de continuar con inducción, es necesario establecer los axiomas de **Dedekin-Peano**, lo cual corresponde a una forma de axiomatizar los números naturales. De este modo, los números naturales son un conjunto <img src="https://render.githubusercontent.com/render/math?math=%5Cmathbb%7BN%7D"> que cumple que
 
@@ -125,7 +125,13 @@ La última proposición se conoce como el axioma de inducción. Bajo este sistem
 
 **Teorema**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large P(n)"> una fórmula respecto a los números naturales, si <img src="https://render.githubusercontent.com/render/math?math=\large P(1)"> y <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20%5Cforall%20n%5Cin%5Cmathbb%7BN%7D(P(n)%5Cimplies%20P(n%2B1))">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large (\forall n \in\mathbb{N})(P(n))">.
 
-La prueba de este axioma es directa con el axioma de inducción. Como comentario, 
+La prueba de este axioma es directa con el axioma de inducción.
+
+**Inducción fuerte**
+
+La diferencia con la inducción _débil_ es que el paso inductivo toma la forma de <img src="https://render.githubusercontent.com/render/math?math=\large \forall n\in\mathbb{N}(k<n\implies(P(k)\implies P(n)))">, esto se conoce como una hipótesis fuerte ya que para probar <img src="https://render.githubusercontent.com/render/math?math=\large P(n)"> asumimos <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20P(1)%2C...%2CP(n-1)">.
+
+Con inducción fuerte podemos probar el **teorema fundamental de la Aritmética**. Dentro de la aritmética de Peano, la inducción usual o débil es equivalente a la inducción fuerte.
 
 **Referencias**
 
