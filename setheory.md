@@ -113,11 +113,15 @@ Es importante comentar que el esquema del axioma de separación corresponde a se
 
 Esta es una técnica o metodología para probar proposiciones/formulas respecto a los naturales. El primer paso es probar o mostrar un caso base que cumpla con la proposición y el segundo es mostrar el paso inductivo, es decir, asumiendo la proposición <img src="https://render.githubusercontent.com/render/math?math=\large p(n)">, mostrar que <img src="https://render.githubusercontent.com/render/math?math=\large p(n+1)"> también cumple.
 
+Antes de continuar con inducción, es necesario establecer los axiomas de **Dedekin-Peano**, lo cual corresponde a una forma de axiomatizar los números naturales. De este modo, los números naturales son un conjunto <img src="https://render.githubusercontent.com/render/math?math=%5Cmathbb%7BN%7D"> que cumple que
 
+- <img src="https://render.githubusercontent.com/render/math?math=\large 1\in\mathbb{N}">.
+- <img src="https://render.githubusercontent.com/render/math?math=\large \forall n\in\mathbb{N}(n+1\in\mathbb{N})">.
+- <img src="https://render.githubusercontent.com/render/math?math=\large \forall n,m\in\mathbb{N}(n+1=m+1\implies n=m)">.
+- <img src="https://render.githubusercontent.com/render/math?math=\large \forall n\in\mathbb{N}(n+1\neq 1)">.
+- <img src="https://render.githubusercontent.com/render/math?math=\large \forall S\subset\mathbb{N}(1\in S\land (n\in S\implies n+1\in S)\implies S=\mathbb{N})">.
 
 **Referencias**
-
-- Jech, Thomas J. (2003). Set theory. Springer 3rd Millennium ed.
 
 ### Conjuntos contables {#countable}
 
