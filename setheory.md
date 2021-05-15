@@ -65,11 +65,12 @@ Respecto a la notación usada, en lógica de primer orden, es usual redactar de 
 
 1. [Introducción](#intro)
 2. [Axiomas de Zermelo-Fraenkel](#ZF)
-3. [Conjuntos contables](#countable)
-4. [Axioma de elección (AC)](#choice)
-5. [Conjuntos bien ordenados](#wellordered)
-6. [Inducción](#induction)
-7. [Números cardinales](#cardinal)
+3. [Inducción matemática](#induc)
+4. [Conjuntos contables](#countable)
+5. [Axioma de elección (AC)](#choice)
+6. [Conjuntos bien ordenados](#wellordered)
+7. [Inducción](#induction)
+8. [Números cardinales](#cardinal)
 
 ### Introducción {#intro}
 
@@ -103,6 +104,16 @@ La teoría de conjuntos pasó a su era moderna a inicios de 1960 con la aparici�
 8. **Axioma de regularidad**: Cada conjunto no vacío contiene al menos un elemento disjunto de sí mismo.
 
 Es importante comentar que el esquema del axioma de separación corresponde a ser una forma débil del esquema del axioma de comprensión. El esquema del axioma de comprensión tiene la forma de "si <img src="https://render.githubusercontent.com/render/math?math=\large P"> es una propiedad, entonces el conjunto <img src="https://render.githubusercontent.com/render/math?math=Y%3D%5C%7Bx%3AP(x)%5C%7D"> existe". Este esquema lleva a la famosa paradoja de Russell, por lo que en **ZF** fue reemplazada por una forma no nociva.
+
+**Referencias**
+
+- Jech, Thomas J. (2003). Set theory. Springer 3rd Millennium ed.
+
+### Inducción matemática {#induc}
+
+Esta es una técnica o metodología para probar proposiciones/formulas respecto a los naturales. El primer paso es probar o mostrar un caso base que cumpla con la proposición y el segundo es mostrar el paso inductivo, es decir, asumiendo la proposición <img src="https://render.githubusercontent.com/render/math?math=\large p(n)">, mostrar que <img src="https://render.githubusercontent.com/render/math?math=\large p(n+1)"> también cumple.
+
+
 
 **Referencias**
 
