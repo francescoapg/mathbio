@@ -116,10 +116,16 @@ Esta es una técnica o metodología para probar proposiciones/formulas respecto 
 Antes de continuar con inducción, es necesario establecer los axiomas de **Dedekin-Peano**, lo cual corresponde a una forma de axiomatizar los números naturales. De este modo, los números naturales son un conjunto <img src="https://render.githubusercontent.com/render/math?math=%5Cmathbb%7BN%7D"> que cumple que
 
 - <img src="https://render.githubusercontent.com/render/math?math=\large 1\in\mathbb{N}">.
-- <img src="https://render.githubusercontent.com/render/math?math=\large \forall n\in\mathbb{N}(n+1\in\mathbb{N})">.
-- <img src="https://render.githubusercontent.com/render/math?math=\large \forall n,m\in\mathbb{N}(n+1=m+1\implies n=m)">.
-- <img src="https://render.githubusercontent.com/render/math?math=\large \forall n\in\mathbb{N}(n+1\neq 1)">.
-- <img src="https://render.githubusercontent.com/render/math?math=\large \forall S\subset\mathbb{N}(1\in S\land (n\in S\implies n+1\in S)\implies S=\mathbb{N})">.
+- <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20%5Cforall%20n%5Cin%5Cmathbb%7BN%7D(n%2B1%5Cin%5Cmathbb%7BN%7D)">.
+- <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20%5Cforall%20n%2Cm%5Cin%5Cmathbb%7BN%7D(n%2B1%3Dm%2B1%5Cimplies%20n%3Dm)">.
+- <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20%5Cforall%20n%5Cin%5Cmathbb%7BN%7D(n%2B1%5Cneq%201)">.
+- <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20%5Cforall%20S%5Csubset%5Cmathbb%7BN%7D(1%5Cin%20S%5Cland%20(n%5Cin%20S%5Cimplies%20n%2B1%5Cin%20S)%5Cimplies%20S%3D%5Cmathbb%7BN%7D)">.
+
+La última proposición se conoce como el axioma de inducción. Bajo este sistema axiomático es posible probar la inducción matemática, la cual se puede expresar de la siguiente manera:
+
+**Teorema**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large P(n)"> una fórmula respecto a los números naturales, si <img src="https://render.githubusercontent.com/render/math?math=\large P(1)"> y <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20%5Cforall%20n%5Cin%5Cmathbb%7BN%7D(P(n)%5Cimplies%20P(n%2B1))">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large (\forall n \in\mathbb{N})(P(n))">.
+
+La prueba de este axioma es directa con el axioma de inducción. Como comentario, 
 
 **Referencias**
 
