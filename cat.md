@@ -2,6 +2,12 @@
 
 ## Categorias
 
+Teoría de Categorías es el estudio del algebra de morfismos. En una nota histórica, está teoría conoció la luz en 1945 con el trabajo _General theory of natural equivalences_ de Eilenberg y Mac Lane. Las primeras aplicaciones se vieron en Topología algebraica y Álgebra abstracta, aunque no tardó su uso en lógica, _computer science_ y muchas otras áreas. Actualmente se usa casi de forma tan extendidad como la Teoría de Conjuntos.
+
+**Referencias**
+
+- Awodey, S. (2010). Category theory. Oxford university press.
+
 **Índice**
 
 1. [Conceptos generales](#conceptos)
@@ -15,7 +21,8 @@ Una categoría <img src="https://render.githubusercontent.com/render/math?math=\
 - Una función llamada composición <img src="https://render.githubusercontent.com/render/math?math=\large \circ_{X,Y,Z}: M(X,Y)\times M(Y,Z)\to M(X,Z)"> para cada triple de objetos <img src="https://render.githubusercontent.com/render/math?math=\large X">, <img src="https://render.githubusercontent.com/render/math?math=\large Y">, <img src="https://render.githubusercontent.com/render/math?math=\large Z"> en <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">. Si <img src="https://render.githubusercontent.com/render/math?math=\large f\in M(X,Y)"> y <img src="https://render.githubusercontent.com/render/math?math=\large g\in M(Y,Z)">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large \circ_{X,Y,Z}(f,g)"> será denotado por <img src="https://render.githubusercontent.com/render/math?math=\large g\circ f">.
 - Un elemento <img src="https://render.githubusercontent.com/render/math?math=\large 1_X\in M(X,X)"> para cada objeto <img src="https://render.githubusercontent.com/render/math?math=\large X"> de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> llamado **morfismo identidad** en <img src="https://render.githubusercontent.com/render/math?math=\large X">.
 
-Los elementos descritos cumplen las siguientes condiciones:
+Los morfismos también son llamados _arrows_. La función composición de morfismos garantiza que estos se comporten de una forma similar a las funciones sin necesidad de serlo, se puede decir también que los morfismos son cerrados bajo composición.
+Todos estos elementos cumplen las siguientes condiciones:
 
 - Los conjuntos de morfismos <img src="https://render.githubusercontent.com/render/math?math=\large M(X,Y)"> y <img src="https://render.githubusercontent.com/render/math?math=\large M(Z,W)"> son mutuamente disjuntos a menos que <img src="https://render.githubusercontent.com/render/math?math=\large X=Z"> y <img src="https://render.githubusercontent.com/render/math?math=\large Y=W"> para todos los objetos <img src="https://render.githubusercontent.com/render/math?math=\large X">, <img src="https://render.githubusercontent.com/render/math?math=\large Y">, <img src="https://render.githubusercontent.com/render/math?math=\large Z">, <img src="https://render.githubusercontent.com/render/math?math=\large W">.
 - La composición es asociativa, es decir, para cualesquiera objetos <img src="https://render.githubusercontent.com/render/math?math=\large X">, <img src="https://render.githubusercontent.com/render/math?math=\large Y">, <img src="https://render.githubusercontent.com/render/math?math=\large Z">, <img src="https://render.githubusercontent.com/render/math?math=\large W"> y para cualesquiera <img src="https://render.githubusercontent.com/render/math?math=\large f \in Mor(X,Y)">, <img src="https://render.githubusercontent.com/render/math?math=\large g\in Mor(Y,Z)"> y <img src="https://render.githubusercontent.com/render/math?math=\large h\in Mor(Z,W)">, <img src="https://render.githubusercontent.com/render/math?math=\large \circ_{X,Z,W}(\circ_{X,Y,Z}(f,g),h)=\circ_{X,Y,W}(f, \circ_{Y,Z,W}(g,h))">, o, en notación simple, <img src="https://render.githubusercontent.com/render/math?math=\large h\circ (g\circ f)=(h\circ g)\circ f">.
@@ -73,3 +80,4 @@ Dado que las propiedades de <img src="https://render.githubusercontent.com/rende
 **Referencias**
 
 - Joshi, K. D. (1983). Introduction to general topology. New Age International.
+- Awodey, S. (2010). Category theory. Oxford university press.
