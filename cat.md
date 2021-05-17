@@ -70,6 +70,8 @@ Sea una categoría <img src="https://render.githubusercontent.com/render/math?ma
 
 Los monomorfismos son análogos a [funciones inyectivas](https://francescoapg.github.io/mathbio/functlations#funciones), aunque en el contexto de categorías, se pueden encontrar morfismos que incluso siendo funciones son monomorfismos y no inyectivas.
 
+Finalmente, por la existencia de la inversa, todo isomorfismo es también un epimorfismo y un monomorfismo. En la categoría de conjuntos, lo inverso también se cumple, es decir, si un morfismo es epi y mono, entonces también es un isomorfismo.
+
 **Categoría dual**:
 
 Entre las formas de construir nuevas categorías sobre otrasse encuentran las categorías duales.
