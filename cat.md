@@ -2,7 +2,7 @@
 
 ## Categorias
 
-Teoría de Categorías es el estudio del algebra de morfismos. En una nota histórica, está teoría conoció la luz en 1945 con el trabajo _General theory of natural equivalences_ de Eilenberg y Mac Lane. Las primeras aplicaciones se vieron en Topología algebraica y Álgebra abstracta, aunque no tardó su uso en lógica, _computer science_ y muchas otras áreas. Actualmente se usa casi de forma tan extendidad como la Teoría de Conjuntos.
+Teoría de Categorías es el estudio del algebra de morfismos, en otras palabras, los morfismos son el corazón de esta teoría que incluso muchas veces los objetos simplemente existen para garantizar la definición de los morfismos. En una nota histórica, está teoría conoció la luz en 1945 con el trabajo _General theory of natural equivalences_ de Eilenberg y Mac Lane. Las primeras aplicaciones se vieron en Topología algebraica y Álgebra abstracta, aunque no tardó su uso en lógica, _computer science_ y muchas otras áreas. Actualmente se usa de forma casi tan extendidad como la Teoría de Conjuntos.
 
 **Referencias**
 
@@ -39,6 +39,8 @@ En lugar de escribir <img src="https://render.githubusercontent.com/render/math?
 Es importante resaltar el hecho de que, viendo los elementos de una categoría y las condiciones que cumplen, la mayoría del _stress_ es puesto en los morfismos y cómo se comportan. Para afianzar el hecho de que las _arrows_ no necesitan ser funciones, es posible definir una categoría en la que los objetos son conjuntos y las _arrows_ son matrices que toman como número de filas a la cardinalidad del dominio y como número de columnas a la cardinalidad del codominio.
 Finalmente, ten en cuenta que no tiene sentido hablar de un morfismo o _arrow_ fuera del contexto de una categoría pues pierde propiedades, i.e., pierde su definición.
 
+Durante la construcción de nuestra categoría, es usual establecer resticciones respecto a las composiciones como <img src="https://render.githubusercontent.com/render/math?math=\large (\forall f:A\to B,g:B\to A)(g\circ f=1_A\land f\circ g=1_B)"> para evitar composiciones infinitas como <img src="https://render.githubusercontent.com/render/math?math=\large f\circ g\circ f\circ g  ...">.
+
 **Subcategoría**:
 
 Una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{D}"> es llamada **subcategoría** de una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> si
@@ -64,6 +66,14 @@ Como un ejemplo sencillo de categoría dual, vemos que si <img src="https://rend
 - Awodey, S. (2010). Category theory. Oxford university press.
 
 ### Functores {#funct}
+
+Un functor <img src="https://render.githubusercontent.com/render/math?math=\large F:C\to D"> entre categorías <img src="https://render.githubusercontent.com/render/math?math=\large C"> y <img src="https://render.githubusercontent.com/render/math?math=\large D"> es un _mapeo_ (_whatever it means_) de objetos a ojetos y de morfismos a morfismos, de modo que
+
+- <img src="https://render.githubusercontent.com/render/math?math=\large F(f:A\to B)=F(A)\to F(B)">.
+- <img src="https://render.githubusercontent.com/render/math?math=\large F(1_A)=1_{F(A)}">.
+- <img src="https://render.githubusercontent.com/render/math?math=\large F(g\circ f)=F(g)\circ F(f)">.
+
+Notamos la similaridad a [homomorfismos](https://francescoapg.github.io/mathbio/groups#homomorphism) en la última condición.
 
 **Functor covariante**
 
