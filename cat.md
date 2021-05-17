@@ -54,9 +54,17 @@ Si en la condición 2. de arriba tenemos igualdad en lugar de inclusión, entonc
 
 **Isomorfismo**:
 
-Sea una categoría <img src="https://render.githubusercontent.com/render/math?math=\large C"> cualesquiera, un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B"> es un isomorfismo si existe un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large g:A\to B"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large g\circ f=1_A"> y <img src="https://render.githubusercontent.com/render/math?math=\large f\circ g=1_B">.
+Sea una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> cualesquiera, un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B"> es un isomorfismo si existe un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large g:A\to B"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large g\circ f=1_A"> y <img src="https://render.githubusercontent.com/render/math?math=\large f\circ g=1_B">.
 
 Representamos esta relación como <img src="https://render.githubusercontent.com/render/math?math=\large A\cong B">.
+
+**Epimorfismo**:
+
+Sea una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> cualesquiera, un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B"> es un epimorfismo si, dado cualquier par de morfismos <img src="https://render.githubusercontent.com/render/math?math=\large g,h:B\to C">, <img src="https://render.githubusercontent.com/render/math?math=\large g\circ f=h\circ f"> implica <img src="https://render.githubusercontent.com/render/math?math=\large g=h">.
+
+**Monomorfismo**:
+
+Sea una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> cualesquiera, un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B"> es un epimorfismo si, dado cualquier par de morfismos <img src="https://render.githubusercontent.com/render/math?math=\large i,j:D\to A">, <img src="https://render.githubusercontent.com/render/math?math=\large f\circ i=f\circ j"> implica <img src="https://render.githubusercontent.com/render/math?math=\large i=j">.
 
 **Categoría dual**:
 
