@@ -58,7 +58,7 @@ Sea una categoría <img src="https://render.githubusercontent.com/render/math?ma
 
 Representamos esta relación como <img src="https://render.githubusercontent.com/render/math?math=\large A\cong B">.
 
-:sparkles: **Categoría dual**:
+**Categoría dual**:
 
 Entre las formas de construir nuevas categorías sobre otrasse encuentran las categorías duales.
 Sea <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> cualquier categoría. Definimos su categoría **dual** u **opuesta** <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> como sigue.
@@ -67,7 +67,7 @@ Intuitivamente, las flechas en <img src="https://render.githubusercontent.com/re
 
 Como un ejemplo sencillo de categoría dual, vemos que si <img src="https://render.githubusercontent.com/render/math?math=\large (X,\leq)"> es un conjunto parcialmente ordenado considerado como categoría, entonces su dual es el conjunto parcialmente ordenado <img src="https://render.githubusercontent.com/render/math?math=\large (X, \geq)">. Estas categorías duales toman relevancia en teoremas de dualidad.
 
-:sparkles: **Categoría morfismo**:
+**Categoría morfismo**:
 
 Una categoría **morfismo** o categoría _**arrow**_ <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{\to}"> de una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> toma a los morfismos de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> como objetos.
 
