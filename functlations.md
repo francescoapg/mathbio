@@ -14,7 +14,7 @@
 
 ### Funciones {#funciones}
 
-Sea <img src="https://render.githubusercontent.com/render/math?math=\large f"> una función de un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large A"> a otro conjunto <img src="https://render.githubusercontent.com/render/math?math=\large B">, denotamos <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B">. Esto implica que <img src="https://render.githubusercontent.com/render/math?math=\large f"> toma **todos** los elementos de <img src="https://render.githubusercontent.com/render/math?math=\large A"> y los lleva a <img src="https://render.githubusercontent.com/render/math?math=\large B">, en otras palabras, _rango_<img src="https://render.githubusercontent.com/render/math?math=\large (f)\subset B">.
+Sea <img src="https://render.githubusercontent.com/render/math?math=\large f"> una función de un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large A"> a otro conjunto <img src="https://render.githubusercontent.com/render/math?math=\large B">, denotamos <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B">. Esto implica que <img src="https://render.githubusercontent.com/render/math?math=\large f"> toma **todos** los elementos de <img src="https://render.githubusercontent.com/render/math?math=\large A"> y los lleva a <img src="https://render.githubusercontent.com/render/math?math=\large B">, en otras palabras, <img src="https://render.githubusercontent.com/render/math?math=\large rango(f)\subset B">.
 
 Podemos tener cierta idea de igualdad de **funciones** como dos funciones que asocian los mismos elementos del conjunto de partida y el de llegada.
 
