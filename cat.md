@@ -62,9 +62,13 @@ Representamos esta relación como <img src="https://render.githubusercontent.com
 
 Sea una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> cualesquiera, un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B"> es un epimorfismo si, dado cualquier par de morfismos <img src="https://render.githubusercontent.com/render/math?math=\large g,h:B\to C">, <img src="https://render.githubusercontent.com/render/math?math=\large g\circ f=h\circ f"> implica <img src="https://render.githubusercontent.com/render/math?math=\large g=h">.
 
+Los epimorfismos se pueden entender como análogos a [funciones suryectivas](https://francescoapg.github.io/mathbio/functlations#funciones), aunque esto no coincide en todos los contextos. La composición de dos epimorfismos es otro epimorfismo. Se debe tener en cuenta el conjunto de morfismos para determinar si un morfismo es epimorfismo o no, es decir, considerando cierto conjunto de morfismo uno podría ser o no un epimorfismo, más allá de las propiedades propias de dicho morfismo.
+
 **Monomorfismo**:
 
 Sea una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> cualesquiera, un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B"> es un epimorfismo si, dado cualquier par de morfismos <img src="https://render.githubusercontent.com/render/math?math=\large i,j:D\to A">, <img src="https://render.githubusercontent.com/render/math?math=\large f\circ i=f\circ j"> implica <img src="https://render.githubusercontent.com/render/math?math=\large i=j">.
+
+Los monomorfismos son análogos a [funciones inyectivas](https://francescoapg.github.io/mathbio/functlations#funciones), aunque en el contexto de categorías, se pueden encontrar morfismos que incluso siendo funciones son monomorfismos y no inyectivas.
 
 **Categoría dual**:
 
