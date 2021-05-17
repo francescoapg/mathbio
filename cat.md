@@ -60,6 +60,12 @@ Intuitivamente, las flechas en <img src="https://render.githubusercontent.com/re
 
 Como un ejemplo sencillo de categoría dual, vemos que si <img src="https://render.githubusercontent.com/render/math?math=\large (X,\leq)"> es un conjunto parcialmente ordenado considerado como categoría, entonces su dual es el conjunto parcialmente ordenado <img src="https://render.githubusercontent.com/render/math?math=\large (X, \geq)">.
 
+**Isomorfismo**:
+
+Sea una categoría <img src="https://render.githubusercontent.com/render/math?math=\large C"> cualesquiera, un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B"> es un isomorfismo si existe un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large g:A\to B"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large g\circ f=1_A"> y <img src="https://render.githubusercontent.com/render/math?math=\large f\circ g=1_B">.
+
+Representamos esta relación como <img src="https://render.githubusercontent.com/render/math?math=\large A\cong B">.
+
 **Referencias**
 
 - Joshi, K. D. (1983). Introduction to general topology. New Age International.
