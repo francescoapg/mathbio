@@ -10,9 +10,10 @@ Teoría de Categorías es el estudio del algebra de morfismos. En una nota hist�
 
 **Índice**
 
-1. [Conceptos generales](#conceptos)
+1. [Definiciones generales](#def)
+2. [Functores](#funct)
 
-### Conceptos generales {#conceptos}
+### Definiciones generales {#def}
 
 Una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> consiste en
 
@@ -56,6 +57,13 @@ Los objetos de <img src="https://render.githubusercontent.com/render/math?math=\
 Intuitivamente, las flechas en <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> van en la dirección opuesta a aquellas de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">.
 
 Como un ejemplo sencillo de categoría dual, vemos que si <img src="https://render.githubusercontent.com/render/math?math=\large (X,\leq)"> es un conjunto parcialmente ordenado considerado como categoría, entonces su dual es el conjunto parcialmente ordenado <img src="https://render.githubusercontent.com/render/math?math=\large (X, \geq)">.
+
+**Referencias**
+
+- Joshi, K. D. (1983). Introduction to general topology. New Age International.
+- Awodey, S. (2010). Category theory. Oxford university press.
+
+### Functores {#funct}
 
 **Functor covariante**
 
