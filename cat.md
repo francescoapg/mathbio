@@ -52,19 +52,24 @@ Una categoría <img src="https://render.githubusercontent.com/render/math?math=\
 
 Si en la condición 2. de arriba tenemos igualdad en lugar de inclusión, entonces <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{D}"> es llamada una **subcategoría completa** de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">.
 
-**Categoría dual**:
-
-Sea <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> cualquier categoría. Definimos su categoría **dual** u **opuesta** <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> como sigue.
-Los objetos de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> son los mismos que aquellos de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">. Sin embargo, para dos objetos <img src="https://render.githubusercontent.com/render/math?math=\large X"> y <img src="https://render.githubusercontent.com/render/math?math=\large Y">, definimos <img src="https://render.githubusercontent.com/render/math?math=\large Mor_{\mathcal{C}^{op}}(X,Y)"> como <img src="https://render.githubusercontent.com/render/math?math=\large Mor_{\mathcal{C}}(Y,X)">. En otras palabras, intercambiamos el dominio y codominio de cada morfismo de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> y obtenemos un morfismo en <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}">. La ley de composición también es cambiada consecuentemente.
-Intuitivamente, las flechas en <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> van en la dirección opuesta a aquellas de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">.
-
-Como un ejemplo sencillo de categoría dual, vemos que si <img src="https://render.githubusercontent.com/render/math?math=\large (X,\leq)"> es un conjunto parcialmente ordenado considerado como categoría, entonces su dual es el conjunto parcialmente ordenado <img src="https://render.githubusercontent.com/render/math?math=\large (X, \geq)">.
-
 **Isomorfismo**:
 
 Sea una categoría <img src="https://render.githubusercontent.com/render/math?math=\large C"> cualesquiera, un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B"> es un isomorfismo si existe un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large g:A\to B"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large g\circ f=1_A"> y <img src="https://render.githubusercontent.com/render/math?math=\large f\circ g=1_B">.
 
 Representamos esta relación como <img src="https://render.githubusercontent.com/render/math?math=\large A\cong B">.
+
+:sparkles: **Categoría dual**:
+
+Entre las formas de construir nuevas categorías sobre otrasse encuentran las categorías duales.
+Sea <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> cualquier categoría. Definimos su categoría **dual** u **opuesta** <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> como sigue.
+Los objetos de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> son los mismos que aquellos de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">. Sin embargo, para dos objetos <img src="https://render.githubusercontent.com/render/math?math=\large X"> y <img src="https://render.githubusercontent.com/render/math?math=\large Y">, definimos <img src="https://render.githubusercontent.com/render/math?math=\large Mor_{\mathcal{C}^{op}}(X,Y)"> como <img src="https://render.githubusercontent.com/render/math?math=\large Mor_{\mathcal{C}}(Y,X)">. En otras palabras, intercambiamos el dominio y codominio de cada morfismo de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> y obtenemos un morfismo en <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}">. La ley de composición también es cambiada consecuentemente.
+Intuitivamente, las flechas en <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> van en la dirección opuesta a aquellas de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">.
+
+Como un ejemplo sencillo de categoría dual, vemos que si <img src="https://render.githubusercontent.com/render/math?math=\large (X,\leq)"> es un conjunto parcialmente ordenado considerado como categoría, entonces su dual es el conjunto parcialmente ordenado <img src="https://render.githubusercontent.com/render/math?math=\large (X, \geq)">. Estas categorías duales toman relevancia en teoremas de dualidad.
+
+:sparkles: **Categoría morfismo**:
+
+Una categoría **morfismo** o categoría _**arrow**_ <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{\to}"> de una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> toma a los morfismos de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> como objetos.
 
 **Referencias**
 
