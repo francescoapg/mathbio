@@ -70,7 +70,7 @@ Sea una categoría <img src="https://render.githubusercontent.com/render/math?ma
 
 Los monomorfismos son análogos a [funciones inyectivas](https://francescoapg.github.io/mathbio/functlations#funciones), aunque en el contexto de categorías, se pueden encontrar morfismos que incluso siendo funciones son monomorfismos y no inyectivas.
 
-Finalmente, por la existencia de la inversa, todo isomorfismo es también un epimorfismo y un monomorfismo. En la categoría de conjuntos, lo inverso también se cumple, es decir, si un morfismo es epi y mono, entonces también es un isomorfismo.
+Finalmente, por la existencia de la inversa, todo isomorfismo es también un epimorfismo y un monomorfismo. En la categoría de conjuntos, lo inverso también se cumple, es decir, si un morfismo es epi y mono, entonces también es un isomorfismo. Existe también una versión menos estricta de un isomorfismo; sea <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B"> un morfismo que tiene una _inversa izquierda_ <img src="https://render.githubusercontent.com/render/math?math=\large g:B\to A"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large g\circ f=1_A">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large f"> es un monomorfismo y <img src="https://render.githubusercontent.com/render/math?math=\large g">, un epimorfismo.
 
 **Categoría dual**:
 
