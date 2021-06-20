@@ -41,7 +41,7 @@ Finalmente, ten en cuenta que no tiene sentido hablar de un morfismo o _arrow_ f
 
 Durante la construcción de nuestra categoría, es usual establecer resticciones respecto a las composiciones como <img src="https://render.githubusercontent.com/render/math?math=\large (\forall f:A\to B,g:B\to A)(g\circ f=1_A\land f\circ g=1_B)"> para evitar composiciones infinitas como <img src="https://render.githubusercontent.com/render/math?math=\large f\circ g\circ f\circ g  ...">.
 
-Para que todos estos conceptos y construcciones funciones, es **usual** llevar cerca la idea de que los objetos de una categoría comparten algún tipo de estructura, de la misma manera, los morfismos suelen referirse a dichas estructuras o, en algunas casos, preservarlas.
+Para que todos estos conceptos y construcciones _funcionen_, es **usual** llevar cerca la idea de que los objetos de una categoría comparten algún tipo de estructura, de la misma manera, los morfismos suelen referirse a dichas estructuras o, en algunas casos, preservarlas.
 
 **Subcategoría**:
 
