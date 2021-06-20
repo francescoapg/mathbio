@@ -54,7 +54,7 @@ Una categoría <img src="https://render.githubusercontent.com/render/math?math=\
 
 Si en la condición 2. de arriba tenemos igualdad en lugar de inclusión, entonces <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{D}"> es llamada una **subcategoría completa** de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">.
 
-Entre las conexiones con otros campos del álgebra, se tiene que toda categoría con un solo objeto es un **monoide**. El monoide (<img src="https://render.githubusercontent.com/render/math?math=\large M">) tendría la forma (<img src="https://render.githubusercontent.com/render/math?math=\large Mor(X,X),\circ">), siendo <img src="https://render.githubusercontent.com/render/math?math=\large X"> el único objeto de la categoría. En otras palabras, <img src="https://render.githubusercontent.com/render/math?math=\large X:=Mor(X,X)">.
+Entre las conexiones con otros campos del álgebra, se tiene que toda categoría con un solo objeto es un **monoide**. El monoide <img src="https://render.githubusercontent.com/render/math?math=\large M"> tendría la forma <img src="https://render.githubusercontent.com/render/math?math=\large (Mor(X,X),\circ)">, siendo <img src="https://render.githubusercontent.com/render/math?math=\large X"> el único objeto de la categoría. En otras palabras, <img src="https://render.githubusercontent.com/render/math?math=\large X:=Mor(X,X)">. Finalmente, <img src="https://render.githubusercontent.com/render/math?math=\large \circ"> representa la composición de morfismos.
 
 **Isomorfismo**:
 
