@@ -63,6 +63,7 @@ Sea una categoría <img src="https://render.githubusercontent.com/render/math?ma
 Representamos esta relación como <img src="https://render.githubusercontent.com/render/math?math=\large A\cong B">. Un **automorfismo** de un objeto <img src="https://render.githubusercontent.com/render/math?math=\large A"> es un isomorfismo <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to A">
 
 La definición de isomorfismo implica que los objetos asociados comparten los mismos morfimos, es decir, que si <img src="https://render.githubusercontent.com/render/math?math=\large A"> y <img src="https://render.githubusercontent.com/render/math?math=\large B"> son isomórficos y existe un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large B\to X">, entonces también existe un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large A\to X">, similarmente en el otro sentido. Esto se cumple debido a la existencia de composiciones de cualquier morfismo con los morfismos que definene el isomofismo.
+Por este motivo, en una categoría no es posible distinguir dos objetos isomórficos basado en sus relaciones (morfismos) con los demás.
 
 Otro aspecto remarcable es que los grupos de automorfismos de dos objetos isomórficos son isomórficos entre ellos.
 
