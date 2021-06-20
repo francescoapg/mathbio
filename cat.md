@@ -54,11 +54,12 @@ Una categoría <img src="https://render.githubusercontent.com/render/math?math=\
 
 Si en la condición 2. de arriba tenemos igualdad en lugar de inclusión, entonces <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{D}"> es llamada una **subcategoría completa** de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">.
 
+Entre las conexiones con otros campos del álgebra, se tiene que toda categoría con un solo objeto es un **monoide**. El monoide (<img src="https://render.githubusercontent.com/render/math?math=\large M">) tendría la forma (<img src="https://render.githubusercontent.com/render/math?math=\large Mor(X,X),\circ">), siendo <img src="https://render.githubusercontent.com/render/math?math=\large X"> el único objeto de la categoría. En otras palabras, <img src="https://render.githubusercontent.com/render/math?math=\large X:=Mor(X,X)">.
 **Isomorfismo**:
 
 Sea una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> cualesquiera, un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B"> es un isomorfismo si existe un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large g:A\to B"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large g\circ f=1_A"> y <img src="https://render.githubusercontent.com/render/math?math=\large f\circ g=1_B">.
 
-Representamos esta relación como <img src="https://render.githubusercontent.com/render/math?math=\large A\cong B">.
+Representamos esta relación como <img src="https://render.githubusercontent.com/render/math?math=\large A\cong B">. Un **automorfismo** de un objeto <img src="https://render.githubusercontent.com/render/math?math=\large A"> es un isomorfismo <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to A">
 
 **Epimorfismo**:
 
