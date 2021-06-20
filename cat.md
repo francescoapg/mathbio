@@ -41,6 +41,8 @@ Finalmente, ten en cuenta que no tiene sentido hablar de un morfismo o _arrow_ f
 
 Durante la construcción de nuestra categoría, es usual establecer resticciones respecto a las composiciones como <img src="https://render.githubusercontent.com/render/math?math=\large (\forall f:A\to B,g:B\to A)(g\circ f=1_A\land f\circ g=1_B)"> para evitar composiciones infinitas como <img src="https://render.githubusercontent.com/render/math?math=\large f\circ g\circ f\circ g  ...">.
 
+Para que todos estos conceptos y construcciones funciones, es **usual** llevar cerca la idea de que los objetos de una categoría comparten algún tipo de estructura, de la misma manera, los morfismos suelen referirse a dichas estructuras o, en algunas casos, preservarlas.
+
 **Subcategoría**:
 
 Una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{D}"> es llamada **subcategoría** de una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> si
@@ -74,7 +76,7 @@ Finalmente, por la existencia de la inversa, todo isomorfismo es también un epi
 
 **Categoría dual**:
 
-Entre las formas de construir nuevas categorías sobre otrasse encuentran las categorías duales.
+Entre las formas de construir nuevas categorías sobre otras se encuentran las categorías duales.
 Sea <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> cualquier categoría. Definimos su categoría **dual** u **opuesta** <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> como sigue.
 Los objetos de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> son los mismos que aquellos de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">. Sin embargo, para dos objetos <img src="https://render.githubusercontent.com/render/math?math=\large X"> y <img src="https://render.githubusercontent.com/render/math?math=\large Y">, definimos <img src="https://render.githubusercontent.com/render/math?math=\large Mor_{\mathcal{C}^{op}}(X,Y)"> como <img src="https://render.githubusercontent.com/render/math?math=\large Mor_{\mathcal{C}}(Y,X)">. En otras palabras, intercambiamos el dominio y codominio de cada morfismo de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> y obtenemos un morfismo en <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}">. La ley de composición también es cambiada consecuentemente.
 Intuitivamente, las flechas en <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> van en la dirección opuesta a aquellas de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">.
@@ -88,6 +90,7 @@ Una categoría **morfismo** o categoría _**arrow**_ <img src="https://render.gi
 **Referencias**
 
 - Joshi, K. D. (1983). Introduction to general topology. New Age International.
+- Jost, J. (2015). Mathematical concepts. Springer International Publishing.
 - Awodey, S. (2010). Category theory. Oxford university press.
 
 ### Functores {#funct}
