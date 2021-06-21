@@ -10,6 +10,17 @@
 
 ### Relaciones {#relaciones}
 
+Una **partición** de un conjunto es un conjunto de subconjuntos del primero tal que para cualquier elemento de la partición, si dichos elementos son diferentes, entonces su intersección es vacía. Además, todos los elementos del conjunto inicial pertenecen a algún elemento de la partición.
+
+Una relación de equivalencia es una relación reflexiva (<img src="https://render.githubusercontent.com/render/math?math=(%5Cforall%20a)%20(a%5Csim%20a)">), simétrica (<img src="https://render.githubusercontent.com/render/math?math=(%5Cforall%20a%2Cb)%20(a%5Csim%20b%20%5Cimplies%20b%5Csim%20a)">) y transitiva (<img src="https://render.githubusercontent.com/render/math?math=(%5Cforall%20a%2Cb%2Cc)%20(a%5Csim%20b%5Cland%20b%5Csim%20c%20%5Cimplies%20a%5Csim%20c)">). A partir de una relación de equivalencia definida en un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large A">, la clase de quivalencia de un elemento <img src="https://render.githubusercontent.com/render/math?math=\large a\in A "> es <img src="https://render.githubusercontent.com/render/math?math=%5Ba%5D%3A%3D%5C%7Bb%5Cin%20A%3Ab%5Csim%20a%5C%7D">.
+
+
+
+**Referencias**:
+
+- Jost, J. (2015). Mathematical concepts. Springer International Publishing.
+
+
 ### Teorema de la función implícita {#teorema}
 
 ### Funciones {#funciones}
