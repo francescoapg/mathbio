@@ -14,7 +14,7 @@ Una **partición** de un conjunto es un conjunto de subconjuntos del primero tal
 
 Una relación de equivalencia es una relación reflexiva (<img src="https://render.githubusercontent.com/render/math?math=(%5Cforall%20a)%20(a%5Csim%20a)">), simétrica (<img src="https://render.githubusercontent.com/render/math?math=(%5Cforall%20a%2Cb)%20(a%5Csim%20b%20%5Cimplies%20b%5Csim%20a)">) y transitiva (<img src="https://render.githubusercontent.com/render/math?math=(%5Cforall%20a%2Cb%2Cc)%20(a%5Csim%20b%5Cland%20b%5Csim%20c%20%5Cimplies%20a%5Csim%20c)">). A partir de una relación de equivalencia definida en un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large A">, la clase de quivalencia de un elemento <img src="https://render.githubusercontent.com/render/math?math=\large a\in A "> es <img src="https://render.githubusercontent.com/render/math?math=%5Ba%5D%3A%3D%5C%7Bb%5Cin%20A%3Ab%5Csim%20a%5C%7D">.
 
-
+Dada una relación de equivalencia en un set, su clase de equivalencia forma una partición en dicho set. Más aún, dad una partición <img src="https://render.githubusercontent.com/render/math?math=\large B"> de <img src="https://render.githubusercontent.com/render/math?math=\large A">, si definimos una relación <img src="https://render.githubusercontent.com/render/math?math=\large \sim"> como <img src="https://render.githubusercontent.com/render/math?math=\large a\sim b\iff \exists x \in B:a,b\in x"> entonces <img src="https://render.githubusercontent.com/render/math?math=\large \sim"> es una relación de equivalencia.
 
 **Referencias**:
 
