@@ -34,9 +34,15 @@ Una función parcial es una función cuyo dominio es un subconjunto del conjunto
 **Función biyectiva**:
 Sea <img src="https://render.githubusercontent.com/render/math?math=\large f: A\to B">. Una función biyectiva es aquella que es inyectiva (1 a 1) y surjectiva (onto) a la vez. Se puede probar también que <img src="https://render.githubusercontent.com/render/math?math=\large f"> admite una  inversa <img src="https://render.githubusercontent.com/render/math?math=\large f^{-1}"> si y solo si <img src="https://render.githubusercontent.com/render/math?math=\large f"> es biyectiva.
 
-**Función inyectiva**: <img src="https://render.githubusercontent.com/render/math?math=\large x,y\in A,f(x)=f(y)\implies x=y">
+**Función inyectiva**: <img src="https://render.githubusercontent.com/render/math?math=\large \forall x,y\in A,f(x)=f(y)\implies x=y">
 
 **Función suryectiva**: <img src="https://render.githubusercontent.com/render/math?math=\large \forall b\in B,\exists a \in A : f(a)=b">
+
+Un importante resultado sobre composiciones de funciones establece que
+
+- La composición de dos funciones inyectivas es inyectiva
+- La composición de dos funciones suryectivas es suryecyiva
+- La composición de dos funciones biyectivas es biyectiva.
 
 **Función bien definida**
 
@@ -76,6 +82,7 @@ Si <img src="https://render.githubusercontent.com/render/math?math=\large f"> es
 **Referencias**
 
 - Awodey, S. (2010). Category theory. Oxford university press.
+- Beck, M., & Geoghegan, R. (2011). The Art of Proof. Springer.
 - Buck, R. C. (1978). Advanced calculus. McGraw-Hill, Inc.
 - Humphreys, J. F. (1996). A course in group theory. Oxford University Press.
 - Joshi, K. D. (1983). Introduction to general topology. New Age International.
