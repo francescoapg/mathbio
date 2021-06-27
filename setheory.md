@@ -174,30 +174,36 @@ Esto también parece cumplirse cuando <img src="https://render.githubusercontent
 ### Filtros {#filter}
 
 Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> un conjunto, un conjunto no vacío <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{F}"> de **subconjuntos** de <img src="https://render.githubusercontent.com/render/math?math=\large X"> (es decir, <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{F}\subset\wp(X)">) es llamado un _**filtro**_ en <img src="https://render.githubusercontent.com/render/math?math=\large X"> siempre que lo siguiente se cumpla
-1. <img src="https://render.githubusercontent.com/render/math?math=\large \emptyset\not\in\mathcal{F}">.
+1. <img src="https://render.githubusercontent.com/render/math?math=\large \emptyset\notin\mathcal{F}">.
 2. <img src="https://render.githubusercontent.com/render/math?math=\large F_1\in\mathcal{F}\land F_2\in\mathcal{F}\implies F_1\cap F_2 \in\mathcal{F}">.
 3. <img src="https://render.githubusercontent.com/render/math?math=\large F\in\mathcal{F}\land F\subset F^*\subset X\implies F^*\in\mathcal{F}">.
 
 A continuación se presenta el concepto de **filter base**.
 
 **Definición**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> un conjunto, un conjunto no vacío <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{B}"> de subconjuntos de <img src="https://render.githubusercontent.com/render/math?math=\large X"> tal que
-1. <img src="https://render.githubusercontent.com/render/math?math=\large \emptyset\not\in\mathcal{B}">.
-2. <img src="https://render.githubusercontent.com/render/math?math=\large B_1\in\mathcal{B}\and B_2\in\mathcal{B}\implies\exists B_3\in\mathcal{B}:B_3\subset B_1\cap B_2">.
+1. <img src="https://render.githubusercontent.com/render/math?math=\large \emptyset\notin\mathcal{B}">.
+2. <img src="https://render.githubusercontent.com/render/math?math=\large B_1\in\mathcal{B}\land B_2\in\mathcal{B}\implies\exists B_3\in\mathcal{B}:B_3\subset B_1\cap B_2">.
 
 A partir de este conjunto <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{B}"> generamos el conjunto <img src="https://render.githubusercontent.com/render/math?math=\large (\mathcal{B})=\{x\subset X:(\forall x\exists B\in\mathcal{B})(B\subset x)\}"> de modo que este es un filtro. Ten en cuenta que un mismo filtro puede ser generado por múltiples filter bases.
 
-**Ultrafiltro**: Un filtro que es maximal. Debe cumplir que
+Solemos usar la expresión <img src="https://render.githubusercontent.com/render/math?math=\large F(X)"> para referirnos a todos los filtros en un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large X">.
 
-1. El vacío no está incluído en un ultrafiltro.
-2. Si A y B pertenecen al ultrafiltro, entonces su unión también es un elemento.
-3. Si Z está incluído en el ultrafiltro, entonces Z pertenece al ultrafiltro o su complemento en el ultrafiltro pertenece al ultrafiltro.
+**Ultrafiltro**: Es un filtro maximal dado el orden parcial de la inclusión <img src="https://render.githubusercontent.com/render/math?math=\large (F(X),\subset)">, es decir, no hay otro filtro que lo contenga que no sea el mismo.
+
+Como consecuencia de su definición, se cumplen las siguientes propiedades además de la definición de filtro, sea <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{U}"> un ultrafiltro en <img src="https://render.githubusercontent.com/render/math?math=\large X">,
+
+1. Si A y B pertenecen al ultrafiltro, entonces su unión también es un elemento.
+2. <img src="https://render.githubusercontent.com/render/math?math=\large (\forall A\subset X)(A\in\mathcal{U}\lor X-A\in\mathcal{U})">.
 
 Los ultrafiltros se dividen en dos clases, los triviales (o fijado o principal) y los libres. Los ultrafiltros triviales son una colección de todos los subconjuntos que contienen a un elemento (el elemento está fijo). Los ultrafiltros libres no son fijos a cualquier elemento, para probar la existencia de un ultrafiltro se requiere el axioma de elección.
 
-Para cada filtro hay un ultrafiltro que lo contiene. Todo filtro es la intersección de todos los ultrafiltros que lo contienen.
+**Teorema**: Para cada filtro existe un ultrafiltro que lo contiene.
+
+Todo filtro es la intersección de todos los ultrafiltros que lo contienen.
 
 **Referencias**
 
+- Herrlich, H. (2006). Axiom of choice. Berlin: Springer.
 - Preuss, G. (2011). Foundations of topology: an approach to convenient topology. Springer Science & Business Media.
 
 ### Axioma de elección (AC) {#choice}
@@ -236,16 +242,6 @@ Entre los matemáticos constructivistas, algunos aceptan formas débiles del axi
 
 1. **Teorema del ultrafiltro**: En todo conjunto cualquier filtro puede ser agrandado a un ultrafiltro.
 2. **Principio del ultrafiltro débil**: Cada conjunto tiene un ultrafiltro libre.
-
-**Ultrafiltro**: Un filtro que es maximal. Debe cumplir que
-
-1. El vacío no está incluído en un ultrafiltro.
-2. Si A y B pertenecen al ultrafiltro, entonces su unión también es un elemento.
-3. Si Z está incluído en el ultrafiltro, entonces Z pertenece al ultrafiltro o su complemento en el ultrafiltro pertenece al ultrafiltro.
-
-Los ultrafiltros se dividen en dos clases, los triviales (o fijado o principal) y los libres. Los ultrafiltros triviales son una colección de todos los subconjuntos que contienen a un elemento (el elemento está _fijo_). Los ultrafiltros libres no son fijos a cualquier elemento, para probar la existencia de un ultrafiltro se requiere el axioma de elección.
-
-Para cada filtro hay un ultrafiltro que lo contiene. Todo filtro es la intersección de todos los ultrafiltros que lo contienen.
 
 **Referencias**
 
