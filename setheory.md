@@ -193,7 +193,9 @@ Solemos usar la expresión <img src="https://render.githubusercontent.com/render
 Como consecuencia de su definición, se cumplen las siguientes propiedades además de la definición de filtro, sea <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{U}"> un ultrafiltro en <img src="https://render.githubusercontent.com/render/math?math=\large X">,
 
 1. Si A y B pertenecen al ultrafiltro, entonces su unión también es un elemento.
-2. <img src="https://render.githubusercontent.com/render/math?math=\large (\forall A\subset X)(A\in\mathcal{U}\lor X-A\in\mathcal{U})">.
+2. <img src="https://render.githubusercontent.com/render/math?math=\large (\forall A\subset X)(A\in\mathcal{U}\lor X\setminusA\in\mathcal{U})">.
+
+La propiedad 2 puede ser tomada como definición de ultrafiltros (en adición a la definición de filtro).
 
 Los ultrafiltros se dividen en dos clases, los triviales (o fijado o principal) y los libres. Los ultrafiltros triviales son una colección de todos los subconjuntos que contienen a un elemento (el elemento está fijo). Los ultrafiltros libres no son fijos a cualquier elemento, para probar la existencia de un ultrafiltro se requiere el axioma de elección.
 
