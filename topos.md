@@ -194,7 +194,7 @@ El estudio de σ-álgebras está relacionado con probabilidades y surge como res
 
 - <img src="https://render.githubusercontent.com/render/math?math=\large X\in\mathcal{A}">.
 - <img src="https://render.githubusercontent.com/render/math?math=\large y\in\mathcal{A}\implies X\setminus y\in\mathcal{A}">.
-- Siendo <img src="https://render.githubusercontent.com/render/math?math=\large \{X_n\}"> un secuencia, si <img src="https://render.githubusercontent.com/render/math?math=\large X_i\mathcal{A}">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large \Cup_{n\in\N}X_n\in\mathcal{A}">.
+- Siendo <img src="https://render.githubusercontent.com/render/math?math=\large \{X_n\}"> un secuencia, si <img src="https://render.githubusercontent.com/render/math?math=\large X_n\in\mathcal{A} \forall n\in\N">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large \bigcup_{n\in\N}X_n\in\mathcal{A}">.
 
 **Referencias**
 
