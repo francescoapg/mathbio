@@ -17,6 +17,10 @@ Los objetos que estudia la Topología son **espacios topológicos**, los cuales,
 5. [Retracción](#retraction)
 6. [Constructos Topológicos](#contructs)
 
+**Elementos Adicionales**
+
+7. [σ-Álgebras y _Set Systems](#apen-1)
+
 ### Nociones Introductorias {#intro}
 
 Estudiar Topología es más sencillo con un ejemplo concreto como lo es <img src="https://render.githubusercontent.com/render/math?math=\large \R">.
@@ -177,3 +181,11 @@ Un **constructo** es una categoría concreta sobre **Set**.
 **Referencias**
 
 - Preuss, G. (2011). Foundations of topology: an approach to convenient topology. Springer Science & Business Media.
+
+
+### σ-Álgebras y _Set Systems {#apen-1}
+
+
+**Referencias**
+
+- Jost, J. (2015). Mathematical concepts. Berlin: Springer.
