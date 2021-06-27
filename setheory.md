@@ -12,7 +12,20 @@ Esta teoría ve la luz en 1874, con el trabajo del matemático aleman Georg Cant
 
 entre otras.
 
-### Conceptos preliminares
+**Índice**
+
+1. [Conceptos preliminares](#preli)
+2. [Introducción](#intro)
+3. [Axiomas de Zermelo-Fraenkel](#ZF)
+4. [Inducción matemática](#induc)
+5. [Conjuntos contables](#countable)
+6. [Filtros](#filter)
+7. [Axioma de elección (AC)](#choice)
+8. [Conjuntos bien ordenados](#wellordered)
+9. [Inducción](#induction)
+10. [Números cardinales](#cardinal)
+
+### Conceptos preliminares {#preli}
 
 Antes de iniciar con el estudio de esta teoría, es necesario tener algunos conceptos de lógica matemática claros. Entre ellos, recordar que una **fórmula** (abreviación de fórmula bien formulada o _well-formed formula_) es una cadena de caracteres (elementos de un alfabeto) que siguen o cumplen con una gramática formal. El conjunto de todas las fórmulas es el **lenguaje formal**. Como ejemplo, un **teorema** es fórmula de cierta importancia en el lenguaje formal. Finalmente, una fórmula puede tener variables libres o no, una fórmula sin variables libres es conocida como una _sentence_. En el caso de las fórmulas con variables libres, se suele adoptar la notación <img src="https://render.githubusercontent.com/render/math?math=\large \phi(p_1,...,p_n)">, donde <img src="https://render.githubusercontent.com/render/math?math=\large p_1,...,p_n"> son las variables.
 
@@ -60,17 +73,6 @@ Respecto a la notación usada, en lógica de primer orden, es usual redactar de 
 **Referencias**
 
 - Jech, Thomas J. (2003). Set theory. Springer 3rd Millennium ed.
-
-**Índice**
-
-1. [Introducción](#intro)
-2. [Axiomas de Zermelo-Fraenkel](#ZF)
-3. [Inducción matemática](#induc)
-4. [Conjuntos contables](#countable)
-5. [Axioma de elección (AC)](#choice)
-6. [Conjuntos bien ordenados](#wellordered)
-7. [Inducción](#induction)
-8. [Números cardinales](#cardinal)
 
 ### Introducción {#intro}
 
@@ -169,6 +171,34 @@ Esto también parece cumplirse cuando <img src="https://render.githubusercontent
 
 - Srivastava, S. M. (2008). A course on Borel sets. Springer Science & Business Media.
 
+### Filtros {#filter}
+
+Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> un conjunto, un conjunto no vacío <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{F}"> de **subconjuntos** de <img src="https://render.githubusercontent.com/render/math?math=\large X"> (es decir, <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{F}\subset\wp(X)">) es llamado un _**filtro**_ en <img src="https://render.githubusercontent.com/render/math?math=\large X"> siempre que lo siguiente se cumpla
+1. <img src="https://render.githubusercontent.com/render/math?math=\large \emptyset\not\in\mathcal{F}">.
+2. <img src="https://render.githubusercontent.com/render/math?math=\large F_1\in\mathcal{F}\land F_2\in\mathcal{F}\implies F_1\cap F_2 \in\mathcal{F}">.
+3. <img src="https://render.githubusercontent.com/render/math?math=\large F\in\mathcal{F}\land F\subset F^*\subset X\implies F^*\in\mathcal{F}">.
+
+A continuación se presenta el concepto de **filter base**.
+
+**Definición**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> un conjunto, un conjunto no vacío <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{B}"> de subconjuntos de <img src="https://render.githubusercontent.com/render/math?math=\large X"> tal que
+1. <img src="https://render.githubusercontent.com/render/math?math=\large \emptyset\not\in\mathcal{B}">.
+2. <img src="https://render.githubusercontent.com/render/math?math=\large B_1\in\mathcal{B}\and B_2\in\mathcal{B}\implies\exists B_3\in\mathcal{B}:B_3\subset B_1\cap B_2">.
+
+A partir de este conjunto <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{B}"> generamos el conjunto <img src="https://render.githubusercontent.com/render/math?math=\large (\mathcal{B})=\{x\subset X:(\forall x\exists B\in\mathcal{B})(B\subset x)\}"> de modo que este es un filtro. Ten en cuenta que un mismo filtro puede ser generado por múltiples filter bases.
+
+**Ultrafiltro**: Un filtro que es maximal. Debe cumplir que
+
+1. El vacío no está incluído en un ultrafiltro.
+2. Si A y B pertenecen al ultrafiltro, entonces su unión también es un elemento.
+3. Si Z está incluído en el ultrafiltro, entonces Z pertenece al ultrafiltro o su complemento en el ultrafiltro pertenece al ultrafiltro.
+
+Los ultrafiltros se dividen en dos clases, los triviales (o fijado o principal) y los libres. Los ultrafiltros triviales son una colección de todos los subconjuntos que contienen a un elemento (el elemento está fijo). Los ultrafiltros libres no son fijos a cualquier elemento, para probar la existencia de un ultrafiltro se requiere el axioma de elección.
+
+Para cada filtro hay un ultrafiltro que lo contiene. Todo filtro es la intersección de todos los ultrafiltros que lo contienen.
+
+**Referencias**
+
+- Preuss, G. (2011). Foundations of topology: an approach to convenient topology. Springer Science & Business Media.
 
 ### Axioma de elección (AC) {#choice}
 
