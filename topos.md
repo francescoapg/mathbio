@@ -19,7 +19,7 @@ Los objetos que estudia la Topología son **espacios topológicos**, los cuales,
 
 **Elementos Adicionales**
 
-7. [σ-Álgebras y _Set Systems](#apen-1)
+1. [σ-Álgebras y _Set Systems_](#apen-1)
 
 ### Nociones Introductorias {#intro}
 
@@ -182,9 +182,19 @@ Un **constructo** es una categoría concreta sobre **Set**.
 
 - Preuss, G. (2011). Foundations of topology: an approach to convenient topology. Springer Science & Business Media.
 
+## Elementos Adicionales
 
 ### σ-Álgebras y _Set Systems {#apen-1}
 
+**σ-Álgebras**
+
+El estudio de σ-álgebras está relacionado con probabilidades y surge como respuesta a la necesidad de medir. Al ser cerradas bajo complementación, las σ-álgebras nos brindan un marco para responder preguntas presentándonos las alternativas <img src="https://render.githubusercontent.com/render/math?math=\large P"> y <img src="https://render.githubusercontent.com/render/math?math=\large \neg P">. La definición por Jost (2015) es la siguiente,
+
+**Definición**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> un conjunto, una σ-álgebra de subconjuntos de <img src="https://render.githubusercontent.com/render/math?math=\large X"> es un subconjunto <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{A}"> de <img src="https://render.githubusercontent.com/render/math?math=\large \wp(X)"> que satisface:
+
+- <img src="https://render.githubusercontent.com/render/math?math=\large X\in\mathcal{A}">.
+- <img src="https://render.githubusercontent.com/render/math?math=\large y\in\mathcal{A}\implies X\setminus y\in\mathcal{A}">.
+- Siendo <img src="https://render.githubusercontent.com/render/math?math=\large \{X_n\}"> un secuencia, si <img src="https://render.githubusercontent.com/render/math?math=\large X_i\mathcal{A}">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large \Cup_{n\in\N}X_n\in\mathcal{A}">.
 
 **Referencias**
 
