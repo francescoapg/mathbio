@@ -15,6 +15,7 @@ Los objetos que estudia la Topología son **espacios topológicos**, los cuales,
 3. [Homeomorfismo](#homeo)
 4. [Espacios Topológicos](#topospace)
 5. [Retracción](#retraction)
+6. [Constructos Topológicos](#contructs)
 
 ### Nociones Introductorias {#intro}
 
@@ -167,3 +168,12 @@ Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> u
 es una **retracción** si <img src="https://render.githubusercontent.com/render/math?math=%5Ctau_%7B%7CA%7D(x)%3Dx">.
 
 **Referencias**
+
+
+### Constructos Topológicos {#contructs}
+
+Un **constructo** es una categoría concreta sobre **Set**.
+
+**Referencias**
+
+- Preuss, G. (2011). Foundations of topology: an approach to convenient topology. Springer Science & Business Media.
