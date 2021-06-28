@@ -19,7 +19,7 @@ Los objetos que estudia la Topología son **espacios topológicos**, los cuales,
 
 **Elementos Adicionales**
 
-1. [σ-Álgebras y _Set Systems_](#apen-1)
+1. [σ-Álgebras](#apen-1)
 
 ### Nociones Introductorias {#intro}
 
@@ -184,9 +184,7 @@ Un **constructo** es una categoría concreta sobre **Set**.
 
 ## Elementos Adicionales
 
-### σ-Álgebras y _Set Systems_ {#apen-1}
-
-**σ-Álgebras**
+### σ-Álgebras{#apen-1}
 
 El estudio de σ-álgebras está relacionado con probabilidades y surge como respuesta a la necesidad de medir. Al ser cerradas bajo complementación, las σ-álgebras nos brindan un marco para responder preguntas presentándonos las alternativas <img src="https://render.githubusercontent.com/render/math?math=\large P"> y <img src="https://render.githubusercontent.com/render/math?math=\large \neg P">. La definición por Jost (2015) es la siguiente,
 
@@ -209,10 +207,6 @@ La manera en que utilizamos σ-álgebras para discriminar elementos de un conjun
 Nos damos cuenta que, a medida que evaluemos más propiedades en <img src="https://render.githubusercontent.com/render/math?math=\large X">, el conjunto <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{B}"> se va haciendo más grande y, en particular, vamos siendo más capaces de discernir con mayor precisión entre los elementos de <img src="https://render.githubusercontent.com/render/math?math=\large X">.
 
 En _Measure Theory_, las propiedades mencionadas anteriormente son las **medidas** <img src="https://render.githubusercontent.com/render/math?math=\large f_1,f_2,...,f_n"> y los conjuntos estarán definidos como <img src="https://render.githubusercontent.com/render/math?math=\large \{x\in X: a<f(x)\}"> o <img src="https://render.githubusercontent.com/render/math?math=\large \{x\in X: f(x)=a\}"> para todo <img src="https://render.githubusercontent.com/render/math?math=\large a\in\R">.
-
-**_Set Systems_**
-
-
 
 **Referencias**
 
