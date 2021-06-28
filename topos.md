@@ -184,7 +184,7 @@ Un **constructo** es una categoría concreta sobre **Set**.
 
 ## Elementos Adicionales
 
-### σ-Álgebras{#apen-1}
+### σ-Álgebras {#apen-1}
 
 El estudio de σ-álgebras está relacionado con probabilidades y surge como respuesta a la necesidad de medir. Al ser cerradas bajo complementación, las σ-álgebras nos brindan un marco para responder preguntas presentándonos las alternativas <img src="https://render.githubusercontent.com/render/math?math=\large P"> y <img src="https://render.githubusercontent.com/render/math?math=\large \neg P">. La definición por Jost (2015) es la siguiente,
 
