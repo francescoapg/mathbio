@@ -218,13 +218,15 @@ Todo filtro es la intersección de todos los ultrafiltros que lo contienen.
 
 **AC**: Para toda familia <img src="https://render.githubusercontent.com/render/math?math=\large (X_i)_{i\in I}"> de conjuntos no vacíos <img src="https://render.githubusercontent.com/render/math?math=\large X_i">, el conjunto producto <img src="https://render.githubusercontent.com/render/math?math=\large \Pi_{i\in I}X_i"> es no vacío.
 
-Los elementos del conjunto producto (<img src="https://render.githubusercontent.com/render/math?math=\large \Pi_{i\in I}X_i">) son **función de elección**. Esta función de elección se aplica siempre que se use la idea de elegir un elemento.
+Los elementos del conjunto producto (<img src="https://render.githubusercontent.com/render/math?math=\large \Pi_{i\in I}X_i">) son **función de elección**. Esta función de elección se aplica siempre que se use la idea de elegir un elemento. Si el conjunto de índices <img src="https://render.githubusercontent.com/render/math?math=\large I"> es finito, se puede probar la existencia de la función de elección de forma inductiva. Sin embargo, para un conjunto de índices infinito esto no es posible.
 
 Recuerda que el producto cartesiano de una familia <img src="https://render.githubusercontent.com/render/math?math=\large (E_i)_{i\in I}"> es definido como <img src="https://render.githubusercontent.com/render/math?math=\large \Pi_{i\in I}E_i=\{(x_i)_{i\in I}: \forall i \in I, x_i\in E_i\}">.
 
 La existencia del axioma de elección es debatible. Hay muchos problemas cuando lo consideramos válido; sin embargo, hay más problemas cuando no lo consideramos; por lo que de momento se considera como necesario (útil pero no válido). Los constructivistas la evitan, ya que afirma la existencia de entidades elusivas (lo único que sabes es que existen). Una de las consecuencias es la **paradoja de Banach-Tarski**, la cual es extremadamente contraintuitivo. 
 
 El axioma de elección implica que todos los conjuntos son **proyectivos** en el sentido categórico, es decir, que para todo conjunto <img src="https://render.githubusercontent.com/render/math?math=\large C">, se cumple que dados cualquier par de morfismos (funciones en este caso) <img src="https://render.githubusercontent.com/render/math?math=\large g:E\to X"> y <img src="https://render.githubusercontent.com/render/math?math=\large f:C\to X">, tal que <img src="https://render.githubusercontent.com/render/math?math=\large g"> sea un [epimorfismo](https://francescoapg.github.io/mathbio/cat#def) (una función suryectiva en este caso), existe al menos un morfismo <img src="https://render.githubusercontent.com/render/math?math=\large h:C\to E"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large g\circ h=f">.
+
+La prueba del siguiente teorema requiere el uso de AC.
 
 **Teorema**: Si <img src="https://render.githubusercontent.com/render/math?math=\large X"> es infinito y <img src="https://render.githubusercontent.com/render/math?math=\large A\subseteq X "> es finito, entonces <img src="https://render.githubusercontent.com/render/math?math=\large X \setminus A"> y <img src="https://render.githubusercontent.com/render/math?math=\large X"> tienen la misma cardinalidad.
 
