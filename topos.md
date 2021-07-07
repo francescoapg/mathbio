@@ -176,10 +176,11 @@ es una **retracción** si <img src="https://render.githubusercontent.com/render/
 
 ### Constructos Topológicos {#contructs}
 
-Un **constructo** es una categoría concreta sobre **Set**.
+Un **constructo** es una categoría concreta sobre **Set**. Un constructo también se puede entender como categorías de _sets_ estructurados y funciones que preservan dicha estructura entre ellos.
 
 **Referencias**
 
+- Adámek, J., Herrlich, H., & Strecker, G. E. (2004). Abstract and concrete categories. The joy of cats.
 - Preuss, G. (2011). Foundations of topology: an approach to convenient topology. Springer Science & Business Media.
 
 ## Elementos Adicionales
