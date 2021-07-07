@@ -270,6 +270,8 @@ Recordemos que ___x___ es minimal en _X_ si y solo si, para todo <img src="https
 
 Estar bien ordenado es una propiedad hereditaria, es decir, una propiedad que se hereda a cada subconjunto.
 
+Si existe una biyección entre dos conjuntos bien ordenados que preserve dicho ordenamiento, dichos conjuntos se dice que son **isomórficos en orden** y la función recibe el nombre de **isomorfismo de orden**.
+
 **Teorema**: X está bien ordenado si y solo si, dado cierto orden lineal, no existe una cada descendiente infinita de elementos de X.
 
 Una consecuencia directa de este teorema es que el intervalo unitario <img src="https://render.githubusercontent.com/render/math?math=%5B0%2C1%5D"> no está bien ordenado, es decir, el continuo no está bien ordenado.
