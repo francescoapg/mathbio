@@ -81,19 +81,6 @@ Los monomorfismos son análogos a [funciones inyectivas](https://francescoapg.gi
 
 Finalmente, por la existencia de la inversa, todo isomorfismo es también un epimorfismo y un monomorfismo. En la categoría de conjuntos, lo inverso también se cumple, es decir, si un morfismo es epi y mono, entonces también es un isomorfismo. Existe también una versión menos estricta de un isomorfismo; sea <img src="https://render.githubusercontent.com/render/math?math=\large f:A\to B"> un morfismo que tiene una _inversa izquierda_ <img src="https://render.githubusercontent.com/render/math?math=\large g:B\to A"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large g\circ f=1_A">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large f"> es un monomorfismo y <img src="https://render.githubusercontent.com/render/math?math=\large g">, un epimorfismo.
 
-**Categoría dual**:
-
-Entre las formas de construir nuevas categorías sobre otras se encuentran las categorías duales.
-Sea <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> cualquier categoría. Definimos su categoría **dual** u **opuesta** <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> como sigue.
-Los objetos de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> son los mismos que aquellos de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">. Sin embargo, para dos objetos <img src="https://render.githubusercontent.com/render/math?math=\large X"> y <img src="https://render.githubusercontent.com/render/math?math=\large Y">, definimos <img src="https://render.githubusercontent.com/render/math?math=\large Mor_{\mathcal{C}^{op}}(X,Y)"> como <img src="https://render.githubusercontent.com/render/math?math=\large Mor_{\mathcal{C}}(Y,X)">. En otras palabras, intercambiamos el dominio y codominio de cada morfismo de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> y obtenemos un morfismo en <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}">. La ley de composición también es cambiada consecuentemente.
-Intuitivamente, las flechas en <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> van en la dirección opuesta a aquellas de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">.
-
-Como un ejemplo sencillo de categoría dual, vemos que si <img src="https://render.githubusercontent.com/render/math?math=\large (X,\leq)"> es un conjunto parcialmente ordenado considerado como categoría, entonces su dual es el conjunto parcialmente ordenado <img src="https://render.githubusercontent.com/render/math?math=\large (X, \geq)">. Estas categorías duales toman relevancia en teoremas de dualidad.
-
-**Categoría morfismo**:
-
-Una categoría **morfismo** o categoría _**arrow**_ <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{\to}"> de una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> toma a los morfismos de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> como objetos.
-
 **Referencias**
 
 - Joshi, K. D. (1983). Introduction to general topology. New Age International.
@@ -134,7 +121,41 @@ Claramente, <img src="https://render.githubusercontent.com/render/math?math=\lar
     
 Dado que las propiedades de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> son duales a aquellas de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}">, es consecuente que las propiedades de <img src="https://render.githubusercontent.com/render/math?math=\large F"> y <img src="https://render.githubusercontent.com/render/math?math=\large F^{op}"> son duales entre ellas tanto en cuanto al rol de la categoría dominio concierne.
 
+**Functor fiel (_faithful_)**
+
+Es un functor inyectivo en morfismos.
+
+**_Embedding_**
+
+Es un functor que es inyectivo tanto en morfismos como en objetos.
+
 **Referencias**
 
-- Joshi, K. D. (1983). Introduction to general topology. New Age International.
 - Awodey, S. (2010). Category theory. Oxford university press.
+- Adámek, J., Herrlich, H., & Strecker, G. E. (2004). Abstract and concrete categories. The joy of cats.
+- Barile, Margherita. "Faithful Functor." From MathWorld--A Wolfram Web Resource, created by Eric W. Weisstein. https://mathworld.wolfram.com/FaithfulFunctor.html
+- Joshi, K. D. (1983). Introduction to general topology. New Age International.
+
+### Categorías Especiales
+
+**Categoría dual**:
+
+Entre las formas de construir nuevas categorías sobre otras se encuentran las categorías duales.
+Sea <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> cualquier categoría. Definimos su categoría **dual** u **opuesta** <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> como sigue.
+Los objetos de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> son los mismos que aquellos de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">. Sin embargo, para dos objetos <img src="https://render.githubusercontent.com/render/math?math=\large X"> y <img src="https://render.githubusercontent.com/render/math?math=\large Y">, definimos <img src="https://render.githubusercontent.com/render/math?math=\large Mor_{\mathcal{C}^{op}}(X,Y)"> como <img src="https://render.githubusercontent.com/render/math?math=\large Mor_{\mathcal{C}}(Y,X)">. En otras palabras, intercambiamos el dominio y codominio de cada morfismo de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> y obtenemos un morfismo en <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}">. La ley de composición también es cambiada consecuentemente.
+Intuitivamente, las flechas en <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{op}"> van en la dirección opuesta a aquellas de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}">.
+
+Como un ejemplo sencillo de categoría dual, vemos que si <img src="https://render.githubusercontent.com/render/math?math=\large (X,\leq)"> es un conjunto parcialmente ordenado considerado como categoría, entonces su dual es el conjunto parcialmente ordenado <img src="https://render.githubusercontent.com/render/math?math=\large (X, \geq)">. Estas categorías duales toman relevancia en teoremas de dualidad (principio de dualidad).
+
+**Categoría morfismo**:
+
+Una categoría **morfismo** o categoría _**arrow**_ <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}^{\to}"> de una categoría <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> toma a los morfismos de <img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{C}"> como objetos.
+
+**Categoría concreta**:
+
+Sea <img src="https://render.githubusercontent.com/render/math?math=\large X"> una categoría. <img src="https://render.githubusercontent.com/render/math?math=\large C"> es una categoría concretado sobre <img src="https://render.githubusercontent.com/render/math?math=\large X"> si existe un functor fiel (_faithful_) <img src="https://render.githubusercontent.com/render/math?math=\large F:C\to X">.
+
+**Referencias**
+
+- Adámek, J., Herrlich, H., & Strecker, G. E. (2004). Abstract and concrete categories. The joy of cats.
+- Joshi, K. D. (1983). Introduction to general topology. New Age International.
