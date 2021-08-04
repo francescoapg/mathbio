@@ -44,7 +44,13 @@ Un importante resultado sobre composiciones de funciones establece que
 - La composición de dos funciones suryectivas es suryecyiva
 - La composición de dos funciones biyectivas es biyectiva.
 
+**Proposición (Beck & Geoghegan, 2010)**: Sean <img src="https://render.githubusercontent.com/render/math?math=\large A"> y <img src="https://render.githubusercontent.com/render/math?math=\large B"> conjuntos. Existe una inyección de <img src="https://render.githubusercontent.com/render/math?math=\large A"> a <img src="https://render.githubusercontent.com/render/math?math=\large B"> si y solo si existe una suryección de <img src="https://render.githubusercontent.com/render/math?math=\large B"> a <img src="https://render.githubusercontent.com/render/math?math=\large A">.
+
+La proposición anterior puede ser entendida en términos de la cardinalidad de cada uno de los conjuntos.
+
 **Función bien definida**
+
+Una forma elegante de decir que es función. Una función que no es bien definida simplemente no es función.
 
 **Inversa**
 
@@ -54,9 +60,9 @@ Ten en cuenta de que <img src="https://render.githubusercontent.com/render/math?
 
 Las siguientes proposiciones son relevantes:
 
-1. <img src="https://render.githubusercontent.com/render/math?math=\large f"> es injectiva si y solo si <img src="https://render.githubusercontent.com/render/math?math=\large f"> tiene _left inverse_.
-2. <img src="https://render.githubusercontent.com/render/math?math=\large f"> es suryectiva si y solo si <img src="https://render.githubusercontent.com/render/math?math=\large f"> tiene _right inverse_.
-3. <img src="https://render.githubusercontent.com/render/math?math=\large f"> es biyectiva si y solo si <img src="https://render.githubusercontent.com/render/math?math=\large f"> tiene inversa.
+1. <img src="https://render.githubusercontent.com/render/math?math=\large f"> es injectiva si y solo si <img src="https://render.githubusercontent.com/render/math?math=\large f"> tiene una _left inverse_.
+2. <img src="https://render.githubusercontent.com/render/math?math=\large f"> es suryectiva si y solo si <img src="https://render.githubusercontent.com/render/math?math=\large f"> tiene una _right inverse_.
+3. <img src="https://render.githubusercontent.com/render/math?math=\large f"> es biyectiva si y solo si <img src="https://render.githubusercontent.com/render/math?math=\large f"> tiene una inversa.
 
 También se demuestra que si una función tiene inversa, entonces esta inversa es única y se usa la notación <img src="https://render.githubusercontent.com/render/math?math=\large f^{-1}">.
 
@@ -88,7 +94,7 @@ Si <img src="https://render.githubusercontent.com/render/math?math=\large f"> es
 **Referencias**
 
 - Awodey, S. (2010). Category theory. Oxford university press.
-- Beck, M., & Geoghegan, R. (2011). The Art of Proof. Springer.
+- Beck, M., & Geoghegan, R. (2010). The art of proof: basic training for deeper mathematics. Springer.
 - Buck, R. C. (1978). Advanced calculus. McGraw-Hill, Inc.
 - Humphreys, J. F. (1996). A course in group theory. Oxford University Press.
 - Joshi, K. D. (1983). Introduction to general topology. New Age International.
