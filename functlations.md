@@ -48,11 +48,17 @@ Un importante resultado sobre composiciones de funciones establece que
 
 **Inversa**
 
-Dada una función <img src="https://render.githubusercontent.com/render/math?math=\large f:X\to Y">, decimos que <img src="https://render.githubusercontent.com/render/math?math=\large f"> tiene una función inversa si existe una función <img src="https://render.githubusercontent.com/render/math?math=\large g:Y\to X"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large g\circ f =id_X"> y <img src="https://render.githubusercontent.com/render/math?math=\large f\circ g=id_Y">.
+Dada una función <img src="https://render.githubusercontent.com/render/math?math=\large f:X\to Y">, decimos que <img src="https://render.githubusercontent.com/render/math?math=\large f"> tiene una función inversa si existe una función <img src="https://render.githubusercontent.com/render/math?math=\large g:Y\to X"> tal que <img src="https://render.githubusercontent.com/render/math?math=\large g\circ f =id_X"> y <img src="https://render.githubusercontent.com/render/math?math=\large f\circ g=id_Y">, en el primer caso, <img src="https://render.githubusercontent.com/render/math?math=\large g"> recibe el nombre de _left inverse_, mientras que en el segundo caso, recibe el nombre de _right inverse_. Si se cumple que existe una función <img src="https://render.githubusercontent.com/render/math?math=\large g" que sea tanto  _left_> como _right_ inversa, entonces <img src="https://render.githubusercontent.com/render/math?math=\large g"> recibe el nombre de _two-sided inverse_ o simplemente _inversa_.
 
-Teniendo en cuenta de que <img src="https://render.githubusercontent.com/render/math?math=\large id_X:X\to X"> está definida como <img src="https://render.githubusercontent.com/render/math?math=\large id_X(x)=x"> para todo elemento de <img src="https://render.githubusercontent.com/render/math?math=\large X">. <img src="https://render.githubusercontent.com/render/math?math=\large id_Y"> está definido de forma análoga.
+Ten en cuenta de que <img src="https://render.githubusercontent.com/render/math?math=\large id_X:X\to X"> está definida como <img src="https://render.githubusercontent.com/render/math?math=\large id_X(x)=x"> para todo elemento de <img src="https://render.githubusercontent.com/render/math?math=\large X">. <img src="https://render.githubusercontent.com/render/math?math=\large id_Y"> está definido de forma análoga.
 
-Se demuestra que si una función tiene inversa, entonces esta inversa es única y se usa la notación <img src="https://render.githubusercontent.com/render/math?math=\large f^{-1}">.
+Las siguientes proposiciones son relevantes:
+
+1. <img src="https://render.githubusercontent.com/render/math?math=\large f"> es injectiva si y solo si <img src="https://render.githubusercontent.com/render/math?math=\large f"> tiene _left inverse_.
+2. <img src="https://render.githubusercontent.com/render/math?math=\large f"> es suryectiva si y solo si <img src="https://render.githubusercontent.com/render/math?math=\large f"> tiene _right inverse_.
+3. <img src="https://render.githubusercontent.com/render/math?math=\large f"> es biyectiva si y solo si <img src="https://render.githubusercontent.com/render/math?math=\large f"> tiene inversa.
+
+También se demuestra que si una función tiene inversa, entonces esta inversa es única y se usa la notación <img src="https://render.githubusercontent.com/render/math?math=\large f^{-1}">.
 
 **Función continua** 
 
