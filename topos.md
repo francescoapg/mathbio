@@ -159,6 +159,8 @@ Note que tanto la topología <img src="https://render.githubusercontent.com/rend
 
 En este sentido, la topología más pequeña de todas es la **topología indiscreta** (<img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{T}=\{\emptyset,X\}">), mientras que la topología más grande de todas es la **topología discreta** (<img src="https://render.githubusercontent.com/render/math?math=\large \mathcal{T}=\wp(X)">). Otra topología con nombre es la **topología cofinita** que en el caso de conjuntos finitos, coincide con la topología discreta, y está definida como aquella que comprende a subconjuntos de <img src="https://render.githubusercontent.com/render/math?math=\large X"> cuyo complemento en <img src="https://render.githubusercontent.com/render/math?math=\large X"> es finito.
 
+Llamamos a un espacio topológico como **paracompacto** si cualquier _cobertura abierta_ pose un _refinamiento localmente finito_.
+
 **Referencias**
 
 - Joshi, K. D. (1983). Introduction to general topology. New Age International.
