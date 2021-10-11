@@ -1,7 +1,7 @@
-## mathbio
-_Mathematical Biology_
+## Bienvenido
+### mathbio
 
-
+Aquí encontrarás cursos básicos para un biomatemático y material de apoyo en la forma de notas que he considerado me han servido en algún punto de mis investigaciones.
 
 ### Cursos
 
@@ -13,13 +13,14 @@ _Mathematical Biology_
 1. [Teoría de conjuntos](https://francescoapg.github.io/mathbio/setheory)
 2. [Relaciones y funciones](https://francescoapg.github.io/mathbio/functlations)
 3. Espacios
-4. [Teoría de Grupos](https://francescoapg.github.io/mathbio/groups)
-5. [Topología General](https://francescoapg.github.io/mathbio/topos)
-6. [Categorias](https://francescoapg.github.io/mathbio/cat)
+4. Álgebra Lineal
+5. [Teoría de Grupos](https://francescoapg.github.io/mathbio/groups)
+6. [Topología General](https://francescoapg.github.io/mathbio/topos)
+7. [Categorias](https://francescoapg.github.io/mathbio/cat)
 
 ### Licencia
 
-Copyright (C) 2021 Francesco Peña Garcia
+Copyright (C) 2020-2021 Francesco Peña Garcia
 
 Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant sections, no Front-Cover texts, and no Back-Cover texts.
 
@@ -27,4 +28,9 @@ Permission is granted to copy, distribute and/or modify this document under the 
 
 ### Contacto
 
-francesco.pena@unmsm.edu.pe
+For inquiries or reclamations, my company email is the following:
+
+**francesco.pena@unmsm.edu.pe**
+
+
+_⁓mathbio, have fun⁓_
