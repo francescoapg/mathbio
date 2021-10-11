@@ -1,7 +1,7 @@
 ## Bienvenido
 ### mathbio
 
-Aquí encontrarás cursos básicos y material de apoyo en la forma de notas que he considerado me han servido en algún punto de mis investigaciones.
+Aquí encontrarás cursos básicos y material de apoyo en la forma de notas que considero me han servido en algún punto de mis investigaciones.
 
 ### Cursos
 
