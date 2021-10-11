@@ -1,6 +1,6 @@
 [<<Home](https://francescoapg.github.io/mathbio/)
 
-## Biomatemática
+## Biomatemática avanzada
 
 Se recomienda al lector leer la introducción de [Teoría de conjuntos](https://francescoapg.github.io/mathbio/setheory#intro) antes de revisar esta sección.
 
