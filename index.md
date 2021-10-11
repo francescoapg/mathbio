@@ -6,7 +6,7 @@ Aquí encontrarás cursos básicos y material de apoyo en la forma de notas que 
 ### Cursos
 
 1. [Ecología Teórica](https://francescoapg.github.io/mathbio/ecoteo)
-2. [Biomatemática](https://francescoapg.github.io/mathbio/prebiomath)
+2. [Biomatemática](https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/2560px-HelloWorld.svg.png)
 3. [Biomatemática Avanzada](https://francescoapg.github.io/mathbio/biomath)
 
 ### Notas
