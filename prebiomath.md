@@ -37,15 +37,15 @@ La palabra _modelo_ es usada deliberadamente para implicar el remplazo de la com
 
 ### Ecuaciones de Diferencia Lineales {#EDL}
 
-Una ecuación de diferencia de orden <img src="https://render.githubusercontent.com/render/math?math=\large k"> tiene la forma <img src="https://render.githubusercontent.com/render/math?math=\large f(x_{t+k},x_{t+k-1},...,x_t)=0"> donde <img src="https://render.githubusercontent.com/render/math?math=\large t=0,1,...">. <img src="https://render.githubusercontent.com/render/math?math=\large f"> es una función de valores reales de las variables reales <img src="https://render.githubusercontent.com/render/math?math=\large x_t"> a <img src="https://render.githubusercontent.com/render/math?math=\large x_{t+k}"> y <img src="https://render.githubusercontent.com/render/math?math=\large t">.
+Una ecuación de diferencia de orden <img src="https://render.githubusercontent.com/render/math?math=\large k"> tiene la forma <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20f(x_%7Bt%2Bk%7D%2Cx_%7Bt%2Bk-1%7D%2C...%2Cx_t)%3D0"> donde <img src="https://render.githubusercontent.com/render/math?math=\large t=0,1,...">. <img src="https://render.githubusercontent.com/render/math?math=\large f"> es una función de valores reales de las variables reales <img src="https://render.githubusercontent.com/render/math?math=\large x_t"> a <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20x_%7Bt%2Bk%7D"> y <img src="https://render.githubusercontent.com/render/math?math=\large t">.
 
 Una ecuación de diferencia es llamada _autónoma_ si no depende explícitamente de <img src="https://render.githubusercontent.com/render/math?math=\large t">. Si una ecuación de diferencia no es _autónoma_ es llamada _no autónoma_.
 
-La representación usual es la siguiente: <img src="https://render.githubusercontent.com/render/math?math=\large x_{t+k}+a_1 x_{t+k-1}+...+a_k x_t=b_t">, donde <img src="https://render.githubusercontent.com/render/math?math=\large t=0,1,..."> Los coeficientes <img src="https://render.githubusercontent.com/render/math?math=\large a_j"> pueden ser funciones de <img src="https://render.githubusercontent.com/render/math?math=\large t"> y <img src="https://render.githubusercontent.com/render/math?math=\large x_i"> para <img src="https://render.githubusercontent.com/render/math?math=\large i=t,...t+k-1">. La función <img src="https://render.githubusercontent.com/render/math?math=\large b_t"> puede depender de <img src="https://render.githubusercontent.com/render/math?math=\large t">.
+La representación usual es la siguiente: <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20x_%7Bt%2Bk%7D%2Ba_1%20x_%7Bt%2Bk-1%7D%2B...%2Ba_k%20x_t%3Db_t">, donde <img src="https://render.githubusercontent.com/render/math?math=\large t=0,1,..."> Los coeficientes <img src="https://render.githubusercontent.com/render/math?math=\large a_j"> pueden ser funciones de <img src="https://render.githubusercontent.com/render/math?math=\large t"> y <img src="https://render.githubusercontent.com/render/math?math=\large x_i"> para <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20i%3Dt%2C...%2Ct%2Bk-1">. La función <img src="https://render.githubusercontent.com/render/math?math=\large b_t"> puede depender de <img src="https://render.githubusercontent.com/render/math?math=\large t">.
 
 _Ejemplo_:
 
-<img src="https://render.githubusercontent.com/render/math?math=\large x_{t+1}=atx_t+bt^2x_{t-1}+sen(t)">
+<img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20x_%7Bt%2B1%7D%3Datx_t%2Bbt%5E2x_%7Bt-1%7D%2Bsen(t)">
 
 
 
