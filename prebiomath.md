@@ -16,7 +16,10 @@ Curso introductorio a la Biomatemática. Se muestran aplicaciones básicas de te
 
 ### Ecuaciones de Diferencia Lineales {#EDL}
 
+**Ejercicios:**
 
+1. Lalala
+2. Lululu
 
 **Referencias**
 
