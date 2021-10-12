@@ -13,6 +13,7 @@ Curso introductorio a la Biomatemática. Se muestran aplicaciones básicas de te
 ### Introducción a la Biomatemática {#intro}
 
 El desarrollo histórico de la Biomatemática tiene sus raíces en los desarrollos matemáticos de [Georg Cantor](https://es.wikipedia.org/wiki/Georg_Cantor) (1845-1918) acerca de los números naturales. La Biología o, mejor dicho, el fenómeno biológico es, de forma recurrente, una fuente de inspiración para el desarrollo matemático. Aunque recientemente es usual que se usen en Biología las herramientas matemáticas más básicas (Cálculo, Teoría de Grafos), ignorar todo el desarrollo matemático que fue generado para entender la naturaleza y, en particular, la biología es como mínimo un error.
+
 Apesar de lo anterior, la palabra Biomatemática ha sido frecuentemente usada para referirse al uso de teorías o métodos estadísticos en la investigación biológica (Bartlett, 1975).
 
 **Primeros usos de matemática como herramienta fundamental en Biología**
@@ -35,6 +36,18 @@ La palabra _modelo_ es usada deliberadamente para implicar el remplazo de la com
 - Gordon, D. M. (2010). Ant encounters. Princeton University Press.
 
 ### Ecuaciones de Diferencia Lineales {#EDL}
+
+Una ecuación de diferencia de orden <img src="https://render.githubusercontent.com/render/math?math=\large k"> tiene la forma <img src="https://render.githubusercontent.com/render/math?math=\large f(x_{t+k},x_{t+k-1},...,x_t)=0"> donde <img src="https://render.githubusercontent.com/render/math?math=\large t=0,1,...">. <img src="https://render.githubusercontent.com/render/math?math=\large f"> es una función de valores reales de las variables reales <img src="https://render.githubusercontent.com/render/math?math=\large x_t"> a <img src="https://render.githubusercontent.com/render/math?math=\large x_{t+k}"> y <img src="https://render.githubusercontent.com/render/math?math=\large t">.
+
+Una ecuación de diferencia es llamada _autónoma_ si no depende explícitamente de <img src="https://render.githubusercontent.com/render/math?math=\large t">. Si una ecuación de diferencia no es _autónoma_ es llamada _no autónoma_.
+
+La representación usual es la siguiente: <img src="https://render.githubusercontent.com/render/math?math=\large x_{t+k}+a_1 x_{t+k-1}+...+a_k x_t=b_t">, donde <img src="https://render.githubusercontent.com/render/math?math=\large t=0,1,..."> Los coeficientes <img src="https://render.githubusercontent.com/render/math?math=\large a_j"> pueden ser funciones de <img src="https://render.githubusercontent.com/render/math?math=\large t"> y <img src="https://render.githubusercontent.com/render/math?math=\large x_i"> para <img src="https://render.githubusercontent.com/render/math?math=\large i=t,...t+k-1">. La función <img src="https://render.githubusercontent.com/render/math?math=\large b_t"> puede depender de <img src="https://render.githubusercontent.com/render/math?math=\large t">.
+
+_Ejemplo_:
+
+<img src="https://render.githubusercontent.com/render/math?math=\large x_{t+1}=atx_t+bt^2x_{t-1}+sen(t)">
+
+
 
 **Ejercicios:**
 
