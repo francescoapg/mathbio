@@ -53,7 +53,7 @@ Si los coeficientes no dependen de las variables de estado (<img src="https://re
 
 También podemos hablar de sistemas de ecuaciones de diferencia que son un análogo directo de los sistemas de ecuaciones y al igual que los sistemas de ecuaciones, es ameno para ser tratado con Álgebra lineal. Una de las representaciones de sistemas de ecuaciones de diferencia es la siguiente: <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20x_i(t%2B1)%3Df_i(x_1(t)%2Cx_2(t)%2C...%2Cx_k(t)%2Ct)">, donde <img src="https://render.githubusercontent.com/render/math?math=\large i=1,2,...,k">. 
 
-La forma matricial de expresar este sistema de ecuaciones sería <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20X(t%2B1)%3DA(t)X(t)%2BB(t)"> donde <img src="https://render.githubusercontent.com/render/math?math=\large X"> es el vector <img src="https://render.githubusercontent.com/render/math?math=\large (x_1,x_2,...,x_k)^t">, la matriz <img src="https://render.githubusercontent.com/render/math?math=\large A=(a_{ij})_{ij=1}^k"> y el vector <img src="https://render.githubusercontent.com/render/math?math=\large B=(b_1,b_2,...,b_k)^t">.
+La forma matricial de expresar este sistema de ecuaciones sería <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20X(t%2B1)%3DA(t)X(t)%2BB(t)"> donde <img src="https://render.githubusercontent.com/render/math?math=\large X"> es el vector <img src="https://render.githubusercontent.com/render/math?math=\large [x_1,x_2,...,x_k]^t">, la matriz <img src="https://render.githubusercontent.com/render/math?math=\large A=(a_{ij})_{ij=1}^k"> y el vector <img src="https://render.githubusercontent.com/render/math?math=\large B=[b_1,b_2,...,b_k]^t">.
 
 **Referencias**
 
