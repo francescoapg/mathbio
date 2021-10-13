@@ -14,7 +14,7 @@ Aquí encontrarás cursos básicos y material de apoyo en la forma de notas que 
 1. [Teoría de conjuntos](https://francescoapg.github.io/mathbio/setheory)
 2. [Relaciones y funciones](https://francescoapg.github.io/mathbio/functlations)
 3. Espacios
-4. Álgebra Lineal
+4. [Álgebra Lineal](https://francescoapg.github.io/mathbio/linalge)
 5. [Teoría de Grupos](https://francescoapg.github.io/mathbio/groups)
 6. [Topología General](https://francescoapg.github.io/mathbio/topos)
 7. [Categorias](https://francescoapg.github.io/mathbio/cat)
