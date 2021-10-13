@@ -30,4 +30,8 @@ Con este operador definimos a la siguiente función, la **longitud** es la raiz 
 
 El operador producto punto también sirve para definir al **vector unitario**, este es un vector que cumple la siguiente ecuación: <img src="https://render.githubusercontent.com/render/math?math=\large v\cdot v =1">. Vectores unitarios son: <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%0A%5B1%2C0%5D%5ET%2C%5B0%2C1%5D%5ET%2C%5Bsen(%5Ctheta)%2Ccos(%5Ctheta)%5D%5ET%2C%5B1%2F2%2C1%2F2%2C1%2F2%2C1%2F2%5D%5ET">. Una forma para obtener un vector unitario en la dirección del vector <img src="https://render.githubusercontent.com/render/math?math=\large v"> es <img src="https://render.githubusercontent.com/render/math?math=\large (1/||v||)v">.
 
+**Proposición**: Solo existe un vector unitario en la dirección <img src="https://render.githubusercontent.com/render/math?math=\large u">.
+
+_Prueba_:
+
 **Referencias**
