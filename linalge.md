@@ -39,7 +39,7 @@ _Prueba_: Sea <img src="https://render.githubusercontent.com/render/math?math=\l
 
 **Referencias**
 
-- Strang, G., Strang, G., Strang, G., & Strang, G. (2016). Introduction to Linear Algebra. Wellesley-Cambridge Press.
+- Strang, G. (2016). Introduction to Linear Algebra. Wellesley-Cambridge Press.
 
 ### Matrices y Ecuaciones Lineales {#matrx}
 
@@ -47,4 +47,4 @@ _Prueba_: Sea <img src="https://render.githubusercontent.com/render/math?math=\l
 
 **Referencias**
 
-- Strang, G., Strang, G., Strang, G., & Strang, G. (2016). Introduction to Linear Algebra. Wellesley-Cambridge Press.
+- Strang, G. (2016). Introduction to Linear Algebra. Wellesley-Cambridge Press.
