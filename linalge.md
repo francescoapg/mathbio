@@ -49,7 +49,7 @@ Cuando <img src="https://render.githubusercontent.com/render/math?math=\large Ax
 
 Conectando el concepto de independecia de columnas y solubilidad de una ecuación matricial, decimos que 
 
-- Si <img src="https://render.githubusercontent.com/render/math?math=\large Ax=0"> tiene solo como solución al vector 0, entonces <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una **matrix invertible**, es decir, existe <img src="https://render.githubusercontent.com/render/math?math=\large A^{-1}">.
+- Si <img src="https://render.githubusercontent.com/render/math?math=\large Ax=0"> tiene solo como solución al vector 0, entonces, dado <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una matriz cuadrada, <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una **matriz invertible**, es decir, existe <img src="https://render.githubusercontent.com/render/math?math=\large A^{-1}">.
 - Si <img src="https://render.githubusercontent.com/render/math?math=\large Ax=0"> tiene más de una solución, <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una **matriz singular**. Para matrices cuadradas, si el _determinante_ es 0, dicha matriz es singular.
 
 **Referencias**
