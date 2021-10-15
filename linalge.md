@@ -43,6 +43,8 @@ _Prueba_: Sea <img src="https://render.githubusercontent.com/render/math?math=\l
 
 Una **ecuación vectorial** es una expresión de la forma <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20c_1v_1%2B...%2Bc_nv_n%3Db">. Esto se puede escribir como <img src="https://render.githubusercontent.com/render/math?math=\large A c =b">, siendo <img src="https://render.githubusercontent.com/render/math?math=\large A"> una matriz cuyas columans son los vectores <img src="https://render.githubusercontent.com/render/math?math=\large v_1,...,v_n"> y <img src="https://render.githubusercontent.com/render/math?math=\large c"> es un vector que comprende a las constantes <img src="https://render.githubusercontent.com/render/math?math=\large c_1,...,c_n">, <img src="https://render.githubusercontent.com/render/math?math=\large b"> es un vector de dimensión <img src="https://render.githubusercontent.com/render/math?math=\large n\times 1">.
 
+En general, la multiplicación de una matriz con un vector por la derecha es la combinación lineal de las columnas donde los escalares son los elementos del vector.
+
 
 **Referencias**
 
