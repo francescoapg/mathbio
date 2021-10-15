@@ -45,6 +45,12 @@ Una **ecuación vectorial** es una expresión de la forma <img src="https://rend
 
 En general, la multiplicación de una matriz con un vector por la derecha es la combinación lineal de las columnas donde los escalares son los elementos del vector.
 
+Cuando <img src="https://render.githubusercontent.com/render/math?math=\large Ax=b"> es considerada como una **ecuación lineal** y <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una matriz cuadrada (con el mismo número de filas y columnas), <img src="https://render.githubusercontent.com/render/math?math=\large x"> va a ser calculado como el producto de la inversa de la matriz con <img src="https://render.githubusercontent.com/render/math?math=\large b">, en otras palabras, <img src="https://render.githubusercontent.com/render/math?math=\large x=A^{-1}b">. Este es el escenario más sencillo; dentro de esceneario los aún más sencillo son cuando <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una matriz triangular (inferior o superior) o diagonal.
+
+Conectando el concepto de independecia de columnas y solubilidad de una ecuación matricial, decimos que 
+
+- Si <img src="https://render.githubusercontent.com/render/math?math=\large Ax=0"> tiene solo como solución al vector 0, entonces <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una **matrix invertible**, es decir, existe <img src="https://render.githubusercontent.com/render/math?math=\large A^{-1}">.
+- Si <img src="https://render.githubusercontent.com/render/math?math=\large Ax=0"> tiene más de una solución, <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una **matriz singular**. Para matrices cuadradas, si el _determinante_ es 0, dicha matriz es singular.
 
 **Referencias**
 
