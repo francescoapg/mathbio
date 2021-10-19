@@ -35,6 +35,15 @@ El operador producto punto también sirve para definir al **vector unitario**, e
 
 _Prueba_: Sea <img src="https://render.githubusercontent.com/render/math?math=\large v"> un vector unitario en direccíon <img src="https://render.githubusercontent.com/render/math?math=\large u"> obtenido de acuerdo a <img src="https://render.githubusercontent.com/render/math?math=\large (1/||u||)u">, si existe un vector unitario <img src="https://render.githubusercontent.com/render/math?math=\large w"> en la misma dirección, esto imploca que <img src="https://render.githubusercontent.com/render/math?math=\large v\cdot v=1=w\cdot w">, esto implica que <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%0Av_1%5E2%2B...%2Bv_n%5E2%3Dw_1%5E2%2B...%2Bw_n%5E2">. Sabemos también que para que dos vectores tengan la misma dirección, es necesario que <img src="https://render.githubusercontent.com/render/math?math=\large (||u||||v||)^{-1}u\cdot v=cos(0)=1">; naturalmente, <img src="https://render.githubusercontent.com/render/math?math=\large w"> también cumple esta igualdad, por lo que <img src="https://render.githubusercontent.com/render/math?math=\large (||u||||v||)^{-1}u\cdot v =(||u||||w||)^{-1} u \cdot w">; sin embargo sabemos que <img src="https://render.githubusercontent.com/render/math?math=\large |||v||=||w||=1">, entonces <img src="https://render.githubusercontent.com/render/math?math=\large u\cdot v=u\cdot w">. También sabemos que <img src="https://render.githubusercontent.com/render/math?math=\large v\cdot w=1">. _continuará_
 
+**Notación**
+
+Tenga en cuenta lo siguiente:
+
+- Las dimensiones de una matriz se escriben como <img src="https://render.githubusercontent.com/render/math?math=\large m\times n">, siendo <img src="https://render.githubusercontent.com/render/math?math=\large m"> el número de filas y <img src="https://render.githubusercontent.com/render/math?math=\large n"> el número de columnas.
+- Los elementos de una matriz <img src="https://render.githubusercontent.com/render/math?math=\large A"> se identifican por sus coordenadas en filas y columnas, <img src="https://render.githubusercontent.com/render/math?math=\large a_{ij}"> estará en la fila <img src="https://render.githubusercontent.com/render/math?math=\large i"> y columna <img src="https://render.githubusercontent.com/render/math?math=\large j">. Para una matriz de <img src="https://render.githubusercontent.com/render/math?math=\large 2\times 2">
+
+<img src="https://render.githubusercontent.com/render/math?math=%5Clarge%0A%5Cbegin%7Bbmatrix%7D%0Aa_%7B11%7D%20%26%20a_%7B12%7D%5C%5C%0Aa_%7B21%7D%26a_%7B22%7D%20%5C%5C%0A%5Cend%7Bbmatrix%7D">
+
 **Referencias**
 
 - Strang, G. (2016). Introduction to Linear Algebra. Wellesley-Cambridge Press.
@@ -43,7 +52,7 @@ _Prueba_: Sea <img src="https://render.githubusercontent.com/render/math?math=\l
 
 Una **ecuación vectorial** es una expresión de la forma <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20c_1v_1%2B...%2Bc_nv_n%3Db">. Esto se puede escribir como <img src="https://render.githubusercontent.com/render/math?math=\large A c =b">, siendo <img src="https://render.githubusercontent.com/render/math?math=\large A"> la **matriz de coeficientes** cuyas columans son los vectores <img src="https://render.githubusercontent.com/render/math?math=\large v_1,...,v_n"> y <img src="https://render.githubusercontent.com/render/math?math=\large c"> es un vector que comprende a las constantes <img src="https://render.githubusercontent.com/render/math?math=\large c_1,...,c_n">, <img src="https://render.githubusercontent.com/render/math?math=\large b"> es un vector de dimensión <img src="https://render.githubusercontent.com/render/math?math=\large m\times 1">. Ten en cuenta que el lado izquierdo de la ecuación vectorial es la llamada _combinación lineal_. Por otra parte, <img src="https://render.githubusercontent.com/render/math?math=\large b"> siempre puede ser calculado como un vector de _productos punto_:
 
-<img src="https://render.githubusercontent.com/render/math?math=%5Clarge%0A%5Cbegin%7Bbmatrix%7D%0A(row_1)%5Ccdot%20x%5C%5C%0A(row_2)%5Ccdot%20x%5C%5C%0A...%5C%5C%0A(row_m)%5Ccdot%20x%5C%5C%0A%5Cend%7Bbmatrix%7D">
+<img src="https://render.githubusercontent.com/render/math?math=%5Clarge%0A%5Cbegin%7Bbmatrix%7D%0A(row_1)%5Ccdot%20c%5C%5C%0A(row_2)%5Ccdot%20c%5C%5C%0A...%5C%5C%0A(row_m)%5Ccdot%20c%5C%5C%0A%5Cend%7Bbmatrix%7D">
 
 En general, la multiplicación de una matriz con un vector por la derecha es la combinación lineal de las columnas donde los escalares son los elementos del vector.
 
@@ -61,7 +70,7 @@ Existen dos maneras de entender las **ecuaciones lineales**:
 
 El método por filas es el más geométrico y quizás recomendable para matrices de poca dimensión, mientras que el método por columnas es recomendable para matrices de mayores dimensiones.
 
-Un concepto importante es el _**rank**_. El _rank_ de <img src="https://render.githubusercontent.com/render/math?math=\large A"> lleva a la dimensión del espacio vectorial de las soluciones de la ecuación lineal <img src="https://render.githubusercontent.com/render/math?math=\large Ax=0">. El _rank_ es el número de columnas linealmente independientes de la matriz y se puede calcular como el número de pivots que hay luego del proceso de eliminación.
+Un concepto importante es el _**rank**_. El _rank_ de <img src="https://render.githubusercontent.com/render/math?math=\large A"> es la dimensión del espacio vectorial de las soluciones de la ecuación lineal <img src="https://render.githubusercontent.com/render/math?math=\large Ax=0">. El _rank_ es el número de columnas linealmente independientes de la matriz y se puede calcular como el número de pivots que hay luego del proceso de eliminación.
 
 **Referencias**
 
