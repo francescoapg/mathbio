@@ -41,7 +41,9 @@ _Prueba_: Sea <img src="https://render.githubusercontent.com/render/math?math=\l
 
 ### Matrices y Ecuaciones Lineales {#matrx}
 
-Una **ecuación vectorial** es una expresión de la forma <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20c_1v_1%2B...%2Bc_nv_n%3Db">. Esto se puede escribir como <img src="https://render.githubusercontent.com/render/math?math=\large A c =b">, siendo <img src="https://render.githubusercontent.com/render/math?math=\large A"> una matriz cuyas columans son los vectores <img src="https://render.githubusercontent.com/render/math?math=\large v_1,...,v_n"> y <img src="https://render.githubusercontent.com/render/math?math=\large c"> es un vector que comprende a las constantes <img src="https://render.githubusercontent.com/render/math?math=\large c_1,...,c_n">, <img src="https://render.githubusercontent.com/render/math?math=\large b"> es un vector de dimensión <img src="https://render.githubusercontent.com/render/math?math=\large n\times 1">.
+Una **ecuación vectorial** es una expresión de la forma <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20c_1v_1%2B...%2Bc_nv_n%3Db">. Esto se puede escribir como <img src="https://render.githubusercontent.com/render/math?math=\large A c =b">, siendo <img src="https://render.githubusercontent.com/render/math?math=\large A"> la **matriz de coeficientes** cuyas columans son los vectores <img src="https://render.githubusercontent.com/render/math?math=\large v_1,...,v_n"> y <img src="https://render.githubusercontent.com/render/math?math=\large c"> es un vector que comprende a las constantes <img src="https://render.githubusercontent.com/render/math?math=\large c_1,...,c_n">, <img src="https://render.githubusercontent.com/render/math?math=\large b"> es un vector de dimensión <img src="https://render.githubusercontent.com/render/math?math=\large m\times 1">. Ten en cuenta que el lado izquierdo de la ecuación vectorial es la llamada _combinación lineal_. Por otra parte, <img src="https://render.githubusercontent.com/render/math?math=\large b"> siempre puede ser calculado como un vector de _productos punto_:
+
+<img src="https://render.githubusercontent.com/render/math?math=%5Clarge%0A%5Cbegin%7Bbmatrix%7D%0A(row_1)%5Ccdot%20x%5C%5C%0A(row_2)%5Ccdot%20x%5C%5C%0A...%5C%5C%0A(row_m)%5Ccdot%20x%5C%5C%0A%5Cend%7Bbmatrix%7D">
 
 En general, la multiplicación de una matriz con un vector por la derecha es la combinación lineal de las columnas donde los escalares son los elementos del vector.
 
@@ -51,6 +53,15 @@ Conectando el concepto de independecia de columnas y solubilidad de una ecuació
 
 - Si <img src="https://render.githubusercontent.com/render/math?math=\large Ax=0"> tiene solo como solución al vector 0, entonces, dado <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una matriz cuadrada, <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una **matriz invertible**, es decir, existe <img src="https://render.githubusercontent.com/render/math?math=\large A^{-1}">.
 - Si <img src="https://render.githubusercontent.com/render/math?math=\large Ax=0"> tiene más de una solución, <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una **matriz singular**. Para matrices cuadradas, si el _determinante_ es 0, dicha matriz es singular.
+
+Existen dos maneras de entender las **ecuaciones lineales**:
+
+- por Filas: <img src="https://render.githubusercontent.com/render/math?math=\large m"> ecuaciones que se intersectan en la solución (<img src="https://render.githubusercontent.com/render/math?math=\large x">).
+- por Columnas: Una combinación lineal de <img src="https://render.githubusercontent.com/render/math?math=\large n"> columnas que produce <img src="https://render.githubusercontent.com/render/math?math=\large b">.
+
+El método por filas es el más geométrico y quizás recomendable para matrices de poca dimensión, mientras que el método por columnas es recomendable para matrices de mayores dimensiones.
+
+Un concepto importante es el _**rank**_. El _rank_ de <img src="https://render.githubusercontent.com/render/math?math=\large A"> lleva a la dimensión del espacio vectorial de las soluciones de la ecuación lineal <img src="https://render.githubusercontent.com/render/math?math=\large Ax=0">. El _rank_ es el número de columnas linealmente independientes de la matriz y se puede calcular como el número de pivots que hay luego del proceso de eliminación.
 
 **Referencias**
 
