@@ -67,7 +67,7 @@ Cuando <img src="https://render.githubusercontent.com/render/math?math=\large Ax
 Conectando el concepto de independecia de columnas y solubilidad de una ecuación matricial, decimos que 
 
 - Si <img src="https://render.githubusercontent.com/render/math?math=\large Ax=0"> tiene solo como solución al vector 0, entonces, dado <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una matriz cuadrada, <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una **matriz invertible**, es decir, existe <img src="https://render.githubusercontent.com/render/math?math=\large A^{-1}">.
-- Si <img src="https://render.githubusercontent.com/render/math?math=\large Ax=0"> tiene más de una solución, <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una **matriz singular**. Para matrices cuadradas, si el _determinante_ es 0, dicha matriz es singular.
+- Si <img src="https://render.githubusercontent.com/render/math?math=\large Ax=0"> tiene más de una solución, <img src="https://render.githubusercontent.com/render/math?math=\large A"> es una **matriz singular**. Para matrices cuadradas, si el _determinante_ es 0, dicha matriz es singular. Una **ecuación singular** tiene 0 soluciones o infinitas soluciones.
 
 Existen dos maneras de entender las **ecuaciones lineales**:
 
@@ -77,6 +77,16 @@ Existen dos maneras de entender las **ecuaciones lineales**:
 El método por filas es el más geométrico y quizás recomendable para matrices de poca dimensión, mientras que el método por columnas es recomendable para matrices de mayores dimensiones.
 
 Un concepto importante es el _**rank**_. El _rank_ de <img src="https://render.githubusercontent.com/render/math?math=\large A"> es la dimensión del espacio vectorial de las soluciones de la ecuación lineal <img src="https://render.githubusercontent.com/render/math?math=\large Ax=0">. El _rank_ es el número de columnas linealmente independientes de la matriz y se puede calcular como el número de pivots que hay luego del proceso de eliminación.
+
+**Eliminación**
+
+Es un proceso por el cual transformamos un sisema de ecuaciones (<img src="https://render.githubusercontent.com/render/math?math=\large Ax=b">) cualquiera en un sistema de ecuaciones **triangular superior** (<img src="https://render.githubusercontent.com/render/math?math=\large Ux=d">). Una vez alcanzado el sistema triangular superior, el sistema es resuelto por **substitución inversa** (_back substitution_).
+
+El corazón de este método es que apesar de ser un sistema distinto, <img src="https://render.githubusercontent.com/render/math?math=\large Ux=d"> tiene las mismas soluciones que <img src="https://render.githubusercontent.com/render/math?math=\large Ax=b">.
+
+Para este método debes verificar primero que la primera posición (<img src="https://render.githubusercontent.com/render/math?math=\large a_{1,1}">) sea diferente de 0, de este modo, esta será tu primera __columna pivot__, caso contario hacer los cambios necesarios para que así sea, de no ser posible, este será la primera **columna libre**.
+
+Para resolver (con una solución única) un sistema de <img src="https://render.githubusercontent.com/render/math?math=\large n"> ecuaciones es necesario tener <img src="https://render.githubusercontent.com/render/math?math=\large n"> _pivots_. Los _pivots_ son los elementos de la diagonal distintos de cero de la matriz <img src="https://render.githubusercontent.com/render/math?math=\large U">.
 
 **Referencias**
 
