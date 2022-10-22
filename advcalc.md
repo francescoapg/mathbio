@@ -15,7 +15,7 @@ Definen dos operaciones binarias en $\mathbb{R}$ representadas con $+$ y $\cdot$
 
 - $\forall a,b\in\mathbb{R},a+b\in\mathbb{R}$
 -  ```math
-    \sqrt{3}
+    $\sqrt{3}$
     ```
 - $\forall a,b\in\mathbb{R},a\cdot b \in\mathbb{R}$
 - $\forall a,b,c\in\mathbb{R},(a + b) + c = a + (b + c)$
