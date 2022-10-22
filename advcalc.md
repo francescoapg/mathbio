@@ -28,7 +28,9 @@ Definen dos operaciones binarias en  \\( \mathbb{R} \\) representadas con  \\( +
 - Conmutatividad de la multiplicación: \\( \forall a,b\in\mathbb{R}, a\cdot b=b\cdot a\\)
 - Distributividad de la multiplicación sobre la suma: \\( \forall a,b,c\in\mathbb{R}, a\cdot (b+c)=a\cdot b + a\cdot c\\)
 
-En base a esto se define al campo \\( (\mathbb{R},+,\cdot) \\). Tome en cuenta que el símbolo "\\( - \\)" en la existencia del inverso aditivo no es la operación de resta sino una parte del símbolo \\( -a\\) que representa al inverso aditivo de \\( a \\).
+En base a esto se define al campo \\( (\mathbb{R},+,\cdot) \\). Tome en cuenta que el símbolo "\\( - \\)" en la existencia del inverso aditivo no es la operación de resta sino una parte del símbolo \\( -a\\) que representa al inverso aditivo de \\( a \\). Del mismo modo, el "exponente" \\( -1 \\) en la existencia del inverso multiplicativo no es una potencia de \\( a \\) sino es una parte del símbolo \\( a^{-1} \\) que representa al inverso multiplicativo de \\( a \\).
+
+Tomando únicamente a la operación de suma, la estructura algebraica \\( (\mathbb{R},+) \\) es un grupo abeliano o conmutativo.
 
 **Axiomas de orden**
 
@@ -38,6 +40,8 @@ Se define la relación de orden ( \\( < \\) ) en el conjunto  \\(  \mathbb{R} \\
 - Transitividad: \\( \forall a,b,c \in \mathbb{R}, (a<b\land b<c)\implies a<c \\)
 - Monotonía de la suma: \\( \forall a,b,c \in\mathbb{R} , a<b\implies a+c<b+c \\)
 - Monotonía de la multiplicación: \\( \forall a,b,c\in\mathbb{R}, (a<b\land 0<c)\implies a\cdot c< b\cdot c \\)
+
+De este modo, se define a \\( \mathbb{R} \\) como un **campo ordenado** \\( (\mathbb{R},+,\cdot,<) \\). Además, \\( (\mathbb{R},<) \\) es un **conjunto totalmente ordenado**.
 
 **Referencias**
 
