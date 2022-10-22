@@ -18,9 +18,7 @@ Los números reales son aquellos elementos del conjunto $\mathbb{R}$, conocido c
 Definen dos operaciones binarias en $\mathbb{R}$ representadas con $+$ y $\cdot$.
 
 - $\forall a,b\in\mathbb{R},a+b\in\mathbb{R}$
--  ```math
-    $\sqrt{3}$
-    ```
+- \\( \forall \\)
 - $\forall a,b\in\mathbb{R},a\cdot b \in\mathbb{R}$
 - $\forall a,b,c\in\mathbb{R},(a + b) + c = a + (b + c)$
 - $\forall a,b,c\in\mathbb{R}, (a\cdot b)\cdot c = a\cdot (b\cdot c)$
