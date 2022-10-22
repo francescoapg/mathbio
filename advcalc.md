@@ -10,7 +10,7 @@
 
 ### Números Reales {#realnumb}
 
-Los números reales son aquellos elementos del conjunto \\( \mathbb{R} \\), conocido como el **conjunto de números reales**. Estos elementos satisfacen una serie de axiomas que se agrupan en (1) propiedades algebraicas de los números reales y (2) propiedades de orden de los números reales. Las propiedades algebraicas también se conocen como **axiomas de campo** pues definen a una estructura algebraica conocida como **campo** (_field_, en inglés). En efecto, los números reales junto con sus operaciones son un **campo**.
+Los números reales son aquellos elementos del conjunto \\( \mathbb{R} \\), conocido como el **conjunto de números reales**. Estos elementos satisfacen una serie de axiomas que se agrupan en (1) propiedades algebraicas de los números reales, (2) propiedades de orden de los números reales y (3) axioma de completitud. Las propiedades algebraicas también se conocen como **axiomas de campo** pues definen a una estructura algebraica conocida como **campo** (_field_, en inglés). En efecto, los números reales junto con sus operaciones son un **campo**.
 
 **Axiomas de campo**
 
@@ -41,7 +41,15 @@ Se define la relación de orden ( \\( < \\) ) en el conjunto  \\(  \mathbb{R} \\
 - Monotonía de la suma: \\( \forall a,b,c \in\mathbb{R} , a<b\implies a+c<b+c \\)
 - Monotonía de la multiplicación: \\( \forall a,b,c\in\mathbb{R}, (a<b\land 0<c)\implies a\cdot c< b\cdot c \\)
 
-De este modo, se define a \\( \mathbb{R} \\) como un **campo ordenado** \\( (\mathbb{R},+,\cdot,<) \\). Además, \\( (\mathbb{R},<) \\) es un **conjunto totalmente ordenado**.
+De este modo, se define a \\( \mathbb{R} \\) como un **campo ordenado** \\( (\mathbb{R},+,\cdot,<) \\). Además, \\( (\mathbb{R},<) \\) es un **conjunto totalmente ordenado**. De hecho,  \\( (\mathbb{Q},+,\cdot,<) \\) también es un campo ordenado, por ende, es necesario añadir una propiedad más a \\( \mathbb{R} \\) para diferenciarlo de \\(\mathbb{Q} \\), esta propiedad viene en la forma del axioma siguiente.
+
+**Axioma de completitud**
+
+Este axioma "completa" a los números racionales en números reales, dicho de otro modo, llena los espacios de los racionales y los expande en un conjunto completo.
+Entre las formas de completitud que se tienen, las más conocidas son la **completitud de Dedekind** y la **completitud de Cauchy**. Dado que  \\( \mathbb{R} \\) satisface una forma del axioma de completitud, satisface todas. De este modo, solo es necesario enunciar una.
+
+Con esto,  \\( (\mathbb{R},+,\cdot,<) \\) se define como un **campo ordenado completo**.
+
 
 **Referencias**
 
