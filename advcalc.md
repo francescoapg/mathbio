@@ -8,12 +8,17 @@
 
 ### Números Reales {#realnumb}
 
-Los números reales son aquellos elementos del conjunto <img src="https://render.githubusercontent.com/render/math?math=%5Cmathbb%7BR%7D">, conocido como el **conjunto de números reales**. Estos elementos satisfacen una serie de axiomas que se agrupan en (1) propiedades algebraicas de los números reales y (2) propiedades de orden de los números reales. Las propiedades algebraicas también se conocen como **axiomas de campo** pues definen a una estructura matemática conocida como **campo** (_field_, en inglés). En efecto, los números reales son un **campo**.
+Los números reales son aquellos elementos del conjunto $\mathbb{R}$, conocido como el **conjunto de números reales**. Estos elementos satisfacen una serie de axiomas que se agrupan en (1) propiedades algebraicas de los números reales y (2) propiedades de orden de los números reales. Las propiedades algebraicas también se conocen como **axiomas de campo** pues definen a una estructura matemática conocida como **campo** (_field_, en inglés). En efecto, los números reales son un **campo**.
 
-Axiomas de campo
+**Axiomas de campo**
+Definen dos operaciones binarias en $\mathbb{R}$ representadas con $+$ y $\cdot$.
 
-- <img src="https://render.githubusercontent.com/render/math?math=%5Cforall%20a%2Cb%5Cin%5Cmathbb%7BR%7D%2Ca%2Bb%5Cin%5Cmathbb%7BR%7D">.
-- <img src="https://render.githubusercontent.com/render/math?math=%5Cforall%20a%2Cb%5Cin%5Cmathbb%7BR%7D%2Ca%5Cdot%20b%5Cin%5Cmathbb%7BR%7D">.
+- $\forall a,b\in\mathbb{R},a+b\in\mathbb{R}$
+- $\forall a,b\in\mathbb{R},a\cdot b \in\mathbb{R}$
+- $\forall a,b,c\in\mathbb{R},(a + b) + c = a + (b + c)$
+- $\forall a,b,c\in\mathbb{R}, (a\cdot b)\cdot c = a\cdot (b\cdot c)$
+- $\exists 0\in\mathbb{R}, x\in\mathbb{R}\implies x+0=0+x=x$
+- $\exists 1\in\mathbb{R}, x\in\mathbb{R}\implies x\cdot 1=1\cdot x=x$
 
 
 **Referencias**
