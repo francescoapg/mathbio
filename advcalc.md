@@ -1,5 +1,6 @@
 [<<Home](https://francescoapg.github.io/mathbio/)
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   
 ## Cálculo Avanzado
 
