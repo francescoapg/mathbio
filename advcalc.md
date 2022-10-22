@@ -32,8 +32,12 @@ En base a esto se define al campo \\( (\mathbb{R},+,\cdot) \\). Tome en cuenta q
 
 **Axiomas de orden**
 
-Se define la relación de orden 
+Se define la relación de orden ( \\( < \\) ) en el conjunto  \\(  \mathbb{R} \\). Esta relación se define de acuerdo a
 
+- Tricotomía: \\( \forall a,b\in\mathbb{R}, a<b \lor a=b \lor b<a \\)
+- Transitividad: \\( \forall a,b,c \in \mathbb{R}, (a<b\land b<c)\implies a<c \\)
+- Monotonía de la suma: \\( \forall a,b,c \in\mathbb{R} , a<b\implies a+c<b+c \\)
+- Monotonía de la multiplicación: \\( \forall a,b,c\in\mathbb{R}, (a<b\land 0<c)\implies a\cdot c< b\cdot c \\)
 
 **Referencias**
 
