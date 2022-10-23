@@ -46,7 +46,12 @@ De este modo, se define a \\( \mathbb{R} \\) como un **campo ordenado** \\( (\ma
 **Axioma de completitud**
 
 Este axioma "completa" a los números racionales en números reales, dicho de otro modo, llena los espacios de los racionales y los expande en un conjunto completo.
-Entre las formas de completitud que se tienen, las más conocidas son la **completitud de Dedekind** y la **completitud de Cauchy**. Dado que  \\( \mathbb{R} \\) satisface una forma del axioma de completitud, satisface todas. De este modo, solo es necesario enunciar una.
+Entre las formas de completitud que se tienen, las más conocidas son la **propiedad de la menor cota superior** (_Least Upper Bound property_) y la **completitud de Cauchy**. Dado que  \\( \mathbb{R} \\) satisface una forma del axioma de completitud, satisface todas. De este modo, solo es necesario enunciar una.
+
+- Todo conjunto no vacío que tienen una _cota superior_ posee una _menor cota superior_ (supremo).
+
+Cabe resaltar que este axioma no es parte del conjunto original de axiomas que propuso Hilbert en
+
 
 Con esto,  \\( (\mathbb{R},+,\cdot,<) \\) se define como un **campo ordenado completo**.
 
