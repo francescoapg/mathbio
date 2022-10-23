@@ -56,7 +56,7 @@ Con esto,  \\( (\mathbb{R},+,\cdot,<) \\) se define como un **campo ordenado com
 
 Del axioma de completitud se desprende directamente que si un conjunto no vacío tiene una cota inferior, entonces tienen un infimo (mayor cota inferior).
 
-**Definición** (D’angelo & West, 1997):  Une secuencia \\( {a_n}\\) de números reales tiene un **límite** \\( L\in\mathbb{R}\\) si, para todo \\( \epsilon >0\\) existe un \\( N\in\mathbb{N} \\) tal que \\( n\geq N\\) implica que \\( \|a_n-L\|<\epsilon \\).
+**Definición** (D’angelo & West, 1997):  Une secuencia \\( \left{a_n\right}\\) de números reales tiene un **límite** \\( L\in\mathbb{R}\\) si, para todo \\( \epsilon >0\\) existe un \\( N\in\mathbb{N} \\) tal que \\( n\geq N\\) implica que \\( \|a_n-L\|<\epsilon \\).
 
 Luego, una secuencia **converge** si tiene un límite. Consecuentemente, una secuencia divergente es aquella que no tiene un límite.
 
