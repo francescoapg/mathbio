@@ -56,8 +56,17 @@ Con esto,  \\( (\mathbb{R},+,\cdot,<) \\) se define como un **campo ordenado com
 
 Del axioma de completitud se desprende directamente que si un conjunto no vacío tiene una cota inferior, entonces tienen un infimo (mayor cota inferior).
 
+**Definición** (D’angelo & West, 1997):  Une secuencia \\( \{a_n\}\\) de números reales tiene un **límite** \\( L\in\mathbb{R}\\) si, para todo \\( \epsilon >0\\) existe un \\( N\in\mathbb{N} \\) tal que \\( n\geq N\\) implica que \\( |a_n-L|<\epsilon \\).
+
+Luego, una secuencia **converge** si tiene un límite. Consecuentemente, una secuencia divergente es aquella que no tiene un límite.
+
+**Teorema de Convergencia Monótona**
+
+- Si una secuencia \\( \{a_n\}\\) es creciente y acotada superiormente, entonces es convergente.
+
 **Referencias**
 
+- D’angelo, J. P., & West, D. B. (1997). Mathematical thinking. Problem Solving and Proofs.
 - Hilbert, David. (1900) "Über den Zahlbegriff." Jahresbericht der Deutschen Mathematiker-Vereinigung 8: 180-183. <http://eudml.org/doc/144659>.
 - Petrovic, J. (2013). Advanced calculus: theory and practice. Chapman and Hall/CRC.
 - Resnik, M. D. (1974). The Frege-Hilbert controversy. Philosophy and Phenomenological Research, 34(3), 386-403.
