@@ -46,11 +46,11 @@ De este modo, se define a \\( \mathbb{R} \\) como un **campo ordenado** \\( (\ma
 **Axioma de completitud**
 
 Este axioma "completa" a los números racionales en números reales, dicho de otro modo, llena los espacios de los racionales y los expande en un conjunto completo.
-Entre las formas de completitud que se tienen, las más conocidas son la **propiedad de la menor cota superior** (_Least Upper Bound property_) y la **completitud de Cauchy**. Dado que  \\( \mathbb{R} \\) satisface una forma del axioma de completitud, satisface todas. De este modo, solo es necesario enunciar una.
+Entre las formas de completitud que se tienen, las más conocidas son la **propiedad de la menor cota superior** (_Least Upper Bound property_) y la **completitud de Cauchy**. Dado que  \\( \mathbb{R} \\) satisface una forma del axioma de completitud, satisface todas. De este modo, solo es necesario enunciar una. A continuación, la propiedad de la menor cota superior:
 
 - Todo conjunto no vacío que tienen una _cota superior_ posee una _menor cota superior_ (supremo).
 
-Cabe resaltar que este axioma no es parte del conjunto original de axiomas que propuso Hilbert en
+Cabe resaltar que este axioma no es parte del conjunto original de axiomas que propuso Hilbert en su trabajo de 1900 titulado "Über den Zahlbegriff" (_Acerca del concepto de los números_) en el que propone los axiomas de los números reales que hemos presentado acá con algunas modificaciones. En lugar de este axioma, Hilbert propuso el _Axioma Arquimeadiano_ ("Archimedisches Axiom") y el _Axioma de completitud_ ("Axiom der Vollständigkeit") que establecía que no era posible expandir el sistema axiomático de los números reales, en otras palabras, los 18 axiomas que presentó estaban **completos**. De acuerdo a Hilbert, los números reales son un sistema de cosas cuyas relaciones satisfacen los axiomas presentados.
 
 
 Con esto,  \\( (\mathbb{R},+,\cdot,<) \\) se define como un **campo ordenado completo**.
@@ -58,4 +58,5 @@ Con esto,  \\( (\mathbb{R},+,\cdot,<) \\) se define como un **campo ordenado com
 
 **Referencias**
 
+- Hilbert, David. (1900) "Über den Zahlbegriff." Jahresbericht der Deutschen Mathematiker-Vereinigung 8: 180-183. <http://eudml.org/doc/144659>.
 - Petrovic, J. (2013). Advanced calculus: theory and practice. Chapman and Hall/CRC.
