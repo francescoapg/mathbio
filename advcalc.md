@@ -50,13 +50,14 @@ Entre las formas de completitud que se tienen, las más conocidas son la **propi
 
 - Todo conjunto no vacío que tienen una _cota superior_ posee una _menor cota superior_ (supremo).
 
-Cabe resaltar que este axioma no es parte del conjunto original de axiomas que propuso Hilbert en su trabajo de 1900 titulado "Über den Zahlbegriff" (_Acerca del concepto de los números_) en el que propone los axiomas de los números reales que hemos presentado acá con algunas modificaciones. En lugar de este axioma, Hilbert propuso el _Axioma Arquimeadiano_ ("Archimedisches Axiom") y el _Axioma de completitud_ ("Axiom der Vollständigkeit") que establecía que no era posible expandir el sistema axiomático de los números reales, en otras palabras, los 18 axiomas que presentó estaban **completos**. De acuerdo a Hilbert, los números reales son un sistema de cosas cuyas relaciones satisfacen los axiomas presentados.
-
+Cabe resaltar que este axioma no es parte del conjunto original de axiomas que propuso Hilbert en su trabajo de 1900 titulado "Über den Zahlbegriff" (_Acerca del concepto de los números_) en el que propone los axiomas de los números reales que hemos presentado acá con algunas modificaciones. En lugar de este axioma, Hilbert propuso el _Axioma Arquimeadiano_ ("Archimedisches Axiom") y el _Axioma de completitud_ ("Axiom der Vollständigkeit") que establecía que no era posible expandir el sistema axiomático de los números reales, en otras palabras, los 18 axiomas que presentó estaban **completos**. De acuerdo a Hilbert, los números reales son un sistema de cosas cuyas relaciones satisfacen los axiomas presentados (Resnil, 1974).
 
 Con esto,  \\( (\mathbb{R},+,\cdot,<) \\) se define como un **campo ordenado completo**.
 
+Del axioma de completitud se desprende directamente que si un conjunto no vacío tiene una cota inferior, entonces tienen un infimo (mayor cota inferior).
 
 **Referencias**
 
 - Hilbert, David. (1900) "Über den Zahlbegriff." Jahresbericht der Deutschen Mathematiker-Vereinigung 8: 180-183. <http://eudml.org/doc/144659>.
 - Petrovic, J. (2013). Advanced calculus: theory and practice. Chapman and Hall/CRC.
+- Resnik, M. D. (1974). The Frege-Hilbert controversy. Philosophy and Phenomenological Research, 34(3), 386-403.
