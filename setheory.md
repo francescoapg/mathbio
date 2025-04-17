@@ -355,6 +355,20 @@ Un conjunto tiene cardinalidad  <img src="https://render.githubusercontent.com/r
 
 Los ordinales son conjuntos bien ordenados canónicos, en realidad, cualquier conjunto bien ordenado es orden isomórfico a un ordinal; por lo que no es una exageración decir que los ordinales son centrales para el estudio de los conjuntos.
 
+### Propiedades de conjuntos en general
+
+$$A\cap (\bigcup_{x\in X}A_x)=\bigcup_{x\in X}(A\cap A_x) $$
+
+$$A\cup (\bigcap_{x\in X}A_x)=\bigcap_{x\in X}(A\cup A_x) $$
+
+$$ (\bigcup_{x\in X} A_x)^c=\bigcap_{x\in X}A_x^c $$
+
+$$ (\bigcap_{x\in X} A_x)^c=\bigcup_{x\in X}A_x^c $$
+
+**Referencias**
+
+- Fernandez, Pedro Jesus (2002) Medida e integracao.
+
 ### Funciones
 
 Sea $I_A$ la función indicadora del conjunto $A\subset \Omega$, se cumple que
@@ -369,3 +383,13 @@ Sea $I_A$ la función indicadora del conjunto $A\subset \Omega$, se cumple que
 - $I_{liminfA_n}=liminf I_{A_n}$
 
 Algunas propiedades de la imagen y preimagen de funciones.
+
+- $f^{-1}(A^c)=(f^{-1}(A))^c$.
+- $f^{-1}(\cap_{\alpha\in I} A_{\alpha})=\cap_{\alpha \in I}f^{-1}(A_{\alpha})$.
+- $f^{-1}(\cup_{\alpha \in I} A_{\alpha})=\cup_{\alpha \in I}f^{-1}(A_{\alpha})$.
+- $f(\cup_{\alpha\in I B_{\alpha}})=\cup_{\alpha \in I} f(B_{\alpha})$.
+- $f(\cap_{\alpha \in I} A_{\alpha})\subset \cap_{\alpha \in I}f(A_{\alpha})$.
+
+**Referencias**
+
+- Fernandez, Pedro Jesus (2002) Medida e integracao.
