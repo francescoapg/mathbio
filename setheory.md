@@ -366,6 +366,6 @@ Sea $I_A$ la función indicadora del conjunto $A\subset \Omega$, se cumple que
 - $`I_{A\cup B}=I_A+I_B-I_AI_B`$.
 - $`I_{\cup_{i=1}^n A_i}=1-\prod_{i=1}^n (1-A_{A_i})`$.
 - $`I_{limsupA_n}=limsup I_{A_n}`$
-- $`I_{liminfA_n}=liminf I_{A_n}`$
+- $I_{liminfA_n}=liminf I_{A_n}$
 
 Algunas propiedades de la imagen y preimagen de funciones.
