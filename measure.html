@@ -43,6 +43,31 @@
         float: none;
       }
     }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
     .button {
       background-color: #04AA6D;
       border: 2px solid #04AA6D;
@@ -91,10 +116,24 @@
 </head>
 <body>
   <div class="header">
-  <a href="https://francescoapg.github.io/mathbio/" class="logo" style="color: black;">Mathbio</a>
+  <a href="https://francescoapg.github.io/mathbio/" class="logo" style="color: black;">Inicio</a>
   <div class="header-right">
     <a href="#bio" class="button">Biología</a>
-    <a href="#math" class="button">Matemática</a>
+    <div class="dropdown">
+      <a href="#math" class="button">Matemática</a>
+      <div class="dropdown-content">
+        <a href="https://francescoapg.github.io/mathbio/setheory">Teoría de conjuntos</a>
+        <a href="https://francescoapg.github.io/mathbio/functlations">Relaciones y funciones</a>
+        <a href="#">Espacios</a>
+        <a href="https://francescoapg.github.io/mathbio/advcalc">Cálculo avanzado</a>
+        <a href="https://francescoapg.github.io/mathbio/measure">Teoría de la medida</a>
+        <a href="https://francescoapg.github.io/mathbio/geomdiff">Geometría diferencial</a>
+        <a href="https://francescoapg.github.io/mathbio/linalge">Álgebra lineal</a>
+        <a href="https://francescoapg.github.io/mathbio/groups">Teoría de grupos</a>
+        <a href="https://francescoapg.github.io/mathbio/topos">Topología general</a>
+        <a href="https://francescoapg.github.io/mathbio/cat">Categorías</a>
+      </div>
+    </div>
     <a href="https://github.com/francescoapg/mathbio" class="button"> GitHub </a>
   </div>
 </div>
