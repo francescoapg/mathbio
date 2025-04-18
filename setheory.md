@@ -310,7 +310,7 @@ El siguiente teorema se prueba por inducción matemática.
 
 La definición por inducción es una manera de definir una función, la prueba demuestra que la función definida por este método existe y es única.
 
-**Prueba por inducción transfinita**: Sea <img src="https://render.githubusercontent.com/render/math?math=\large (W,\leq)"> un conjunto bien ordenado, sea <img src="https://render.githubusercontent.com/render/math?math=\large P(w)"> una proposición matemática respecto a <img src="https://render.githubusercontent.com/render/math?math=\large w\in W">. Supón que <img src="https://render.githubusercontent.com/render/math?math=\large \forall w \in W (P(v) \forall v<w)\Rightarrow P(w) "> Entonces, <img src="https://render.githubusercontent.com/render/math?math=\large P(w)"> es cierto para todo elemento de <img src="https://render.githubusercontent.com/render/math?math=\large W">.
+**Prueba por inducción transfinita**: Sea $ (W,\leq)$ un conjunto bien ordenado, sea $ P(w)$ una proposición matemática respecto a $ w\in W$. Supón que $ \forall w \in W (P(v) \forall v<w)\Rightarrow P(w)$ Entonces, $P(w)$ es cierto para todo elemento de $ W$.
 
 34/274
 
@@ -323,16 +323,16 @@ La definición por inducción es una manera de definir una función, la prueba d
 
 A pesar de estar en contra de AC, Russell dio una versión equivalente del axioma de elección llamada axioma de multipicación. La introducción de este axioma permitía la definición de productos arbitrarios de números cardinales, como
 
-- <img src="https://render.githubusercontent.com/render/math?math=\large |X|\cdot |Y|=|X\times Y|">
-- <img src="https://render.githubusercontent.com/render/math?math=\large k\cdot 0=0\cdot k=0">
-- <img src="https://render.githubusercontent.com/render/math?math=\large k \cdot u = 0 \Rightarrow k=0\lor u=0">
-- <img src="https://render.githubusercontent.com/render/math?math=\large k\cdot 1=1\cdot k=k">
+- $ |X|\cdot |Y|=|X\times Y|$
+- $ k\cdot 0=0\cdot k=0$
+- $ k \cdot u = 0 \Rightarrow k=0\lor u=0$
+- $ k\cdot 1=1\cdot k=k$
 
-**Axioma multiplicativo**: (Russell) Para cada familia <img src="https://render.githubusercontent.com/render/math?math=\large (X_i)_{i\in I}"> de conjuntos no vacíos mutuamente disjuntos, existe un conjunto <img src="https://render.githubusercontent.com/render/math?math=\large Y"> con <img src="https://render.githubusercontent.com/render/math?math=\large |Y\cap X_i|=1"> para cada <img src="https://render.githubusercontent.com/render/math?math=\large i\in I">.
+**Axioma multiplicativo**: (Russell) Para cada familia $(X_i)_{i\in I}$ de conjuntos no vacíos mutuamente disjuntos, existe un conjunto $ Y$ con $ |Y\cap X_i|=1$ para cada $ i\in I$.
 
 **Alephs**
 
-Un conjunto tiene cardinalidad  <img src="https://render.githubusercontent.com/render/math?math=\large \aleph_0"> si y solo si es contable infinito, es decir, si existe una biyeccoón entre dicho cojunto y los números naturales. Los siguientes son <img src="https://render.githubusercontent.com/render/math?math=\large \aleph_0">
+Un conjunto tiene cardinalidad $\aleph_0$ si y solo si es contable infinito, es decir, si existe una biyeccoón entre dicho cojunto y los números naturales. Los siguientes son $\aleph_0$
 
 - Números impares
 - Números pares
@@ -342,7 +342,7 @@ Un conjunto tiene cardinalidad  <img src="https://render.githubusercontent.com/r
 - Racionales
 - El conjunto de todos los subconjuntos finitos de cualquier conjunto infinito contable.
 
-<img src="https://render.githubusercontent.com/render/math?math=\large \aleph_1"> es la cardinalidad del conjunto de todos los números ordinales contables, dicho conjunto (<img src="https://render.githubusercontent.com/render/math?math=\large \omega_1">) es incontable.
+$\aleph_1$ es la cardinalidad del conjunto de todos los números ordinales contables, dicho conjunto ($ \omega_1$) es incontable.
 
 **Hipótesis del Aleph**: Para todo ordinal <img src="https://render.githubusercontent.com/render/math?math=%5Calpha">, <img src="https://render.githubusercontent.com/render/math?math=2%5E%7B%5Caleph_%5Calpha%7D%3D%5Caleph_%7B%5Calpha%2B1%7D">. Tanto la hipótesis del continuo como la hipótesis del aleph para un cardinal 0 se supone que son falsas.
 
@@ -364,6 +364,8 @@ $$A\cup (\bigcap_{x\in X}A_x)=\bigcap_{x\in X}(A\cup A_x) $$
 $$ (\bigcup_{x\in X} A_x)^c=\bigcap_{x\in X}A_x^c $$
 
 $$ (\bigcap_{x\in X} A_x)^c=\bigcup_{x\in X}A_x^c $$
+
+$$ \bigcup_{i=1}^\infty = A_1+\bigsum_{i=2}^\infty (A_i-\bigcup_{j=1}^{i-1}A_j) $$
 
 **Referencias**
 
