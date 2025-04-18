@@ -23,8 +23,8 @@
       transition-duration: 0.4s;
     }
     .button:hover {
-      background-color: #04AA6D; /* Green */
-      color: white;
+      background-color: white;
+      color: black;
 }
 </style>
 </head>
@@ -40,7 +40,9 @@
   \[ (\bigcap_{x\in X} A_x)^c=\bigcup_{x\in X}A_x^c \]
   Recuerda que el símbolo de suma se refiere a la unión disjunta de conjuntos.
   \[ \bigcup_{i=1}^\infty = A_1+\sum_{i=2}^\infty (A_i-\bigcup_{j=1}^{i-1}A_j) \]
-  
+  \[ \bigcap_{i=1}^\infty A_i=A_1-\bigcup_{i=1}^\infty (A_1-A_i)\]
+  Recuerda que llamamos diferencia propia de conjuntos \(A-B\) cuando \(B\subset A\).
+  <br>
 Sea \(I_A\) la función indicadora del conjunto \(A\subset \Omega\), se cumple que
 </p>
 <ul>
@@ -105,23 +107,38 @@ Algunas propiedades de la imagen y preimagen de funciones.
   <b>Definición</b>: \( A\) es un \(\sigma- \)<i>anillo</i> si y solamente si es cerrada por diferencias y por uniones numerables. Si \( A\) es un \(\sigma- \)<i>anillo</i> y \(\Omega\in A\), se dice que \( A\) es un \(\sigma- \)<i>álgebra</i>.
 </blockquote>
   <blockquote>
-  <b>Proposición</b>: \( A \) es un \(\sigma- \)<i>anillo</i> si y solamente si es cerrado cerrado por intersección finita, diferencia propia y suma numerable.
+  <b>Proposición</b>: \( A \) es un \(\sigma- \)anillo si y solamente si es cerrado cerrado por intersección finita, diferencia propia y suma numerable.
 </blockquote>
+  <blockquote>
+  <b>Proposición</b>: Todo \(\sigma- \)anillo es cerrado por intersección numerable.
+</blockquote>
+  Como todo \(\sigma- \)anillo es cerrado por uniones e intersecciones numerables, sigue que todo \(\sigma- \)anillo es cerrado con respecto al límite superior y límite inferior de secuencias de conjuntos. El mismo concepto de anillo y álgebra generada de una colección de subconjuntos de \(\Omega\) aplica para \(\sigma- \)anillo y \(\sigma- \)álgebras. Simbolizamos al \(\sigma- \)anillo generado por \(C\) como \(\sigma(C)\).
+    <blockquote style="border: 2px solid powderblue;">
+  <b>Definición</b>: \( A\) es un <i>clase</i> \(\sigma- \)<i>aditiva</i> si y solamente si \(\Omega\in A\) y es cerrada por diferencia propia, suma finita y unión creciente.
+</blockquote>
+  Que sea cerrado por <q>unión creciente</q> se refiere a que para toda secuencia de conjuntos  \( \{A_i\}_{i\in \mathbb{N}}\) que sea creciente, es decir, que para todo \( n\in\mathbb{N} \), \(A_n\subset A_{n+1} \), la unión de la familia es un elemento de A, es decir,
+  \[\bigcup_{i=1}^\infty A_i\in A \]
+  Nuevamente, la intersección de una familia cualquiera de clases \(\sigma- \)aditivas es \(\sigma- \)aditiva.
+<blockquote>
+  <b>Proposición</b>: Si \(C \) es una clase no vacía de conjuntos cerrada por intersección finita, entonces la clase \(\sigma- \)aditiva generada por \(\C \) es igual a \(\sigma(C) \).
+</blockquote>
+
 </p>
 <h2>Referencias</h2>
 <ul>
   <li>Fernandez, Pedro Jesus (2002) Medida e integracao.</li>
 </ul>
-<p> Esta página web existe gracias a \(\LaTeX \) y \(MathJax\). <br>
+<p> 
 <hr>
 </p>
-<p style="text-align:center;">
-  Navega en el sitio web
-</p>
 <div style="text-align:center; padding: 3px;" >
+  Navega en el sitio web
   <a href="https://francescoapg.github.io/mathbio/" class="button"> Pagina principal </a>
   <a href="https://github.com/francescoapg/mathbio" class="button"> GitHub </a>
 </div>
-<p style="clear:both"></p>
+<p style="clear:both">
+<hr>
+Esta página web existe gracias a \(\LaTeX \) y \(MathJax\). <br>
+</p>
 </body>
 </html>
