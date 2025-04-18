@@ -24,6 +24,7 @@
     }
     .button:hover {
       background-color: white;
+      border: 2px solid #04AA6D;
       color: black;
 }
 </style>
@@ -39,8 +40,9 @@
   \[ (\bigcup_{x\in X} A_x)^c=\bigcap_{x\in X}A_x^c \]
   \[ (\bigcap_{x\in X} A_x)^c=\bigcup_{x\in X}A_x^c \]
   Recuerda que el símbolo de suma se refiere a la unión disjunta de conjuntos.
-  \[ \bigcup_{i=1}^\infty = A_1+\sum_{i=2}^\infty (A_i-\bigcup_{j=1}^{i-1}A_j) \]
+  \[ \bigcup_{i=1}^\infty A_i = A_1+\sum_{i=2}^\infty (A_i-\bigcup_{j=1}^{i-1}A_j) \]
   \[ \bigcap_{i=1}^\infty A_i=A_1-\bigcup_{i=1}^\infty (A_1-A_i)\]
+  \[ \sum_{i=1}^\infty A_i=\bigcup_{i=1}^\infty\sum_{n=1}^iA_n\]
   Recuerda que llamamos diferencia propia de conjuntos \(A-B\) cuando \(B\subset A\).
   <br>
 Sea \(I_A\) la función indicadora del conjunto \(A\subset \Omega\), se cumple que
@@ -85,7 +87,7 @@ Algunas propiedades de la imagen y preimagen de funciones.
   <blockquote>
   <b>Proposición</b>: Sea \( R\) una clase de conjuntos tal que \(\emptyset \neq R\subset \wp(\Omega) \). Son equivalentes las siguientes afirmaciones:
     <br>
-    - \( R \) es cerrada por unión y diferencias finitas.
+    - \( R \) es cerrada por unión finita y diferencia.
     <br>
     - \( R \) es cerrada por unión finita y diferencia propia.
     <br>
@@ -112,7 +114,7 @@ Algunas propiedades de la imagen y preimagen de funciones.
   <blockquote>
   <b>Proposición</b>: Todo \(\sigma- \)anillo es cerrado por intersección numerable.
 </blockquote>
-  Como todo \(\sigma- \)anillo es cerrado por uniones e intersecciones numerables, sigue que todo \(\sigma- \)anillo es cerrado con respecto al límite superior y límite inferior de secuencias de conjuntos. El mismo concepto de anillo y álgebra generada de una colección de subconjuntos de \(\Omega\) aplica para \(\sigma- \)anillo y \(\sigma- \)álgebras. Simbolizamos al \(\sigma- \)anillo generado por \(C\) como \(\sigma(C)\).
+  Como todo \(\sigma- \)anillo es cerrado por uniones e intersecciones numerables, sigue que todo \(\sigma- \)anillo es cerrado con respecto al límite superior y límite inferior de secuencias de conjuntos. El mismo concepto de anillo y álgebra generada de una colección de subconjuntos de \(\Omega\) aplica para \(\sigma- \)anillo y \(\sigma- \)álgebras. Simbolizamos al \(\sigma- \)álgebra generado por \(C\) como \(\sigma(C)\). Mediante \(\tilde{\sigma}(C)\) se simboliza al \(\sigma- \)anillo generado.
     <blockquote style="border: 2px solid powderblue;">
   <b>Definición</b>: \( A\) es un <i>clase</i> \(\sigma- \)<i>aditiva</i> si y solamente si \(\Omega\in A\) y es cerrada por diferencia propia, suma finita y unión creciente.
 </blockquote>
@@ -120,25 +122,43 @@ Algunas propiedades de la imagen y preimagen de funciones.
   \[\bigcup_{i=1}^\infty A_i\in A \]
   Nuevamente, la intersección de una familia cualquiera de clases \(\sigma- \)aditivas es \(\sigma- \)aditiva.
 <blockquote>
-  <b>Proposición</b>: Si \(C \) es una clase no vacía de conjuntos cerrada por intersección finita, entonces la clase \(\sigma- \)aditiva generada por \(\C \) es igual a \(\sigma(C) \).
+  <b>Proposición</b>: Si \(C \) es una clase no vacía de conjuntos cerrada por intersección finita, entonces la clase \(\sigma- \)aditiva generada por \(C \) es igual a \(\sigma(C) \).
 </blockquote>
-
+<blockquote style="border: 2px solid powderblue;">
+  <b>Definición</b>: \( A\) es un <i>clase monotónica</i> si es cerrada por unión numerable creciente y por intersección numerable decreciente.
+</blockquote>
+Nuevamente podemos formular el concepto de clase monotónica generada.
+  <blockquote>
+  <b>Proposición</b>: Si \(R\) es un álgebra, la clase monotónica generada por \(R\) es \(\sigma(R)\), es decir, su \(\sigma-\)álgebra generada. El resultado análogo para anillos se cumple.
+</blockquote>
+</p>
+  <h2>Medidas y extensión de medidas</h2>
+<p>
+Sea \(\Omega\) un conjunto y \(\emptyset \neq A\subset \wp(\Omega)\).
+<blockquote style="border: 2px solid powderblue;">
+  <b>Definición</b>: Una función \( \mu:A\to (-\infty,+\infty]\) es llamada una <i>función de conjunto</i>.
+</blockquote>
+  <blockquote style="border: 2px solid powderblue;">
+  <b>Definición</b>: Sea \(\mu\) una función de conjunto, \(\mu\) es <i>finitamente aditiva</i> si y solamente si para \(A_i\in A, 1\leq i \leq n\), \( S=\sum_{i=1}^n A_i\in A\) entonces se tiene que
+    \[ \mu(S)=\sum_{i=1}^n\mu(A_i).\]
+    Se dice que \(\mu \) es \(\sigma- \)aditiva si y solo si para toda familia numerable \( \{A_i\_{i\in\mathbb{N}}}\) con \(A_i\in A \) con \( S=\sum_{i=1}^\infty A_i \in A\), se tiene que
+    \[ \mu(S)=\sum_{i=1}^\infty \mu(A_i).\]
+</blockquote>
 </p>
 <h2>Referencias</h2>
 <ul>
   <li>Fernandez, Pedro Jesus (2002) Medida e integracao.</li>
 </ul>
-<p> 
 <hr>
+  <p>Esta página web existe gracias a \(\LaTeX \) y \(MathJax\).</p>
+  <p style="text-align:center"> 
+<hr>
+  Navega en el sitio web
 </p>
 <div style="text-align:center; padding: 3px;" >
-  Navega en el sitio web
   <a href="https://francescoapg.github.io/mathbio/" class="button"> Pagina principal </a>
   <a href="https://github.com/francescoapg/mathbio" class="button"> GitHub </a>
 </div>
-<p style="clear:both">
-<hr>
-Esta página web existe gracias a \(\LaTeX \) y \(MathJax\). <br>
-</p>
+<p style="clear:both"> </p>
 </body>
 </html>
