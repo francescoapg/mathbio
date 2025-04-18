@@ -365,7 +365,7 @@ $$ (\bigcup_{x\in X} A_x)^c=\bigcap_{x\in X}A_x^c $$
 
 $$ (\bigcap_{x\in X} A_x)^c=\bigcup_{x\in X}A_x^c $$
 
-$$ \bigcup_{i=1}^\infty = A_1+\bigsum_{i=2}^\infty (A_i-\bigcup_{j=1}^{i-1}A_j) $$
+$$ \bigcup_{i=1}^\infty = A_1+\sum_{i=2}^\infty (A_i-\bigcup_{j=1}^{i-1}A_j) $$
 
 **Referencias**
 
