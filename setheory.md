@@ -357,7 +357,7 @@ Los ordinales son conjuntos bien ordenados canónicos, en realidad, cualquier co
 
 ### Propiedades de conjuntos en general
 
-$$A\cap (\bigcup_{x\in X}A_x)=\bigcup_{x\in X}(A\cap A_x) $$
+\[A\cap (\bigcup_{x\in X}A_x)=\bigcup_{x\in X}(A\cap A_x) \]
 
 $$A\cup (\bigcap_{x\in X}A_x)=\bigcap_{x\in X}(A\cup A_x) $$
 
@@ -390,7 +390,7 @@ Algunas propiedades de la imagen y preimagen de funciones.
 - $f^{-1}(\cap_{\alpha\in I} A_{\alpha})=\cap_{\alpha \in I}f^{-1}(A_{\alpha})$.
 - $f^{-1}(\cup_{\alpha \in I} A_{\alpha})=\cup_{\alpha \in I}f^{-1}(A_{\alpha})$.
 - $f(\cup_{\alpha\in I B_{\alpha}})=\cup_{\alpha \in I} f(B_{\alpha})$.
-- $f(\cap_{\alpha \in I} A_{\alpha})\subset \cap_{\alpha \in I}f(A_{\alpha})$.
+- \(f(\cap_{\alpha \in I} A_{\alpha})\subset \cap_{\alpha \in I}f(A_{\alpha})\).
 
 **Referencias**
 
