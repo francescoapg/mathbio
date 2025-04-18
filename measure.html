@@ -26,7 +26,13 @@
       background-color: white;
       border: 2px solid #04AA6D;
       color: black;
-}
+    }
+    .proof {
+      width: 100%;
+      padding: 5px 0;
+      background-color: lightgray;
+      margin-top: 2px;
+    }
 </style>
 </head>
 <body>
@@ -141,7 +147,7 @@ Sea \(\Omega\) un conjunto y \(\emptyset \neq A\subset \wp(\Omega)\).
   <blockquote style="border: 2px solid powderblue;">
   <b>Definición</b>: Sea \(\mu\) una función de conjunto, \(\mu\) es <i>finitamente aditiva</i> si y solamente si para \(A_i\in A, 1\leq i \leq n\), \( S=\sum_{i=1}^n A_i\in A\) entonces se tiene que
     \[ \mu(S)=\sum_{i=1}^n\mu(A_i).\]
-    Se dice que \(\mu \) es \(\sigma- \)aditiva si y solo si para toda familia numerable \( \{A_i\_{i\in\mathbb{N}}\}\) con \(A_i\in A \) para todo \(i\in \mathbb{N} \) y \( S=\sum_{i=1}^\infty A_i \in A\), se tiene que
+    Se dice que \(\mu \) es \(\sigma- \)aditiva si y solo si para toda familia numerable \( \{A_i\}_{i\in\mathbb{N}}\) con \(A_i\in A \) para todo \(i\in \mathbb{N} \) y \( S=\sum_{i=1}^\infty A_i \in A\), se tiene que
     \[ \mu(S)=\sum_{i=1}^\infty \mu(A_i).\]
 </blockquote>
   <blockquote style="border: 2px solid powderblue;">
@@ -152,7 +158,11 @@ Sea \(\Omega\) un conjunto y \(\emptyset \neq A\subset \wp(\Omega)\).
   <b>Definición</b>: Un triple \( \Omega,A,\mu\) en el que \(\Omega \) es un conjunto, \( A\) es un \( \sigma-\)álgebra contenida en \( \wp(\Omega)\) y \( \mu\) es un medida sobre \( A\) es llamado un <i>espacio de medida</i>. La dupla  \( \Omega,A\) es llamado un <i>espacio medible</i>.
 </blockquote>
 
-
+<button onclick="showProof(1)">Mostrar demostración</button>
+<div class="proof" style="display: none;" id="1">
+Demostracion etc etc \( x=1\) pero también
+  \[ m=1 \].
+</div>
 
   \( \)
 </p>
@@ -169,5 +179,15 @@ Sea \(\Omega\) un conjunto y \(\emptyset \neq A\subset \wp(\Omega)\).
   <a href="https://github.com/francescoapg/mathbio" class="button"> GitHub </a>
 </div>
 <p style="clear:both"> </p>
+<script>
+function myFunction(n) {
+  var x = document.getElementById(n);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>
