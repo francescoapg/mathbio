@@ -18,8 +18,31 @@
   \[ (\bigcap_{x\in X} A_x)^c=\bigcup_{x\in X}A_x^c \]
   \[ \bigcup_{i=1}^\infty = A_1+\sum_{i=2}^\infty (A_i-\bigcup_{j=1}^{i-1}A_j) \]
   
-  Todo esto gracias a \(\LaTeX \).
-  
+Sea $I_A$ la función indicadora del conjunto $A\subset \Omega$, se cumple que
+</p>
+<ul>
+  <li>\( A\subset B \iff I_A\leq I_B \)</li>
+  <li>\(I_{A^C}=1-I_A \)</li>
+  <li>\( I_{A\cap B}=I_AI_B\)</li>
+  <li>\( I_{\cap_{i=1}^n A_i}=\prod_{i=1}^n A_i\)</li>
+  <li>\( I_{A\cup B}=I_A+I_B-I_AI_B \)</li>
+  <li>\( I_{\cup_{i=1}^n A_i}=1-\prod_{i=1}^n (1-A_{A_i}) \)</li>
+  <li>\( I_{\lim_{n} sup A_n}=\lim_n sup I_{A_n}\)</li>
+  <li>\( I_{\lim_n inf A_n}=\lim_n inf I_{A_n}\)</li>
+</ul>
+<p>
+Algunas propiedades de la imagen y preimagen de funciones.
+</p>
+<ul>
+  <li>\( f^{-1}(A^c)=(f^{-1}(A))^c\)</li>
+  <li>\( f^{-1}(\cap_{\alpha\in I} A_{\alpha})=\cap_{\alpha \in I}f^{-1}(A_{\alpha}) \)</li>
+  <li>\( f^{-1}(\cup_{\alpha \in I} A_{\alpha})=\cup_{\alpha \in I}f^{-1}(A_{\alpha}) \)</li>
+  <li>\( f(\cup_{\alpha\in I B_{\alpha}})=\cup_{\alpha \in I} f(B_{\alpha}) \)</li>
+  <li>\( f(\cap_{\alpha \in I} A_{\alpha})\subset \cap_{\alpha \in I}f(A_{\alpha}) \)</li>
+</ul>
+
+<p>
+  Todo esto gracias a \(\LaTeX \) y a \(MathJax\).
 </p>
 </body>
 </html>
