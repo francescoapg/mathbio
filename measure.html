@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Teoría de conjuntos</title>
+  <title>Teoría de la medida</title>
   <script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
 </head>
 <body>
-<h1>Teoría de la medida</h1>
+<h1 style="text-align:center;">Teoría de la medida</h1>
 <h2>Fórmulas útiles de teoría de conjuntos</h2>
 <p>
   Veamos algunas ecuaciones útiles
@@ -18,6 +18,7 @@
   \[ A\cup (\bigcap_{x\in X}A_x)=\bigcap_{x\in X}(A\cup A_x) \]
   \[ (\bigcup_{x\in X} A_x)^c=\bigcap_{x\in X}A_x^c \]
   \[ (\bigcap_{x\in X} A_x)^c=\bigcup_{x\in X}A_x^c \]
+  Recuerda que el símbolo de suma se refiere a la unión disjunta de conjuntos.
   \[ \bigcup_{i=1}^\infty = A_1+\sum_{i=2}^\infty (A_i-\bigcup_{j=1}^{i-1}A_j) \]
   
 Sea \(I_A\) la función indicadora del conjunto \(A\subset \Omega\), se cumple que
@@ -36,17 +37,27 @@ Sea \(I_A\) la función indicadora del conjunto \(A\subset \Omega\), se cumple q
 Algunas propiedades de la imagen y preimagen de funciones.
 </p>
 <p>
-  \[ f^{-1}(A^c)=(f^{-1}(A))^c\) \]
-   \[  f^{-1}(\cap_{\alpha\in I} A_{\alpha})=\cap_{\alpha \in I}f^{-1}(A_{\alpha}) \)\]
-   \[  f^{-1}(\cup_{\alpha \in I} A_{\alpha})=\cup_{\alpha \in I}f^{-1}(A_{\alpha}) \)\]
-   \[  f(\cup_{\alpha\in I B_{\alpha}})=\cup_{\alpha \in I} f(B_{\alpha}) \)\]
-   \[  f(\cap_{\alpha \in I} A_{\alpha})\subset \cap_{\alpha \in I}f(A_{\alpha}) \)\]
+  \[ f^{-1}(A^c)=(f^{-1}(A))^c \]
+   \[  f^{-1}(\bigcap_{\alpha\in I} A_{\alpha})=\bigcap_{\alpha \in I}f^{-1}(A_{\alpha}) \]
+   \[  f^{-1}(\bigcup_{\alpha \in I} A_{\alpha})=\bigcup_{\alpha \in I}f^{-1}(A_{\alpha}) \]
+   \[  f(\bigcup_{\alpha\in I B_{\alpha}})=\bigcup_{\alpha \in I} f(B_{\alpha}) \]
+   \[  f(\bigcap_{\alpha \in I} A_{\alpha})\subset \bigcap_{\alpha \in I}f(A_{\alpha}) \]
 </p>
-<h2>Fórmulas útiles de teoría de conjuntos</h2>
+<h2>Clases de conjuntos</h2>
+<pre>
+  Algunas definiciones de gran utilidad. Sea \( \Omega \) un conjunto no vacío y \( S \subset \wp(\Omega)\) una clase no vacía de subconjuntos de \( \Omega\).
+  <b>Definición</b>: \( S\) es un <i>semi-anillo</i> si y solamente si
+  - \( A,B\in S \implies A\cap B\in S\).
+  - \( A,B \in S \implies A-B=\sum_{i=1}^n C_i\) para \( n\in \mathbb{N}\) y para \( C_i\in S\) para todo i.
 
-  
-<p>
-  Esta página web existe gracias a \(\LaTeX \) y a \(MathJax\).
-</p>
+  Es evidente que la segunda propiedad implica que \( \emptyset \in S\).
+
+  <b>Definición</b>: \( S\) es un <i>semi-álgebra</i> si y solamente si es un semi-anillo y  \( \Omega \in S\)
+</pre>
+<h2>Referencias</h2>
+<ul>
+  <li>Fernandez, Pedro Jesus (2002) Medida e integracao.</li>
+</ul>  
+<p> Esta página web existe gracias a \(\LaTeX \) y a \(MathJax\). </p>
 </body>
 </html>
