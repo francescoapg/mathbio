@@ -7,7 +7,7 @@
   <script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
-  <style>
+ <style>
     .header {
       padding: 20px 10px;
     }
@@ -53,10 +53,10 @@
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
+      top: 100%;
     }
     .dropdown-content a {
       color: black;
-      padding: 12px 16px;
       text-decoration: none;
       display: block;
     }
@@ -117,7 +117,16 @@
   <div class="header">
   <a href="https://francescoapg.github.io/mathbio/" class="logo" style="color: black;">Inicio</a>
   <div class="header-right">
-    <a href="#bio" class="button">Biología</a>
+  <a href="https://github.com/francescoapg/mathbio" class="button"> GitHub </a>
+        <div class="dropdown">
+      <a href="#math" class="button">Biología</a>
+      <div class="dropdown-content">
+        <a href="https://francescoapg.github.io/mathbio/setheory">Teoría de conjuntos</a>
+        <a href="https://francescoapg.github.io/mathbio/functlations">Relaciones y funciones</a>
+        <a href="#">Espacios</a>
+        <a href="https://francescoapg.github.io/mathbio/advcalc">Cálculo avanzado</a>
+      </div>
+    </div>
     <div class="dropdown">
       <a href="#math" class="button">Matemática</a>
       <div class="dropdown-content">
@@ -133,10 +142,10 @@
         <a href="https://francescoapg.github.io/mathbio/cat">Categorías</a>
       </div>
     </div>
-    <a href="https://github.com/francescoapg/mathbio" class="button"> GitHub </a>
   </div>
 </div>
 <div class="header" style="overflow: hidden"></div>
+
 <hr>
 <div style="padding-left:20px; padding-right: 20px;">
 <h1 style="text-align:center;">Teoría de la medida</h1>
