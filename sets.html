@@ -3,15 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>MathJax example</title>
+  <title>Teoría de conjuntos</title>
   <script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
 </head>
 <body>
 <p>
-  When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-  \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+  Veamos algunas ecuaciones útiles
+
+  \[ A\cap (\bigcup_{x\in X}A_x)=\bigcup_{x\in X}(A\cap A_x) \]
+  \[ A\cup (\bigcap_{x\in X}A_x)=\bigcap_{x\in X}(A\cup A_x) \]
+  \[ (\bigcup_{x\in X} A_x)^c=\bigcap_{x\in X}A_x^c \]
+  \[ (\bigcap_{x\in X} A_x)^c=\bigcup_{x\in X}A_x^c \]
+  \[ \bigcup_{i=1}^\infty = A_1+\sum_{i=2}^\infty (A_i-\bigcup_{j=1}^{i-1}A_j) \]
+  
+  Todo esto gracias a \(\LaTeX \).
+  
 </p>
 </body>
 </html>
