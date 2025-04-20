@@ -150,7 +150,7 @@
 <div style="padding-left:20px; padding-right: 20px;">
 <h1 style="text-align:center;">Geometría diferencial</h1>
 <h2>Diferenciabilidad de funciones de \( \mathbb{R}^m\) en \(\mathbb{R}^n\)</h2>
-<blockquote  style="border: 2px solid powderblue;"><b>Definición</b> Sea \( U\subset \mathbb{R}^m\) un abierto, \(f:U\to\mathbb{R}^n\), \(a\in U \) y denotemos \(U_a=\{\ h\in \mathbb{R}^m :a+h\in U \}\).
+<blockquote  style="border: 2px solid powderblue;"><b>Definición</b>: Sea \( U\subset \mathbb{R}^m\) un abierto, \(f:U\to\mathbb{R}^n\), \(a\in U \) y denotemos \(U_a=\{\ h\in \mathbb{R}^m :a+h\in U \}\).
   <br>
   Decimos que \(f\) es <i>diferenciable</i> en \( a\) si y solo si existe \(T_a\in\mathcal{L}(\mathbb{R})\) tal que
   \[
@@ -183,7 +183,7 @@ f'(a):&\mathbb{R}^m&\to&\mathbb{R}^n\\
 \]
 De acá podemos encontrar la matriz asociada a la transformación lineal \( f'(a)\) en las base canónica \( \{e_1,...,e_m\}\) de \( \mathbb{R}^m\) y la base canónica \( \{e_1',...,e_n'\}\) de \( \mathbb{R}^n\). Sea \( f=(f_1,...,f_n)\) diferenciable en \( a\), sea \( 1\leq i\leq m\) tenemos
 \[
-f'(a)(e_i)=\frac{\partial f}{\partial e_i}(a)=\frac{\partial f}{\partial x_i}(a)=\left( \frac{\partial f_1}{\partial e_i}(a),...,\frac{\partial f_n}{\partial e_i}(a) \right)
+f'(a)(e_i)=\frac{\partial f}{\partial e_i}(a)=\frac{\partial f}{\partial x_i}(a)=\left( \frac{\partial f_1}{\partial x_i}(a),...,\frac{\partial f_n}{\partial x_i}(a) \right)
 \]
 Entonces esta será la \( i\)-ésima columna de la matriz asociada. La matriz resultante es la <b>matriz Jacobiana</b> que se denota por \( Jf(a)\). Esta matriz tiene por filas a los gradientes de las funciones coordenada \( f_i\) y como columnas a los vectores que calculamos anteriormente.
 </p>
@@ -192,13 +192,68 @@ Entonces esta será la \( i\)-ésima columna de la matriz asociada. La matriz re
 
   <h2>Superficies</h2>
 <h3>Proposición </h3>
-  <blockquote> Sea \( V\) un subconjunto de una superficie regular \( S\), pruebe que \( V\) es una superficie regular si y solo si \( V\) es un abierto en \( S\).
+  <blockquote> Sea \( V\) un subconjunto de una superficie regular \( S\), \( V\) es una superficie regular si y solo si \( V\) es un abierto en \( S\).
 </blockquote>
-<button class="btnProof" onclick="showProof(1)" id="btn1"> Mostrar demostración</button>
-<div class="proof" style="display: none;" id="1">
 
+
+<h3>Proposición </h3>
+<blockquote>
+<b> Cambio de parámetros</b>. Sea \( p\) un punto de una superficie regular \( S\) y sean
+\[
+X:U\subset \mathbb{R}^2 \to S
+\]
+\[
+Y:V\subset \mathbb{R}^2 \to S
+\]
+Dos parametrizaciones de \( S\) tal que \( p \in X(U)\cap Y(V)=W \). Entonces el <i>cambio de coordenadas</i>
+\[
+h=X^{-1}\circ Y:Y^{-1}(W) \to X^{-1}(W)
+\]
+es un <b> difeomorfismo</b>, es decir, \( h\) es diferenciable y tiene inversa diferenciable.
+</blockquote>
+<button class="btnProof" onclick="changeBtnText(1,"btn1")" id="btn1"> Mostrar demostración</button>
+<div class="proof" style="display: none;" id="1">
+Tenemos que \( h=X^{-1}\circ Y\) es un homeomorfismo por ser composición de homeomorfismos. Sea \( r\in Y^{-1}(W)\), \( q=h(r)\), como \( X\) es una parametrización, podemos suponer cambiando el nombre de los ejes de ser necesario que \( X(u,v)=(x(u,v),y(u,v),z(u,v))\) donde
+\[
+\frac{\partial (x,y)}{\partial (u,v)}(q)\neq 0
+\]
+Ahora, vamos a <q> extender</q> \( X\) a una aplicación \( F:U\times \mathbb{R} \to \mathbb{R}^3\) definida por
+\[
+F(u,v,t)=(x(u,v),y(u,v,z(u,v)+t))
+\]
+como \( X\) es diferenciable, \( F\) es diferenciable, además, con cierto abuso de notación, podemos decir que \( F_{|U\times \{0\}}=X\), ahora
+\[
+dF_q=
+\begin{vmatrix}
+\frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} & 0\
+\frac{\partial y}{\partial u} & \frac{\partial y}{\partial v} & 0\\
+\frac{\partial z}{\partial u} & \frac{\partial z}{\partial v} & 1
+\end{vmatrix}=\frac{\partial (x,y)}{\partial (u,v)}(q)\neq 0
+\]
+Entonces podemos el teorema de la función inversa, luego existe \( M\) vecindad de \( p=X(q)\) en \( \mathbb{R}^3\) tal que \( F^{-1}\) existe y es diferenciable en \( M\). Por la continuidad de \( Y\), existe un entorno \( N\) de \( r\) en \( V\) tal que \( Y(N)\subset M\). (Esta es una propiedad de funciones.) Luego como \( h_{|N}=F^{-1}\circ Y_{|N}\), vemos que \( h\) es la composición de funciones diferenciables. Un argumento análogo prueba que \( h^{-1}\) es diferenciable.
 </div>
-  
+<blockquote  style="border: 2px solid powderblue;"><b>Definición</b>:
+Sea \( F:V\subset S \to \mathbb{R}\) una función definida en \( V\) abierto y \( S\) superficie regular. Se dice que \( f\) es <b> diferenciable</b> en \( p\in V\) si para alguna parametrización \( X:U\subset \mathbb{R}^2\to S\) con \( p\in X(U)\subset V\), la composición \( f\circ X:U\subset \mathbb{R}^2\to \mathbb{R}\) es diferenciable en \( X^{-1}(p)\). \( f\) es diferenciable en \( V\) si es diferenciable en todos los puntos de \( V\).
+</blockquote>
+<p>Observe que esta definición es independiente de parametrizaciones.
+Analogamente podemos definir diferenciabilidad de funciones entre superficies, sea
+\[
+\phi:V_1\subset S_1\to S_2
+\]
+Con \( V_1\) abierto. Decimos que \( \phi\) es diferenciable en \( p\in V_1\) si dadas las parametrizaciones
+\[
+X_1:U_1\subset \mathbb{R}^2\to S_1
+\]
+\[
+X_2:U_2\subset \mathbb{R}^2\to S_2
+\]
+con \( p\in X_1(U_1)\) y \( \phi(X_1(U_1))\subset X_2(U_2)\). La aplicación
+\[
+X_2^{-1}\¢irc \phi \circ X_1 :U_1\to U_2
+\]
+es diferenciable en \(q=X_1^{-1}(p) \). Se dice que dos superficies regulares \( S_1\) y \( S_2\) son difeomorfas si existe una aplicación diferenciable \( \phi:S_1\to S_2\) con inversa diferenciable.
+<i> Desde el punto de vista de la diferenciabilidad, dos superficies difeomorfas son indistinguibles</i>. Sin mayor dificultad puedes encontrar que toda superficie regular es localmente difeomorfa a un plano.
+</p>
 
 <h2>Referencias</h2>
 <ul>
@@ -209,14 +264,15 @@ Entonces esta será la \( i\)-ésima columna de la matriz asociada. La matriz re
   <hr>
   </div>
 <script>
-function showProof(n) {
-  var x = document.getElementById(n);
+
+function changeBtnText(N,"btnN") {
+  var x = document.getElementById(N);
   if (x.style.display === "none") {
     x.style.display = "block";
-    document.getElementById("btn1").innerHTML= "Ocultar demostración";
+    document.getElementById("btnN").innerHTML= "Ocultar demostración";
   } else {
     x.style.display = "none";
-    document.getElementById("btn1").innerHTML= "Mostrar demostración";
+    document.getElementById("btnN").innerHTML= "Mostrar demostración";
   }
 }
 </script>
