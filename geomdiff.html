@@ -150,7 +150,35 @@
 <div style="padding-left:20px; padding-right: 20px;">
 <h1 style="text-align:center;">Geometría diferencial</h1>
 <h2>Diferenciabilidad de funciones de \( \mathbb{R}^m\) en \(\mathbb{R}^n\)</h2>
-  <p></p>
+<blockquote  style="border: 2px solid powderblue;"> Sea \( U\subset \mathbb{R}^m\) un abierto, \(f:U\to\mathbb{R}^n\), \(a\in U \) y denotemos \(U_a=\{\ h\in \mathbb{R}^m :a+h\in U \}\).
+  <br>
+  Decimos que \(f\) es <i>diferenciable</i> en \( a\) si y solo si existe \(T_a\in\mathcal{L}(\mathbb{R})\) tal que
+  \[
+  f(a+h)=f(a)+T(h)+r_a(h), \forall h\in U_a
+  \]
+  en donde \( \lim_{h\to 0}\frac{r_a(h)}{||h||}=0\).
+  <br>
+  Decimos que \( f\) es <i>diferenciable</i> en \( U\) si y solo si es diferenciable en todos los puntos de \( U\).
+</blockquote>
+<p>La transformación lineal \( T\) se representa por \( f'(a)\) cuando existe y cumple las condiciones de la definición.</p>
+<h3>Proposición </h3>
+<blockquote>
+Sea \( U\subset \mathbb{R}^m\) abierto, \( f=(f_1,...,f_n):U\to \mathbb{R}^n\) y \( a\in U\). \( f\) es diferenciable en \( a\) si y solo si \( f_1\),...,\( f_n\) son diferenciables en \( a\). En caso esto se cumpla, tendremos que
+\[
+f'(a)=(f_1'(a),...,f_n'(a))
+\]
+</blockquote>
+<p>De acá se desprende como corolario que si \( f\) es diferenciable en \( a\) entonces es continua en \( a\). Además, si \(f \) es diferenciable en un punto entonces todas las <i>derivadas direccionales</i> existen en dicho punto. Siendo estas definidas como
+\[
+\frac{\partial f}{\partial v}(a)=\lim_{t\to 0} \frac{f(a+tv)-f(a)}{t}
+\]
+cuando tal límite existe.
+<br>
+
+</p>
+
+<p> </p>
+
   <h2>Superficies</h2>
 <h3>Proposición </h3>
   <blockquote> Sea \( V\) un subconjunto de una superficie regular \( S\), pruebe que \( V\) es una superficie regular si y solo si \( V\) es un abierto en \( S\).
