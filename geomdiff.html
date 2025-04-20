@@ -211,7 +211,7 @@ h=X^{-1}\circ Y:Y^{-1}(W) \to X^{-1}(W)
 \]
 es un <b> difeomorfismo</b>, es decir, \( h\) es diferenciable y tiene inversa diferenciable.
 </blockquote>
-<button class="btnProof" onclick="changeBtnText(1,"btn1")" id="btn1"> Mostrar demostración</button>
+<button class="btnProof" id="btn1" onclick="showProof(1)"> Mostrar demostración</button>
 <div class="proof" style="display: none;" id="1">
 Tenemos que \( h=X^{-1}\circ Y\) es un homeomorfismo por ser composición de homeomorfismos. Sea \( r\in Y^{-1}(W)\), \( q=h(r)\), como \( X\) es una parametrización, podemos suponer cambiando el nombre de los ejes de ser necesario que \( X(u,v)=(x(u,v),y(u,v),z(u,v))\) donde
 \[
@@ -225,7 +225,7 @@ como \( X\) es diferenciable, \( F\) es diferenciable, además, con cierto abuso
 \[
 dF_q=
 \begin{vmatrix}
-\frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} & 0\
+\frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} & 0\\
 \frac{\partial y}{\partial u} & \frac{\partial y}{\partial v} & 0\\
 \frac{\partial z}{\partial u} & \frac{\partial z}{\partial v} & 1
 \end{vmatrix}=\frac{\partial (x,y)}{\partial (u,v)}(q)\neq 0
@@ -249,7 +249,7 @@ X_2:U_2\subset \mathbb{R}^2\to S_2
 \]
 con \( p\in X_1(U_1)\) y \( \phi(X_1(U_1))\subset X_2(U_2)\). La aplicación
 \[
-X_2^{-1}\¢irc \phi \circ X_1 :U_1\to U_2
+X_2^{-1}\circ \phi \circ X_1 :U_1\to U_2
 \]
 es diferenciable en \(q=X_1^{-1}(p) \). Se dice que dos superficies regulares \( S_1\) y \( S_2\) son difeomorfas si existe una aplicación diferenciable \( \phi:S_1\to S_2\) con inversa diferenciable.
 <i> Desde el punto de vista de la diferenciabilidad, dos superficies difeomorfas son indistinguibles</i>. Sin mayor dificultad puedes encontrar que toda superficie regular es localmente difeomorfa a un plano.
@@ -264,15 +264,14 @@ es diferenciable en \(q=X_1^{-1}(p) \). Se dice que dos superficies regulares \(
   <hr>
   </div>
 <script>
-
-function changeBtnText(N,"btnN") {
+function showProof(N) {
   var x = document.getElementById(N);
   if (x.style.display === "none") {
     x.style.display = "block";
-    document.getElementById("btnN").innerHTML= "Ocultar demostración";
+    document.getElementById(btn1).innerHTML= "Ocultar demostración";
   } else {
     x.style.display = "none";
-    document.getElementById("btnN").innerHTML= "Mostrar demostración";
+    document.getElementById(btn1).innerHTML= "Mostrar demostración";
   }
 }
 </script>
