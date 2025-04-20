@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Teoría de la medida</title>
+  <title>Geometría Diferencial</title>
   <script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
@@ -150,7 +150,7 @@
 <div style="padding-left:20px; padding-right: 20px;">
 <h1 style="text-align:center;">Geometría diferencial</h1>
 <h2>Diferenciabilidad de funciones de \( \mathbb{R}^m\) en \(\mathbb{R}^n\)</h2>
-<blockquote  style="border: 2px solid powderblue;"> Sea \( U\subset \mathbb{R}^m\) un abierto, \(f:U\to\mathbb{R}^n\), \(a\in U \) y denotemos \(U_a=\{\ h\in \mathbb{R}^m :a+h\in U \}\).
+<blockquote  style="border: 2px solid powderblue;"><b>Definición</b> Sea \( U\subset \mathbb{R}^m\) un abierto, \(f:U\to\mathbb{R}^n\), \(a\in U \) y denotemos \(U_a=\{\ h\in \mathbb{R}^m :a+h\in U \}\).
   <br>
   Decimos que \(f\) es <i>diferenciable</i> en \( a\) si y solo si existe \(T_a\in\mathcal{L}(\mathbb{R})\) tal que
   \[
@@ -174,7 +174,18 @@ f'(a)=(f_1'(a),...,f_n'(a))
 \]
 cuando tal límite existe.
 <br>
-
+Luego, si \( f\) es diferenciable en \( a\) entonces podemos considerar la función
+\[
+\begin{array}{cccc}
+f'(a):&\mathbb{R}^m&\to&\mathbb{R}^n\\
+&v&\mapsto&f'(a)(v)=\frac{\partial f}{\partial v}(a)
+\end{array}
+\]
+De acá podemos encontrar la matriz asociada a la transformación lineal \( f'(a)\) en las base canónica \( \{e_1,...,e_m\}\) de \( \mathbb{R}^m\) y la base canónica \( \{e_1',...,e_n'\}\) de \( \mathbb{R}^n\). Sea \( f=(f_1,...,f_n)\) diferenciable en \( a\), sea \( 1\leq i\leq m\) tenemos
+\[
+f'(a)(e_i)=\frac{\partial f}{\partial e_i}(a)=\frac{\partial f}{\partial x_i}(a)=\left( \frac{\partial f_1}{\partial e_i}(a),...,\frac{\partial f_n}{\partial e_i}(a) \right)
+\]
+Entonces esta será la \( i\)-ésima columna de la matriz asociada. La matriz resultante es la <b>matriz Jacobiana</b> que se denota por \( Jf(a)\). Esta matriz tiene por filas a los gradientes de las funciones coordenada \( f_i\) y como columnas a los vectores que calculamos anteriormente.
 </p>
 
 <p> </p>
