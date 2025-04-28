@@ -7,116 +7,11 @@
   <script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
- <style>
-    .header {
-      padding: 20px 10px;
-    }
-    .header a {
-      float: left;
-      color: white;
-      text-align: center;
-      padding: 12px;
-      text-decoration: none;
-      font-size: 18px; 
-      line-height: 25px;
-      border-radius: 4px;
-    }
-    .header a.logo {
-      font-size: 25px;
-      font-weight: bold;
-    }
-    .header a.logo :hover {
-      background-color: #ddd;
-      color: black;
-    }
-    .header-right {
-      float: right;
-    }
-    @media screen and (max-width: 500px) {
-      .header a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-      .header-right {
-        float: none;
-      }
-    }
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-      top: 100%;
-    }
-    .dropdown-content a {
-      color: black;
-      text-decoration: none;
-      display: block;
-      font-size: 15px;
-    }
-    .dropdown-content a:hover {background-color: #f1f1f1}
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    .dropdown:hover .dropbtn {
-      background-color: #3e8e41;
-    }
-    .button {
-      background-color: #04AA6D;
-      border: 2px solid #04AA6D;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 4px;
-      transition-duration: 0.4s;
-    }
-    .button:hover {
-      background-color: white;
-      border: 2px solid #04AA6D;
-      color: black;
-    }
-    .proof {
-      width: 100%;
-      padding: 5px 0;
-      background-color: #d5e8f5;
-      margin-top: 2px;
-    }
-    .btnProof {
-      background-color: #04AA6D;
-      border: 1px solid #04AA6D;
-      color: white;
-      padding: 5px 8px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 12px;
-      margin: 2px 1px;
-      cursor: pointer;
-      border-radius: 2px;
-      transition-duration: 0.4s;
-    }
-    .btnProof:hover {
-      background-color: white;
-      border: 1px solid #04AA6D;
-      color: black;
-    }
-</style>
+    <link rel="stylesheet" href="mystyles.css">
 </head>
 <body>
   <div class="header">
-  <a href="https://francescoapg.github.io/mathbio/" class="logo" style="color: black;">Inicio</a>
+  <a href="https://francescoapg.github.io/mathbio/" class="logo" style="color: black;"><span>Inicio</span></a>
   <div class="header-right">
   <a href="https://github.com/francescoapg/mathbio" class="button"> GitHub </a>
         <div class="dropdown">
@@ -134,6 +29,7 @@
         <a href="https://francescoapg.github.io/mathbio/functlations">Relaciones y funciones</a>
         <a href="#">Espacios</a>
         <a href="https://francescoapg.github.io/mathbio/advcalc">Cálculo avanzado</a>
+        <a href="https://francescoapg.github.io/mathbio/edo">Ecuaciones Diferenciales</a>
         <a href="https://francescoapg.github.io/mathbio/measure">Teoría de la medida</a>
         <a href="https://francescoapg.github.io/mathbio/geomdiff">Geometría diferencial</a>
         <a href="https://francescoapg.github.io/mathbio/linalge">Álgebra lineal</a>
@@ -149,33 +45,59 @@
 <hr>
 <div style="padding-left:20px; padding-right: 20px;">
 <h1 style="text-align:center;">Teoría de la medida</h1>
-<h2>Fórmulas útiles de teoría de conjuntos</h2>
+
+<h2>Preliminares</h2>
+Se tomará \( \subset\) como equivalente a \( \subseteq \) y \( \varsubsetneq\) se tomará como subconjunto propio.
+<h3>Principio de Dualidad </h3>
+<blockquote>
+Siendo \( \Omega\) el universo o espacio sobre el cual se definen conjuntos. Cualquier identidad entre conjuntos obtenida con uniones, intersecciones y complementos permanece válida si los símbolos
+\[
+\cap\hspace{10pt} \subset\hspace{10pt} \emptyset
+\]
+son reeemplazados por
+\[
+\cup \hspace{10pt} \supset \hspace{10pt} \Omega
+\]
+respectivamente y la igualdad \( =\) y complemento \( ^c\) permanecen constantes.
+</blockquote>
 <p>
-  Veamos algunas ecuaciones útiles
+  Veamos algunas ecuaciones útiles de teoría de conjuntos
 
   \[ A\cap (\bigcup_{x\in X}A_x)=\bigcup_{x\in X}(A\cap A_x) \]
   \[ A\cup (\bigcap_{x\in X}A_x)=\bigcap_{x\in X}(A\cup A_x) \]
   \[ (\bigcup_{x\in X} A_x)^c=\bigcap_{x\in X}A_x^c \]
   \[ (\bigcap_{x\in X} A_x)^c=\bigcup_{x\in X}A_x^c \]
-  Recuerda que el símbolo de suma se refiere a la unión disjunta de conjuntos.
+  Recuerda que el símbolo de suma se refiere a la unión disjunta de conjuntos. La palabra <q>clase</q> será reservada para denotar a un conjunto de conjuntos. Usamos la palabra <q>colección</q> para un conjunto de clases.
   \[ \bigcup_{i=1}^\infty A_i = A_1+\sum_{i=2}^\infty (A_i-\bigcup_{j=1}^{i-1}A_j) \]
   \[ \bigcap_{i=1}^\infty A_i=A_1-\bigcup_{i=1}^\infty (A_1-A_i)\]
   \[ \sum_{i=1}^\infty A_i=\bigcup_{i=1}^\infty\sum_{n=1}^iA_n\]
   Recuerda que llamamos diferencia propia de conjuntos \(A-B\) cuando \(B\subset A\).
   <br>
 Sea \(I_A\) la función indicadora del conjunto \(A\subset \Omega\), se cumple que
-</p>
-<ul>
-  <li>\( A\subset B \iff I_A\leq I_B \)</li>
-  <li>\(I_{A^C}=1-I_A \)</li>
-  <li>\( I_{A\cap B}=I_AI_B\)</li>
-  <li>\( I_{\cap_{i=1}^n A_i}=\prod_{i=1}^n A_i\)</li>
-  <li>\( I_{A\cup B}=I_A+I_B-I_AI_B \)</li>
-  <li>\( I_{\cup_{i=1}^n A_i}=1-\prod_{i=1}^n (1-A_{A_i}) \)</li>
-  <li>\( I_{\lim_{n} sup A_n}=\lim_n sup I_{A_n}\)</li>
-  <li>\( I_{\lim_n inf A_n}=\lim_n inf I_{A_n}\)</li>
-</ul>
-<p>
+\[
+A\subset B \iff I_A\leq I_B
+\]
+\[
+I_{A^C}=1-I_A
+\]
+\[
+I_{A\cap B}=I_AI_B
+\]
+\[
+I_{\cap_{i=1}^n A_i}=\prod_{i=1}^n A_i
+\]
+\[
+I_{A\cup B}=I_A+I_B-I_AI_B 
+\]
+\[
+I_{\cup_{i=1}^n A_i}=1-\prod_{i=1}^n (1-A_{A_i})
+\]
+\[
+I_{\lim_{n} sup A_n}=\lim_n sup I_{A_n}
+\]
+\[
+I_{\lim_n inf A_n}=\lim_n inf I_{A_n}
+\]
 Algunas propiedades de la imagen y preimagen de funciones.
 </p>
 <p>
@@ -184,6 +106,57 @@ Algunas propiedades de la imagen y preimagen de funciones.
    \[  f^{-1}(\bigcup_{\alpha \in I} A_{\alpha})=\bigcup_{\alpha \in I}f^{-1}(A_{\alpha}) \]
    \[  f(\bigcup_{\alpha\in I B_{\alpha}})=\bigcup_{\alpha \in I} f(B_{\alpha}) \]
    \[  f(\bigcap_{\alpha \in I} A_{\alpha})\subset \bigcap_{\alpha \in I}f(A_{\alpha}) \]
+</p>
+Algunos resultados de topología general y análisis también deben tenerse en cuenta.
+<h3>Teorema de Heine-Borel </h3>
+<blockquote>
+Para todo subconjunto \( S\) de \( \mathbb{R}^n\), \( S\) es compacto si y solo si es cerrado y acotado.
+</blockquote>
+<p>
+Recuerda que un conjunto \( S\) es <q>compacto cuando toda cobertura abierta de  \( S\) tiene una <i> subcobertura finita</i></q>. El teorema de Heine-Borel se mantiene si para \( S\) en lugar de ser un subconjunto de \( \mathbb{R}^n\) se toma como un <b> espacio métrico</b> cualquiera. Incluso para su generalización a \( S\) un <b> espacio uniforme</b>.
+</p>
+<h3>Teorema de Tychonoff </h3>
+<blockquote>
+El espacio topológico producto (con su topología de Tychonoff) de un conjunto arbitrario de espacios topológicos compactos es compacto.
+</blockquote>
+<p>
+Para su demostración es necesario el axioma de elección.
+El teorema de Tychonoff tiene como corolario inmediato al teorema de Heine-Borel.
+</p>
+<h3>Lema de Urysohn </h3>
+<blockquote>
+Un espacio topológico \( X\) es normal si y solo si cualquier par de conjuntos disjuntos no vacíos cerrados \( A\), \( B\) de \( X\), existe una función continua \( f:X\to [0,1]\) tal que \( f(A)=\{0\}\) y \( f(B)=\{1\}\).
+</blockquote>
+<p>
+Recuerda que decimos que un espacio topológico \( X\) es normal cuando todo par de subconjuntos cerrados disjuntos de \( X\) tiene coberturas abiertas disjuntas que los rodeen. Todos los espacios métricos son normales, en particular, \( \mathbb{R}^n\) es normal.
+<br>
+Continuando con los conceptos topológicos, decimos que una clase \( \mathbb{B}\) es una <b> base</b> del espacio topológico \( (X,\mathcal{T}_X)\) si para todo \( x\in X\) y toda vecindad \( V\) de \( x\) existe un set \( B\in \mathbb{B}\) tal que \( x\in B\subset V\). La topología de la recta real es determinada por el requisito de que la clase de todos los intervalos abiertos es una base. Decimos que un espacio \( X\) es <b> separable</b> si tiene una base numerable. Una subbase es una colección de conjuntos tal que la colección de las intersecciones finitas de elementos de este conjunto es una base.
+<br>
+Una espacio topológico es un <b> espacio de Hausdorff</b> si todo par de puntos distintos tienen vecindades disjuntas.
+<br>
+Una transformación \( T\) de un espacio topológico \( (X,\mathcal{T}_X)\) a un espacio topológico \( (Y,\mathcal{T}_Y) \) es <b>continua</b> si la imagen inversa de todo conjunto abierto (o cerrado) en \( Y\) es abierto (o cerrado) en \( X\). La transformación es abierta si la imagen de todo subconjunto abierto es abierta. Si \( \mathbb{B}\) es una subbase en \( Y\), entonces una condición necesaria y suficiente para que la transformación sea continua es que \( T^{-1}(B)\) sea abierto para todo \( B\in \mathbb{B}\). Si una transformación continua mapea \( X\) en \( Y\) y \( X\) es compacto, entonces \( Y\) es compacto. Un <b>homeomorfismo</b> es una transformación inyectiva y continua cuya inversa también es continua.
+<br>
+Sea \( X\) un grupo, un subconjunto \( Y\subset X\) es un subgrupo si y solo si \( Y^{-1}Y\subset Y\) con \( Y^{-1}=\{y^{-1}\in X:y\in Y\}\). Sea \( E\) un subconjunto arbitrario de \( X\), escribimos usualmente \( xE\) en lugar de \( \{x\}E\) y llamamos a este conjunto la traslación izquierda de \( E\). Analogamente \( Ex\) es la traslación derecha. Si \( Y\) es un subgrupo, \( xY\) y \( Yx\) reciben el nombre de <i>left coset</i> and <i>right coset</i>.
+</p>
+<p>
+Un <b>grupo topológico</b> es un grupo \( G\) que es un espacio de Hausdorff tal que la transformación sobreyectiva \( T:G\times G\to G\) definida como \( T(x,y)=x^{-1}y \) es continua. Una clase \( \mathcal{N}\) de conjuntos abiertos que contienen al elemento neutro \( e\) en un grupo topológico es una <b>base en \( e\)</b> si
+<ol>
+	<li>Para cada \(x\) distinto de \( e\) existe un conjunto \( U\) en \( \mathcal{N}\) tal que \( x\not\in U\).</li>
+	<li>Para todo par \(U,V\in \mathcal{N}\) existe un conjunto \( W\in \mathcal{N}\) tal que \(W\subset U\cap V\).</li>
+	<li>Para todo conjunto \(U\in \mathcal{N}\) existe un conjunto \( V\in \mathcal{N}\) tal que \( V^{-1}V\subset U\).</li>
+	<li>Para todo \(U\in \mathcal{N}\) y cualquier \( x\in G\), existe un conjunto \( V\in \mathcal{N}\) tal que \( V\subset xUx^{-1}\).</li>
+	<li>Para todo \(U\in \mathcal{N}\) y cualquier \( x\in U\), existe un conjunto \( V\in \mathcal{N}\) tal que \( Vx\subset U\).</li>
+</ol>
+La clase de todas las vecindades de \( e\) es una base en \( e\). El siguiente resultado es sumamente relevante.
+</p>
+<h3>Proposición </h3>
+<blockquote class="important">
+Sea \( G\) un grupo cualquiera. Sea \( \mathcal{N}\) la clase de todos los subconjuntos de \( G\) que satisfacen las condiciones mencionadas arriba. Si la clase de todas las traslaciones de conjuntos en \( \mathcal{N}\) se toma como base, entonces con respecto a la topología así definida, \( G\) es un grupo topológico.
+</blockquote>
+<p>
+Una vecindad \( V\) de \( e\) es <b>simétrica</b> si \( V=V^{-1}\). La clase de todas las vecindades simétricas de \( e\) es una base en \( e\). Si \( \mathcal{N}\) es una base en \( e\) y si \( F\) es cerrado en \( G\), entonces \( F=\bigcap_{U\in \mathcal{N}} UF\).
+<br>
+Si \( Y\) es un subgrupo invariante y cerrado del grupo topológico \( G\) y si un subset de \(\hat{G}=G/Y \) es llamado abierto si y solo si su imagen inversa por la proyección canónica \( \pi\) es abierta en \( G\), entonces \( \hat{G}\) es un grupo topológico y la transformación \( \pi\) de \( G\) en \( G/Y\) es abierta y continua.
 </p>
 <h2>Clases de conjuntos</h2>
 <p>
@@ -194,7 +167,7 @@ Algunas propiedades de la imagen y preimagen de funciones.
   <br>
   - \( A,B\in S \implies A\cap B\in S\).
   <br>
-  - \( A,B \in S \implies A-B=\sum_{i=1}^n C_i\) para \( n\in \mathbb{N}\) y para \( C_i\in S\) para todo i.
+  - \( A,B \in S \implies A-B=\sum_{i=1}^n C_i\) para \( n\in \mathbb{N}\) y para \( C_i\in S\) para todo \( i\in \{1,...,n\}\).
 </blockquote>
   <p>
   Es evidente que la segunda propiedad implica que \( \emptyset \in S\).
@@ -202,8 +175,10 @@ Algunas propiedades de la imagen y preimagen de funciones.
 <blockquote style="border: 2px solid powderblue;">
   <b>Definición</b>: \( S\) es un <i>semi-álgebra</i> si y solamente si es un semi-anillo y  \( \Omega \in S\)
 </blockquote>
-  <blockquote>
-  <b>Proposición</b>: Sea \( R\) una clase de conjuntos tal que \(\emptyset \neq R\subset \wp(\Omega) \). Son equivalentes las siguientes afirmaciones:
+
+<h3>Proposición </h3>
+<blockquote>
+Sea \( R\) una clase de conjuntos tal que \(\emptyset \neq R\subset \wp(\Omega) \). Son equivalentes las siguientes afirmaciones:
     <br>
     - \( R \) es cerrada por unión finita y diferencia.
     <br>
@@ -216,39 +191,106 @@ Algunas propiedades de la imagen y preimagen de funciones.
   <blockquote style="border: 2px solid powderblue;">
   <b>Definición</b>: \( R\) es un <i>anillo</i> si satisface alguna de las condiciones de la proposición anterior. \( R \) es un álgebra si es un anillo y \(\Omega\in R \).
 </blockquote>
-  <p>
-    La intersección de cualquier familia de anillos es un anillo. Podemos definir el anillo generado por una clase de subconjuntos \( C\) de \(\Omega \) es el menor anillo que contiene a \( C\). Es evidente también que este anillo generado es la intersección de todos los anillos que contienen a \( C \).
-  <blockquote>
-  <b>Proposición</b>: Si \( S \) es un semianillo entonces la familia \( R(S) \) de sumas finitas disjuntas de elementos de \( S \) es un anillo y coincide con el anillo generado por \( S \). Lo mismo se dice si \( S \) es un semi-algebra.
+<p>
+La intersección de cualquier familia de anillos es un anillo. Podemos definir el anillo generado por una clase de subconjuntos \( C\) de \(\Omega \) como el menor anillo que contiene a \( C\). Es evidente también que este anillo generado es la intersección de todos los anillos que contienen a \( C \).
+</p>
+<h3>Teorema </h3>
+<blockquote>
+Si \( E\) es cualquier clase de conjuntos, entonces todo conjunto en el anillo generado de \( E\) que se denota como \( R(E)\) puede ser cubierto por una unión finita de conjuntos en \( E\).
 </blockquote>
-  <br>
-  Sea ahora \( A\) tal que \( \emptyset\neq A\subset \wp(\Omega)\).
+<button class="btnProof" id="btn1" onclick="showProof('1','btn1')"> Mostrar demostración</button>
+<div class="proof" style="display: none;" id="1">
+<i>Demostracion</i>. La clase \( F\) de todos los conjuntos que pueden ser cubiertos por una unión finita de conjuntos en \( E\) es un anillo. En efecto, sea \( A,B\in F\), por condición, \( A\subset \bigcup_{i=1}^n S_i\) y \( B\subset \bigcup_{j=1}^m S_j'\) con \( S_i,S_j'\in E\). Tenemos que
+\[
+A\cup B \subset \left(\bigcup_{i=1}^n S_i \right)\cup \left( \bigcup_{i=1}^n S_i\right)
+\]
+la cual es unión finita de conjuntos en \( E\). Por otro lado, la diferencia
+\[
+A-B\subset \bigcup_{i=1}^n S_i
+\]
+Se tiene entonces que \( F\) es un anillo y dado que \( E\subset F\), entonces \(R(E)\subset  F\).
+</div>
+<h3>Teorema </h3>
+<blockquote>
+Si \( E\) es una clase numerable de conjuntos, \( R(E)\) también es numerable.
+</blockquote>
+<button class="btnProof" id="btn2" onclick="showProof('2','btn2')"> Mostrar demostración</button>
+<div class="proof" style="display: none;" id="2">
+<i>Demostración</i>. Para cualquier clase \( C\) de conjuntos, escribimos \( C^*\) como la clase de todas las uniones finitas y diferencias de conjuntos en \( C\). Es evidente que si \( C\) es numberable, \( C^*\) es numerable. Además si \( \emptyset\in C\), entonces \( C\subset C^*\).
+<br>
+Si \(\emptyset \not\in E \), tomamos \( E'=E\cup\{\emptyset\}\). Como \( R(E)\subset R(E')\) si demostramos que \( R(E')\) es numerable, sigue que \( R(E)\) es numerable. Tomamos sin pérdida de generalidad que \( \emptyset\in E\), escribimos
+\[
+E_0=E^* \hspace{10pt} E_n=E_{n-1}^*\hspace{10pt} n=1,2,...
+\]
+Es evidente que
+\[
+E\subset \bigcup_{n=0}^\infty E_n\subset R(E)
+\]
+Y que la clase \(\bigcup_{n=0}^\infty E_n \) es numerable. Ahora vamos a probar que \( \bigcup_{n=0}^\infty E_n\) es un anillo. Dado que
+\[
+E=E_0\subset E_1\subset E_2 \subset ...
+\]
+Entonces para todo par \( A,B\in \bigcup_{n=0}^\infty E_n\) existe un \( E_n\) tal que \( A,B\in E_n\). Entonces
+\[
+A-B\in E_{n+1}
+\]
+y como \( \emptyset\in E_0\subset E_n\). Sigue que
+\[
+A\cup B =(A-\emptyset)\cup (B-\emptyset)\in E_{n+1}
+\]
+Concluímos que \( \bigcup_{n=0}^\infty E_n\) es un anillo que contiene a \( E\) y está contenido en \( R(E)\), luego que \(R(E)= \bigcup_{n=0}^\infty E_n\).
+</div>
+
+
+
+<h3>Corolario </h3>
+<blockquote>
+Si \( S \) es un semianillo entonces \( R(S) \) es la clase de sumas finitas disjuntas de elementos de \( S \). Lo mismo si \( S \) es un semi-algebra.
+</blockquote>
+<p>
+Sea ahora \( A\) tal que \( \emptyset\neq A\subset \wp(\Omega)\).
+</p>
   <blockquote style="border: 2px solid powderblue;">
   <b>Definición</b>: \( A\) es un \(\sigma- \)<i>anillo</i> si y solamente si es cerrada por diferencias y por uniones numerables. Si \( A\) es un \(\sigma- \)<i>anillo</i> y \(\Omega\in A\), se dice que \( A\) es un \(\sigma- \)<i>álgebra</i>.
 </blockquote>
-  <blockquote>
-  <b>Proposición</b>: \( A \) es un \(\sigma- \)anillo si y solamente si es cerrado cerrado por intersección finita, diferencia propia y suma numerable.
+<h3>Proposición </h3>
+<blockquote>
+\( A \) es un \(\sigma- \)anillo si y solamente si es cerrado cerrado por intersección finita, diferencia propia y suma numerable.
 </blockquote>
-  <blockquote>
-  <b>Proposición</b>: Todo \(\sigma- \)anillo es cerrado por intersección numerable.
+<p>
+
+</p>
+<h3>Proposición </h3>
+<blockquote>
+Todo \(\sigma- \)anillo \( S\) es cerrado por intersección numerable. Además, si \( \{E_i\}_{i\in \mathbb{N}}\) es un secuencia de conjuntos en \( S\), se sigue que \( \lim_n inf E_n\) y \( \lim_n sup E_n\) son elementos de \( S\).
 </blockquote>
-  Como todo \(\sigma- \)anillo es cerrado por uniones e intersecciones numerables, sigue que todo \(\sigma- \)anillo es cerrado con respecto al límite superior y límite inferior de secuencias de conjuntos. El mismo concepto de anillo y álgebra generada de una colección de subconjuntos de \(\Omega\) aplica para \(\sigma- \)anillo y \(\sigma- \)álgebras. Simbolizamos al \(\sigma- \)álgebra generado por \(C\) como \(\sigma(C)\). Mediante \(\tilde{\sigma}(C)\) se simboliza al \(\sigma- \)anillo generado.
+<p>
+Como todo \(\sigma- \)anillo es cerrado por uniones e intersecciones numerables, sigue que todo \(\sigma- \)anillo es cerrado con respecto al límite superior y límite inferior de secuencias de conjuntos. El mismo concepto de anillo y álgebra generada de una colección de subconjuntos de \(\Omega\) aplica para \(\sigma- \)anillo y \(\sigma- \)álgebras. Simbolizamos al \(\sigma- \)álgebra generado por \(C\) como \(\sigma(C)\). Mediante \(\tilde{\sigma}(C)\) se simboliza al \(\sigma- \)anillo generado.
+</p>
     <blockquote style="border: 2px solid powderblue;">
   <b>Definición</b>: \( A\) es un <i>clase</i> \(\sigma- \)<i>aditiva</i> si y solamente si \(\Omega\in A\) y es cerrada por diferencia propia, suma finita y unión creciente.
 </blockquote>
-  Que sea cerrado por <q>unión creciente</q> se refiere a que para toda secuencia de conjuntos  \( \{A_i\}_{i\in \mathbb{N}}\) que sea creciente, es decir, que para todo \( n\in\mathbb{N} \), \(A_n\subset A_{n+1} \), la unión de la familia es un elemento de A, es decir,
+<p>
+Que sea cerrado por <q>unión creciente</q> se refiere a que para toda secuencia de conjuntos  \( \{A_i\}_{i\in \mathbb{N}}\) que sea creciente, es decir, que para todo \( n\in\mathbb{N} \), \(A_n\subset A_{n+1} \), la unión de la familia es un elemento de A, es decir,
   \[\bigcup_{i=1}^\infty A_i\in A \]
   Nuevamente, la intersección de una familia cualquiera de clases \(\sigma- \)aditivas es \(\sigma- \)aditiva.
+</p>
+<h3>Proposición </h3>
 <blockquote>
-  <b>Proposición</b>: Si \(C \) es una clase no vacía de conjuntos cerrada por intersección finita, entonces la clase \(\sigma- \)aditiva generada por \(C \) es igual a \(\sigma(C) \).
+Si \(C \) es una clase no vacía de conjuntos cerrada por intersección finita, entonces la clase \(\sigma- \)aditiva generada por \(C \) es igual a \(\sigma(C) \).
 </blockquote>
 <blockquote style="border: 2px solid powderblue;">
   <b>Definición</b>: \( A\) es un <i>clase monotónica</i> si es cerrada por unión numerable creciente y por intersección numerable decreciente.
 </blockquote>
+<p>
 Nuevamente podemos formular el concepto de clase monotónica generada.
-  <blockquote>
-  <b>Proposición</b>: Si \(R\) es un álgebra, la clase monotónica generada por \(R\) es \(\sigma(R)\), es decir, su \(\sigma-\)álgebra generada. El resultado análogo para anillos se cumple.
+</p>
+<h3>Proposición </h3>
+<blockquote>
+Si \(R\) es un álgebra, la clase monotónica generada por \(R\) es \(\sigma(R)\), es decir, su \(\sigma-\)álgebra generada. El resultado análogo para anillos se cumple.
 </blockquote>
+<p>
+
 </p>
   <h2>Medidas y extensión de medidas</h2>
 <p>
@@ -266,37 +308,125 @@ Sea \(\Omega\) un conjunto y \(\emptyset \neq A\subset \wp(\Omega)\).
   <b>Definición</b>: Si \( \mathbb{S}\) es un semianillo, \(\mu:\mathbb{S}\to [0,+\infty] \) es una <i>medida finitamente aditiva</i> si y solo si \(\mu(\emptyset)=0 \) y \( \mu\) es finitamente aditiva. Una medida finitamente aditiva que es \(\sigma- \)aditiva es llamada una <i>medida</i>.
 </blockquote>
   Se puede definir analogamente medidas sobre semi-algebras, anillos, álgebras, \(\sigma \)-anillos y \( \sigma\)-álgebras.
-  <blockquote style="border: 2px solid powderblue;">
-  <b>Definición</b>: Un triple \( (\Omega,A,\mu)\) en el que \(\Omega \) es un conjunto, \( A\) es un \( \sigma-\)álgebra contenida en \( \wp(\Omega)\) y \( \mu\) es un medida sobre \( A\) es llamado un <i>espacio de medida</i>. La dupla  \( (\Omega,A)\) es llamado un <i>espacio medible</i>.
+<br>  
+Si \( \mu\) es una medida en un anillo \( \mathbf{R}\), un conjunto \( E\in \mathbf{R}\) se dice que tiene una <b>medida finita</b> si \( \mu(E)<\infty\). La medida de \( E\) es \( \sigma\)-finita si existe una secuencia \( \{E_n\}\) de conjuntos en \( \mathbb{R}\) tal que
+\[
+E\subset \bigcup_{n=1}^\infty E_n\hspace{10pt}\text{ y }\hspace{10pt} \mu(E_n)<\infty,n=1,2,...
+\]
+Es evidente que toda medida finita es \( \sigma\)-finita. Si la medida en <b>todo</b> \( E\in \mathbf{R}\) es finita (o \( \sigma\)-finita), se dice que la medida en \( \mathbf{R}\) es finita (o \( \sigma\)-finita). Si \( \mathbb{R}\) es un álgebra, es decir, si \( \Omega\in \mathbf{R}\) y \( \mu(\Omega)\) es finita o \( \sigma\)-finita, entonces \( \mu\) se dice que es <b>totalmente finita</b> o <b>totalmente \(\sigma\)-finita</b> respectivamente. La medida \( \mu\) es <b>completa</b> si
+\[
+E\in \mathbf{R},\hspace{10pt}F\subset E,\hspace{10pt} \mu(E)=0
+\]
+implican que \( F\in \mathbf{R}\).
+</p>
+<blockquote style="border: 2px solid powderblue;">
+<b>Definición</b>: Un triple \( (\Omega,A,\mu)\) en el que \(\Omega \) es un conjunto, \( A\) es un \( \sigma-\)álgebra contenida en \( \wp(\Omega)\) y \( \mu\) es un medida sobre \( A\) es llamado un <i>espacio de medida</i>. La dupla  \( (\Omega,A)\) es llamado un <i>espacio medible</i>.
 </blockquote>
-
-<button class="btnProof" onclick="showProof(1)" id="btn1"> Mostrar demostración</button>
-<div class="proof" style="display: none;" id="1">
-Demostracion etc etc \( x=1\) pero también
-  \[ 1=1 \].
+<p>
+Un espacio de medida  \( (\Omega,A,\mu)\) en el que \(\mu(\Omega)=1 \) es denominado <b>espacio de probabilidades</b>.
+</p>
+<h3>Proposición </h3>
+<blockquote>
+Sea \( (\Omega,\mathcal{A},\mu)\) un espacio de medida
+<ol>
+	<li>\(A\subset B\), \( \mu(B)<\infty\) entonces \( \mu(B-A)=\mu (B)-\mu (A)\).</li>
+	<li>\(A_n \uparrow A \implies \mu(A)=\lim \mu(A_n)\).</li>
+	<li>\(A_n \downarrow A\) y \( \exists k\in \mathbb{N}/\mu (A_k)<\infty\) implica que \( \mu(A)=\lim \mu (A_n)\).</li>
+	<li>\(\mu \left( \bigcup_{n=1}^\infty A_n\right)\leq \sum_{n=1}^\infty \mu (A_n)\).</li>
+	<li>Para toda secuencia \( \{A_n\}\) de elementos de \(\mathcal{A} \),
+	\[
+\mu(\lim inf A_n)\leq \lim inf  \mu (A_n)
+	 \]
+	 y si para algún \( k\in \mathbb{N}\), \( \mu \left( \bigcup_{n=k}^\infty A_n\right)<\infty\), entonces
+	 	\[
+\lim sup  \mu (A_n)\leq \mu(\lim sup A_n)
+	 \]
+	 De forma particular, si \( (\Omega,\mathcal{A},P)\) es un espacio de probabilidades, \( A_n\rightarrow A\) implica que \( P(A_n)\rightarrow P(A)\).
+	 </li>
+	<li>\( \sum_{n=1}^\infty \mu(A_n)<\infty\implies \mu(\lim sup A_n)=0\).</li>
+</ol>
+</blockquote>
+<p>
+Observe que esta proposición es válida incluso si \( \mathcal{A}\) es tan solo un \( \sigma\)-anillo.
+</p>
+<button class="btnProof" id="btn3" onclick="showProof('3','btn3')"> Mostrar demostración</button>
+<div class="proof" style="display: none;" id="3">
+<i>Demostracion</i>. Veamos en cada caso
+<ol>
+	<li>\(\).</li>
+	<li>\(\).</li>
+	<li>\(\).</li>
+	<li>\(\).</li>
+</ol>
 </div>
 
-  \( \)
-</p>
+
+
+
+
 <h2>Referencias</h2>
 <ul>
   <li>Fernandez, Pedro Jesus (2002) Medida e integração.</li>
+  <li>Paul R. Halmos (1974) Measure theory.</li>
 </ul>
 <hr>
-  <p>Esta página web existe gracias a GitHub, \(\LaTeX \) y \(MathJax\).</p>
-  <hr>
+<p style="font-family: Garamond, serif;font-size: 16px;">
+El contenido de está entrada ha sido parcialmente redactado por F. Peña-Garcia y parcialmente recopilado y traducido de los textos que se listan en las referencias. No reclamo derechos intelectuales sobre cualquier parte del texto incluso si es enteramente de mi autoría puesto que el <q>contenido teórico</q> que es acá desarrollado es patrimonio de la humanidad.
+<br>
+Esta página web existe gracias a GitHub, \(\LaTeX \) y \(MathJax\).
+</p>
+<hr>
   </div>
 <script>
-function showProof(n) {
+function showProof(n, btnN) {
   var x = document.getElementById(n);
-  if (x.style.display === "none") {
+  var button = document.getElementById(btnN);
+  
+  // Use getComputedStyle to check current display value
+  if (window.getComputedStyle(x).display === "none") {
     x.style.display = "block";
-    document.getElementById("btn1").innerHTML= "Ocultar demostración";
+    button.textContent = 'Ocultar demostración';
   } else {
     x.style.display = "none";
-    document.getElementById("btn1").innerHTML= "Mostrar demostración";
+    button.textContent = 'Mostrar demostración';
   }
 }
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Create the TOC container
+  const toc = document.createElement('nav');
+  toc.className = 'toc';
+  toc.innerHTML = '<h2 style=" text-decoration: none; padding: 10px 0px 12px 0px;">Índice</h2><ul></ul>';
+  
+  // Get all h2 elements
+  const headings = document.querySelectorAll('h2');
+  const tocList = toc.querySelector('ul');
+  
+  // Process each heading
+  headings.forEach(heading => {
+    if (!heading.id) {
+      // Create ID from text if none exists
+      heading.id = heading.textContent.toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w\-]/g, '');
+    }
+    const li = document.createElement('li');
+    li.innerHTML = `<a href="#${heading.id}">${heading.textContent}</a>`;
+    tocList.appendChild(li);
+  });
+  
+  // Find the h1 element
+  const h1 = document.querySelector('h1');
+  
+  // Insert the TOC after h1 if h1 exists, otherwise at start of body
+  if (h1) {
+    h1.insertAdjacentElement('afterend', toc);
+  } else {
+    document.body.insertBefore(toc, document.body.firstChild);
+  }
+
+});
 </script>
 </body>
 </html>
