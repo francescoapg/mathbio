@@ -7,116 +7,11 @@
   <script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
- <style>
-    .header {
-      padding: 20px 10px;
-    }
-    .header a {
-      float: left;
-      color: white;
-      text-align: center;
-      padding: 12px;
-      text-decoration: none;
-      font-size: 18px; 
-      line-height: 25px;
-      border-radius: 4px;
-    }
-    .header a.logo {
-      font-size: 25px;
-      font-weight: bold;
-    }
-    .header a.logo :hover {
-      background-color: #ddd;
-      color: black;
-    }
-    .header-right {
-      float: right;
-    }
-    @media screen and (max-width: 500px) {
-      .header a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-      .header-right {
-        float: none;
-      }
-    }
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-      top: 100%;
-    }
-    .dropdown-content a {
-      color: black;
-      text-decoration: none;
-      display: block;
-      font-size: 15px;
-    }
-    .dropdown-content a:hover {background-color: #f1f1f1}
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    .dropdown:hover .dropbtn {
-      background-color: #3e8e41;
-    }
-    .button {
-      background-color: #04AA6D;
-      border: 2px solid #04AA6D;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 4px;
-      transition-duration: 0.4s;
-    }
-    .button:hover {
-      background-color: white;
-      border: 2px solid #04AA6D;
-      color: black;
-    }
-    .proof {
-      width: 100%;
-      padding: 5px 0;
-      background-color: #d5e8f5;
-      margin-top: 2px;
-    }
-    .btnProof {
-      background-color: #04AA6D;
-      border: 1px solid #04AA6D;
-      color: white;
-      padding: 5px 8px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 12px;
-      margin: 2px 1px;
-      cursor: pointer;
-      border-radius: 2px;
-      transition-duration: 0.4s;
-    }
-    .btnProof:hover {
-      background-color: white;
-      border: 1px solid #04AA6D;
-      color: black;
-    }
-</style>
+    <link rel="stylesheet" href="mystyles.css">
 </head>
 <body>
   <div class="header">
-  <a href="https://francescoapg.github.io/mathbio/" class="logo" style="color: black;">Inicio</a>
+  <a href="https://francescoapg.github.io/mathbio/" class="logo" style="color: black;"><span>Inicio</span></a>
   <div class="header-right">
   <a href="https://github.com/francescoapg/mathbio" class="button"> GitHub </a>
         <div class="dropdown">
@@ -134,6 +29,7 @@
         <a href="https://francescoapg.github.io/mathbio/functlations">Relaciones y funciones</a>
         <a href="#">Espacios</a>
         <a href="https://francescoapg.github.io/mathbio/advcalc">Cálculo avanzado</a>
+        <a href="https://francescoapg.github.io/mathbio/edo">Ecuaciones Diferenciales</a>
         <a href="https://francescoapg.github.io/mathbio/measure">Teoría de la medida</a>
         <a href="https://francescoapg.github.io/mathbio/geomdiff">Geometría diferencial</a>
         <a href="https://francescoapg.github.io/mathbio/linalge">Álgebra lineal</a>
@@ -149,7 +45,30 @@
 <hr>
 <div style="padding-left:20px; padding-right: 20px;">
 <h1 style="text-align:center;">Geometría diferencial</h1>
+<h2>Curvas parametrizadas</h2>
+<p>
+Decimos que una función real de una variable real es diferenciable o suave si admite en todos sus puntos derivadas de todos los órdenes. Una curva parametrizada diferenciable es una aplicación diferenciable \( \alpha:I\to \mathbb{R}^3\) de un intervalo abierto \( I\subset \mathbb{R}\) definida como \( \alpha(t)=(x(t),y(t),z(t)) \) con cada una de las funciones coordenada diferenciables. Se dice que \( t\) es el parámetro. Tenemos que \( \alpha'(t)=(x'(t),y'(t),z'(t)) \) es el <b>vector tangente</b> o velocidad de \( \alpha\) en \(t \).
+</p>
+<blockquote  style="border: 2px solid powderblue;"><b>Definición</b>:
+Una curva parametrizada diferenciable \( \alpha:I\to \mathbb{R}^3\) se denomina regular si \( \alpha'(t)\neq 0\) para todo \( t\in I\).
+</blockquote>
+Si \( \alpha'(t)=0\) se dice que \( t\) es un punto singular de \( \alpha\). La longitud del arco de una curva parametrizada regular es
+\[
+l(t)=\int_{t_0}^t ||\alpha'(t)||dt
+\]
+Recuerda que si \( \alpha\) está parametrizada por longitud de arco, entonces \( |\alpha'(t)|=1\).
+<br>
+
+
+
+
+
+
+
+
+
 <h2>Diferenciabilidad de funciones de \( \mathbb{R}^m\) en \(\mathbb{R}^n\)</h2>
+Recuerda que toda función continua lleva conexos en conexos.
 <blockquote  style="border: 2px solid powderblue;"><b>Definición</b>: Sea \( U\subset \mathbb{R}^m\) un abierto, \(f:U\to\mathbb{R}^n\), \(a\in U \) y denotemos \(U_a=\{\ h\in \mathbb{R}^m :a+h\in U \}\).
   <br>
   Decimos que \(f\) es <i>diferenciable</i> en \( a\) si y solo si existe \(T_a\in\mathcal{L}(\mathbb{R})\) tal que
@@ -185,12 +104,115 @@ De acá podemos encontrar la matriz asociada a la transformación lineal \( f'(a
 \[
 f'(a)(e_i)=\frac{\partial f}{\partial e_i}(a)=\frac{\partial f}{\partial x_i}(a)=\left( \frac{\partial f_1}{\partial x_i}(a),...,\frac{\partial f_n}{\partial x_i}(a) \right)
 \]
-Entonces esta será la \( i\)-ésima columna de la matriz asociada. La matriz resultante es la <b>matriz Jacobiana</b> que se denota por \( Jf(a)\). Esta matriz tiene por filas a los gradientes de las funciones coordenada \( f_i\) y como columnas a los vectores que calculamos anteriormente.
+Entonces esta será la \( i\)-ésima columna de la matriz asociada. La matriz resultante es la <b>matriz Jacobiana</b> que se denota por \( Jf(a)\) y también como \( df_a\) llamada como la <q>diferencial de \( f\) en el punto \( a\)</q>. Esta matriz tiene por filas a los gradientes de las funciones coordenada \( f_i\) y como columnas a los vectores que calculamos anteriormente.
 </p>
+<h3>Proposición </h3>
+<blockquote>
+Sea \( f:U\subset \mathbb{R}^n\to \mathbb{R}\) una aplicación diferenciable definida sobre un conjunto abierto y conexo \( U\) de \( \mathbb{R}^n\). Si \( df_p:\mathbb{R}^n\to \mathbb{R}\) es cero (función cero) en cada punto \( p\in U\). Entonces \( f\) es constante en \( U\).
+</blockquote>
+<button class="btnProof" id="btn2" onclick="showProof('2','btn2')"> Mostrar demostración</button>
+<div class="proof" style="display: none;" id="2">
+<i>Demostracion</i>. Sea \( p\in U\) y sea \( B_\delta(p)\subset U\) una bola abierta. Cualquier punto \( q\in B_\delta(p)\) puede unirse a \( p\) mediante un segmento de recta pues las bolas son conjuntos convexos. En efecto, sea \( \beta :[0,1]\to U\) definida como \( \beta(t)=tq+(1-t)p\). Como \( U\) es abierto, podemos extender \( \beta\) al intervalo abierto \( (0-\epsilon,1+\epsilon) \). Ahora compones esta función con \( f\), es decir
+\[
+f\circ \beta : (0-\epsilon,1+\epsilon)\to \mathbb{R}
+\]
+de acá que aplicando la regla de la cadena generalizada
+\[
+d(f\circ \beta)_t=df_{\beta(t)}d\beta_t\equiv 0
+\]
+pues \( df_v\equiv 0\) para todo \( v\in U\). Entonces como \( f\circ \beta\) es una función real de valores reales,
+\[
+\frac{d (f\circ \beta)}{dt }=0\hspace{10pt}\forall t\in (0-\epsilon,1+\epsilon)
+\]
+Sabemos que por estar definida en un intervalo (conjunto abierto conexo) la función \( f\circ \beta\) es constante. Pero como \( \beta(0)=p\) y \( \beta(1)=q\), entonces \( f(p) = f(q)\) para todo \( q\in B_\delta (p)\).
+<br>
+Ahora, sea un punto arbitrario \( r\in U\), como \( U\) es abierto y conexo, es conexo por caminos. Luego que existe un camino que une a \( r\) con \( p\). Sea \( \alpha : [a,b]\to U\) este camino continuo con \( \alpha(a)=p\), \( \alpha(b)=r\). Ahora, para cada \( t\in [a,b]\) existe un intervalo \( I_t\) abierto en \( [a,b]\) tal que \( f\circ \alpha\) es constante en este intervalo. Como \( [a,b]=\bigcup_{t\in [a,b]}I_t\), entonces el teorema de Heine-Borel nos dice que existe una subcobertura finita \( [a,b]=\bigcup_{s=1}^nI_s\). Ahora, como los intervalos son todos abiertos en \( [a,b]\) es necesario que tengan intersecciones. Se sigue que \( f\circ\alpha\) es constante en \( [a,b]\), concluímos que \( f(r)=f(p)\) para todo \( r\in U\).
+</div>
+<h3>Teorema de la función inversa </h3>
+<blockquote>
+Sea \( F:U\subset \mathbb{R}^n\to \mathbb{R}^n\) una aplicación diferenciable y supóngase que en \( p\in U\) la diferencial \( dF_p:\mathbb{R}^n\to \mathbb{R}^n\) es un isomorfismo. Entonces existe un entorno \( V\) de \( p\) en \( U\) y un entorno \( W\) de \( F(p)\) en \( \mathbb{R}^n\) tal que \( F:V\to W\) tiene una inversa diferenciable.
+</blockquote>
+<h3>Teorema de la función implícita </h3>
+<blockquote>
+Sea \( U\subset \mathbb{R}^{n+m}=\mathbb{R}^n\times \mathbb{R}^m\) un conjunto abierto, \( F:U\to \mathbb{R}^m\) una aplicación diferenciable y \( (p,q)\in U\) tales que \( F(p,q)=c\in \mathbb{R}^m\). Si la restricción de \( dF_{(p,q)}\) a \( \{0_{\mathbb{R}^n}\}\times \mathbb{R}^m\) es un isomorfismo sobre \( \mathbb{R}^m\) existirán abiertos \( V\subset U\) y \( A\subset \mathbb{R}^n\) tal que \( (p,q)\in V\) y \( p\in A\) que cumplen las siguientes condiciones
+<ul>
+	<li>Para todo \(x\in A\) existe un único \( y=\varepsilon(x)\in \mathbb{R}^m\) tal que
+\[
+(x,\varepsilon(x))\in V \hspace{10pt}y\hspace{10pt}F(x,\varepsilon(x))=c
+	\]	
+	</li>
+	<li>La aplicación
+	\begin{equation*}
+	\begin{array}{cccc}
+	\varepsilon:&A\subset \mathbb{R}^n&\to&\mathbb{R}^m\\
+	&x&\mapsto&\varepsilon(x)
+	\end{array}
+	\end{equation*}
+	es diferenciable.
+	</li>
+</ul>
+</blockquote>
+<p>
+Es sabido que los dos teoremas anteriores son equivalentes.
+</p>
+<h2>Superficies Regulares</h2>
+<p>
+Una superficie regular se botinee tomando trozos de un plano, deformándolos y disponiéndolos de modo que la figura resultante no tenga esquinas ni autointersecciones.
+<blockquote  style="border: 2px solid powderblue;"><b>Definición</b>:
+Un subconjunto \( S\subset \mathbb{R}^3\) es una superficie regular si para cada \( p\in S\) existe un entorno \( V\) en \( \mathbb{R}^3\) y una aplicación \( X:U\to V\cap S\) de un subconjunto abierto \( U\) de \( \mathbb{R}^2\) de modo que
+<ul>
+	<li>\(X\) es diferenciable, es decir, si \( X(u,v)=(x(u,v),y(u,v),z(u,v))\), las funciones coordenadas \( x,y,z\) tienen derivadas parciales continuas de todos los órdenes en \( U\).</li>
+	<li>\(X\) es un homeomorfismo, es decir, es continua y admite inversa \( X^{-1}\) que sea la <i>restricción de una función continua</i>. En otras palabras, \( X^{-1}:V\cap S \to U\) es la restricción de \( F:W\subset \mathbb{R}^3\to \mathbb{R}^2\) de modo que \( W\) es abierto y \( V\cap S\subset W\).</li>
+	<li><b>Condición de regularidad</b>. \( \forall q\in U,dX_q:\mathbb{R}^2\to \mathbb{R}^3\) es inyectiva. \( dX_q\) es la diferencial de \( X\) en \( q\).</li>
+</ul>
+</blockquote>
+Se dice que \( X\) es un <b> sistema local de coordenadas</b> en torno a \( p\) y \( V\cap S\) es un <b> entorno coordenado</b>. La condición de regularidad garantiza que exista un plano tangente a todos los puntos \( p\in S\). Como observación importante, tenemos que
+\[
+dX_q=
+\begin{pmatrix}
+ \frac{\partial x}{\partial u} & \frac{\partial x}{\partial v}\\
+ \frac{\partial y}{\partial u} & \frac{\partial y}{\partial v}\\
+ \frac{\partial z}{\partial u} & \frac{\partial z}{\partial v}
+\end{pmatrix}
+\]
+entonces \( dX_q\) es inyectiva si y solo si las dos columnas son linealmente independientes. Si y solo si \( \frac{\partial X}{\partial u}\times \frac{\partial X}{\partial v} \neq 0_{\mathbb{R}^3}\). Esto se cumple cuando cualquiera de los determinantes jacobianos \( \frac{\partial (x,y)}{\partial (u,v)}\), \( \frac{\partial (y,z)}{\partial (u,v)}\) o \( \frac{\partial (x,z)}{\partial (u,v)}\) sean distintos de 0 simultaneamente.
+<br>
+Muchas veces es conveniente parametrizar la esfera \( S^2\) con coordenadas geograficas. Sea \( V=\{(\theta,\phi): 0<\theta<\pi,0<\phi<2\pi\}\) definimos \( X: V\to \mathbb{R}^3\) como
+\[
+X(\theta,\phi)=(sen\theta cos \phi , sen\theta sen \phi,cos\theta)
+\]
+</p>
+<h3>Proposición </h3>
+<blockquote>
+Si \( f:U\subset \mathbb{R}^2\to \mathbb{R}\) es una función diferenciable sobre el conjunto \( U\) abierto. Entonces la gráfica de \( f\), es decir
+\[
+G(f)=\{(x,y,f(x,y)):(x,y)\in U\}
+\]
+es una <b>superficie regular</b>.
+</blockquote>
+<p>
+</p>
+<h3>Proposición </h3>
+<blockquote>
+Si \( f:U\subset \mathbb{R}^3\to \mathbb{R}\) es una función diferenciable y \( a\in f(U)\) es un <i>valor regular</i> de \( f\), entonces \( f^{-1}(a)\) es una superficie regular de \( \mathbb{R}^3\).
+</blockquote>
+<p>
+Recordamos que \( a\in f(U)\) es un <b>valor regular</b> si y solo si \( f_x,f_y,f_z\) <b>no</b> se anulan simultaneamente en cualquier punto de la imagen inversa de \( a\), es decir, en el conjunto \( f^{-1}(a)=\{(x,y,z)\in U: f(x,y,z)=a\}\).
+</p>
+<h3>Proposición </h3>
+<blockquote>
+Sea \( S\subset \mathbb{R}^3\) una superficie regular y \( p\in S\). Entonces existe un entorno \( V\) de \( p\in S\) tal que \( V\) es la gráfica de una función diferenciable que tiene una de las tres formas \( z=f(x,y)\), \( y=g(x,z)\) o \( x=h(y,z)\).
+</blockquote>
+<p>
+Ahora, si ya sabemos que \( S\) es una superficie regular y tenemos un candidato como parametrización, no tenemos que comprobar que su inversa es conitnua se las demás condiciones se cumplen.
+</p>
+<h3>Proposición </h3>
+<blockquote>
+Sea \( p\in S\) un punto de una superficie regular \( S\) y sea \(X:U\subset \mathbb{R}^2\to \mathbb{R}^3 \) una aplicación con \( p\in X(U)\subset S\) que cumple las condiciones 1 y 3 de la definición de superficies regulares. Si \( X\) es inyectiva entonces \( X^{-1}\) es continua.
+</blockquote>
+<p>
 
-<p> </p>
-
-  <h2>Superficies</h2>
+</p>
 <h3>Proposición </h3>
   <blockquote> Sea \( V\) un subconjunto de una superficie regular \( S\), \( V\) es una superficie regular si y solo si \( V\) es un abierto en \( S\).
 </blockquote>
@@ -211,7 +233,7 @@ h=X^{-1}\circ Y:Y^{-1}(W) \to X^{-1}(W)
 \]
 es un <b> difeomorfismo</b>, es decir, \( h\) es diferenciable y tiene inversa diferenciable.
 </blockquote>
-<button class="btnProof" id="btn1" onclick="showProof(1)"> Mostrar demostración</button>
+<button class="btnProof" id="btn1" onclick="showProof('1','btn1')"> Mostrar demostración</button>
 <div class="proof" style="display: none;" id="1">
 Tenemos que \( h=X^{-1}\circ Y\) es un homeomorfismo por ser composición de homeomorfismos. Sea \( r\in Y^{-1}(W)\), \( q=h(r)\), como \( X\) es una parametrización, podemos suponer cambiando el nombre de los ejes de ser necesario que \( X(u,v)=(x(u,v),y(u,v),z(u,v))\) donde
 \[
@@ -254,26 +276,86 @@ X_2^{-1}\circ \phi \circ X_1 :U_1\to U_2
 es diferenciable en \(q=X_1^{-1}(p) \). Se dice que dos superficies regulares \( S_1\) y \( S_2\) son difeomorfas si existe una aplicación diferenciable \( \phi:S_1\to S_2\) con inversa diferenciable.
 <i> Desde el punto de vista de la diferenciabilidad, dos superficies difeomorfas son indistinguibles</i>. Sin mayor dificultad puedes encontrar que toda superficie regular es localmente difeomorfa a un plano.
 </p>
+<h3>El plano tangente</h3>
+<p>
+Por un vector tangente a \( S\) en \( p\in S\) entendermos el vector tangente \( \alpha'(0)\) de una curva parametrizada diferenciable \( \alpha:(-\epsilon,\epsilon)\to S\) con \( \alpha(0)=p\).
+<h3>Proposición </h3>
+<blockquote>
+Sea \( X:U\subset \mathbb{R}^2\to S\) una parametrización de una superficie regular \( S\) y sea \( q\in U\). El subespacio vectorial de dimensión 2
+\[
+dX_q(\mathbb{R}^2)\subset \mathbb{R}^3
+\]
+coincide con el conjunto de vectores tangentes a \( S\) en \( X(q)\).
+</blockquote>
+De acá que denotamos \( dX_q(\mathbb{R}^2)=T_p(S)\), \( x(q)=p\).
+<p>
 
+</p>
+</p>
 <h2>Referencias</h2>
 <ul>
-  <li>.</li>
+  <li>Renato Benazic (2024) Análisis Real 2.</li>
+  <li>Manfredo P. do Carmo (1995) Geometría diferencial de curvas y superficies. Traducido por José Claudio Sabina de Lis.</li>
+  <li>Ronaldo Freire de Lima (2016) Introdução à Geometria Diferencial.</li>
 </ul>
 <hr>
-  <p>Esta página web existe gracias a GitHub, \(\LaTeX \) y \(MathJax\).</p>
-  <hr>
+<p style="font-family: Garamond, serif;font-size: 16px;">
+El contenido de está entrada ha sido parcialmente redactado por F. Peña-Garcia y parcialmente recopilado y traducido de los textos que se listan en las referencias. No reclamo derechos intelectuales sobre cualquier parte del texto incluso si es enteramente de mi autoría puesto que el <q>contenido teórico</q> que es acá desarrollado es patrimonio de la humanidad.
+<br>
+Esta página web existe gracias a GitHub, \(\LaTeX \) y \(MathJax\).
+</p>
+<hr>
   </div>
 <script>
-function showProof(N) {
-  var x = document.getElementById(N);
-  if (x.style.display === "none") {
+function showProof(n, btnN) {
+  var x = document.getElementById(n);
+  var button = document.getElementById(btnN);
+  
+  // Use getComputedStyle to check current display value
+  if (window.getComputedStyle(x).display === "none") {
     x.style.display = "block";
-    document.getElementById(btn1).innerHTML= "Ocultar demostración";
+    button.textContent = 'Ocultar demostración';
   } else {
     x.style.display = "none";
-    document.getElementById(btn1).innerHTML= "Mostrar demostración";
+    button.textContent = 'Mostrar demostración';
   }
 }
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Create the TOC container
+  const toc = document.createElement('nav');
+  toc.className = 'toc';
+  toc.innerHTML = '<h2 style=" text-decoration: none; padding: 10px 0px 12px 0px;">Índice</h2><ul></ul>';
+  
+  // Get all h2 elements
+  const headings = document.querySelectorAll('h2');
+  const tocList = toc.querySelector('ul');
+  
+  // Process each heading
+  headings.forEach(heading => {
+    if (!heading.id) {
+      // Create ID from text if none exists
+      heading.id = heading.textContent.toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w\-]/g, '');
+    }
+    const li = document.createElement('li');
+    li.innerHTML = `<a href="#${heading.id}">${heading.textContent}</a>`;
+    tocList.appendChild(li);
+  });
+  
+  // Find the h1 element
+  const h1 = document.querySelector('h1');
+  
+  // Insert the TOC after h1 if h1 exists, otherwise at start of body
+  if (h1) {
+    h1.insertAdjacentElement('afterend', toc);
+  } else {
+    document.body.insertBefore(toc, document.body.firstChild);
+  }
+
+});
 </script>
 </body>
 </html>
