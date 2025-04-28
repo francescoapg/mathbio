@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ecuaciones diferenciales</title>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <link rel="stylesheet" href="mystyles.css">
+  <link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+</head>
+<body>
+  <div class="header">
+  <a href="https://francescoapg.github.io/mathbio/" class="logo"><span>Inicio</span></a>
+  <div class="header-right">
+  <a href="https://github.com/francescoapg/mathbio" class="button"> GitHub </a>
+        <div class="dropdown">
+      <a href="#math" class="button">Biología</a>
+      <div class="dropdown-content">
+        <a href="https://francescoapg.github.io/mathbio/ecoteo">Ecología Teórica</a>
+        <a href="https://francescoapg.github.io/mathbio/prebiomath">Biomatemática</a>
+        <a href="https://francescoapg.github.io/mathbio/biomath">Biomatemática avanzada</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#math" class="button">Matemática</a>
+      <div class="dropdown-content">
+        <a href="https://francescoapg.github.io/mathbio/setheory">Teoría de conjuntos</a>
+        <a href="https://francescoapg.github.io/mathbio/functlations">Relaciones y funciones</a>
+        <a href="#">Espacios</a>
+        <a href="https://francescoapg.github.io/mathbio/advcalc">Cálculo avanzado</a>
+        <a href="https://francescoapg.github.io/mathbio/measure">Teoría de la medida</a>
+        <a href="https://francescoapg.github.io/mathbio/geomdiff">Geometría diferencial</a>
+        <a href="https://francescoapg.github.io/mathbio/linalge">Álgebra lineal</a>
+        <a href="https://francescoapg.github.io/mathbio/groups">Teoría de grupos</a>
+        <a href="https://francescoapg.github.io/mathbio/topos">Topología general</a>
+        <a href="https://francescoapg.github.io/mathbio/cat">Categorías</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header" style="overflow: hidden"></div>
+
+<hr>
+<div style="padding-left:20px; padding-right: 20px;">
+<h1 style="text-align:center;">Ecuaciones diferenciales</h1>
+<h2>Solución de EDOs lineales</h2>
+<p>
+Recuerda que para dos matrices cuadradas \( A,B\), \( det(AB)=det(A)det(B)\). Es necesario recordar también el siguiente resultado de álgebra lineal
+</p>
+<div class="proposition"><span class="number"></span> Forma canónica de Jordan para matrices reales </div>
+<blockquote>
+Si \( A\in \mathbb{R}^{n\times n}\), entonces existe una matriz \( P\in GL(\mathbb{R}^n)\) tal que
+\[
+PAP^{-1}=J_A=diag[J_1,...,J_m],
+\]
+donde cada \( J_i\) es una matriz cuadrada de la forma
+<ul>
+	<li>\(J_i=\lambda_iI+N_{n_i}\) si \( \lambda_i\) es un autovalor real de \( A\).</li>
+	<li>\(J_i=J_{2n}(a_j,b_j)+N_{2n_j}^2\) si \( a_j+ib_j\) es un autovalor complejo de \( A\).</li>
+</ul>
+</blockquote>
+<p>
+La matriz diagonal por bloques \( J_A\) se llama forma canónica de Jordan real de \( A\).
+</p>
+<p>
+Veamos ahora qué pasa con las formas canónicas de matrices con autovalores de multiplicidad uno. Sea \( A\in K^{n\times n}\) con \( K=\mathbb{R}\) o \( K=\mathbb{C}\), tenemos que los autovalores de \( A\) son las raíces del polinomio característico \( P_A(\lambda)=det(A-\lambda I)\). Luego que una matriz tiene \( n\) autovalores contando multiplicidad. Sea \( \lambda_0\) un autovalor de \( A\), el <b>autoespacio</b> asociado se define como \( Ker(A-\lambda_0 I)\), es decir,
+\[
+Ker(A-\lambda_0 I)=\{v\in K^n:(A-\lambda_0 I)(v)=0_{K^n}\}
+\]
+El autoespacio al ser un subespacio vectorial admite una base. Los autovectores de \( A\) asociados a \( \lambda_0\) serán entonces los elementos de cualquier base del autoespacio \( A-\lambda_0 I\). (De acá que \( 0_{K^n}\) nunca será un autovalor.)
+</p>
+<div class="proposition"><span class="number">Autovalores de multiplicidad algebraica 1</span></div>
+<blockquote>
+Sean \( \lambda_1,...,\lambda_n\in K\) todos los autovalores de \( A\) cada uno de multiplicidad algebraica 1. Si denotamos
+\[
+W_i=Ker(A-\lambda_i I)\hspace{10pt}\forall i\in \{1,..,n\}
+\]
+Entonces
+<ol>
+	<li>dim\(W_1\)=...=dim\(W_n=1 \).</li>
+	
+	<li>\(K^n=W_1\bigoplus ... \bigoplus W_n\).</li>
+</ol>
+</blockquote>
+<p>
+Tenemos las siguientes posibilidades.
+<ol>
+	<li>Todos los autovalores son reales de multiplicidad algebraica 1.
+	<br>
+	En este caso, para cada autovalor encontramos el autoespacio asociado de dimensión 1 y desde ahí determinamos una base que estará formada por 1 solo vector. Diseñamos una matriz \( n\times n\) en la que cada columna sea un autovector. Se cumple que esta matriz es igual a \( P^{-1}\). Como cada columna es linealmente independiente (por la segunda condición de la proposición anterior) se desprende que la matriz es inversible, de este modo calculamos \( P\). Con esto tendremos que \( J_A=PAP^{-1}\).
+	<br>
+	Se demuestra también que \( J_A=diag[\lambda_1,...,\lambda_n]\) en el mismo orden en el que se escribieron las columnas de \( P^{-1}\). Con esto rápidamente calculamos \( e^A=e^{P^{-1}J_AP}=P^{-1}e^{J_A}P\). Ten en cuenta que \( e^{J_A}=diag[e^{\lambda_1},...,e^{\lambda_n}]\).
+	</li>
+	<li>Todos los autovalores son complejos de multiplicidad algebraica 1.
+<br>	
+Ya que \( P_A(\lambda)\) es un polinomio con coeficientes reales, sus raíces completas van a pares conjugados, es decir, si \( a+ib\) es una raiz, \( a-ib\) será otra raíz. Sea \( \mu_j=a_j+ib_j\) un autovalor, el autoespacio \( Ker(A-\mu_j I)\) es un \( \mathbb{C}\)-espacio vectorial de dimensión compleja 1 y su base es un vector con coordenadas complejas. Nos interesa pasar esto a una base real.
+<br>
+Sea 	\( w_j=(s_{1j}+it_{1j},...,s_{nj}+it_{nj})\in \mathbb{C}^n\) el \( \mathbb{C}\)-autovector asocaido al autovalor \( \mu_j=a_j+ib_j\). Definimos los vectores \( s_j=(s_{1j},...,s_{nj})\) y \( t_j=(t_{1j},...,t_{nj})\). Se observa que \( \{s_j,t_j\}\) es una base real para el autoespacio asociado a \( \mu_j\).
+<br>
+Por otro lado, se hace el mismo procedimiento para el autoespacio asociado al autovalor conjugado \( \overline{\mu_j}\) y se obtiene que
+\[
+Ker(A-\mu_j I)=Ker(A-\overline{\mu_j} I)
+\]
+Es suficiente trabajar solo con una de las raíces conjugadas entonces. De acá construímos una matriz con las columnas \(Q= [s_1,t_1,s_2,t_2,...,s_{n/2},t_{n/2}]\). Se cumple que \( Q=P^{-1}\) y de acá se verifica que
+\[
+J_A=PAP^{-1}=diag[I_2(a_1,b_1),I_2(a_2,b_2),...,I_2(a_{n/2},b_{n/2})]
+\]
+	</li>
+	<li>La matriz tiene autovalores reales y complejos pero todos de multiplicidad algebraica 1.
+<br>	
+	De forma completamente analoga a los casos anteriores, ordenamos los autovalores reales como \( \lambda_1,...,\lambda_r\) y los autovalores complejos como \( \mu_1,...,\mu_k\) contando solo los representativos, i.e., sin considerar los conjugados de cada uno de estos. Luego calculamos los autoespacios asociados con cada uno de ellos y seguido los autovectores reales \( v_1,...,v_r \) y complejos \( w_1=a_1+ib_1,...,w_k=a_k+ib_k\). Hacemos el mismo procedimiento que en el caso anterior para los autovectores complejos y los separamos como vectores <q>parte real</q> \( s_j \) y <q>parte imaginaria</q> \( t_j\) y formamos la matriz con columnas \( P^{-1}=[v_1,...,v_r,s_1,t_1,...,s_k,t_k]\).
+	<br>
+	Se cumple que
+	\[
+J_A=PAP^{-1}=diag[\lambda_1,\lambda_r,I_2(a_1,b_1),...,I_2(a_{k},b_{k})]
+\]
+	</li>
+</ol>
+Ahora vamos a estudiar el caso de autovalores repetidos.
+</p>
+<div class="proposition"><span class="number"></span> Descomposición primaria </div>
+<blockquote>
+Sean \( \lambda_1,...,\lambda_k\in K \) los autovalores de una matriz \( A\in K^{n\times n}\) con multiplicidad algebraica \( d_1,...,d_k\) respectivamente. Denotando
+\[
+W_i=Ker((A-\lambda_i I)^{d_i})\hspace{10pt}\forall i\in \{1,..,k\}
+\]
+Entonces, sea \( T_A\) la transformación lineal asociada a \( A\) definida como \( T_A(x)=Ax\),
+<ol>
+	<li>\((T_A-\lambda_j I)_{|W_j}\) como transformación lineal de \( W_j\) a \( W_j\) es nilpotente.</li>
+	<li>dim\(W_j=d_j\) para todo \( j\in \{1,...,k\}\).</li>
+<li>\(K^n=W_1\bigoplus ... \bigoplus W_n\).</li>
+</ol>
+</blockquote>
+<p>
+\( Ker((A-\lambda_i I)^{d_i})\) se conoce como el autoespacio generalizado de \( A\) asociado al autovalor \( \lambda_i\) y se denota por
+\[
+E_{d_i}(A,\lambda_i) = Ker((A-\lambda_i I)^{d_i})
+\]
+<br>
+Si todos los autovalores tienen multiplicidad algebraica 1, esta proposición se reduce a la proposición anterior.
+<br>
+<blockquote  style="border: 2px solid blue;"><b>Observación</b>:
+Si \( A\in K^{n\times n}\) tiene un <b>único autovalor \( \lambda\) de multiplicidad algebraica \( n\)</b>, tenemos que \( K^n= E_{n}(A,\lambda)\), entonces \( N=A-\lambda I\) es nilpotente, digamos de orden \( r+1\leq n\), entonces como \( N \) conmuta con \( \lambda I\) conmutan, tenemos que
+\[
+e^A=e^{\lambda I +N}=e^\lambda \left( I+N+\frac{1}{2!}N^2+...+\frac{1}{r!}N^r\right)
+\]
+</blockquote>
+
+
+
+</p>
+<div class="definition">
+<div class="def-header"><span class="def-title">Definición: Espacio cíclico asociado</span></div>
+<div class="def-content">
+Sea \( V\) un \( K\)-espacio vectorial de dimensión finita y \( N\in \mathcal{V}\) nilpotente. Si \( u\in V\) es tal que \( N^m(u)=0\) y
+\[
+u, N(u),...,N^{m-1}(u)
+\]
+son linealmente independientes entonces el subespacio de \( V\) generado por estos vectores es denotado por \( Z_m(u)\) es llamado <b>espacio cíclico</b> de \( V\) asociado a \( N\) y de dimensión \( m\).
+</div></div>
+<div class="proposition"><span class="number"></span> Formas Canónicas de Transformaciones Nilpotentes </div>
+<blockquote>
+Si \( V\) es un \( K\)-espacio vectorial de dimensión \( d\) y \(N\in \mathcal{V} \) es nilpotente de orden \( k\), \( k\leq d\), entonces existen  vectores linealmente independientes \( u_1,...,u_r\in V\) tales que
+<ol>
+	<li>\(Z_	{k_1}(u_1),...,Z_{k_r}(u_r)\) son subespacios cíclicos asociados a \(N \).</li>
+	<li>\(k=k_1\geq k_2 \geq ...\geq k_r\geq 1\) y \( k_1+...+k_r=d\).</li>
+	<li>Si \(p\in \{1,...,r\}\) es tal que \( k_{p+1}=...=k_r=1\) entonces \( u_{p+1},...,u_r\in Ker(N)\).</li>
+	<li>\(V=Z_{k_1}(u_1)\bigoplus ...\bigoplus Z_{k_r}(u_r)\).</li>
+</ol>
+Más aún, el conjunto
+\[
+B=\{N^{k_1-1}(u_1),N^{k_1-2}(u_1),...,u_1,...,N^{k_r-1}(u_r),N^{k_r-2}(u_r),...,u_r\}
+\]
+es una base ordenada de \( V\) en la cual \( N\) se representa por la matriz
+\[
+diag[N_{k_1},...,N_{k_r}]
+\]
+</blockquote>
+<p>
+Sean \( \lambda_1,...,\lambda_r\in K\) los autovalores distintos de la matriz \( A\in K^{n\times n}\) con multiplicidad algebraica \( d_1,...,d_r\). Por el teorema de la descomposición espectral tenemos que
+\[
+K^n=E_{d_1}(A,\lambda_1)\bigoplus...\bigoplus E_{d_r}(A,\lambda_r)
+\]
+Además \( (A-\lambda_i I)_{|E_{d_j}(A,\lambda_j)}\) como transformación lineal de \( E_{d_i}(A,\lambda_i)\) en \( E_{d_i}(A,\lambda_i)\) es nilpotente de orden \( k_j\leq d_j\). Por el teorema de la forma canónica de una matriz nilpotente existe una base \( B_j=\{v_1^j,...,v_{d_j}^j\}\) de \( E_{d_i}(A,\lambda_i)\) en la que \( N_j= A-\lambda_j I\) se representa por una matriz diagonal compuesta de matrices nilpotentes canónicas. Luego que \( B=B_1\cup ...\cup B_r\) es una base de \( K^n\) y por tanto la matriz de columnas \( P^{-1}=[v_1^1,...,v_{d_1}^1,...,v_r^r,...,v_{d_r}^r]\) es inversible.
+<br>
+Recuerda que dado una PVI \( x'=Ax\) con \( x(0)=x_0\), la solución es única y viene dada por
+\[
+\phi(t)=e^{tA}x_0=P^{-1}e^{tJ_A}Px_0
+\]
+Como \( tJ_A\) es una matriz por bloques diagonal, podemos aplicar la exponencial directamente en cada bloque y así obtenemos la solución.
+<br>
+Es importante que recuerdes que si
+\[
+J_A=
+\begin{bmatrix}
+1 & 2 \\
+-2 & 1
+\end{bmatrix}
+\]
+Entonces por su simetría, tenemos que
+\[
+e^{tJ_A}=e^t\begin{bmatrix}
+cos 2t &  sen 2t\\
+-sen 2t  & cos 2t
+\end{bmatrix}
+\]
+Ahora recuerda que si una matriz \(2 \times 2 \) tiene un único autovalor de multiplicidad 2, entonces no hay necesidad de calcular \( P\).
+En efecto, sea
+\[
+A=
+\begin{bmatrix}
+3 & -4 \\
+1 & -1
+\end{bmatrix}
+\]
+El autovalor de \( A\) es 1 y tiene multiplicidad 2, entonces la matriz
+\[
+N=A-\lambda I = A-I
+\]
+es nilpotente. Como este matriz es distinto al 0, entonces debe ser nilpotente de orden 2. Luego que
+\[
+e^{tA}=e^{t(I+N)}=e^{tI}e^{tN}=e^t\left( I +tN \right)
+\]
+El cálculo luego nos muestra que
+\[
+e^{tA}=e^t
+\begin{bmatrix}
+1+2t & -4t \\
+t & 1-2t
+\end{bmatrix}
+\]
+Observe que no escribimos \( tI\) sino \( I\) dado que corresponde a \( (tN)^0\).
+<br>
+Sea \( A\in K^{n\times n}\). Un resultado conocido es el teorema de Cayley-Hamilton que señala que la matriz evaluada en su polinomio característico es igual a la matriz nula, es decir, \( P_A(A)=\Theta \). De acá que \( A^k\) es combinación lineal de las demás potencias de \( A\) menores o iguales a \( n\).
+</p>
+<div class="proposition"><span class="number"></span> Algortimo de Putzer </div>
+<blockquote>
+Si \( A\in \mathbb{R}^{n\times n}\) y \(\lambda_1,...,\lambda_n\in K \) son sus autovalores repetidos de acuerdo a la multiplicidad, entonces
+\[
+e^{tA}=\sum_{k=0}^{n-1}r_{k+1}(t)P_{k}(A)
+\]
+en donde \( P_0(A),...,P_{n-1}(A)\in K^{n\times n}\) se definen como
+\[
+P_0(A)=I\hspace{10pt}P_k(A)=\prod_{j=1}^k(A-\lambda_jI)\hspace{10pt},1\leq k\leq n
+\]
+y \( r_1,...,r_n:\mathbb{R}\to K\) son soluciones de los PVI
+\[
+\begin{cases}
+r_1'(t)=\lambda_1 r_1(t)&,r_1(0)=1\\
+\vdots&\\
+r'_{k+1}(t)=\lambda_{k+1}r_{k+1}(t)+r_k(t)&,r_{k+1}(0)=0,\hspace{10pt} 1\leq k\leq n-1
+\end{cases}
+\]
+</blockquote>
+<p>
+Luego la dificultad de calcular la matriz \( P^{-1}\) se pasa a calcular las soluciones del sistema de ecuaciones \( \mathbf{r}'=M\mathbf{r}\).
+<br>
+Veamos un ejemplo. Sea
+\[
+A=\begin{bmatrix}
+4 & -3\\
+8 & -6
+\end{bmatrix}
+\]
+Tenemos que \( P_A(\lambda)=\lambda(\lambda+2)\), con el algoritmo de Putzer tenemos que
+\[
+e^{tA}=r_1(t)P_0(A)+r_2(t)P_1(A)
+\]
+Donde \( P_0(A)=I\), \( P_1(A)=A-\lambda_1I\), podemos elegir cualquier valor para \(\lambda_1\), asignamos el valor de 0, luego
+\[
+e^{tA}=r_1(t)I+r_2(t)A
+\]
+Ahora, tenemos el sistema
+\[
+\begin{cases}
+r_1'=\lambda_1r_1(t),&r_1(0)=1\\
+r_2'=\lambda_2r_2(t)+r_1(t),&r_2(0)=0
+\end{cases}
+\]
+manteniendo la elección tenemos \( \lambda_1=0,\lambda_2=-2\)
+Resolvemos
+\[
+e^{tA}=I+\left( \frac{1}{2}-\frac{1}{2}e^{-2t}\right)A
+\]
+<blockquote  style="border: 2px solid blue;"><b>Observación</b>:
+Este método funciona exactamente del mismo modo si los autovalores son repetidos, son reales, complejos, etc., lo cual es una ventaja sobre los métodos previos.
+</blockquote>
+<div class="proposition"><span class="number"></span> Fórmula general para sistemas lineales no homogéneos con coeficientes constantes </div>
+<blockquote>
+Sea \( A\in \mathbb{R}^{n\times n}\), \( b:J\to \mathbb{R}^{n\times 1}\) es una función matricial continua en el intervalo \( J\) con \( t_0\in J\) y \( x_0\in \mathbb{R}^{n\times 1}\). Entonces el siguiente sistema
+\[
+\begin{cases}
+x'=Ax+b(t)\\
+x(t_0)=x_0
+\end{cases}
+\]
+tiene una única solución que viene dado en términos de la siguiente fórmula
+\[
+\psi(t)=e^{(t-t_0)A}x_0+e^{tA}\int_{t_0}^te^{sA}b(s)ds,\hspace{10pt}\forall t\in J
+\]
+</blockquote>
+<p>
+Muchas veces es computacionalmente muy dificil resolver estas ecuaciones incluso con la fórmula general.
+</p>
+<h2>Teoría cualitativa de EDOs lineales</h2>
+Sea \( A\in \mathbb{R}^{n\times n}\), \( P_A(\lambda)\) es un polinomio de grado \( n\), por tanto si \( n\geq 5\) entonces no hay una fórmula para hallar las ráices de estos polinomios. Una salida sería usar herramientas algebraicas como la teoría de Galois para encontrar si el polinomio es soluble por radicales pero incluso acá es posible que no se pueda resolver en general \( P_A(\lambda)=0\). Por eso continuamos con el análisis cualitativo de EDOs lineales, i.e., el analisis sin conocer explícitamente cuales son las soluciones.
+<br>
+<div class="definition">
+<div class="def-header"><span class="def-title">Definición: Flujo asociado</span></div>
+<div class="def-content">
+Sea \( A\in \mathbb{R}^{n\times n}\), el <b>flujo asociado</b> a la EDO lineal \(x'=Ax \) es dado por
+\begin{equation*}
+\begin{array}{cccc}
+\varphi_A:&\mathbb{R}\times \mathbb{R}^{n}&\to&\mathbb{R}^n\\
+&(t,x)&\mapsto&\varphi_A(t,x)=e^{tA}x
+\end{array}
+\end{equation*}
+</div></div>
+Acá se trata de hacer variar el valor inicial \( x_0\) sobre todo el espacio \( \mathbb{R}^n\).
+<br>
+<div class="proposition"><span class="number"></span>Propiedades del flujo</div>
+<blockquote>
+Sea \( A\in \mathbb{R}^{n\times n}\), su flujo asociado
+\[
+\varphi_A :\mathbb{R}\times \mathbb{R}^n\to \mathbb{R}^n
+\]
+se cumple que
+<ol>
+	<li>\( \varphi_A (0,x)=x\hspace{10pt} \forall x\in \mathbb{R}^n\).</li>
+	<li>\( \varphi_A (t+s,x)=\varphi_A(t,\varphi_A(s,x))\hspace{10pt} \forall t,s\in \mathbb{R},\forall x\in \mathbb{R}^n\).</li>
+</ol>
+</blockquote>
+Observe que existe la derivada parcial \(\frac{\partial \varphi_A}{\partial t} \) en todo punto \( \mathbb{R}\times \mathbb{R}^n\). Se observa también que para todo \( t\in \mathbb{R}\), la matriz asociada a la transformación lineal \( (\varphi_A)_t\) pertenece a \( GL(\mathbb{R}^n)\). Es evidente también que para todo \( t_1,t_2\in \mathbb{R}\)
+\[
+(\varphi_A)_{t_1+t_2}=(\varphi_A)_{t_1}\circ (\varphi_A)_{t_2}
+\]
+\[
+(\varphi_A)_{0}=I
+\]
+<div class="proposition"><span class="number"></span></div>
+<blockquote>
+Si la función \( F:\mathbb{R}\times \mathbb{R}^n\to \mathbb{R}^n\) cumple que
+<ol>
+	<li>Existe la derivada parcial \(\frac{\partial F}{\partial t}\) en todo punto \( \mathbb{R}\times \mathbb{R}^n\).</li>
+	<li>\(F_t\) es una transformación lineal de \( \mathbb{R}^n \) en \( \mathbb{R}^n\) para todo \( t\in \mathbb{R}\).</li>
+	<li>\(F_{t_1+t_2}=F_{t_1}\circ F_{t_2}\) para todo \( t_1,t_2\in \mathbb{R}\).</li>
+	<li>\(F_0=I\).</li>
+</ol>
+Entonces existe una única matriz \(A\in \mathbb{R}^{n\times n} \) tal que \( F\) es su flujo asociado.
+</blockquote>
+Ahora veremos que las soluciones de \( x'=Ax\) generan una partición del espacio \( \mathbb{R}^n\).
+<br>
+<div class="definition">
+<div class="def-header"><span class="def-title">Definición: Órbita</span></div>
+<div class="def-content">
+Sea \( x\in \mathbb{R}^n\) fijo, la <b>órbita</b> del punto \( x\) a través del flujo \( \varphi_A\) se denota y define del siguiente modo
+\[
+\mathcal{O}_A(x)=\{\varphi_A(t,x):t\in \mathbb{R}\}
+\]
+</div></div>
+<div class="proposition"><span class="number"></span> </div>
+<blockquote>
+Sea \( A\in \mathbb{R}^{n\times n}\) y \( \varphi_A\) su flujo asociado. Se cumple
+<ol>
+	<li>Para todo \(x,y\in \mathbb{R}^n\) fijos,
+\[
+\mathcal{O}_A(x)\cap \mathcal{O}_A(y)=\emptyset \lor \mathcal{O}_A(x)=\mathcal{O}_A(y)
+	\]	
+	</li>
+	<li> Para todo \( x\in \mathbb{R}^n\),
+	\[
+	x\in Ker(A) \iff \mathcal{O}_A(x)=\{x\}
+	\]
+	En particular \( \mathcal{O}_A(0)=\{0\}\).
+	</li>
+</ol>
+</blockquote>
+<div class="definition">
+<div class="def-header"><span class="def-title">Definición: foliación por curvas</span></div>
+<div class="def-content">
+El conjunto
+\[
+\mathcal{F}_A=\{\mathcal{O}_A(x):x\in \mathbb{R}^n\}
+\]
+es llamado <b>foliación por curvas</b> de \( \mathbb{R}^n\) generada por la matriz \( A\in \mathbb{R}^{n\times n}\).
+</div></div>
+La foliación \( \mathcal{F}_A\) es el conjunto formado por todas las soluciones de \( x'=Ax\) las cuales pueden ser puntos (como \(\mathcal{O}_A(0) \)) o curvas de \( \mathbb{R}^n\).
+<br>
+Para clasificar los flujos vamos a usar homeomorfismos. Recuerda que los homeomorfismos preservan propiedades topológicas de las curvas como la compacidad, conexidad, etc. 
+<div class="definition">
+<div class="def-header"><span class="def-title">Definición: Conjugación topológica</span></div>
+<div class="def-content">
+Sea \(A,B\in \mathbb{R}^{n\times n} \) y los flujos asociados \( \varphi_A\) y \( \varphi_B\). Decimos que \(A \) y \( B\) son <b>topológicamente conjugadas</b> que se denota como \( A\equiv_{top}B\) si y solo si existe un homeomorfismo \( h:\mathbb{R}^{n}\to \mathbb{R}^n\) llamado <b>conjugación topológica</b> tal que
+\[
+h(\varphi_A(t,x))=\varphi_B(t,h(x)),\hspace{10pt}\forall t\in \mathbb{R},\forall x\in \mathbb{R}^n
+\]
+</div></div>
+Es relevante mencionar que como difeomorfimos conservan propiedades diferenciables como concavidad, puntos de inflexión, etc., si \( h\) es además un difeomorfismo de clase \( C^r\), \( 1\leq r\leq \infty\), entonces \( A\) y \( B\) son \( C^r\)-<b>conjugados</b>. Si \( h \) es un isomorfimo entonces \( A\) y \( B\) son <b>linealmente conjugados</b>. Para cada caso las notaciones respectivas son
+\[
+A\equiv_{C^r} B
+\]
+\[
+A\equiv_{lin} B
+\]
+Recuerda que isomorfismos preservan propiedades algebraicas y llevan subespacios en subespacios.
+La definición de conjugación topológica se puede entender como que existe un homomorfismo \( h\) tal que el siguiente diagrama conmute.
+\[
+\begin{array}{@{}c@{}c@{}c@{}}
+\mathbb{R }& \times & \mathbb{R}^n &  \xrightarrow{ \varphi_A} &  \mathbb{R}^n \\
+id\Big\downarrow &&\Big\downarrow h& & \Big\downarrow h \\
+\mathbb{R}& \times &\mathbb{R}^n & \xrightarrow{ \varphi_B} &  \mathbb{R}^n \\
+\end{array}
+\]
+Ahora vamos a ver que la conjugación \( h\) lleva órbitas en órbitas, es decir, la imagen por \( h\) de la órbita de \( x_0\) es igual a la órbita de \( h(x_0)\), de forma precisa
+\[
+h[\mathcal{O}_A(x_0)]=\mathcal{O}_B(h(x_0))
+\]
+Observe también lo siguiente
+\[
+h(e^{tA}x)=e^{tB}h(x),\hspace{10pt}\forall t\in \mathbb{R}, \forall x\in \mathbb{R}^n
+\]
+</p>
+<div class="proposition"><span class="number"></span> </div>
+<blockquote>
+Las conjugaciones \( \equiv_{top}\), \( \equiv_{C^r}\) y \( \equiv_{lin}\) son relaciones de equivalencia en \( \mathbb{R}^{n\times n}\).
+</blockquote>
+<p>
+Es evidente que para todo \(r\in [1,\infty] \),
+\[
+A\equiv_{lin} B \implies A\equiv_{C^r} B \implies A\equiv_{top} B
+\]
+El siguiente resultado nos dice que las matrices cuadradas solo admiten dos clasificaciones, la topológica y la lineal.
+</p>
+<div class="proposition"><span class="number"></span> </div>
+<blockquote>
+Sean \( A,B\in \mathbb{R}^{n\times n}\), las siguientes afirmaciones son equivalentes
+<ol>
+	<li>\(A\equiv_{C^1} B\).</li>
+	<li>\( A\) y \( B\) son matrices semejantes (o similares), es decir, \(\exists P\in GL(\mathbb{R}^n):PA=BP\).</li>
+	<li>\(A\equiv_{lin} B\).</li>
+</ol>
+</blockquote>
+<p>
+Sabemos que toda matriz \( A\in \mathbb{R}^{n\times n}\) es similar a su forma canónica de Jordan \( J_A\in \mathbb{R}^{n\times n}\). De acá que cada clase de equivalencia admite un representante cuya exponecial es facil de calcular.
+</p>
+<blockquote  style="border: 2px solid blue;"><b>Observación</b>:
+Toda \(h\in Diff^1(\mathbb{R}^n) \) conjugación \( C^1\) entre \( A\) y \( B\) induce una conjugación lineal entre \( A\) y \( B\) que viene dada por \( h'(0)\in GL(\mathbb{R}^n)\).
+</blockquote>
+<p>
+Sean \( \lambda_1, \lambda_2\) los autovalores de \( A_{2\times 2}\). Existe las siguientes posibilidades
+<ol>
+	<li>\(\lambda_1,\lambda_2\in \mathbb{R}, \lambda_1\neq \lambda_2\).
+<br>	
+Si los autovalores reales son distintos, entonces
+\[
+J_A=\begin{bmatrix}
+\lambda_1 & 0 \\
+0 &  \lambda_2
+\end{bmatrix}
+	\]	
+Entonces el flujo asociado a \( J_A\) en cualquier punto \( p_0=(x_0,y_0)\in \mathbb{R}^2\) viene dado por
+\[
+\varphi_{J_A}(t,p_0)=e^{tJ_A}p_0
+\]
+Como sabemos que
+\[
+e^{tJ_A}=\begin{bmatrix}
+e^{t\lambda_1} & 0 \\
+0 &  e^{t\lambda_2}
+\end{bmatrix}
+\]
+Entonces
+\[
+\varphi_{J_A}(t,p_0)=(e^{t\lambda_1}x_0,e^{t\lambda_2}y_0), \hspace{10pt}\forall t \in \mathbb{R}
+\]
+La gráfica y el comportamiento de las curvas va a depender de los signos de \( \lambda_1,\lambda_2,x_0,y_0\) o si alguno de ellos es 0. Si \( x_0=0\) o \( y_0=0\) entonces es muy sencillo analizar las órbitas de estos puntos. Si ambos son distintos a cero entonces si tomamos
+\[
+x=e^{t\lambda_1}x_0,\hspace{10pt}y=e^{t\lambda_2}y_0
+\]
+podemos escribir a \( y\) en  función de \( x\) o viceversa dependiendo de si \( \lambda_1\) o \( \lambda_2\) son distintos a cero respectivamente. En cada caso tendremos
+\[
+\displaystyle y=y_0\Big|\frac{x}{x_0}\Big|^{\frac{\lambda_2}{\lambda_1}}
+\]
+\[
+\displaystyle x=x_0\Big|\frac{y}{y_0}\Big|^{\frac{\lambda_1}{\lambda_2}}
+\]
+Entonces el comportamiento va a depender del valor si \( x_0\) o \( y_0\) son positivos o negativos y \( \frac{\lambda_2}{\lambda_1}\) es negativo, está entre 0 y 1 o si es mayor a 1. Es interesante mencionar que si \( \lambda_1<0<\lambda_2\), entonces el origen es un punto silla. Si \( \lambda_2=0\), entonces las órbitas son rectas horizontales que tienden al eje Y y los elementos del eje Y son elementos del kernel de \( J_A\), si \( \lambda_1=0\) son rectas verticales que se alejan del eje X que es el kernel de \( J_A\). Si \( 0<\lambda_1<\lambda_2\) entonces el origen es un repulsor.
+	</li>
+	<li>\(\lambda_1=\lambda_2\in \mathbb{R}\).
+<br>	
+Las formas canónicas de Jordan son
+\[
+J_A=\begin{bmatrix}
+\lambda & 0\\
+0 &  \lambda
+\end{bmatrix} \hspace{10pt} J_A=\begin{bmatrix}
+\lambda & 1\\
+0 &  \lambda
+\end{bmatrix} 
+\]
+Analizar el primer caso es sumamente sencillo, si \( \lambda>0 \) entonces el orgine es un repulsor y si \(\lambda<0 \) el origen es un atractor.
+<br>
+Vamos con el segundo caso, ya sabemos que la matriz \( N=J_A-\lambda I\) es nilpotente, luego que
+\[
+e^{tJ_A}=e^{tN+t\lambda I}=e^{\lambda t}e^{tN}=e^{\lambda t}\left(I +tN \right)
+\]
+\[
+e^{tJ_A}=e^{\lambda t}\begin{bmatrix}
+1 & t\\
+0 & 1 \\
+\end{bmatrix}
+\]
+Concluímos que
+\[
+\varphi_A(t,(x_0,y_0))=e^{tJ_A}(x_0,y_0)=e^{\lambda t}\begin{bmatrix}
+1 & t\\
+0 & 1 \\
+\end{bmatrix}\begin{bmatrix}
+x_0 \\
+y_0
+\end{bmatrix}=((x_0+ty_0)e^{\lambda t},y_0e^{\lambda t})
+\]
+Luego analizamos cada caso, supongamos que \( \lambda<0\). Puedes analizar cada órbita si \( x_0=0\) o \( y_0=0\). Se observa que si \( x_0=0\) no se obtienen resultados evidentes tanto como si \( y_0=0\). Para todas las demás soluciones podemos poner a \( x=x(y)\) mediante la siguiente fórmula
+\[
+x=x_0y+\frac{1}{\lambda}y\ln \Big| \frac{y}{y_0}\Big|
+\]
+desde donde se obtienen las órbitas dados los valores \( (x_0,y_0)\). En estos casos el origen es un atractor, i.e.,
+\[
+\lim_{t\to +\infty}\varphi_{J_A}(t,p_0)=(0,0)
+\]
+mientras que
+\[
+\lim_{t\to +\infty}|\varphi_{J_A}(t,p_0)|=+\infty
+\]
+Si \( \lambda>0\) el origen es un repulsor con \( \lim_{t\to -\infty}\varphi_{J_A}(t,p_0)=(0,0)\).
+<br>
+Si \(\lambda=0 \), el análisis es sencillo y se tiene que las órbitas son rectas horizontales que van hacia la derecha con el eje X como kernel de \( J_A\).
+	</li>
+	<li>\(\lambda_1=\overline{\lambda_2}\).
+<br>	
+En este caso tenemos que siendo \( \lambda_1=a+ib\)
+\[J_A=
+\begin{bmatrix}
+a  & b\\
+-b  & a
+\end{bmatrix}
+\]
+Sabemos que
+\[
+e^{tJ_A}	=e^{ta}\begin{bmatrix}
+cos bt & sen bt \\
+-sen bt &  cos bt
+\end{bmatrix}
+	\]	
+Luego que
+\[
+e^{tJ_A}	(x_0,y_0)=e^{ta}\begin{bmatrix}
+cos bt & sen bt \\
+-sen bt &  cos bt
+\end{bmatrix}\begin{bmatrix}
+x_0 \\
+y_0
+\end{bmatrix}=e^{ta}(x_0cos bt+y_0sen bt,-x_0 sen bt+y_0cos bt)
+\]
+Si \( a=0\), entonces las órbitas son circulares. Si \( a<0\) entonces las órbitas son espirales que tienden al origen cuando \( t\to +\infty\). Si \( a>0\), entonces las órbitas son espirales que se alejan del origen.
+	</li>
+</ol>
+Pasamos ahora a analizar atractores y repulsores.
+<div class="definition">
+<div class="def-header"><span class="def-title">Definición: atractor y repulsor</span></div>
+<div class="def-content">
+Sea \( A\in \mathbb{R}^{n\times n}\), consideremos el flujo asociado \( \varphi_A\), decimos que
+<ul>
+	<li>\(0\in \mathbb{R}^n\) es un <b>atractor</b> de \( A\) si y solo si
+	\[
+	\lim_{t\to +\infty}\varphi_A(t,x)=0,\hspace{10pt}\forall x\in \mathbb{R}^n
+	\]
+	</li>
+	<li>\(0\in \mathbb{R}^n\) es un <b>repulsor</b> de \( A\) si y solo si
+\[
+\lim_{t\to +\infty}|\varphi_A(t,x)|=+\infty,\hspace{10pt}\forall x\in \mathbb{R}^n	-\{0\}
+	\]	
+	</li>
+</ul>
+</div></div>
+De la definición sigue que el vector 0 es un atractor de \( A\) si y solo si es un repulsor de \( -A\).
+</p>
+<div class="proposition"><span class="number"></span> </div>
+<blockquote>
+Si \( A\in \mathbb{R}^{n\times n}\) y \(\lambda \) es un autovalor de \( A\) entonces para todo autovector \( v\in K^n-\{0\}\) de \( A\) asociado a \(\lambda \) se cumple que
+\[
+e^{tA}v=e^{\lambda t}v,\hspace{10pt} \forall t\in \mathbb{R}
+\]
+</blockquote>
+<div class="proposition"><span class="number"></span> </div>
+<blockquote>
+Si \( 0\in \mathbb{R}^n \) es un atractor de \( A\in \mathbb{R}^{n\times n}\), entonces <b>todos los autovalores de \( A\) tienen parte real negativa</b>.
+</blockquote>
+<p>
+La demostración corre por el método del absurdo, supón que existe un autovalor con parte real no negativa, de acá se obtiene un absurdo analizando \( \lim_{t\to +\infty}|\varphi_A(t,v)|\) donde \( v\) es un autovector asociado a este autovalor.
+</p>
+<blockquote  style="border: 2px solid blue;"><b>Observación</b>:
+Si \( 0\in \mathbb{R}^n\) es un atractor de \( A\in \mathbb{R}^{n\times n}\) entonces \( A\) es una matriz invertible. Para esto recordamos que
+\[
+det(A)=\prod_{i=1}^n \lambda_i
+\]
+Como cada autovalor es distinto de 0, \( det(A)\neq 0\), luego que la matriz es invertible, i.e., \( A\in GL(\mathbb{R}^n)\).
+</blockquote>
+<div class="proposition"><span class="number"></span> </div>
+<blockquote>
+Si \( J\) es una matriz real del tipo
+\[
+J=\lambda I + N_n\in \mathbb{R}^{n\times n}, \hspace{10pt} \lambda\in \mathbb{R}
+\]
+o del tipo
+\[
+J=J_{2n}(a,b)+N_{2n}^2\in \mathbb{R}^{n\times n},\hspace{10pt}\lambda=a+ib\in \mathbb{C}
+\]
+entonces existen reales no negativos \(a_0,...,a_{n-1} \) tales que
+\[
+||e^{tJ}||\leq e^{at}\left( a_0+a_1 t +...+a_{n-1}t^{n-1} \right),\hspace{10pt}\forall t\geq 0
+\]
+</blockquote>
+<div class="proposition"><span class="number"></span></div>
+<blockquote>
+Si \( A\in \mathbb{R}^{n\times n}\) tiene todos sus autovalores con parte real negativa entonces existen constantes \( \mu >0\) y \( K\leq 1\) tales que
+\[
+|\varphi_A(t,x)|\leq Ke^{-\mu t}|x|, \hspace{10pt} \forall x\in \mathbb{R}^n,\forall t\geq 0
+\]
+</blockquote>
+<p>
+Vamos a ver ahora que el hecho de que \( 0\in \mathbb{R}^n\) sea atractor o repulsor es invariante por conjugaciones topológicas.
+</p>
+<div class="proposition"><span class="number"></span></div>
+<blockquote>
+Sean \( A,B\in \mathbb{R}^{n\times n}\), si \( 0\in \mathbb{R}^n\) es un atractor de \( A\) y \( A\equiv_{top} B\), entonces 0 es un atractor de \( B\).
+</blockquote>
+<div class="proposition"><span class="number"></span></div>
+<blockquote>
+Si \( A\in \mathbb{R}^{n\times n}\) es tal que \( A\equiv_{top}-I\) entonces \( 0\in \mathbb{R}^n\) es un atractor de \( A\).
+</blockquote>
+<p>
+La demostración sigue de demostrar que 0 es un atractor de \( -I\) lo cual es realizado facilmente por definición.
+</p>
+<div class="proposition"><span class="number"></span></div>
+<blockquote>
+Sea \( A\in \mathbb{R}^{n\times n}\) y suponga que existen constantes \( \mu >0\) y \( K\geq 1\) tales que \( |\varphi_A(t,x)|\leq Ke^{-\mu t}|x|\), \( \forall x\in \mathbb{R}^n,\forall t\geq 0\). Entonces existe un producto interno \( <\cdot,\cdot >_A\) en \( \mathbb{R}^n\) tal que la órbita \( \mathcal{O}_A(x)\) de cualquier punto \( x\in \mathbb{R}^n-\{0\}\) intersecta en un único punto a cada una de las esferas de la familia \( \{S_A(r)\}_{r>0}\) donde
+\[
+S_A(r)=\{x\in \mathbb{R}^n: < x , x >_A=r^2\}
+\]
+</blockquote>
+<div class="proposition"><span class="number"></span></div>
+<blockquote>
+Dada la matriz \( A\in \mathbb{R}^{n\times n}\), las siguientes afirmaciones son equivalentes
+<ol>
+	<li>\(A \equiv_{top} -I\).</li>
+	<li>\( 0\) es un atractor de \(A\).</li>
+	<li>Todos los autovalores de \( A\) tienen parte real negativa.</li>
+	<li>Existen constantes \(\mu >0\), \( K\geq 1\) tales que \( |\varphi_A(t,x)|\leq Ke^{-\mu t}|x|\), \( \forall x\in \mathbb{R}^n,\forall t\geq 0\).</li>
+</ol>
+</blockquote>
+<div class="proposition"><span class="number"></span></div>
+<blockquote>
+Sean \( A,B\in \mathbb{R}^{n\times n}\), \( A\equiv_{top} B\) si y solo si \( -A\equiv_{top} -B\).
+</blockquote>
+<div class="proposition"><span class="number"></span></div>
+<blockquote>
+Dada la matriz \( A\in \mathbb{R}^{n\times n}\), las siguientes afirmaciones son equivalentes
+<ol>
+	<li>\(A \equiv_{top} I\).</li>
+	<li>\( 0\) es un repulsor de \(A\).</li>
+	<li>Todos los autovalores de \( A\) tienen parte real positiva.</li>
+	<li>Existen constantes \(\mu >0\), \( K\geq 1\) tales que \( |\varphi_A(t,x)|\geq K^{-1}e^{\mu t}|x|\), \( \forall x\in \mathbb{R}^n,\forall t\geq 0\).</li>
+</ol>
+</blockquote>
+<div class="definition">
+<div class="def-header"><span class="def-title">Definición: matrices hiperbólicas</span></div>
+<div class="def-content">
+Decimos que la matriz \( A\) o su sistema asociado \(x'=Ax \) es <b>hiperbólico</b> si y solo si todos los autovalores de \( A\) tienen parte real <b>negativa</b>.
+</div></div>
+Para una matriz hiperbólica \( A\), el <b>índice de estabilidad</b> de \( A\) denotado por \( i(A)\) es el número de autovalores de \( A\) contando multiplicidad con parte real negativa.
+<blockquote  style="border: 2px solid blue;"><b>Observación</b>:
+\( 0\in \mathbb{R}^n\) es un atractor de \( A\) si y solo si \( i(A)=n\).
+</blockquote>
+
+
+
+
+
+
+<h2>Referencias</h2>
+<ul>
+  <li>R. Benazic (2006) Tópicos de Ecuaciones Diferenciales Ordinarias</li>
+  <li></li>
+  <li></li>
+</ul>
+<hr>
+<p style="font-family: Garamond, serif;font-size: 16px;">
+El contenido de está entrada ha sido parcialmente redactado por F. Peña-Garcia y parcialmente recopilado y traducido de los textos que se listan en las referencias. No reclamo derechos intelectuales sobre cualquier parte del texto.
+<br>
+Esta página web existe gracias a GitHub, \(\LaTeX \) y \(MathJax\).
+</p>
+<hr>
+</div>
+<script>
+function showProof(n, btnN) {
+  var x = document.getElementById(n);
+  var button = document.getElementById(btnN);
+  
+  // Use getComputedStyle to check current display value
+  if (window.getComputedStyle(x).display === "none") {
+    x.style.display = "block";
+    button.textContent = 'Ocultar demostración';
+  } else {
+    x.style.display = "none";
+    button.textContent = 'Mostrar demostración';
+  }
+}
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Create the TOC container
+  const toc = document.createElement('nav');
+  toc.className = 'toc';
+  toc.innerHTML = '<h2 style=" text-decoration: none; padding: 10px 0px 12px 0px;">Índice</h2><ul></ul>';
+  
+  // Get all h2 elements
+  const headings = document.querySelectorAll('h2');
+  const tocList = toc.querySelector('ul');
+  
+  // Process each heading
+  headings.forEach(heading => {
+    if (!heading.id) {
+      // Create ID from text if none exists
+      heading.id = heading.textContent.toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w\-]/g, '');
+    }
+    const li = document.createElement('li');
+    li.innerHTML = `<a href="#${heading.id}">${heading.textContent}</a>`;
+    tocList.appendChild(li);
+  });
+  
+  // Find the h1 element
+  const h1 = document.querySelector('h1');
+  
+  // Insert the TOC after h1 if h1 exists, otherwise at start of body
+  if (h1) {
+    h1.insertAdjacentElement('afterend', toc);
+  } else {
+    document.body.insertBefore(toc, document.body.firstChild);
+  }
+
+});
+</script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if CSS counters are supported
+            const testElement = document.createElement('div');
+            testElement.style.content = 'counter(test)';
+            
+            if (!testElement.style.content) {
+                // CSS counters not supported - use JavaScript fallback
+                const propositions = document.querySelectorAll('.proposition');
+                propositions.forEach((prop, index) => {
+                    const numberElement = prop.querySelector('.number');
+                    if (numberElement) {
+                        numberElement.textContent = 'Proposición ${index + 1}.';
+                    }
+                });
+            }
+        });
+</script>
+</body>
+</html>
