@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math & Bio | FrancescoAPG</title>
+    <style>
+        :root {
+            --math-color: #6a4c93;
+            --bio-color: #2a6e3f;
+            --dark-bg: #1a1a2e;
+            --light-bg: #f8f9fa;
+            --text-dark: #212529;
+            --text-light: #f8f9fa;
+            --transition: all 0.3s ease;
+        }
+        
+        a {text-decoration: none; }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            color: var(--text-dark);
+            background: var(--light-bg);
+            margin: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Header */
+        header {
+            background: var(--dark-bg);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+			font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            font-size: 1.7rem;
+            font-weight: 600;
+        }
+
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: var(--transition);
+        }
+        
+        nav a:hover {
+            color: var(--math-color);
+        }
+        
+        /* Main Content */
+        .split-container {
+            display: flex;
+            flex: 1;
+        }
+        
+        /* Math Section */
+        .math-section {
+            flex: 1;
+            padding: 3rem;
+            background: linear-gradient(135deg, rgba(106,76,147,0.03) 0%, rgba(106,76,147,0.1) 100%);
+            border-right: 1px solid #eee;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .math-section::before {
+            content: '∫';
+            position: absolute;
+            bottom: -50px;
+            right: -30px;
+            font-size: 300px;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        /* Bio Section */
+        .bio-section {
+            flex: 1;
+            padding: 3rem;
+            background: linear-gradient(135deg, rgba(42,110,63,0.03) 0%, rgba(42,110,63,0.1) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .bio-section::before {
+            content: '\1F331';
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            font-size: 300px;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        .section-header {
+            position: relative;
+            margin-bottom: 2rem;
+            z-index: 1;
+        }
+        
+        .math-section .section-header h2 {
+            color: var(--math-color);
+            display: inline-block;
+            border-bottom: 2px solid var(--math-color);
+            padding-bottom: 5px;
+        }
+        
+        .bio-section .section-header h2 {
+            color: var(--bio-color);
+            display: inline-block;
+            border-bottom: 2px solid var(--bio-color);
+            padding-bottom: 5px;
+        }
+        
+        .content-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 1;
+            transition: var(--transition);
+        }
+        
+        .content-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
+        }
+        
+        .math-section .content-card {
+            border-left: 3px solid var(--math-color);
+        }
+        
+        .bio-section .content-card {
+            border-left: 3px solid var(--bio-color);
+        }
+        
+        .content-card h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .math-section .content-card h3 {
+            color: var(--math-color);
+        }
+        
+        .bio-section .content-card h3 {
+            color: var(--bio-color);
+        }
+        
+        .content-card p {
+            margin-bottom: 0;
+            color: #555;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--math-color);
+        }
+        
+        .copyright {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .split-container {
+                flex-direction: column;
+            }
+            
+            .math-section {
+                border-right: none;
+                border-bottom: 1px solid #eee;
+            }
+            
+            .header-container, nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav a {
+                margin: 0.5rem 0;
+                display: block;
+            }
+        }
+        
+.hover-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+}
+
+.hover-trigger {
+  color: white;
+  border-bottom: 1px dashed #6a4c93;
+  transition: all 0.2s ease;
+}
+
+.hover-trigger:hover {
+  color: #8a6dbb; /* Lighter purple */
+}
+
+.hover-popup {
+  position: absolute;
+  top: 100%; /* Changed from bottom: 100% */
+  left: 0; /* Changed from left: 50% */
+  width: 250px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 15px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  margin-top: 10px; /* Added space between trigger and popup */
+}
+
+.hover-container:hover .hover-popup {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* Simplified transform */
+}
+     
+     
+     
+.youtube-btn {
+    display: inline-flex;
+    align-items: center;
+    background: #FF0000; /* YouTube red */
+    color: white !important;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    text-decoration: none !important;
+    transition: var(--transition);
+    gap: 0.5rem;
+    transform: translateY(-7px);
+}
+
+.youtube-btn:hover {
+    background: #CC0000; /* Darker red on hover */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.youtube-btn::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>');
+    background-size: contain;
+}
+
+    </style>
+</head>
+
+
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">mathbio</div>
+            <nav>
+                <a href="https://www.researchgate.net/profile/Francesco-Pena-Garcia?ev=hdr_xprf">Mis publicaciones</a>
+                <a>
+                <div class="hover-container">
+<span class="hover-trigger">Contacto</span>
+<div class="hover-popup">
+<div class="popup-actions">
+<p>
+For inquiries or reclamations, my company email is the following:
+<br>
+francesco.pena@unmsm.edu.pe
+</p>
+</div>
+</div>
+</div>
+</a>
+                <a href="#"></a>
+            </nav>
+        </div>
+    </header>
+    <p style="text-align: center;">
+<i>⁓Mathematical biology, have fun⁓</i>
+
+    </p>
+    <!-- Main Content -->
+    <div class="split-container">
+        <!-- Mathematics Section -->
+        <section class="math-section">
+            <div class="section-header">
+                <h2>Matemática</h2>
+            </div>
+            
+
+            <a href="https://francescoapg.github.io/mathbio/setheory">
+            <div class="content-card">
+                <h3>Teoría de Conjuntos</h3>
+                <p>Axiomas y propiedades básicas.</p>
+            </div>
+            </a>
+            
+			<a href="https://francescoapg.github.io/mathbio/functlations">            
+            <div class="content-card">
+                <h3>Relaciones y funciones</h3>
+                <p>Conceptos básicos para el trabajo con funciones.</p>
+            </div>
+			</a>            
+            
+            
+            	<a href="">
+            <div class="content-card">
+                <h3>Espacios</h3>
+                <p>Conceptos abstractos acerca de los espacios en diversas teorías matemáticas.</p>
+            </div>
+            </a>
+            
+            <a href="https://francescoapg.github.io/mathbio/advcalc">
+            <div class="content-card">
+                <h3>Análisis Real</h3>
+                <p>Fundamentos matemáticos de las herramientas del cálculo.</p>
+            </div>
+            </a>
+
+
+			<a href="https://francescoapg.github.io/mathbio/edo">
+            <div class="content-card">
+                <h3>Ecuaciones diferenciales</h3>
+                <p>Solución y análisis cualitativo.</p>
+            </div>
+            </a>
+
+			<a href="https://francescoapg.github.io/mathbio/measure">
+            <div class="content-card">
+                <h3>Teoría de la medida</h3>
+                <p>Teoría abstracta que nos permite aplicar medidas sobre conjuntos.</p>
+            </div>
+            </a>
+            
+            
+            <a href="https://francescoapg.github.io/mathbio/geomdiff">
+            <div class="content-card">
+                <h3>Geometría diferencial</h3>
+                <p>Análisis de curvas y superficies.</p>
+            </div>            
+            </a>
+            
+            
+            <a href="https://francescoapg.github.io/mathbio/linalge">
+            <div class="content-card">
+                <h3>Álgebra Lineal</h3>
+                <p>Espacios vectoriales y transformaciones lineales</p>
+            </div>
+            </a>
+            
+            
+            <a href="https://francescoapg.github.io/mathbio/groups">
+            <div class="content-card">
+                <h3>Teoría de Grupos</h3>
+                <p>Estructura algebraica básica.</p>
+            </div>
+            </a>
+            
+            
+            <a href="https://francescoapg.github.io/mathbio/topos">
+            <div class="content-card">
+                <h3>Topología General</h3>
+                <p>Espacios topológicos y propiedades fundamentales</p>
+            </div>
+            </a>
+            
+            <a href="https://francescoapg.github.io/mathbio/cat">
+            <div class="content-card">
+                <h3>Categorías</h3>
+                <p>Una de las teorías matemáticas de mayor generalidad.</p>
+            </div>
+			</a>
+            
+        </section>
+        
+        <!-- Biology Section -->
+        <section class="bio-section">
+            <div class="section-header">
+                <h2>Biología</h2>
+            </div>
+            
+            <a href="https://francescoapg.github.io/mathbio/ecoteo">
+            <div class="content-card">
+                <h3>Ecología Teórica</h3>
+                <p>Modelos de dinámica poblacional.</p>
+            </div>
+            </a>
+            
+            <a href="https://francescoapg.github.io/mathbio/prebiomath">
+            <div class="content-card">
+                <h3>Biomatemática</h3>
+                <p>Introducción a los modelos matemáticos en biología.</p>
+            </div>
+            </a>
+            
+            <a href="https://francescoapg.github.io/mathbio/biomath">
+            <div class="content-card">
+                <h3>Biomatemática Avanzada</h3>
+                <p>Se exploran nuevas teorías matemáticas además del cálculo y ecuaciones diferenciales para estudiar el fenómeno biológico.</p>
+            </div>
+			</a>            
+            
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="https://www.github.com/francescoapg/mathbio/">GitHub</a>
+                <a href="https://www.youtube.com/@francescoapg" class="youtube-btn">Youtube</a>
+            </div>
+            <p class="copyright">© 2020-2025 Francesco Peña Garcia.
+<br>            
+<br>
+Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant sections, no Front-Cover texts, and no Back-Cover texts.
+<br>
+<a style="background-color: powderblue; color: black;" href="https://francescoapg.github.io/mathbio/lcs">Ver licencia (Inglés)</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
