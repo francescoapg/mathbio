@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bienvenido | mathbio</title>
+    <title>Bienvenido | mathbio</title>
     <style>
         :root {
             --math-color: #6a4c93;
@@ -182,6 +182,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
+            position: relative; /* Needed for absolute positioning */
         }
         
         .footer-links {
@@ -295,6 +296,39 @@
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>');
     background-size: contain;
 }
+
+
+
+  /* Estilos generales para la tarjeta */
+        .visitas-card {
+    position: absolute;
+    right: 2rem;
+    top: 0rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    min-width: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+        /* Estilos para el número de visitas */
+        .visitas-count {
+            font-size: 2em;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Estilos para el texto "Visitas" */
+        .visitas-text {
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
 
     </style>
 </head>
@@ -457,10 +491,17 @@ francesco.pena@unmsm.edu.pe
     <!-- Footer -->
     <footer>
         <div class="footer-container">
+        
+<div class="visitas-card">
+            <div class="visitas-count" id="visitas">0</div>
+            <div class="visitas-text">Visitas</div>
+        </div>        
+        
+        
             <div class="footer-links">
                 <a href="https://www.github.com/francescoapg/mathbio/">GitHub</a>
                 <a href="https://www.youtube.com/@francescoapg" class="youtube-btn">Youtube</a>
-            </div>
+            </div>            
             <p class="copyright">© 2020-2025 Francesco Peña Garcia.
 <br>            
 <br>
@@ -470,5 +511,22 @@ Permission is granted to copy, distribute and/or modify this document under the 
             </p>
         </div>
     </footer>
+<script>    
+       // Función para actualizar el contador de visitas
+        function actualizarContador() {
+            if (localStorage.getItem('visitas')) {
+                // Si ya existe, incrementa el contador
+                let visitas = parseInt(localStorage.getItem('visitas')) + 1;
+                localStorage.setItem('visitas', visitas);
+                document.getElementById('visitas').textContent = visitas;
+            } else {
+                // Si no existe, inicializa el contador en 1
+                localStorage.setItem('visitas', 1);
+                document.getElementById('visitas').textContent = 1;
+            }
+        }
+// Llama a la función para actualizar el contador cuando la página se carga
+        window.onload = actualizarContador;
+</script>
 </body>
 </html>
