@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Álgebra Lineal</title>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <link rel="stylesheet" href="mystyles.css">
+  <link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+</head>
+<body>
+  <div class="header">
+  <a href="https://francescoapg.github.io/mathbio/" class="logo"><span>Inicio</span></a>
+  <div class="header-right">
+  <a href="https://github.com/francescoapg/mathbio" class="button"> GitHub </a>
+        <div class="dropdown">
+      <a href="#math" class="button">Biología</a>
+      <div class="dropdown-content">
+        <a href="https://francescoapg.github.io/mathbio/ecoteo">Ecología Teórica</a>
+        <a href="https://francescoapg.github.io/mathbio/prebiomath">Biomatemática</a>
+        <a href="https://francescoapg.github.io/mathbio/biomath">Biomatemática avanzada</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#math" class="button">Matemática</a>
+      <div class="dropdown-content">
+        <a href="https://francescoapg.github.io/mathbio/setheory">Teoría de conjuntos</a>
+        <a href="https://francescoapg.github.io/mathbio/functlations">Relaciones y funciones</a>
+        <a href="#">Espacios</a>
+        <a href="https://francescoapg.github.io/mathbio/real">Análisis Real</a>
+        <a href="https://francescoapg.github.io/mathbio/edo">Ecuaciones Diferenciales</a>
+        <a href="https://francescoapg.github.io/mathbio/measure">Teoría de la medida</a>
+        <a href="https://francescoapg.github.io/mathbio/geomdiff">Geometría diferencial</a>
+        <a href="https://francescoapg.github.io/mathbio/linalge">Álgebra lineal</a>
+        <a href="https://francescoapg.github.io/mathbio/groups">Teoría de grupos</a>
+        <a href="https://francescoapg.github.io/mathbio/topos">Topología general</a>
+        <a href="https://francescoapg.github.io/mathbio/cat">Categorías</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header" style="overflow: hidden"></div>
+
+<hr>
+<div style="padding-left:20px; padding-right: 20px; ">
+<h1 style="text-align:center; ">Álgebra Lineal</h1>
+<h2>Introducción</h2>
+<p>
+El foco principal del Álgebra Lineal son las combinaciones lineales, estas son combinaciones de dos operaciones básicas que son la multiplicación escalar y la suma. Sean \( v,w\) dos vectores, y \( a,b\) dos números. \(av+bw \) es una combinación lineal de \( v,w\). Estas dos operaciones llevan vectores a vectores, es decir, todo resultado de una combinación lineal es un vector.
+<br>
+La suma de vectores y la multiplicación escalar siguen algunas reglas muy sencillas. En el caso de la suma de vectores, son las siguientes:
+</p>
+<ol>
+	<li>Los vectores deben tener la misma dimensión.</li>
+	<li>\( a_{ij}\) del primer vector se sumará solo con \(b_{ij} \) del segundo vector y visceversa. En otras palabras, la suma se realiza de forma sistemática y ordenada de acuerdo a las posiciones de los elementos de los vectores.</li>
+	<li>\( v+w=w+v\)</li>
+</ol>
+<p>
+Por su parte, en la multiplicación escalar, el valor a multiplicar, llámese \( k\) deberá ser multiplicado en todas las posiciones de la matriz o vector. En otras palabras, si la matriz está formada por \( a_{ij}\) elementos, luego de la multiplicación escalar, estará formada por \( ka_{ij}\) elementos.
+<br>
+Naturalmente, la "resta" de los vectores \( v,w\) deberá ser entendida como la siguiente combinación lineal: \(v+(-1)w \).
+<br>
+Ahora bien, ¿qué pasaría si tienes a todas las combinaciónes lineales de un vector de dimensión 3?. En otras palabras, si en  c v \), siendo \(  v \) el vector, \(  c \) pudiese tomar cualquier valor. Es claro que este caso sería el de una línea con dirección \(  v \). Si tomamos dos vectores linealmente independientes de dimensión 3, \(  v \) y \(  w \), todas las combinaciones lineales llenarán un plano. De forma análoga, tres vectores linealmente idependientes llenarán todo el espacio tridimensional. Un acotación importante es que ninguno de los vectores mencionados debe ser el vector cero (<i>zero vector</i>). Combinación lineales del vector cero serán el mismo vector además, toda línea o plano que pase por el origen comprenderá al vector cero.
+<br>
+La siguiente operación entre vectores es llamada producto punto o producto interno. Esta operación se representa como \(  v\cdot w \) y tiene como resultado a un número. La fórmula general es . El producto punto es interesante por su interpretación geométrica. Por ejemplo, si el producto punto de dos vectores es 0, esto implica que ambos vectores son perpendiculares, es decir, el ángulo entre ellos es de 90°. De forma general, sea \(  \theta \) el ángulo entre el vector \(  u \) y \(  v \), \(  cos(\theta)=(||u||||v||)^{-1}u\cdot v \). Apartir de esta igualdad obtenemos las siguientes inecuaciones:
+<br>
+1. Inecuación de Schwarz: \(  |u\cdot v|\leq ||u||||v|| \).
+<br>
+2. Inecuación triangular: \(  ||u+v||\leq ||u||+||v|| \).
+<br>
+
+Con el operador producto punto definimos a la siguiente función, la longitud es la raiz cuadrada del producto punto del vector consigo mismo. La notación es la siguiente: \(  ||v||=(v\cdot v)^{1/2} \).
+<br>
+El operador producto punto también sirve para definir al **vector unitario**, este es un vector que cumple la siguiente ecuación: \(  v\cdot v =1 \). Una forma para obtener un vector unitario en la dirección del vector \(  v \) es \(  (1/||v||)v \).
+</p>
+<div class="proposition"><span class="number"></span> </div>
+<blockquote>
+Sea \( u\neq \theta\). Solo existe un vector unitario en la dirección \(  u \).
+</blockquote>
+<button class="btnProof" id="btn1" onclick="showProof('1','btn1')"> Mostrar demostración</button>
+<div class="proof" style="display: none;" id="1">
+<i>Demostracion</i>. Sea \(  v \) un vector unitario en direccíon \(  u \) obtenido de acuerdo a \(  (1/||u||)u \), si existe un vector unitario \(  w \) en la misma dirección, entonces \( w=ku\), sin embargo desde que \( v=k_2u\), sigue que \( w=\frac{k}{k_2}v\), como \( v\) es unitaro \( k_2\neq 0\), luego aplicamos norma y tenemos que \( 1=\frac{k}{k_2}\), de acá sigue la igualdad.
+</div>
+<p>
+Otra matriz importante es la matriz identidad, esta matriz es aquella matriz \(  I \) que cumple \(  Ix=x \) siendo \(  x \) distinto al vector cero. Es evidente que la dimensión de la matriz identidad va a variar dependiendo de la dimensión de \(  x \). Adelantamos que para que dos matrices se puedan multiplicar, el número de columnas de la primera debe ser igual al número de filas de la segunda. Siendo \(  x \) una matriz con 3 filas, \(  I \) sería
+
+\[
+\begin{bmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{bmatrix}
+\]
+
+La matriz identidad es una matriz cuyos elementos son 0s a excepción de la diagonal principal que está conformada por 1s.
+
+<b>Notación:</b>
+
+Tenga en cuenta lo siguiente:
+</p>
+<ol>
+	<li>Las dimensiones de una matriz se escriben como \(  m\times n \), siendo \(  m \) el número de filas y \(  n \) el número de columnas.</li>
+	<li>Los elementos de una matriz \(  A \) se identifican por sus coordenadas en filas y columnas, \(  a_{ij} \) estará en la fila \(  i \) y columna \(  j \).</li>
+</ol>
+
+
+<h2>Matrices y Ecuaciones Lineales</h2>
+
+Una ecuación vectorial es una expresión de la forma \(A c =b\), siendo \( A\) la matriz de coeficientes de dimensión \( n\times m\). \( c\) es un vector (una matriz columna) de dimensión \(m\times 1 \) y \( v\) es un vector de dimensión \( n\times 1\). Ten en cuenta que el lado izquierdo de la ecuación vectorial es la llamada combinación lineal.
+<br>
+En general, la multiplicación de una matriz con un vector por la derecha es la combinación lineal de las columnas donde los escalares son los elementos del vector.
+<br>
+Cuando \( Ax=b\) es considerada como una ecuación lineal y \( A\) es una matriz cuadrada (con el mismo número de filas y columnas) invertible, \( x\) va a ser calculado como el producto de la inversa de la matriz con \( b\), en otras palabras, \( x=A^{-1}b\). Este es el escenario más sencillo. Un escenario aún más sencillo es cuando \( A\) es una matriz triangular (inferior o superior) o diagonal.
+<br>
+Conectando el concepto de independecia de columnas y solubilidad de una ecuación matricial, decimos que 
+</p>
+<ol>
+	<li>Si \( Ax=0\) tiene solo como solución al vector 0, entonces, dado \(A \) es una matriz cuadrada, \( A\) es una matriz invertible, es decir, existe \( A^{-1}\) tal que \( A^{-1}A=AA^{-1}=I\).</li>
+	<li>Si \( Ax=0\) tiene más de una solución, \( A\) es una <b>matriz singular</b>. Para matrices cuadradas, el determinante es 0 si y solo si dicha matriz es singular. Una ecuación singular tiene 0 soluciones o infinitas soluciones.</li>
+</ol>
+<p>
+Existen dos maneras de entender las ecuaciones lineales:
+<br>
+Por Filas: \( m\) ecuaciones que se intersectan en la solución (\( x\)).
+<br>
+Por Columnas: Una combinación lineal de \( n\) columnas que producen \( b\).
+<br>
+El método por filas es el más geométrico y quizás recomendable para matrices de poca dimensión, mientras que el método por columnas es recomendable para matrices de mayores dimensiones.
+<br>
+Un concepto importante es el <i>rank</i>. El <i>rank</i> de \( A\) es la dimensión del espacio vectorial de las soluciones de la ecuación lineal \( Ax=0\). El <i>rank</i> es el número de columnas linealmente independientes de la matriz y se puede calcular como el número de pivots que hay luego del proceso de eliminación.
+</p>
+<h3>Eliminación</h3>
+Es un proceso por el cual transformamos un sistema de ecuaciones (\( Ax=b\)) cualquiera en un sistema de ecuaciones triangular superior (\( Ux=d\)). Una vez alcanzado el sistema triangular superior, el sistema es resuelto por substitución inversa (<i>back substitution</i>).
+
+El corazón de este método es que apesar de ser un sistema distinto, \( Ux=d\) tiene las mismas soluciones que \( Ax=b\).
+
+Para este método debes verificar primero que la primera posición (\( a_{1,1}\)) sea diferente de 0, de este modo, esta será tu primera columna pivot, caso contario hacer los cambios necesarios para que así sea, de no ser posible, este será la primera columna libre.
+
+Para resolver (con una solución única) un sistema de \( n\) ecuaciones es necesario tener \( n\) <i>pivots</i>. Los pivots son los elementos de la diagonal distintos de cero de la matriz \( U\).
+
+
+
+
+
+
+
+
+<h2>Referencias</h2>
+<ul>
+  <li>Strang, G. (2016). Introduction to Linear Algebra. Wellesley-Cambridge Press.</li>
+  <li></li>
+  <li></li>
+</ul>
+<hr>
+<p style="font-family: Garamond, serif;font-size: 16px;">
+El contenido de está entrada ha sido parcialmente redactado por F. Peña-Garcia y parcialmente recopilado y traducido de los textos que se listan en las referencias. No reclamo derechos intelectuales sobre cualquier parte del texto.
+<br>
+Esta página web existe gracias a GitHub, \(\LaTeX \) y \(MathJax\).
+</p>
+<hr>
+</div>
+<script>
+function showProof(n, btnN) {
+  var x = document.getElementById(n);
+  var button = document.getElementById(btnN);
+  
+  // Use getComputedStyle to check current display value
+  if (window.getComputedStyle(x).display === "none") {
+    x.style.display = "block";
+    button.textContent = 'Ocultar demostración';
+  } else {
+    x.style.display = "none";
+    button.textContent = 'Mostrar demostración';
+  }
+}
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Create the TOC container
+  const toc = document.createElement('nav');
+  toc.className = 'toc';
+  toc.innerHTML = '<h2 style=" text-decoration: none; padding: 10px 0px 12px 0px;">Índice</h2><ul></ul>';
+  
+  // Get all h2 elements
+  const headings = document.querySelectorAll('h2');
+  const tocList = toc.querySelector('ul');
+  
+  // Process each heading
+  headings.forEach(heading => {
+    if (!heading.id) {
+      // Create ID from text if none exists
+      heading.id = heading.textContent.toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w\-]/g, '');
+    }
+    const li = document.createElement('li');
+    li.innerHTML = `<a href="#${heading.id}">${heading.textContent}</a>`;
+    tocList.appendChild(li);
+  });
+  
+  // Find the h1 element
+  const h1 = document.querySelector('h1');
+  
+  // Insert the TOC after h1 if h1 exists, otherwise at start of body
+  if (h1) {
+    h1.insertAdjacentElement('afterend', toc);
+  } else {
+    document.body.insertBefore(toc, document.body.firstChild);
+  }
+
+});
+</script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if CSS counters are supported
+            const testElement = document.createElement('div');
+            testElement.style.content = 'counter(test)';
+            
+            if (!testElement.style.content) {
+                // CSS counters not supported - use JavaScript fallback
+                const propositions = document.querySelectorAll('.proposition');
+                propositions.forEach((prop, index) => {
+                    const numberElement = prop.querySelector('.number');
+                    if (numberElement) {
+                        numberElement.textContent = 'Proposición ${index + 1}.';
+                    }
+                });
+            }
+        });
+</script>
+<script src="contador.js"></script>
+</body>
+</html>
